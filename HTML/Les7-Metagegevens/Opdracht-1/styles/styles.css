@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+td {
+  vertical-align: text-top;
+}
+
+.td-politiek {
+  width: 210px;
+}
+
+.td-economie {
+  width: 125px;
+}
+
+.td-cultuur {
+  width: 125px;
+}
+
+caption {
+  font-size: 24px;
+  text-align: left;
+  padding: 20px;
+  padding-left: 10px;
+}
+/*# sourceMappingURL=styles.css.map */

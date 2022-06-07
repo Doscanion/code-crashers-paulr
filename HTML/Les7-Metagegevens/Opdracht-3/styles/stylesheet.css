@@ -1,0 +1,13 @@
+body {
+	background-color: chocolate;
+	color: white;
+	font-size: 20px;
+	font-family: Georgia, Times, serif;	
+}
+h1, h2, h3 {
+	text-shadow: 2px 2px 2px black;
+}
+a {
+	font-style: italic;
+	text-decoration: none;
+}
