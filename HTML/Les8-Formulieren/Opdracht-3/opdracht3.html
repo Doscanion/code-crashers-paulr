@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Opdracht 3</title>
+        <style>
+            textarea {
+                resize: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Enquêteformulier</h1>
+        <form action="opdracht3.html" method="POST">
+            <fieldset>
+                <legend>Gebruikers Informatie</legend>
+                <label for="voornaam">Voornaam</label>
+                <br />
+                <input type="text" name="voornaam" id="voornaam" />
+                <br />
+                <label for="achternaam">Achternaam</label>
+                <br />
+                <input type="text" name="achternaam" id="achternaam" />
+                <br />
+                <label for="email">E-mailadres</label>
+                <br />
+                <input type="email" name="email" id="email" />
+                <br />
+                <label
+                    ><input
+                        type="radio"
+                        name="geslacht"
+                        value="man"
+                    />Man</label
+                >
+                <label
+                    ><input
+                        type="radio"
+                        name="geslacht"
+                        value="vrouw"
+                    />Vrouw</label
+                >
+                <label
+                    ><input type="radio" name="geslacht" value="nvt" />Niet van
+                    toepassing</label
+                >
+            </fieldset>
+            <br />
+            <br />
+            <fieldset>
+                <legend>Vragenlijst</legend>
+                <label for="vraag1">1. Welk cijfer zou je aan ons geven?</label>
+                <br />
+                <input
+                    type="number"
+                    name="vraag1"
+                    id="vraag1"
+                    min="1"
+                    max="10"
+                    step="1"
+                />
+                <br />
+                <label for="vraag2"
+                    >2. Stel je bent de baas van ons bedrijf. Hoe zou jij het
+                    aanpakken?</label
+                >
+                <br />
+                <textarea
+                    name="vraag2"
+                    id="vraag2"
+                    maxlength="160"
+                    cols="40"
+                    rows="4"
+                ></textarea>
+                <br />
+                <label for="vraag3"
+                    >3. Welke onduidelijkheden/bezwaren/twijfels had je voordat
+                    je klant bij ons werd?</label
+                >
+                <br />
+                <textarea
+                    name="vraag3"
+                    id="vraag3"
+                    maxlength="160"
+                    cols="40"
+                    rows="4"
+                ></textarea>
+                <br />
+                <label for="vraag4"
+                    >4. Hoe zou je ons beschrijven aan een vriend?</label
+                >
+                <br />
+                <textarea
+                    name="vraag4"
+                    id="vraag4"
+                    maxlength="160"
+                    cols="40"
+                    rows="4"
+                ></textarea>
+                <br />
+                <label for="vraag5"
+                    >5. Stel dat we iets speciaal voor jou maken. Wat zou dat
+                    zijn?</label
+                >
+                <br />
+                <textarea
+                    name="vraag5"
+                    id="vraag5"
+                    maxlength="160"
+                    cols="40"
+                    rows="4"
+                ></textarea>
+                <br />
+                <label for="vraag6"
+                    >6. Heb je positief of negatief over ons gesproken tegen een
+                    vriend, collega of familielid? Als dat zo is, waar ging het
+                    over?</label
+                >
+                <br />
+                <textarea
+                    name="vraag6"
+                    id="vraag6"
+                    maxlength="160"
+                    cols="40"
+                    rows="4"
+                ></textarea>
+                <br />
+                <label for="vraag7"
+                    >7. Welke andere aanbieders heb je overwogen voordat je
+                    klant bij ons werd?</label
+                >
+                <br />
+                <textarea
+                    name="vraag7"
+                    id="vraag7"
+                    maxlength="160"
+                    cols="40"
+                    rows="4"
+                ></textarea>
+                <br />
+                <label for="vraag8"
+                    >8. Waarom heb je besloten om klant bij ons te worden? En
+                    niet bij de andere aanbieders?</label
+                >
+                <br />
+                <textarea
+                    name="vraag8"
+                    id="vraag8"
+                    maxlength="160"
+                    cols="40"
+                    rows="4"
+                ></textarea>
+                <br />
+                <label for="vraag9"
+                    >9. Wat zou je overhalen om vaker voor ons te kiezen?</label
+                >
+                <br />
+                <textarea
+                    name="vraag9"
+                    id="vraag9"
+                    maxlength="160"
+                    cols="40"
+                    rows="4"
+                ></textarea>
+            </fieldset>
+            <br />
+            <br />
+            <label
+                ><input type="checkbox" name="akkoord" value="ja" /> Ik ga
+                akkoord met de voorwaarden</label
+            >
+            <br />
+            <br />
+            <input type="submit" value="Verzenden" />
+        </form>
+    </body>
+</html>

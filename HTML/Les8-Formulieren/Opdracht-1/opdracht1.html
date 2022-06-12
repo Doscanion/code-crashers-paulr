@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Opdracht 1</title>
+    </head>
+    <body>
+        <h1>Registratieformulier</h1>
+        <form action="opdracht1.html" method="post">
+            <label for="gebruikersnaam">Gebruikersnaam</label>
+            <input
+                type="text"
+                name="gebruikersnaam"
+                id="gebruikersnaam"
+                autofocus
+                required
+            />
+            <br />
+            <label for="woonplaats">Woonplaats</label>
+            <input type="text" name="woonplaats" id="woonplaats" required />
+            <br />
+            <label for="postcode">Postcode</label>
+            <input type="text" name="postcode" id="postcode" disabled />
+            <br />
+            <input type="submit" value="Verzenden" />
+            <input type="submit" value="Reset" />
+        </form>
+    </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Opdracht 2</title>
+    </head>
+    <body>
+        <h1>Registratieformulier</h1>
+        <form action="opdracht1.html" method="post">
+            <label for="gebruikersnaam">Gebruikersnaam</label>
+            <input
+                type="text"
+                name="gebruikersnaam"
+                id="gebruikersnaam"
+                autofocus
+                required
+            />
+            <br />
+            <label for="woonplaats">Woonplaats</label>
+            <input
+                type="text"
+                name="woonplaats"
+                id="woonplaats"
+                list="steden"
+                required
+            />
+            <datalist id="steden">
+                <option value="Rotterdam"></option>
+                <option value="Amsterdam"></option>
+                <option value="Barendrecht"></option>
+                <option value="Dinteloord"></option>
+                <option value="Roosendaal"></option>
+                <option value="Tilburg"></option>
+                <option value="Eindhoven"></option>
+            </datalist>
+
+            <br />
+            <label for="postcode">Postcode</label>
+            <input type="text" name="postcode" id="postcode" disabled />
+            <br />
+            <label for="wachtwoord">Wachtwoord</label>
+            <input type="password" name="wachtwoord" id="wachtwoord" />
+            <br />
+            <label for="bsn-nummer">BSN-nummer</label>
+            <input type="number" name="bsn-nummer" id="bsn-nummer" />
+            <br />
+            <label for="e-mail">E-mail</label>
+            <input type="email" name="e-mail" id="e-mail" />
+            <br />
+            <label for="kleur">Favoriete kleur</label>
+            <input type="color" name="kleur" id="kleur" />
+            <br />
+            <label for="datum">Geboorte datum</label>
+            <input type="date" name="datum" id="datum" />
+            <br />
+            <label for="kinderen">Heb je kinderen?</label>
+            <input type="checkbox" name="kinderen" id="kinderen" />
+            <br />
+            <span>Burgerlijke staat</span>&nbsp;
+            <label for="ongehuwd">Ongehuwd</label>
+            <input type="radio" name="partner" value="ongehuwd" id="ongehuwd" />
+            <label for="gehuwd">Gehuwd</label>
+            <input type="radio" name="partner"" value="gehuwd" id="gehuwd" />
+            <label for="gescheiden">Gescheiden</label>
+            <input type="radio" name="partner"" value="gescheiden"
+            id="gescheiden" />
+            <br />
+            <label for="nationaliteit">Nationaliteit</label>
+            <select name="nationaliteit" id="nationaliteit">
+                <option>Nederlandse</option>
+                <option>Marokkaanse</option>
+                <option>Turkse</option>
+                <option>Surinaamse</option>
+                <option>Antilliaanse</option>
+                <option>Overige</option>
+            </select>
+            <br />
+            <input type="submit" value="Verzenden" />
+            <input type="submit" value="Reset" />
+        </form>
+    </body>
+</html>
