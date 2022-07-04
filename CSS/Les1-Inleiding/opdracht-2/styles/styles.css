@@ -1,0 +1,20 @@
+body {
+  background-color: #f0e78e;
+}
+
+h1 {
+  color: #ff0000;
+}
+
+p {
+  color: #008000;
+}
+
+h2 {
+  color: #ffa500;
+}
+
+.p-color-text {
+  color: blue;
+}
+/*# sourceMappingURL=styles.css.map */

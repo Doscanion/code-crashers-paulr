@@ -1,0 +1,31 @@
+body {
+  background-color: #add8e6;
+}
+
+h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #ff7f50;
+}
+
+h2 {
+  color: #ff00ff;
+  font-family: Comic Sans MS;
+}
+
+p {
+  color: #637fe1;
+  font-size: 20px;
+}
+
+li {
+  color: #33987f;
+}
+
+.light-pink {
+  color: #db8fed;
+}
+
+ol {
+  list-style-type: hiragana;
+}
+/*# sourceMappingURL=styles.css.map */

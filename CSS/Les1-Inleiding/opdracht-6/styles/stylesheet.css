@@ -1,0 +1,12 @@
+button {
+  cursor: pointer;
+}
+
+progress {
+  cursor: wait;
+}
+
+a {
+  cursor: not-allowed;
+}
+/*# sourceMappingURL=stylesheet.css.map */

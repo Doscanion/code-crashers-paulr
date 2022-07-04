@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Samenvatting HTML</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/stylesheet.css" />
+    </head>
+    <body>
+        <!-- Tabel met elementen -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Element</th>
+                    <th>Uitleg</th>
+                    <!-- Laat indien mogelijk ook de werking zien van het element. -->
+                    <th>Demonstratie</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th colspan="3">Les 1 - Inleiding HTML</th>
+                </tr>
+                <tr>
+                    <td>&lt;html&gt;</td>
+                    <td>Hiermee kun je een HTML document aanmaken</td>
+                    <td>n.v.t.</td>
+                </tr>
+                <tr>
+                    <td>&lt;head&gt;</td>
+                    <td>Hier plaats je alle informatie over de pagina</td>
+                    <td>n.v.t.</td>
+                </tr>
+                <tr>
+                    <td>&lt;body&gt;</td>
+                    <td>Hier plaats je de feitelijke content van de pagina</td>
+                    <td>n.v.t.</td>
+                </tr>
+                <tr>
+                    <td>&lt;title&gt;</td>
+                    <td>
+                        Wordt gebruikt om je pagina een titel te geven (voor het
+                        tabblad)
+                    </td>
+                    <td>(zie tabblad)</td>
+                </tr>
+                <tr>
+                    <td>&lt;p&gt;</td>
+                    <td>Hiermee kun je een paragraaf aanmaken</td>
+                    <td><p>Dit is een paragraaf.</p></td>
+                </tr>
+                <tr>
+                    <td>&lt;br&gt;</td>
+                    <td>Om een nieuwe regel te beginnen</td>
+                    <td>Nieuwe regel<br />beginnen.</td>
+                </tr>
+                <tr>
+                    <td>&lt;strong&gt;</td>
+                    <td>Hiermee kun je tekst als belangrijk markeren</td>
+                    <td>
+                        <strong>markeren</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;em&gt;</td>
+                    <td>Hiermee kun je tekst als benadrukt markeren</td>
+                    <td>
+                        <em>benadrukt</em>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="3">Les 2 - Teksten</th>
+                </tr>
+                <tr>
+                    <td>&lt;meta&gt;</td>
+                    <td>
+                        Hier plaats je metagegevens plaatsen (vooral voor SEO)
+                    </td>
+                    <td>n.v.t.</td>
+                </tr>
+                <tr>
+                    <td>&lt;h1&gt; t/m &lt;h6&gt;</td>
+                    <td>Met deze elementen kun je headings (kopjes) maken</td>
+                    <td><h3>Dit is een h3-heading</h3></td>
+                </tr>
+                <tr>
+                    <td>&lt;del&gt;</td>
+                    <td>Geeft aan dat de tekst is verwijderd</td>
+                    <td>
+                        <del>Deze zin is verwijderd</del>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;ins&gt;</td>
+                    <td>Geeft aan dat de tekst later is toegevoegd</td>
+                    <td>
+                        <ins>Deze zin was later toegevoegd</ins>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;sup&gt;</td>
+                    <td>
+                        Tekst dat op de bovenste helft komt te staan van een
+                        karakter ruimte
+                    </td>
+                    <td>Tekst op de <sup>bovenste</sup> helft</td>
+                </tr>
+                <tr>
+                    <td>&lt;sub&gt;</td>
+                    <td>
+                        Tekst dat op de onderste helft komt te staan van een
+                        karakter ruimte
+                    </td>
+                    <td>Tekst op de <sub>onderste</sub> helft</td>
+                </tr>
+                <tr>
+                    <td>&lt;q&gt;</td>
+                    <td>Tekst komt dan tussen quotes te staan</td>
+                    <td>
+                        <q>Tekst met quotes</q>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;blockquote&gt;</td>
+                    <td>
+                        Geeft aan dat de tekst van een andere bron vandaan komt
+                    </td>
+                    <td>
+                        <blockquote cite="https://codecrashers.nl/">
+                            Tekst met als bron https://codecrashers.nl/
+                        </blockquote>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;abbr&gt;</td>
+                    <td>Een afkorting van meedere met de betekenis erbij</td>
+                    <td>
+                        <abbr title="HyperText Markup Language">HTML</abbr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;details&gt;</td>
+                    <td>Een klikbare spoiler</td>
+                    <td>
+                        <details>
+                            <summary>De spoiler summary</summary>
+                            <p>De spoiler tekst</p>
+                        </details>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>&lt;summary&gt;</td>
+                    <td>Is het zichtbare kop gedeelte van &lt;details&gt;</td>
+                    <td>Zie &lt;details&gt;</td>
+                </tr>
+                <tr>
+                    <th colspan="3">Les 3 - Lijsten</th>
+                </tr>
+                <tr>
+                    <td>&lt;ul&gt;</td>
+                    <td>Is het openings element van een ongeorderde lijst</td>
+                    <td>
+                        <ul>
+                            <li>Dit is een list item</li>
+                            <li>Lijst</li>
+                            <li>Hyperlink</li>
+                            <li>Afbeelding</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;li&gt;</td>
+                    <td>Een list item dat in een list staat</td>
+                    <td>Zie &lt;ul&gt; of &lt;ol&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;ol&gt;</td>
+                    <td>Is het openings element van een georderde lijst</td>
+                    <td>
+                        <ol>
+                            <li>Dit is een list item</li>
+                            <li>Lijst</li>
+                            <li>Hyperlink</li>
+                            <li>Afbeelding</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;dl&gt;</td>
+                    <td>
+                        Een lijst dat bestaat uit woorden met daarbij de
+                        beschrijving ervan
+                    </td>
+                    <td>
+                        <dl>
+                            <dt>Super Nintendo</dt>
+                            <dd>Een oude gameconsole</dd>
+                            <dt>Nintendo Switch</dt>
+                            <dd>Een nieuwe gameconsole</dd>
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;dt&gt;</td>
+                    <td>Een term dat in een &lt;dl&gt; staat</td>
+                    <td>Zie &lt;dl&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;dd&gt;</td>
+                    <td>De beschrijving van een &lt;dt&gt;</td>
+                    <td>Zie &lt;dl&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;code&gt;</td>
+                    <td>Geeft de tekst het uitelijk van computer code</td>
+                    <td>
+                        <code>Tekst met code</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;pre&gt;</td>
+                    <td>De tekst behoudt de enters en de extra spaties</td>
+                    <td>
+                        <pre>Tekst  met       pre</pre>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="3">Les 4 - Hyperlinks</th>
+                </tr>
+                <tr>
+                    <td>&lt;a&gt;</td>
+                    <td>
+                        Maakt de tekst klikbaar. Het heeft meestal een
+                        attributen
+                    </td>
+                    <td>Een klikbare <a>tekst</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;iframe&gt;</td>
+                    <td>
+                        Het maakt een venster op de pagina dat dan via een
+                        attribuut naar een source verwijst
+                    </td>
+                    <td>
+                        <iframe
+                            src="https://www.wikipedia.org/"
+                            width="400"
+                            height="100"
+                        ></iframe>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="3">Les 5 - Afbeelding</th>
+                </tr>
+                <tr>
+                    <td>&lt;img&gt;</td>
+                    <td>
+                        Een afbeelding wordt geplaatst op de pagina via een
+                        source.
+                    </td>
+                    <td>
+                        <img src="./tsicons.com-fort.png" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;map&gt;</td>
+                    <td>
+                        Maakt het mogelijk om 1 of meerdere klikbare area te
+                        hebben
+                    </td>
+                    <td>
+                        <img usemap="#castle" src="./tsicons.com-fort.png" />
+                        <map name="castle">
+                            <area
+                                shape="default"
+                                alt="Castle"
+                                href="https://www.mariowiki.com/Castle"
+                                target="_blank"
+                            />
+                        </map>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;area&gt;</td>
+                    <td>
+                        De area geeft aan wat en waar de klikbare area is in de
+                        img
+                    </td>
+                    <td>Zie &lt;map&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;object&gt;</td>
+                    <td>
+                        Een verouderde manier om naar een bestand of website te
+                        verwijzen
+                    </td>
+                    <td>
+                        <object data="./tsicons.com-fort.png"></object>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;link&gt;</td>
+                    <td>
+                        Maakt een verbinding tussen een afbeelding of een style
+                        sheet
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>&lt;svg&gt;</td>
+                    <td>Hiermee wordt een afbeelding gecreëerd uit xml</td>
+                    <td>
+                        <svg width="100" height="100">
+                            <circle
+                                cx="50"
+                                cy="50"
+                                r="40"
+                                stroke="green"
+                                stroke-width="4"
+                                fill="yellow"
+                            />
+                        </svg>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;rect&gt;</td>
+                    <td>
+                        Het wordt in een svg gebruikt om de vorm aan te geven
+                    </td>
+                    <td>
+                        <svg width="400" height="110">
+                            <rect
+                                width="300"
+                                height="100"
+                                style="
+                                    fill: rgb(0, 0, 255);
+                                    stroke-width: 3;
+                                    stroke: rgb(0, 0, 0);
+                                "
+                            />
+                        </svg>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;circle&gt;</td>
+                    <td>
+                        Het wordt in een svg gebruikt om de vorm aan te geven
+                    </td>
+                    <td>
+                        <svg height="100" width="100">
+                            <circle
+                                cx="50"
+                                cy="50"
+                                r="40"
+                                stroke="black"
+                                stroke-width="3"
+                                fill="red"
+                            />
+                        </svg>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;ellipse&gt;</td>
+                    <td>
+                        Het wordt in een svg gebruikt om de vorm aan te geven
+                    </td>
+                    <td>
+                        <svg height="140" width="500">
+                            <ellipse
+                                cx="200"
+                                cy="80"
+                                rx="100"
+                                ry="50"
+                                style="
+                                    fill: yellow;
+                                    stroke: purple;
+                                    stroke-width: 2;
+                                "
+                            />
+                        </svg>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;line&gt;</td>
+                    <td>
+                        Het wordt in een svg gebruikt om een lijn aan te geven
+                    </td>
+                    <td>
+                        <svg height="210" width="500">
+                            <line
+                                x1="0"
+                                y1="0"
+                                x2="200"
+                                y2="200"
+                                style="stroke: rgb(255, 0, 0); stroke-width: 2"
+                            />
+                        </svg>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;polyline&gt;</td>
+                    <td>
+                        Het wordt in een svg gebruikt om meerdere aan elkaar
+                        verbonden lijnen te maken
+                    </td>
+                    <td>
+                        <svg height="200" width="500">
+                            <polyline
+                                points="20,20 40,25 60,40 80,120 120,140 200,180"
+                                style="
+                                    fill: none;
+                                    stroke: black;
+                                    stroke-width: 3;
+                                "
+                            />
+                        </svg>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;polygon&gt;</td>
+                    <td>
+                        Het wordt in een svg gebruikt om een polygon te maken
+                        met 3 hoeken
+                    </td>
+                    <td>
+                        <svg height="210" width="500">
+                            <polygon
+                                points="200,10 250,190 160,210"
+                                style="
+                                    fill: lime;
+                                    stroke: purple;
+                                    stroke-width: 1;
+                                "
+                            />
+                        </svg>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;text&gt;</td>
+                    <td>Plaats text in een svg</td>
+                    <td>
+                        <svg height="30" width="200">
+                            <text x="0" y="15" fill="red">I love SVG!</text>
+                        </svg>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;path&gt;</td>
+                    <td>Geeft een path aan om een vorm te maken in een svg</td>
+                    <td>
+                        <svg height="210" width="400">
+                            <path d="M150 0 L75 200 L225 200 Z" />
+                        </svg>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="3">Les 5 - Tabellen</th>
+                </tr>
+                <tr>
+                    <td>&lt;table&gt;</td>
+                    <td>Het begin element van een table</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <th>Dinsdag</th>
+                                <th>Woensdag</th>
+                            </tr>
+                            <tr>
+                                <td>28</td>
+                                <td>29</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;tr&gt;</td>
+                    <td>Is de tablerow van een table</td>
+                    <td>Zie &lt;table&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;th&gt;</td>
+                    <td>Hierin staat de header informatie van een table</td>
+                    <td>Zie &lt;table&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;td&gt;</td>
+                    <td>Hierin staat de informatie van een table</td>
+                    <td>Zie &lt;table&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;thead&gt;</td>
+                    <td>Geeft de header aan in de table</td>
+                    <td>
+                        <table>
+                            <caption>
+                                Maandelijks Bespaard
+                            </caption>
+                            <thead>
+                                <tr>
+                                    <th>Maand</th>
+                                    <th>Bespaard</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Januari</td>
+                                    <td>€100</td>
+                                </tr>
+                                <tr>
+                                    <td>Februari</td>
+                                    <td>€80</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>Totaal</td>
+                                    <td>€180</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;tbody&gt;</td>
+                    <td>Geeft de body aan in de table</td>
+                    <td>Zie &lt;thead&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;tfoot&gt;</td>
+                    <td>Geeft de footer aan in de table</td>
+                    <td>Zie &lt;thead&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;caption&gt;</td>
+                    <td>Tekst dat boven de table komt staan</td>
+                    <td>Zie &lt;thead&gt;</td>
+                </tr>
+                <tr>
+                    <th colspan="3">Les 6 - Metagegevens</th>
+                </tr>
+                <tr>
+                    <td>&lt;head&gt;</td>
+                    <td>Gaat over de informatie die op de pagina staat</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>&lt;title&gt;</td>
+                    <td>
+                        Maakt de title van pagina die gezien kan worden op een
+                        tabblad en zoekmachine
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>&lt;meta&gt;</td>
+                    <td>Hierin staan de meta gegevens van een html pagina</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>&lt;figure&gt;</td>
+                    <td>Geeft een container voor een img</td>
+                    <td>
+                        <figure>
+                            <img src="./tsicons.com-fort.png"">
+                            <figcaption>Castle</figcaption>
+                        </figure>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;figcaption&gt;</td>
+                    <td>
+                        Binnen een figure gebruikt om een img een figcaption te
+                        geven
+                    </td>
+                    <td>Zie &lt;figure&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;base&gt;</td>
+                    <td>Geeft een base voor een href, src en target</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>&lt;style&gt;</td>
+                    <td>Geeft opmaak aan één of meerder elementen</td>
+                    <td>
+                        <style>
+                            .p-blue {
+                                color: blue;
+                            }
+                        </style>
+                        <p class="p-blue">De tekst is blauw</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;script&gt;</td>
+                    <td>
+                        Hierin staat javascript of een verwijzing naar
+                        javascript bestand
+                    </td>
+                    <td>
+                        <p id="script"></p>
+                        <script>
+                            document.getElementById('script').innerHTML =
+                                'script text dat naar een id gaat';
+                        </script>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="3">Les 7 - Formulieren</th>
+                </tr>
+                <tr>
+                    <td>&lt;form&gt;</td>
+                    <td>
+                        Hierin komen gegevens te staan die worden verstuurd naar
+                        een ander bestand waar het dan wordt verwerkt
+                    </td>
+                    <td>
+                        <form action="./index.html" method="post">
+                            <label for="fname">Voornaam:</label><br />
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                value=""
+                                placeholder="AAAAAA"
+                            /><br />
+                            <label for="lname">Achternaam:</label><br />
+                            <input
+                                type="text"
+                                id="lastname"
+                                name="lastname"
+                                value=""
+                                placeholder="BBBBBB"
+                            /><br /><br />
+                            <input type="submit" value="Submit" />
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;input&gt;</td>
+                    <td>
+                        Een element die gebruikt wordt om de gegevens te
+                        versturen die erin staan of gebruikt wordt om te
+                        versturen
+                    </td>
+                    <td>Zie &lt;form&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;label&gt;</td>
+                    <td>
+                        Wordt geplaatst voor een input om aan te geven wat voor
+                        veld het is.
+                    </td>
+                    <td>Zie &lt;form&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;select&gt;</td>
+                    <td>Het wordt gebruikt om een drop-down list te maken</td>
+                    <td>
+                        <label for="pokemon">Kies een pokémon:</label>
+                        <select name="pokemon" id="pokemon">
+                            <optgroup label="Kanto">
+                                <option value="bulbasaur">Bulbasaur</option>
+                                <option value="charmander">Charmander</option>
+                                <option value="squirtle">Squirtle</option>
+                            </optgroup>
+                            <optgroup label="Johto">
+                                <option value="chikorita">Chikorita</option>
+                                <option value="cyndaquil">Cyndaquil</option>
+                                <option value="totodile">Totodile</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;option&gt;</td>
+                    <td>Is een option die je kunt selecteren in een select</td>
+                    <td>Zie &lt;select&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;optgroup&gt;</td>
+                    <td>Zorgt voor een groep aan options in een select</td>
+                    <td>Zie &lt;select&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;datalist&gt;</td>
+                    <td>Een invoerveld met vooraf gedefinieerde opties</td>
+                    <td>
+                        <label for="pokemon"
+                            >Kies een Kanto starter pokémon:</label
+                        >
+                        <input list="pokemon" name="pokemon" id="pokemon" />
+                        <datalist id="pokemon">
+                            <option value="Bulbasaur"></option>
+                            <option value="Charmander"></option>
+                            <option value="Squirtle"></option>
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;textarea&gt;</td>
+                    <td>Een grote invoerveld bedoelt voor tekst</td>
+                    <td>
+                        <label for="textarea">Textarea:</label>
+
+                        <textarea
+                            id="textarea"
+                            name="textarea"
+                            rows="2"
+                            cols="60"
+                        >
+Een grote invoerveld bedoelt voor tekst
+                        </textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;fieldset&gt;</td>
+                    <td>
+                        Wordt gebruikt om gerelateerde elementen in een groep te
+                        zetten binnen een form
+                    </td>
+                    <td>
+                        <form action="./index.html" method="post">
+                            <fieldset>
+                                <legend>Naam</legend>
+                                <label for="fname">Voornaam:</label><br />
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    value=""
+                                    placeholder="AAAAAA"
+                                /><br />
+                                <label for="lname">Achternaam:</label><br />
+                                <input
+                                    type="text"
+                                    id="lastname"
+                                    name="lastname"
+                                    value=""
+                                    placeholder="BBBBBB"
+                                /><br /><br />
+                                <input type="submit" value="Submit" />
+                            </fieldset>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;legend&gt;</td>
+                    <td>
+                        Wordt gebruikt om de groep binnen een fieldset een naam
+                        te geven
+                    </td>
+                    <td>Zie &lt;fieldset&gt;</td>
+                </tr>
+                <tr>
+                    <th colspan="3">Les 8 - Media</th>
+                </tr>
+                <tr>
+                    <td>&lt;audio&gt;</td>
+                    <td>
+                        Hiermee wordt een audio file geplaatst op de pagina en
+                        is het mogelijk om het af te spelen
+                    </td>
+                    <td>
+                        <audio controls loop>
+                            <source src="./sadmusic.mp3" type="audio/mpeg" />
+                            Er is een probleem met het afspelen van het bestand.
+                        </audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;video&gt;</td>
+                    <td>
+                        Hiermee wordt een video file geplaatst op de pagina en
+                        is het mogelijk om het af te spelen
+                    </td>
+                    <td>
+                        <video width="240" height="120" controls>
+                            <source src="./video.mp4" type="video/mp4" />
+                            Er is een probleem met het afspelen van het bestand.
+                        </video>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;source&gt;</td>
+                    <td>
+                        Het wordt gebruikt om een koppeling te maken naar een
+                        bestand.
+                    </td>
+                    <td>Zie &lt;video&gt; of &lt;audio&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;embed&gt;</td>
+                    <td>
+                        Wordt gebruikt om een koppling te maken naar een bestand
+                    </td>
+                    <td>
+                        Niet mogelijk om een voorbeeld te geven omdat er geen
+                        ondersteun meer is op de huidige webbrowsers
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;canvas&gt;</td>
+                    <td>
+                        Maakt het mogelijk om binnen de canvas een grafische
+                        toepassing te maken
+                    </td>
+                    <td>
+                        <canvas id="myCanvas">
+                            Your browser does not support the canvas tag.
+                        </canvas>
+
+                        <script>
+                            var canvas = document.getElementById('myCanvas');
+                            var ctx = canvas.getContext('2d');
+                            ctx.fillStyle = '#FF0000';
+                            ctx.fillRect(0, 0, 80, 80);
+                        </script>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;div&gt;</td>
+                    <td>Het is een container voor html code</td>
+                    <td>
+                        <div>
+                            <p>Deze p tag staat in een div.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;header&gt;</td>
+                    <td>Het wordt gebruikt als de kop van je pagina</td>
+                    <td>
+                        <header>
+                            <p>Deze p tag staat in een header</p>
+                        </header>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;footer&gt;</td>
+                    <td>Het wordt gebruikt als de afsluiting van je pagina</td>
+                    <td>
+                        <footer>
+                            <p>Deze p tag staat in een footer</p>
+                        </footer>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;nav&gt;</td>
+                    <td>
+                        Het wordt gebruikt als een navigatie balk van je pagina
+                    </td>
+                    <td>
+                        <nav>
+                            <ul>
+                                <li><a href="./index.html">Home</a></li>
+                            </ul>
+                        </nav>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;section&gt;</td>
+                    <td>
+                        Wordt gebruikt wanneer er meerder blokken tekst zijn die
+                        over het zelfde onderwerp gaan
+                    </td>
+                    <td>
+                        <section>
+                            <h2>Nintendo 64</h2>
+                            <p>Voorbeeld 1 staat in een eigen section</p>
+                        </section>
+
+                        <section>
+                            <h2>Nintendo Gamecube</h2>
+                            <p>Voorbeeld 2 staat in een eigen section</p>
+                        </section>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;article&gt;</td>
+                    <td>
+                        Het wordt gebruikt op een zichzelf staande blok tekst
+                    </td>
+                    <td>
+                        <article>
+                            <h2>Article</h2>
+                            <p>Dit is een voorbeeld van een article</p>
+                        </article>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;aside&gt;</td>
+                    <td>
+                        Het wordt gebruikt als een aanvulling van de bestaande
+                        tekst maar over het algemeen niet relevant is.
+                    </td>
+                    <td>
+                        <p>
+                            De Super Nintendo was Nintendo's derde spelcomputer.
+                            Nintendo's tweede spelcomputer was de Nintendo
+                            Entertainment System (NES) en was niet overal een
+                            groot succes. De Super Nintendo werd echter overal
+                            een succes. Ondanks de late ontwikkeling in
+                            vergelijking met concurrerende 16-bits
+                            spelcomputers, werd de Super Nintendo Entertainment
+                            System de best verkochte spelcomputer van het 16
+                            bittijdperk.
+                        </p>
+                        <aside>
+                            <p>
+                                De Europese en Amerikaanse versie hebben allebei
+                                een andere uiterlijk.
+                            </p>
+                        </aside>
+                    </td>
+                </tr>
+                <!-- <tr>
+                    <td>&lt;&gt;</td>
+                    <td></td>
+                    <td></td>
+                </tr> -->
+            </tbody>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,4 @@
+4.1 De sponsor van Symfony is een frans bedrijf.
+4.2 De meeste gezochte CMS is Wordpress en er is een versie 5.9 van Wordpress. 
+    De meest gezochte CMS in Nederland is Wordpress.
+    Zie afbeelding
