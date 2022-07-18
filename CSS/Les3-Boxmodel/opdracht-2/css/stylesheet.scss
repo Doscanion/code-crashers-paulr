@@ -1,0 +1,27 @@
+body {
+    background-color: grey;
+    font-size: 16px;
+    font-family: Verdana, Arial, sans-serif;
+}
+header {
+    overflow: hidden;
+    background-color: goldenrod;
+    height: 200px;
+    text-align: center;
+}
+main {
+    background-color: khaki;
+    min-height: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+article {
+    flex: 1;
+    margin: 0px 50px;
+}
+
+h2,
+p {
+    margin-bottom: 30px;
+}

@@ -1,0 +1,37 @@
+div {
+  height: 180px;
+  width: 280px;
+  margin: 20px;
+}
+
+#box-one {
+  background-color: #ee82ee;
+  border: 5px dashed black;
+}
+
+#box-two {
+  height: 130px;
+  width: 230px;
+  background-color: #3cb371;
+  border-top: 30px solid #1e90ff;
+  border-right: 30px solid #6a5acd;
+  border-bottom: 30px solid #1e90ff;
+  border-left: 30px solid #6a5acd;
+}
+
+#box-three {
+  border: 10px solid #ff6347;
+  border-radius: 30px;
+  background-color: #ffa500;
+}
+
+#box-four {
+  background-color: #cd5c5c;
+  border: 10px double #4b0082;
+  border-top-right-radius: 65px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 65px;
+  border-bottom-style: dotted;
+}
+/*# sourceMappingURL=style.css.map */

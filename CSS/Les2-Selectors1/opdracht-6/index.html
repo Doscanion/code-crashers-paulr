@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Contact opnemen</title>
+        <link rel="stylesheet" href="./styles/style.css" />
+    </head>
+    <body>
+        <h1>Neem contact met ons op!</h1>
+        <p>Gelieve onderstaand formulier volledig in te vullen.</p>
+        <hr />
+        <form action="opdracht1.html" method="post">
+            <label class="form-style" for="gebruikersnaam"
+                >Gebruikersnaam</label
+            >
+            <input
+                class="form-style form-style-field"
+                type="text"
+                name="gebruikersnaam"
+                id="gebruikersnaam"
+                required
+            />
+
+            <label class="form-style" for="wachtwoord">Wachtwoord</label>
+            <input
+                class="form-style form-style-field"
+                type="password"
+                name="wachtwoord"
+                id="wachtwoord"
+                required
+            />
+
+            <label class="form-style" for="emailadres">E-mailadres</label>
+            <input
+                class="form-style form-style-field"
+                type="email"
+                name="emailadres"
+                id="emailadres"
+                required
+            />
+
+            <label class="form-style" for="vandaag">Huidige datum</label>
+            <input
+                class="form-style form-style-field"
+                type="date"
+                name="vandaag"
+                id="vandaag"
+            />
+
+            <label class="form-style" for="commentaar">Commentaar</label>
+            <textarea
+                class="form-style form-style-field"
+                name="commentaar"
+                id="commentaar"
+                maxlength="150"
+                cols="30"
+                rows="5"
+            ></textarea>
+
+            <input type="submit" name="verzenden" value="Verzenden" />
+            <input type="reset" value="Opnieuw" />
+        </form>
+    </body>
+</html>

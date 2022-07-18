@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: linear-gradient(
+        to right,
+        white,
+        skyblue,
+        navy,
+        skyblue,
+        white
+    );
+    font-size: 16px;
+    font-family: Verdana, Arial, sans-serif;
+}
+#container {
+    background-color: white;
+    max-width: 960px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 25px 5px lemonchiffon;
+}
+header {
+    background-color: coral;
+    padding: 50px 0;
+    height: 40px;
+    text-align: center;
+}
+section {
+    padding: 40px;
+    background-color: cornsilk;
+    min-height: 400px;
+    overflow: auto;
+}
+section h1,
+section p {
+    margin-bottom: 20px;
+}
+section figure {
+    float: right;
+}
+section figure img {
+    border-radius: 10px;
+}
+section figure figcaption {
+    font-style: italic;
+    text-align: center;
+    color: grey;
+}
+
+figure {
+    margin: 0px 0px 20px 20px;
+}
+
+footer {
+    background-color: azure;
+    padding: 20px 0px;
+    height: 20px;
+    text-align: center;
+}
+footer a {
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,33 @@
+a:link {
+  text-decoration: none;
+  color: lightgreen;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: darkgreen;
+}
+
+a:active {
+  font-style: italic;
+}
+
+#mdn:link {
+  color: lightcoral;
+}
+
+#mdn:visited {
+  color: red;
+}
+
+#nintendo:link {
+  color: lightblue;
+}
+
+#nintendo:visited {
+  color: blue;
+}
+/*# sourceMappingURL=styles.css.map */

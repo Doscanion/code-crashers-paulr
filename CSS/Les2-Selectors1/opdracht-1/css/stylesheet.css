@@ -1,0 +1,24 @@
+.flanders {
+  color: gold;
+}
+
+.wallonia {
+  color: red;
+}
+
+.greatest-area {
+  font-weight: bold;
+}
+
+.most-populous {
+  font-style: italic;
+}
+
+body {
+  background-color: black;
+}
+
+li {
+  list-style-type: circle;
+}
+/*# sourceMappingURL=stylesheet.css.map */
