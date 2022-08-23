@@ -1,0 +1,94 @@
+@font-face {
+  src: url("../fonts/LifeCraft_Font.ttf");
+  font-family: LifeCraft;
+}
+
+body {
+  font-family: LifeCraft, Verdana, sans-serif;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 60px;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  gap: 40px;
+}
+
+figcaption {
+  text-align: center;
+  margin-top: 20px;
+  text-shadow: 1px 1px 2px black;
+}
+
+.alliance {
+  color: royalblue;
+}
+
+#human {
+  -webkit-box-shadow: 10px 10px 10px gray;
+          box-shadow: 10px 10px 10px gray;
+}
+
+#dwarf {
+  -webkit-box-shadow: -30px 20px black;
+          box-shadow: -30px 20px black;
+}
+
+#night-elf {
+  -webkit-box-shadow: 0px -20px 30px navy;
+          box-shadow: 0px -20px 30px navy;
+}
+
+#gnome {
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 10px maroon;
+          box-shadow: 0px 0px 10px maroon;
+}
+
+.horde {
+  color: crimson;
+}
+
+#orc {
+  -webkit-box-shadow: 30px -20px 30px 20px green;
+          box-shadow: 30px -20px 30px 20px green;
+}
+
+#undead {
+  border-radius: 10px;
+  -webkit-box-shadow: 0px -10px 10px 10px aqua, 0px 10px 10px 10px purple;
+          box-shadow: 0px -10px 10px 10px aqua, 0px 10px 10px 10px purple;
+}
+
+#tauren {
+  -webkit-box-shadow: -40px -20px 10px orange, 0px 20px 10px red, 40px -10px 10px black;
+          box-shadow: -40px -20px 10px orange, 0px 20px 10px red, 40px -10px 10px black;
+}
+
+#troll {
+  -webkit-box-shadow: 0px 0px 10px 10px fuchsia, -10px -10px 20px 10px lime, 10px 10px 20px 10px yellow;
+          box-shadow: 0px 0px 10px 10px fuchsia, -10px -10px 20px 10px lime, 10px 10px 20px 10px yellow;
+}
+
+#pandaren {
+  -webkit-filter: drop-shadow(10px 0px 10px black);
+          filter: drop-shadow(10px 0px 10px black);
+}
+/*# sourceMappingURL=stylesheet.css.map */

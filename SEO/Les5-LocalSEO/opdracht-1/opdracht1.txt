@@ -1,0 +1,12 @@
+1.2
+Tandarts
+Kapper
+Sportschool
+Supermarkt
+Bloemenzaak
+
+Nintendo
+Sony
+Microsoft
+Sega
+Atari

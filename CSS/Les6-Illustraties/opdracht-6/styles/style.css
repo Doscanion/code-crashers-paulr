@@ -1,0 +1,15 @@
+#ruiten {
+  -webkit-clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+          clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+}
+
+#octagon {
+  -webkit-clip-path: polygon(25% 0, 0 25%, 0 75%, 25% 100%, 75% 100%, 100% 75%, 100% 25%, 75% 0%);
+          clip-path: polygon(25% 0, 0 25%, 0 75%, 25% 100%, 75% 100%, 100% 75%, 100% 25%, 75% 0%);
+}
+
+#ovaal {
+  -webkit-clip-path: ellipse(50% 50%);
+          clip-path: ellipse(50% 50%);
+}
+/*# sourceMappingURL=style.css.map */

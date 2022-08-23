@@ -1,0 +1,56 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap");
+*:lang(el-GR) {
+  color: blue;
+}
+
+*:lang(pl-PL) {
+  color: lightcoral;
+}
+
+*:lang(de-DE) {
+  color: red;
+}
+
+*:lang(fi-FI) {
+  color: aqua;
+}
+
+body {
+  font-size: 20px;
+  font-family: 'Ibarra Real Nova', serif;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main > article {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 5px;
+}
+
+#greek {
+  quotes: "«" "»";
+}
+
+#polish {
+  quotes: "„" "”";
+}
+
+#deutsch {
+  quotes: "„" "“";
+}
+
+#finnish {
+  quotes: "”" "”";
+}
+/*# sourceMappingURL=stylesheet.css.map */

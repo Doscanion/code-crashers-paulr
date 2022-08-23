@@ -1,0 +1,32 @@
+body {
+    font-family: Verdana, Arial, sans-serif;
+}
+h1 {
+    font-style: oblique;
+}
+
+.flag {
+    display: inline-block;
+    width: 16px;
+    height: 11px;
+    background: url('../images/flags.png') no-repeat;
+}
+.flag.flag-nl {
+    background-position: -80px -110px;
+}
+.flag.flag-gb {
+    background-position: -176px -44px;
+}
+.flag.flag-it {
+    background-position: -208px -66px;
+}
+.flag.flag-es {
+    background-position: -16px -44px;
+}
+.flag.flag-jp {
+    background-position: -16px -77px;
+}
+
+.flag.flag-fr {
+    background-position: -144px -44px;
+}

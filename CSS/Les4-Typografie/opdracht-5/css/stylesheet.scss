@@ -1,0 +1,46 @@
+//font-family: 'Ibarra Real Nova', serif;
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap');
+
+*:lang(el-GR) {
+    color: blue;
+}
+
+*:lang(pl-PL) {
+    color: lightcoral;
+}
+
+*:lang(de-DE) {
+    color: red;
+}
+
+*:lang(fi-FI) {
+    color: aqua;
+}
+
+body {
+    font-size: 20px;
+    font-family: 'Ibarra Real Nova', serif;
+}
+main {
+    display: flex;
+    flex-direction: row;
+}
+main > article {
+    flex: 1;
+    padding: 5px;
+}
+
+#greek {
+    quotes: '\00AB''\00BB';
+}
+
+#polish {
+    quotes: '\201E''\201D';
+}
+
+#deutsch {
+    quotes: '\201E''\201C';
+}
+#finnish {
+    quotes: '\201D''\201D';
+}

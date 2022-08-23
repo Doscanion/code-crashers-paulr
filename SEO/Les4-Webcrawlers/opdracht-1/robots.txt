@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /javascript/
+
+User-agent: Christcrawler
+Disallow: /
+
+User-agent: Askjeeves
+Disallow: /oud/testpagina.html
+
+User-agent: Googlebot
+Allow: /javascript/
+
+User-agent: *
+Disallow: /*.pdf$ 

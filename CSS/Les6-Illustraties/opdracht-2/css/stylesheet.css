@@ -1,0 +1,42 @@
+@font-face {
+  src: url("../fonts/zelda-botw.otf");
+  font-family: 'BotW';
+}
+
+body {
+  background-color: #253125;
+  color: #f3b333;
+  font-size: 30px;
+  font-family: BotW, Calibri, sans-serif;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+figure:nth-child(1) img {
+  -o-object-position: right center;
+     object-position: right center;
+}
+
+figure:nth-child(3) img {
+  -o-object-position: left center;
+     object-position: left center;
+}
+/*# sourceMappingURL=stylesheet.css.map */

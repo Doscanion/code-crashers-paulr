@@ -1,0 +1,64 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: lightgrey;
+    height: 100%;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+    max-width: 1200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    flex: 1 0 auto;
+    height: 150px;
+    background-color: grey;
+}
+
+section {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex: 1 0 auto;
+}
+
+article {
+    padding: 25px;
+}
+
+article:nth-child(even) {
+    flex: 2;
+    background-color: lightblue;
+}
+
+article:nth-child(odd) {
+    flex: 1;
+    background-color: peachpuff;
+}
+
+footer {
+    min-height: 100px;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+        margin: 0;
+        color: aqua;
+    }
+}

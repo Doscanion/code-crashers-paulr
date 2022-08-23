@@ -1,0 +1,20 @@
+#ruiten {
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+}
+
+#octagon {
+    clip-path: polygon(
+        25% 0,
+        0 25%,
+        0 75%,
+        25% 100%,
+        75% 100%,
+        100% 75%,
+        100% 25%,
+        75% 0%
+    );
+}
+
+#ovaal {
+    clip-path: ellipse(50% 50%);
+}

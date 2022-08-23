@@ -1,0 +1,41 @@
+body {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+#p-number-one {
+    color: blue;
+    text-shadow: -6px 5px 0px green;
+}
+#p-number-two {
+    color: yellow;
+    text-shadow: 0px -3px 5px orange;
+}
+#p-number-three {
+    color: purple;
+    text-shadow: 2px 10px 2px green;
+}
+#p-number-four {
+    color: white;
+    text-shadow: 4px 4px 4px gray;
+}
+
+#p-number-five {
+    color: black;
+    text-shadow: 0px 0px 5px red;
+}
+
+#p-number-six {
+    color: white;
+    text-shadow: 2px 8px 3px gray, -4px -6px 2px black;
+}
+#p-number-seven {
+    color: black;
+    font-style: italic;
+    text-shadow: -5px 1px 6px yellow, 5px -1px 6px fuchsia;
+}
+#p-number-eight {
+    color: black;
+    text-shadow: -10px -3px 3px red, 0px 7px 3px green, 10px -3px 3px blue;
+}

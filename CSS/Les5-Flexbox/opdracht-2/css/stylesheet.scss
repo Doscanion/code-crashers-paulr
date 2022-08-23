@@ -1,0 +1,29 @@
+body {
+    font-size: 16px;
+    font-family: Verdana, Arial, sans-serif;
+    color: mistyrose;
+    background-color: mistyrose;
+}
+article {
+    padding: 20px;
+    box-sizing: border-box;
+    border-left: 2px solid sandybrown;
+    border-top: 2px solid sandybrown;
+    border-right: 2px solid saddlebrown;
+    border-bottom: 2px solid saddlebrown;
+    background-color: peru;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+article {
+    padding: 1rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 500px;
+}

@@ -1,0 +1,71 @@
+@font-face {
+    src: url('../fonts/LifeCraft_Font.ttf');
+    font-family: LifeCraft;
+}
+
+body {
+    font-family: LifeCraft, Verdana, sans-serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+section {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 40px;
+}
+figcaption {
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 1px 1px 2px black;
+}
+.alliance {
+    color: royalblue;
+}
+
+#human {
+    box-shadow: 10px 10px 10px gray;
+}
+
+#dwarf {
+    box-shadow: -30px 20px black;
+}
+
+#night-elf {
+    box-shadow: 0px -20px 30px navy;
+}
+
+#gnome {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px maroon;
+}
+
+.horde {
+    color: crimson;
+}
+
+#orc {
+    box-shadow: 30px -20px 30px 20px green;
+}
+
+#undead {
+    border-radius: 10px;
+    box-shadow: 0px -10px 10px 10px aqua, 0px 10px 10px 10px purple;
+}
+#tauren {
+    box-shadow: -40px -20px 10px orange, 0px 20px 10px red,
+        40px -10px 10px black;
+}
+
+#troll {
+    box-shadow: 0px 0px 10px 10px fuchsia, -10px -10px 20px 10px lime,
+        10px 10px 20px 10px yellow;
+}
+
+#pandaren {
+    filter: drop-shadow(10px 0px 10px black);
+}
