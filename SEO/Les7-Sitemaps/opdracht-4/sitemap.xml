@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    <url>
+        <loc>http://www.sushigrillgeleen.nl/index.html</loc>
+        <priority>0.5</priority>
+        <changefreq>weekly</changefreq>
+        <lastmod>2022-08-25T12:00:00+01:00</lastmod>
+    </url>
+    <url>
+		<loc>http://www.sushigrillgeleen.nl/wp-content/uploads/2022/05/sushi-grill-geleen_menu2022.pdf</loc>
+		<priority>0.7</priority>
+		<changefreq>monthly</changefreq>
+		<lastmod>2022-05-25T12:00:00+01:00</lastmod>
+	</url>
+    <image:image>
+        <image:loc>http://www.sushigrillgeleen.nl/wp-content/uploads/2022/08/dining-area.jpg</image:loc>
+        <image:title>Dining area</image:title>
+    </image:image>
+    <image:image>
+        <image:loc>http://www.sushigrillgeleen.nl/wp-content/uploads/2022/08/served-food.jpg</image:loc>
+        <image:title>Served food</image:title>
+    </image:image>
+    <image:image>
+        <image:loc>http://www.sushigrillgeleen.nl/wp-content/uploads/2022/08/the-bar.jpg</image:loc>
+        <image:title>The bar</image:title>
+    </image:image>
+    <!-- <url>
+        <loc></loc>
+        <priority></priority>
+        <changefreq></changefreq>
+        <lastmod></lastmod>
+    </url> -->
+</urlset>

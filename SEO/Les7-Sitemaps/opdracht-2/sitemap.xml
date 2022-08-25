@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>php.html</loc>
+        <priority>0.5</priority>
+        <changefreq>monthly</changefreq>
+        <lastmod>2022-25-08</lastmod>
+    </url>
+    <url>
+        <loc>javascript.html</loc>
+        <priority>0.5</priority>
+        <changefreq>monthly</changefreq>
+        <lastmod>2022-25-08</lastmod>
+    </url>
+    <!-- <url>
+        <loc></loc>
+        <priority></priority>
+        <changefreq></changefreq>
+        <lastmod></lastmod>
+    </url> -->
+    
+</urlset>

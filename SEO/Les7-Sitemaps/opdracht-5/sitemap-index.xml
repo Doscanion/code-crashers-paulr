@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>sitemaps-de.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>sitemaps-en.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>sitemaps-fr.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>sitemaps-nl.xml</loc>
+  </sitemap>
+</sitemapindex>
