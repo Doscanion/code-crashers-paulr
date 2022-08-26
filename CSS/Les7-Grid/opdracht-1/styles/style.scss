@@ -1,0 +1,38 @@
+body {
+    background-color: bisque;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    height: 1000px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px 200px;
+    grid-gap: 20px;
+    justify-content: end;
+    align-content: flex-end;
+}
+
+.grid-squire {
+    background-color: blue;
+    padding: 3rem;
+    display: grid;
+    justify-items: start;
+    align-items: end;
+}
+
+.grid-squire:nth-child(1) {
+    justify-self: stretch;
+}
+
+.grid-squire:nth-child(2) {
+    align-self: start;
+}
+.grid-squire:nth-child(3) {
+    place-self: center;
+}

@@ -1,0 +1,52 @@
+body {
+  background-color: bisque;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  height: 1000px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 200px 200px 200px 200px;
+      grid-template-columns: 200px 200px 200px 200px;
+  -ms-grid-rows: 200px 200px 200px 200px;
+      grid-template-rows: 200px 200px 200px 200px;
+  grid-gap: 20px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+}
+
+.grid-squire {
+  background-color: blue;
+  padding: 3rem;
+  display: -ms-grid;
+  display: grid;
+  justify-items: start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.grid-squire:nth-child(1) {
+  -ms-grid-column-align: stretch;
+      justify-self: stretch;
+}
+
+.grid-squire:nth-child(2) {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+.grid-squire:nth-child(3) {
+  place-self: center;
+}
+/*# sourceMappingURL=style.css.map */
