@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(25, 25, 25);
+}
+
+.container {
+    max-width: 1600px;
+}
+
+.tiles {
+    max-height: 534px;
+    background-color: red;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    grid-template-areas:
+        'grid-block-1 grid-block-2 grid-block-3 grid-block-4 grid-block-5 grid-block-5'
+        'grid-block-6 grid-block-6 grid-block-3 grid-block-4 grid-block-7 grid-block-8';
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.grid-block-1 {
+    background-color: lightcoral;
+    grid-area: grid-block-1;
+}
+.grid-block-2 {
+    background-color: lightblue;
+    grid-area: grid-block-2;
+}
+.grid-block-3 {
+    background-color: lightcyan;
+    grid-area: grid-block-3;
+}
+.grid-block-4 {
+    background-color: lightgoldenrodyellow;
+    grid-area: grid-block-4;
+}
+.grid-block-5 {
+    background-color: lightgray;
+    grid-area: grid-block-5;
+}
+.grid-block-6 {
+    background-color: lightgreen;
+    grid-area: grid-block-6;
+}
+.grid-block-7 {
+    background-color: lightpink;
+    grid-area: grid-block-7;
+}
+.grid-block-8 {
+    background-color: lightsalmon;
+    grid-area: grid-block-8;
+}
+
+.banner {
+    height: 200px;
+    background-color: green;
+}
+
+.content {
+    height: 469px;
+    background-color: blue;
+}

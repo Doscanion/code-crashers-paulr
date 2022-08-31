@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(25, 25, 25);
+}
+
+.container {
+    max-width: 1600px;
+}
+
+.tiles {
+    max-height: 534px;
+    background-color: red;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    grid-template-areas:
+        'grid-block-1 grid-block-2 grid-block-3 grid-block-4 grid-block-5 grid-block-5'
+        'grid-block-6 grid-block-6 grid-block-3 grid-block-4 grid-block-7 grid-block-8';
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.grid-block-1 {
+    background-color: lightcoral;
+    grid-area: grid-block-1;
+}
+.grid-block-2 {
+    background-color: lightblue;
+    grid-area: grid-block-2;
+}
+.grid-block-3 {
+    background-color: lightcyan;
+    grid-area: grid-block-3;
+}
+.grid-block-4 {
+    background-color: lightgoldenrodyellow;
+    grid-area: grid-block-4;
+}
+.grid-block-5 {
+    background-color: lightgray;
+    grid-area: grid-block-5;
+}
+.grid-block-6 {
+    background-color: lightgreen;
+    grid-area: grid-block-6;
+}
+.grid-block-7 {
+    background-color: lightpink;
+    grid-area: grid-block-7;
+}
+.grid-block-8 {
+    background-color: lightsalmon;
+    grid-area: grid-block-8;
+}
+
+.banner {
+    height: 200px;
+    background-color: #282f35;
+    display: grid;
+    grid-template-columns: 1fr minmax(1fr) 1fr;
+}
+
+.banner-block-2 {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+button {
+    color: white;
+    background-color: #282f35;
+    border: 1px solid white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding: 10px 25px;
+    height: auto;
+    width: auto;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.content {
+    height: 469px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr minmax(1fr) 1fr;
+}
+
+.content-block-2 {
+    color: #9ca6ae;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+
+    .email {
+        height: 40px;
+        padding-left: 10px;
+        font-style: italic;
+    }
+    .submit {
+        padding: 5px 15px;
+        height: 44px;
+        background-color: #64c29e;
+        color: white;
+        border: none;
+    }
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+}
