@@ -1,2 +1,2 @@
 User-agent: *
-Disallow: /oud.hml
+Disallow: /oud.html

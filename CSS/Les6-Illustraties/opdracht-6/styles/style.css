@@ -11,5 +11,7 @@
 #ovaal {
   -webkit-clip-path: ellipse(50% 50%);
           clip-path: ellipse(50% 50%);
+  -webkit-filter: sepia(100%) contrast(40%);
+          filter: sepia(100%) contrast(40%);
 }
 /*# sourceMappingURL=style.css.map */

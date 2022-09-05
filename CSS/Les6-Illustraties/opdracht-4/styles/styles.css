@@ -40,5 +40,6 @@ img {
 img:hover {
   -webkit-filter: opacity(100%);
           filter: opacity(100%);
+  cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */

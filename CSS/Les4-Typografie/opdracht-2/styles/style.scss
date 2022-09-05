@@ -1,6 +1,7 @@
 body {
     font-size: 18px;
-    font-family: 'Lucida Sans Unicode';
+    font-family: 'Lucida Sans Unicode', 'Lucida Sans', 'Lucida Sans Regular',
+        'Lucida Grande', Geneva, Verdana, sans-serif;
     color: rgb(25, 25, 25);
     word-break: break-all;
     user-select: none;
@@ -28,8 +29,13 @@ h1 {
     font-weight: normal;
     letter-spacing: 10px;
     text-transform: uppercase;
+    font-style: italic;
 }
 
 h1:hover {
     text-decoration: underline;
+}
+
+h1:active {
+    text-decoration: line-through;
 }

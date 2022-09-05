@@ -5,6 +5,18 @@
         <priority>0.5</priority>
         <changefreq>weekly</changefreq>
         <lastmod>2022-08-25T12:00:00+01:00</lastmod>
+        <image:image>
+            <image:loc>http://www.sushigrillgeleen.nl/wp-content/uploads/2022/08/dining-area.jpg</image:loc>
+            <image:title>Dining area</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>http://www.sushigrillgeleen.nl/wp-content/uploads/2022/08/served-food.jpg</image:loc>
+            <image:title>Served food</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>http://www.sushigrillgeleen.nl/wp-content/uploads/2022/08/the-bar.jpg</image:loc>
+            <image:title>The bar</image:title>
+        </image:image>
     </url>
     <url>
 		<loc>http://www.sushigrillgeleen.nl/wp-content/uploads/2022/05/sushi-grill-geleen_menu2022.pdf</loc>
@@ -12,18 +24,7 @@
 		<changefreq>monthly</changefreq>
 		<lastmod>2022-05-25T12:00:00+01:00</lastmod>
 	</url>
-    <image:image>
-        <image:loc>http://www.sushigrillgeleen.nl/wp-content/uploads/2022/08/dining-area.jpg</image:loc>
-        <image:title>Dining area</image:title>
-    </image:image>
-    <image:image>
-        <image:loc>http://www.sushigrillgeleen.nl/wp-content/uploads/2022/08/served-food.jpg</image:loc>
-        <image:title>Served food</image:title>
-    </image:image>
-    <image:image>
-        <image:loc>http://www.sushigrillgeleen.nl/wp-content/uploads/2022/08/the-bar.jpg</image:loc>
-        <image:title>The bar</image:title>
-    </image:image>
+
     <!-- <url>
         <loc></loc>
         <priority></priority>

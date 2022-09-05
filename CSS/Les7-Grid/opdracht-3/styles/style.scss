@@ -15,8 +15,8 @@ body {
     grid-template-rows: 100px 50px 1fr 50px;
     grid-template-areas:
         'header header'
-        'menu menu'
-        'nav section'
+        'nav nav'
+        'menu section'
         'footer footer';
 }
 
@@ -31,9 +31,9 @@ button {
     cursor: pointer;
 }
 
-menu {
+nav {
     //height: 50px;
-    grid-area: menu;
+    grid-area: nav;
     background-color: Aquamarine;
     display: flex;
     flex-direction: row;
@@ -46,9 +46,9 @@ menu {
     }
 }
 
-nav {
+menu {
     //width: 300px;
-    grid-area: nav;
+    grid-area: menu;
     background-color: LightSteelBlue;
 }
 
