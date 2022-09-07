@@ -1,0 +1,53 @@
+.size-gradient {
+  width: 600px;
+  height: 200px;
+}
+
+.gradient-1 {
+  background-image: -webkit-gradient(linear, left top, right top, from(black), to(violet));
+  background-image: linear-gradient(to right, black, violet);
+}
+
+.gradient-2 {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#808080), color-stop(#ffffff), to(#808080));
+  background-image: linear-gradient(to top right, #808080, #ffffff, #808080);
+}
+
+.gradient-3 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(MediumSeaGreen), color-stop(orange), to(dodgerblue));
+  background-image: linear-gradient(to bottom, MediumSeaGreen, orange, dodgerblue);
+}
+
+.gradient-4 {
+  background-image: -webkit-gradient(linear, left top, right top, from(Tomato), color-stop(Orange), color-stop(DodgerBlue), color-stop(MediumSeaGreen), color-stop(Gray), color-stop(SlateBlue), color-stop(Violet), to(LightGray));
+  background-image: linear-gradient(to right, Tomato, Orange, DodgerBlue, MediumSeaGreen, Gray, SlateBlue, Violet, LightGray);
+}
+
+.gradient-5 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(white), color-stop(Orange), color-stop(Tomato), color-stop(SlateBlue), to(black));
+  background-image: linear-gradient(to bottom right, white, Orange, Tomato, SlateBlue, black);
+}
+
+.gradient-6 {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(70%, MediumSeaGreen), to(black));
+  background-image: linear-gradient(to bottom, MediumSeaGreen 70%, black);
+}
+
+.gradient-7 {
+  height: 200px;
+  width: 600px;
+  background-color: green;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(0, 255, 0, 0.25)), color-stop(rgba(255, 0, 255, 0.5)), to(rgba(0, 255, 255, 0.75)));
+  background-image: linear-gradient(to top right, rgba(0, 255, 0, 0.25), rgba(255, 0, 255, 0.5), rgba(0, 255, 255, 0.75));
+}
+
+.gradient-8 {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(black)), -webkit-gradient(linear, left top, left bottom, from(red), color-stop(white), to(blue));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), black), linear-gradient(to bottom, red, white, blue);
+}
+
+.gradient-9 {
+  background-image: -webkit-gradient(linear, left top, right top, from(Tomato), color-stop(20%, DodgerBlue), color-stop(80%, SlateBlue));
+  background-image: linear-gradient(to right, Tomato 0% 20%, DodgerBlue 20% 80%, SlateBlue 80% 100%);
+}
+/*# sourceMappingURL=style.css.map */

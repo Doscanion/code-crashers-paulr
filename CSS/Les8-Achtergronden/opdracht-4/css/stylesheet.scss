@@ -1,0 +1,103 @@
+/* Imports en dergelijke */
+@font-face {
+    src: url('../fonts/shanghai.ttf');
+    font-family: Shanghai;
+}
+
+/* De algemene CSS */
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: black;
+    font-family: Shanghai, Tahoma, sans-serif;
+    font-size: 20px;
+    color: maroon;
+    position: relative;
+}
+
+.background {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    padding-left: 20px;
+    background-image: url('../images/noodles-bowl.png'),
+        url('../images/the_great_wall_at_sunset.jpg');
+    background-origin: content-box, border-box;
+    background-size: auto, cover;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+}
+
+#container {
+    margin: 0 auto;
+    max-width: 960px;
+    background-color: rgba(240, 230, 140, 0.9);
+    box-shadow: 0px 0px 20px 0px maroon;
+}
+
+/* De CSS voor de header */
+header {
+    height: 250px;
+    background-color: maroon;
+    background-image: url('../images/China_dragon.svg'),
+        url('../images/wok-wok.jpg');
+    background-size: contain, cover;
+    background-repeat: no-repeat;
+    background-position: right bottom, center center;
+}
+
+/* De CSS voor het menu */
+nav {
+    background-color: maroon;
+    position: sticky;
+    top: 0;
+    flex: 1 0 auto;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+nav ul li {
+    box-sizing: border-box;
+    position: relative;
+    flex: 1;
+    text-align: center;
+}
+nav ul li:last-child {
+    border-right: 0;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    background-color: maroon;
+    padding: 10px 20px;
+    display: block;
+}
+nav ul li a:hover {
+    background-color: tomato;
+}
+
+/* De CSS voor de content */
+section {
+    min-height: 1200px;
+    padding: 60px;
+}
+h1 {
+    text-shadow: 0px 0px 3px tomato;
+}
+
+/* De CSS voor de footer */
+footer {
+    height: 20px;
+    background-color: maroon;
+}

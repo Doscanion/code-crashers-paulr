@@ -1,0 +1,126 @@
+body {
+  background-color: lightgray;
+  background-image: url("../images/background.gif");
+  background-repeat: repeat;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  color: white;
+  text-shadow: -1px -1px 2px black, 1px 1px 2px black;
+}
+
+#container {
+  margin: 0 auto;
+  max-width: 1000px;
+  background-color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 200px 38px 1fr 50px;
+      grid-template-rows: 200px 38px 1fr 50px;
+      grid-template-areas: 'header' 'menu' 'content' 'footer';
+}
+
+/* De CSS voor de header */
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+  background-color: navy;
+  background-image: url(../images/Free-cloud-wallpaper-HD.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+/* De CSS voor het menu */
+nav {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: menu;
+  background-color: lightblue;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav ul li {
+  border-right: 1px solid white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+}
+
+nav ul li:last-child {
+  border-right: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  background-color: royalblue;
+  background-image: url("../images/gradient.png");
+  background-repeat: repeat-x;
+  padding: 10px 20px;
+  display: block;
+  font-size: 1rem;
+}
+
+nav ul li a:hover {
+  background-color: mediumseagreen;
+}
+
+/* De CSS voor de content */
+main {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: lightblue;
+  background-image: url(../images/CSS3_logo_and_wordmark.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 20%;
+  min-height: 400px;
+}
+
+main section {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+/* De CSS voor de footer */
+footer {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  line-height: 50px;
+  text-align: center;
+  background-color: royalblue;
+  background-image: url(../images/sun-clipart.png);
+  background-repeat: repeat-x;
+  background-size: contain;
+}
+/*# sourceMappingURL=stylesheet.css.map */

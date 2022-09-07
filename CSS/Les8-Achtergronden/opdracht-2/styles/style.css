@@ -1,0 +1,96 @@
+body {
+  background-color: antiquewhite;
+}
+
+.container {
+  min-width: 900px;
+  height: 900px;
+  display: block;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.buttons .button-one {
+  display: block;
+  height: 26px;
+  width: 25px;
+  background-image: url(../images/buttons.png);
+  background-position: -51px 0px;
+}
+
+.buttons .button-two {
+  display: block;
+  height: 26px;
+  width: 25px;
+  background-image: url(../images/buttons.png);
+  background-position: -52px -26px;
+}
+
+.buttons .button-three {
+  display: block;
+  height: 26px;
+  width: 25px;
+  background-image: url(../images/buttons.png);
+  background-position: 0px -26px;
+}
+
+.flags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.flags .netherlands {
+  display: block;
+  height: 11px;
+  width: 16px;
+  background-image: url(../images/flags.png);
+  background-position: -80px -110px;
+}
+
+.flags .uk {
+  display: block;
+  height: 11px;
+  width: 16px;
+  background-image: url(../images/flags.png);
+  background-position: -176px -44px;
+}
+
+.flags .spain {
+  display: block;
+  height: 11px;
+  width: 16px;
+  background-image: url(../images/flags.png);
+  background-position: -16px -44px;
+}
+
+.flags .france {
+  display: block;
+  height: 11px;
+  width: 16px;
+  background-image: url(../images/flags.png);
+  background-position: -144px -44px;
+}
+
+.flags .germany {
+  display: block;
+  height: 11px;
+  width: 16px;
+  background-image: url(../images/flags.png);
+  background-position: -80px -33px;
+}
+
+.flags .italy {
+  display: block;
+  height: 11px;
+  width: 16px;
+  background-image: url(../images/flags.png);
+  background-position: -208px -66px;
+}
+/*# sourceMappingURL=style.css.map */
