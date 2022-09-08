@@ -1,0 +1,21 @@
+body {
+	background-color: rgb(215,255,215);
+	color: darkred;
+	font-size: 20px;
+	font-family: calibri, verdana, sans-serif;
+}
+#container {
+	width: 960px;
+	min-height: 800px;
+	margin: 0 auto;
+	position: relative;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: mediumseagreen;
+}
+img {
+	margin: 20px;
+}
+img:first-of-type {
+	float: right;
+}

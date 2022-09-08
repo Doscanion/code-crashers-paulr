@@ -1,0 +1,64 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.snow {
+  height: 32px;
+  width: 24px;
+  display: block;
+  background-image: url("../images/snowmen-sprites.png");
+  background-repeat: no-repeat;
+}
+
+.snow-1 {
+  background-position: -96px -192px;
+}
+
+.snow-1:hover {
+  background-position: -72px -192px;
+}
+
+.snow-1:active {
+  background-position: -120px -192px;
+}
+
+.snow-2 {
+  background-position: -96px -0px;
+}
+
+.snow-2:hover {
+  background-position: -72px -0px;
+}
+
+.snow-2:active {
+  background-position: -120px -0px;
+}
+
+.snow-3 {
+  background-position: -24px -224px;
+}
+
+.snow-3:hover {
+  background-position: -0px -224px;
+}
+
+.snow-3:active {
+  background-position: -48px -224px;
+}
+
+.snow-4 {
+  background-position: -168px -128px;
+}
+
+.snow-4:hover {
+  background-position: -144px -128px;
+}
+
+.snow-4:active {
+  background-position: -192px -128px;
+}
+/*# sourceMappingURL=style.css.map */
