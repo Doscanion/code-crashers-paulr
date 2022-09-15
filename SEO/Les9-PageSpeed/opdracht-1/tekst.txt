@@ -1,0 +1,7 @@
+1. De afbeeldingen van de website moeten heel wat megabytes minder worden door naar een nieuw en betere bestandstype te gaan zonder dat je te veel kwaliteit verliest.
+2. De afbeeldingen moeten ook een passende resolutie krijgen vergeleken met de grote die nodig is voor de website.
+3. De afbeeldingen moeten efficiënt worden gecomprimeerd
+4. De front-end moet sneller worden ingeladen.
+5. Er wordt veel te veel data ingeladen bij het openen van de website.
+6. De gegevens van de website moeten langer worden gecached.
+7. Er moeten minder request worden gemaakt voor het renderen van één pagina.
