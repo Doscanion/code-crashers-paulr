@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    max-width: 1000px;
+}
+
+header {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    background-image: linear-gradient(to top, white, black);
+    background-size: 200px;
+}
+
+.icons {
+    font-size: 40px;
+    position: absolute;
+    gap: 20px;
+    bottom: 10px;
+    right: 10px;
+}
+
+.icons > a {
+    text-decoration: none;
+}
+
+.icon:hover {
+    filter: drop-shadow(10px 5px 3px black);
+}
