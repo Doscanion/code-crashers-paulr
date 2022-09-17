@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  font-family: sans-serif, Arial;
+  width: 1920px;
+  height: 1405px;
+  position: relative;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+header {
+  position: absolute;
+  width: 1407.55px;
+  height: 36px;
+  left: 257.45px;
+  top: 29px;
+}
+
+.header-logo {
+  position: absolute;
+  left: 0%;
+  right: 92.07%;
+  top: 0%;
+  bottom: 24.96%;
+}
+
+nav {
+  position: absolute;
+  left: 11.9%;
+  right: 51.15%;
+  top: 11.11%;
+  bottom: 11.11%;
+}
+nav a {
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #222222;
+  text-decoration: none;
+  padding-right: 10px;
+}
+
+.icons {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  left: 83.52%;
+  right: 0%;
+  top: 13.89%;
+  bottom: 13.89%;
+}
+
+main {
+  position: absolute;
+  width: 1411px;
+  height: 592px;
+  left: 255px;
+  top: 155px;
+}
+
+.page-title {
+  font-family: "Arial, sans-serif";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 49px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.side-nav {
+  width: 123px;
+  height: 350px;
+  top: 123px;
+  margin-top: 39px;
+}
+.side-nav a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  padding-top: 20px;
+  text-decoration: none;
+  color: #222222;
+}
+
+.order-table {
+  position: absolute;
+  width: 1051px;
+  height: 495px;
+  left: 340px;
+  top: 90px;
+}
+.order-table table {
+  width: 1050px;
+  display: table;
+  border-collapse: collapse;
+  border-spacing: 2px;
+  border-color: gray;
+}
+
+.thead {
+  height: 50px;
+  background-color: #e4e4e4;
+  font-family: sans-serif, Arial;
+}
+.thead th {
+  font-family: sans-serif, Arial;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+}
+
+tr > td {
+  padding: 20px;
+  text-align: center;
+}
+
+td > button {
+  width: 140px;
+  height: 50px;
+  background: #222222;
+  color: white;
+}
+
+footer {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  position: absolute;
+  width: 1920px;
+  height: 571px;
+  left: 0px;
+  top: 834px;
+  background-color: #e4e4e4;
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: left;
+  width: 1410px;
+  height: 296px;
+}
+
+.inner-1 {
+  display: grid;
+  align-self: flex-start;
+  width: 286px;
+  height: 255px;
+}
+.inner-1 p {
+  height: 120px;
+  width: 286px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.social {
+  height: 15.5px;
+  width: 205px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.fa-brands {
+  color: black;
+}
+
+.inner-2 {
+  align-self: center;
+  width: 593px;
+  height: 293px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.inner-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.li-style {
+  padding-bottom: 10px;
+}
+.li-style a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.inner-2-colum {
+  justify-self: center;
+}
+
+.inner-3 {
+  width: 330px;
+  height: 283px;
+  margin-left: 100px;
+}
+
+.inner-3-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.email-form {
+  background-color: white;
+  width: 300px;
+  height: 40px;
+  margin-bottom: 40px;
+}
+
+#email {
+  height: 40px;
+  width: 240px;
+  border: none;
+}
+
+#submit {
+  border: none;
+  height: 40px;
+  width: 55px;
+  background-color: white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.payment-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.up-you-go {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  right: 0;
+  bottom: 0;
+}/*# sourceMappingURL=style.css.map */

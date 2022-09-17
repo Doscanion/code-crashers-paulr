@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Crocs, frogs & lizards</title>
+        <style>
+            html,
+            body {
+                font-size: 16px;
+                font-family: Georgia, Times, serif;
+                background-color: lightblue;
+            }
+            #container {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 50px;
+                background-color: white;
+            }
+            #gallery {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            figure {
+                width: 40%;
+                margin: 5%;
+            }
+            figure > img {
+                max-width: 100%;
+            }
+            form {
+                display: grid;
+                grid-template-columns: repeat(2, auto);
+            }
+            input[type='password'] {
+                background-color: pink;
+            }
+            input[type='password']:focus {
+                background-color: lightgreen;
+            }
+            img[alt*='krokodil' i] {
+                box-shadow: 5px 5px 5px green;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <section>
+                <form action="index.html" method="POST">
+                    <label for="voornaam">Voornaam</label>
+                    <input type="text" name="voornaam" id="voornaam" />
+                    <label for="achternaam">Achternaam</label>
+                    <input type="text" name="achternaam" id="achternaam" />
+                    <label for="wachtwoord">Wachtwoord</label>
+                    <input type="password" name="wachtwoord" id="wachtwoord" />
+                    <label for="wachtwoord-opnieuw">Herhaal wachtwoord</label>
+                    <input
+                        type="password"
+                        name="wachtwoord-opnieuw"
+                        id="wachtwoord-opnieuw"
+                    />
+                    <input type="submit" value="Verzenden" />
+                    <input type="reset" value="Opnieuw invullen" />
+                </form>
+            </section>
+            <section id="gallery">
+                <figure>
+                    <img
+                        src="images/581DCC3D996810D260D49FAAB8366127-hagedis.jpg"
+                        alt="Zittende hagedis"
+                    />
+                </figure>
+                <figure>
+                    <img
+                        src="images/6855_fullimage_krokodillen.jpg"
+                        alt="Etende krokodil"
+                    />
+                </figure>
+                <figure>
+                    <img
+                        src="images/bruine kikker_jh.jpg"
+                        alt="Chillende kikker"
+                    />
+                </figure>
+                <figure>
+                    <img
+                        src="images/kikker-600x350.jpg"
+                        alt="Rustende kikker"
+                    />
+                </figure>
+                <figure>
+                    <img src="images/Krokodil.jpg" alt="Lachende krokodil" />
+                </figure>
+                <figure>
+                    <img
+                        src="images/KW-krokodil-header.jpg"
+                        alt="De baas der krokodillen"
+                    />
+                </figure>
+                <figure>
+                    <img
+                        src="images/Man-man-krokodil-fotos.jpg"
+                        alt="Krokodil onder water"
+                    />
+                </figure>
+                <figure>
+                    <img src="images/original.jpg" alt="Vriendelijke hagedis" />
+                </figure>
+            </section>
+        </div>
+    </body>
+</html>

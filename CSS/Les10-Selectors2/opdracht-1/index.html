@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Combinators</title>
+        <style>
+            html,
+            body {
+                font-size: 16px;
+                font-family: Arial, sans-serif;
+            }
+            #container {
+                max-width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            nav,
+            main,
+            aside {
+                flex: 1;
+                padding: 40px;
+            }
+            form span,
+            form label,
+            form input {
+                display: block;
+            }
+            form label {
+                /*margin-top: 20px;*/
+            }
+            form textarea {
+                resize: none;
+            }
+            ul li a {
+                color: green;
+            }
+            nav > ul > li > a {
+                font-weight: bold;
+            }
+            ul > li > ul > li > a {
+                font-style: italic;
+            }
+            main section + p {
+                background-color: yellow;
+            }
+
+            main > p {
+                background-color: red;
+            }
+
+            article ~ p {
+                background-color: blue;
+            }
+
+            form > span {
+                font-size: 0.75em;
+            }
+            input:required + span {
+                color: darkred;
+            }
+            label ~ * {
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <nav>
+                <h1>Combinators</h1>
+                <ul>
+                    <li><a href="#">Item 1</a></li>
+                    <li>
+                        <a href="#">Item 2</a>
+                        <ul>
+                            <li><a href="#">Item 2a</a></li>
+                            <li><a href="#">Item 2b</a></li>
+                            <li><a href="#">Item 2c</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Item 3</a></li>
+                    <li>
+                        <a href="#">Item 4</a>
+                        <ul>
+                            <li><a href="#">Item 4a</a></li>
+                            <li><a href="#">Item 4b</a></li>
+                            <li><a href="#">Item 4c</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Item 5</a></li>
+                </ul>
+            </nav>
+            <main>
+                <p>Regel 1.</p>
+                <section>
+                    <p>Regel 2.</p>
+                </section>
+                <p>Regel 3.</p>
+                <section>
+                    <article>
+                        <p>Regel 4.</p>
+                    </article>
+                    <p>Regel 5.</p>
+                    <article>
+                        <p>Regel 6.</p>
+                    </article>
+                    <p>Regel 7.</p>
+                    <article>
+                        <p>Regel 8.</p>
+                    </article>
+                    <p>Regel 9.</p>
+                    <p>Regel 10.</p>
+                </section>
+                <p>Regel 11.</p>
+                <p>Regel 12.</p>
+            </main>
+            <aside>
+                <form action="index.html" method="post">
+                    <label for="naam">Naam:</label>
+                    <input type="text" name="naam" id="naam" required />
+                    <span>* Dit veld is verplicht.</span>
+                    <label for="leeftijd">Leeftijd:</label>
+                    <input
+                        type="number"
+                        name="leeftijd"
+                        id="leeftijd"
+                        min="0"
+                        max="150"
+                        step="1"
+                        required
+                    />
+                    <label for="email">E-mailadres:</label>
+                    <input type="email" name="email" id="email" required />
+                    <span>* Dit veld is verplicht.</span>
+                    <label for="opmerkingen">Opmerkingen:</label>
+                    <textarea name="opmerkingen" id="opmerkingen"></textarea>
+                    <label for="akkoord">Ik ga akkoord:</label>
+                    <input
+                        type="checkbox"
+                        name="akkoord"
+                        id="akkoord"
+                        value="ja"
+                        required
+                    />
+                    <span>* Dit veld is verplicht.</span>
+                    <input type="submit" value="Verzenden" />
+                    <span>Gelieve alle verplichte velden in te vullen!</span>
+                </form>
+            </aside>
+        </div>
+    </body>
+</html>
