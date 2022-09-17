@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Over CSS</title>
+        <link rel="canonical" href="about-css.html" />
+        <link rel="stylesheet" href="css/stylesheet.css" />
+    </head>
+    <body>
+        <div id="container">
+            <main>
+                <h1>Cascading Style Sheets</h1>
+                <p>
+                    Cascading Style Sheets (afgekort tot CSS), stijlbladen, zijn
+                    een mogelijkheid om de vormgeving van webpagina's los te
+                    koppelen van hun feitelijke inhoud en centraal vast te
+                    leggen. Het Engelse "style" heeft de betekenis van "opmaak",
+                    niet van schrijfstijl. Het begrip "cascading" (als een
+                    waterval) verwijst naar de mogelijkheid van het overerven
+                    van opmaak-eigenschappen (zie onder).
+                </p>
+                <p>
+                    De CSS-informatie voor de vormgeving van het document wordt
+                    toegevoegd aan de HTML-code ervan. Die informatie mag in het
+                    HTML-bestand zelf staan, maar ook in een apart bestand waar
+                    het HTML-document naar verwijst. Een dergelijk extern
+                    bestand wordt ook wel stylesheet genoemd.
+                </p>
+                <p>
+                    Een belangrijke reden voor de introductie van Cascading
+                    Style Sheets was de eenvoudigere en consistentere vormgeving
+                    van webpagina's, met minder webbrowser-specifieke
+                    eigenaardigheden. Het World Wide Web Consortium (W3C) heeft
+                    daartoe de standaard vastgelegd. De vastgelegde standaard is
+                    in de loop van de jaren significant uitgebreid. De
+                    oorspronkelijke standaard staat bekend als CSS1. Latere
+                    uitbreidingen staan bekend als CSS2 en CSS3. Deze laatste
+                    uitbreiding (CSS3) is gedeeltelijk nog in ontwikkeling en is
+                    als zodanig geen offici&euml;le standaard.
+                </p>
+                <p>
+                    Moderne browsers ondersteunen CSS1 en CSS2. CSS3 is nog geen
+                    offici&euml;le standaard, hierdoor is er minder
+                    ondersteuning door webbrowsers.
+                </p>
+                <p>
+                    Omdat er verschillende manieren zijn om een stijl aan te
+                    geven, is de prioriteit hiervan expliciet geregeld.
+                    Hieronder staat de prioriteit aangegeven (een hogere
+                    prioriteit heeft voorrang over een lagere prioriteit). Elk
+                    aspect van stijl wordt daarbij afzonderlijk bekeken.
+                </p>
+                <ol>
+                    <li>stijl met !important-regel in de stijldefinitie.</li>
+                    <li>stijl aangegeven in de tag van het element.</li>
+                    <li>stijl volgens de naam van de id in de tag.</li>
+                    <li>stijl volgens de naam van de class in de tag.</li>
+                    <li>
+                        stijl volgens de naam van de tag (aspecten van stijl die
+                        niet expliciet zijn aangegeven worden bepaald door de
+                        ingebouwde stylesheet in de browser).
+                    </li>
+                    <li>stijl van het parent-element.</li>
+                </ol>
+            </main>
+        </div>
+    </body>
+</html>
