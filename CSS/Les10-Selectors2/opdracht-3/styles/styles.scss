@@ -1,0 +1,55 @@
+body {
+    margin: 200px;
+}
+table {
+    border-collapse: collapse;
+}
+
+table,
+td {
+    border: 1px solid black;
+}
+
+tr:first-child,
+tr:last-child {
+    font-style: italic;
+}
+
+td:first-child,
+td:last-child {
+    font-weight: bold;
+}
+
+tr:nth-child(2) td:nth-child(4) {
+    color: blue;
+}
+
+tr:nth-child(3) td:nth-child(3) {
+    color: green;
+}
+
+tr:nth-child(4) td:nth-child(2) {
+    color: red;
+}
+
+tr:nth-child(1) > td::selection {
+    color: yellow;
+    background-color: black;
+}
+
+tr:nth-child(2) > td::selection {
+    color: purple;
+    background-color: black;
+}
+tr:nth-child(3) > td::selection {
+    color: powderblue;
+    background-color: black;
+}
+tr:nth-child(4) > td::selection {
+    color: goldenrod;
+    background-color: black;
+}
+tr:nth-child(5) > td::selection {
+    color: seagreen;
+    background-color: black;
+}

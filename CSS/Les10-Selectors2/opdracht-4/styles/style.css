@@ -1,0 +1,49 @@
+@font-face {
+  font-family: Treasure Island;
+  src: url("../fonts/TREAI___.TTF");
+}
+@font-face {
+  font-family: Stony Island;
+  src: url("../fonts/STONIN__.TTF");
+}
+body {
+  font-size: 19px;
+  font-family: Stony Island, sans-serif;
+}
+
+.bg {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, yellow 30%, blue, red);
+  background-attachment: fixed;
+}
+
+section {
+  padding: 40px;
+}
+
+h1,
+h2 {
+  font-family: Treasure Island, sans-serif;
+}
+
+p::first-line,
+blockquote::first-line {
+  text-shadow: 5px 5px 5px white;
+}
+
+section > *:not(blockquote)::first-letter {
+  color: orange;
+}
+
+blockquote::-moz-selection {
+  background-color: green;
+}
+
+blockquote::selection {
+  background-color: green;
+}
+
+h1 + p {
+  color: red;
+}/*# sourceMappingURL=style.css.map */

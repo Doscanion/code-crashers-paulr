@@ -1,0 +1,18 @@
+1.  De meta omschrijving is er niet.
+2.  De title tag heeft te veel karakters. Moet 10 t/m 70 karakters zijn.
+3.  De afbeelding moeten in opslag minder worden.
+4.  Het moet geoptimaliseerd worden voor Mobile PageSpeed Insights.
+5.  Het moet geoptimaliseerd worden voor Desktop PageSpeed Insights.
+6.  De keyswords zijn niet aanwezig in de html.
+7.  De website moet meer relevante tekst hebben.
+8.  Een aantal images op de website missen de alt attribuut.
+9.  Facebook Pixel installeren en opstellen.
+10. Inline style plaatsen in de css file
+11. Twitter Cards toevoegen in de header.
+12. Een link toevoegen naar de linkedin profile en aanmaken als het niet bestaat.
+13. Er moet één meta description zijn.
+14. Er moeten minder CSS bestanden zijn.
+15. Er moeten minder JS bestanden zijn.
+16. De heading moet aangepast worden. Het springt van h2 naar h4
+17. De anchor text moet worden aangepast en voor één worden toegevoegd.
+18. Er moet één meta title zijn.
