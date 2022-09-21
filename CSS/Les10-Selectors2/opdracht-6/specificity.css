@@ -1,0 +1,42 @@
+/* Opdracht 6 */
+/* The specificity of our city, of our city... */
+
+/* Specificity score: 1*/
+a {
+}
+
+/* Specificity score: 3*/
+ul > li > a {
+}
+
+/* Specificity score: 13*/
+ul > li > a[target='_blank'] {
+}
+
+/* Specificity score: 124*/
+#container nav ul > li:hover > a[target='_blank'] {
+}
+
+/* Specificity score: 4*/
+section img + p::first-line {
+}
+
+/* Specificity score: 12*/
+main .col-s > p {
+}
+
+/* Specificity score: 12*/
+main .col-s > *:not(p) {
+}
+
+/* Specificity score: 23*/
+form.register input:checked + label {
+}
+
+/* Specificity score: 113*/
+#users tr:nth-child(3) > td::first-letter {
+}
+
+/* Specificity score: 223*/
+#wrapper #container footer .col-s ul > li[id^='new'] {
+}

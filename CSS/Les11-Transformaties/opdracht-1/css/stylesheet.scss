@@ -1,0 +1,52 @@
+#container {
+    width: 800px;
+    min-height: 600px;
+    margin: 0 auto;
+}
+.puzzle {
+    width: 800px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.piece {
+    width: 200px;
+    height: 200px;
+}
+
+.piece:nth-child(2) {
+    transform: translate(400px, 200px);
+}
+
+.piece:nth-child(3) {
+    transform: translate(0, 400px);
+}
+
+.piece:nth-child(4) {
+    transform: translate(-400px);
+}
+
+.piece:nth-child(5) {
+    transform: translate(400px);
+}
+
+.piece:nth-child(6) {
+    transform: translate(-200px, 200px);
+}
+
+.piece:nth-child(7) {
+    transform: translate(-400px);
+}
+
+.piece:nth-child(8) {
+    transform: translate(0, -200px);
+}
+
+.piece:nth-child(9) {
+    transform: translate(200px, -200px);
+}
+
+.piece:nth-child(11) {
+    transform: translate(0, -400px);
+}

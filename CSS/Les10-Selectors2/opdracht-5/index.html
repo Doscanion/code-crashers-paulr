@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles/style.css" />
+        <title>Selectors 2 Opdracht 5</title>
+    </head>
+    <body>
+        <div class="container">
+            <form>
+                <label for="name">Naam:</label>
+                <input type="text" name="name" id="name" required />
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" required />
+                <label for="trouw">Burgerlijke staat</label>
+                <select name="trouw" id="trouw">
+                    <option value="ongehuwd" selected>Ongehuwd</option>
+                    <option value="gehuwd">Gehuwd</option>
+                    <option value="gescheiden">Gescheiden</option>
+                    <option value="verweduwd">Verweduwd</option>
+                </select>
+                <label for="children">Aantal kinderen</label>
+                <input
+                    type="number"
+                    name="children"
+                    id="children"
+                    min="0"
+                    step="1"
+                    value="0"
+                />
+                <label for="nationaliteit">Nationaliteit</label>
+                <select name="nationaliteit" id="nationaliteit">
+                    <option value="">Nederlandse</option>
+                    <option value="">Belgische</option>
+                    <option value="">Duitse</option>
+                    <option value="anders">anders...</option>
+                </select>
+                <input type="button" value="Verzenden" />
+                <span>verplicht om in te vullen</span>
+            </form>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+                totam cumque ipsum dolor fugit in itaque vero blanditiis eveniet
+                voluptatem necessitatibus, quas reprehenderit, quisquam impedit
+                aspernatur. Placeat ex ab accusantium.
+            </p>
+            <p></p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Commodi deleniti dolorum repudiandae sed natus cumque temporibus
+                ab, perspiciatis provident placeat? Cum, voluptatum quibusdam
+                iure asperiores maiores vitae pariatur veritatis officiis!
+            </p>
+        </div>
+    </body>
+</html>

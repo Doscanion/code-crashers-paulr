@@ -1,0 +1,77 @@
+body,
+html {
+  font-size: 40px;
+  font-family: Calibri, Arial, sans-serif;
+}
+
+#container {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-image: url("../images/background.png");
+}
+
+header,
+footer,
+aside,
+article {
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+}
+
+header {
+  width: 1000px;
+  height: 200px;
+}
+
+header > p {
+  transform: scaleY(3);
+}
+
+aside {
+  width: 200px;
+  height: 400px;
+}
+
+aside:nth-child(2) > p {
+  transform: rotate(90deg);
+}
+
+section > article:nth-child(1) > p {
+  transform: scale(3.5, 0.8);
+}
+
+section > article:nth-child(2) > p {
+  transform: skewY(15deg);
+}
+
+aside:nth-child(4) > p {
+  transform: rotate(315deg);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+section > article:first-of-type {
+  width: 600px;
+  height: 200px;
+}
+
+section > article:last-of-type {
+  width: 600px;
+  height: 200px;
+}
+
+footer {
+  width: 1000px;
+  height: 200px;
+}
+
+footer > p {
+  transform: skew(60deg, 355deg);
+}/*# sourceMappingURL=stylesheet.css.map */
