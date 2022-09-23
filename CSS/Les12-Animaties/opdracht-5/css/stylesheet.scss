@@ -1,0 +1,71 @@
+body {
+    background-color: khaki;
+}
+#container {
+    width: 700px;
+    min-height: 700px;
+    margin: 50px auto;
+    position: relative;
+}
+.clock {
+    width: 500px;
+    height: 500px;
+    background-image: url('../images/clock.png');
+    background-size: cover;
+    background-color: none;
+    top: 100px;
+    left: 100px;
+    position: absolute;
+}
+.divHours,
+.divMinutes,
+.divSeconds {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.hours {
+    background: rgb(0, 0, 0);
+    height: 20%;
+    left: 48.75%;
+    position: absolute;
+    top: 30%;
+    transform-origin: 50% 100%;
+    width: 2.5%;
+    animation: rotate 43200s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.minutes {
+    background: rgb(0, 0, 0);
+    height: 40%;
+    left: 49%;
+    position: absolute;
+    top: 10%;
+    transform-origin: 50% 100%;
+    width: 2%;
+    animation: rotate 3600s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(60);
+}
+.seconds {
+    background: rgb(200, 0, 0);
+    height: 45%;
+    left: 49.5%;
+    position: absolute;
+    top: 14%;
+    transform-origin: 50% 80%;
+    width: 1%;
+    z-index: 8;
+    animation: rotate 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(60);
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotateZ(360deg);
+    }
+}

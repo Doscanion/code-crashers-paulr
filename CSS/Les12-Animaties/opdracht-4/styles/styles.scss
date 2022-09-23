@@ -1,0 +1,63 @@
+html {
+    background-color: black;
+}
+
+body {
+    margin: auto;
+    max-width: 1400px;
+}
+
+section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 20px;
+    align-items: stretch;
+}
+
+figcaption {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0px 0px 5px red;
+}
+
+img {
+    border: 5px solid red;
+    transition: filter 3s, border-color 0s, border-width 0s;
+    filter: opacity(75%);
+}
+
+img:hover {
+    filter: opacity(100%);
+    transition: filter 5s;
+    cursor: pointer;
+}
+
+img:active {
+    transition: border-color 1200ms, border-width 0s;
+    border-color: purple;
+    border-width: 10px;
+}
+
+figure {
+    transition-timing-function: ease-out;
+    transition: 1500ms;
+    transform: translate(50px, 50px);
+}
+
+figure:hover {
+    transition: 3500ms;
+    transform: scale(120%, 120%) translate(50px, 50px);
+}
+
+figure:active {
+    transition: 2s;
+    transform: scale(120%, 120%) translate(50px, 50px) skew(10deg, 10deg);
+}
+
+figcaption {
+    transform: rotate(340deg) translate(0, -25px);
+    letter-spacing: 2px;
+    font-size: 2rem;
+}

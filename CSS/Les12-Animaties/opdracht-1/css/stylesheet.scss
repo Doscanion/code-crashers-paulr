@@ -1,0 +1,77 @@
+html,
+body {
+    font-family: Verdana, Arial, sans-serif;
+    background-color: khaki;
+    background-image: url('../images/paper.gif');
+    background-repeat: repeat;
+    font-size: 18px;
+}
+#container {
+    background-color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header {
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 100px;
+    height: 100px;
+    background-color: mediumseagreen;
+    transition: height 3s, line-height 3s;
+    transition-timing-function: linear;
+}
+
+header:active {
+    height: 250px;
+    line-height: 250px;
+}
+
+main {
+    min-height: 400px;
+    display: flex;
+    flex-direction: row;
+}
+section {
+    padding: 20px;
+    flex: 1;
+}
+main form label,
+main form input {
+    display: block;
+    margin-bottom: 10px;
+}
+footer {
+    font-size: 0.8em;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    background: linear-gradient(to right, mediumseagreen, royalblue);
+}
+
+.input-field-change {
+    transition: background-color 2s;
+}
+
+.input-field-change:hover {
+    background-color: lightblue;
+}
+
+.input-field-change:focus {
+    background-color: lightgreen;
+    transition: background-color 1s;
+    transition-delay: 1s;
+}
+
+@media screen and (max-width: 900px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+p:active {
+    transition: font-size 3s, color 2s;
+    transition-timing-function: ease-out 500ms;
+    font-size: 2em;
+    color: purple;
+}

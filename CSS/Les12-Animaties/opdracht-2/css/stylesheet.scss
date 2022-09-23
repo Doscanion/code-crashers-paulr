@@ -1,0 +1,51 @@
+#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.block-1,
+.block-2,
+.block-3 {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    margin: 20px;
+    animation-delay: 250ms;
+}
+.block-1 {
+    background-color: khaki;
+    animation: animation-bg 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+.block-2 {
+    background-color: lightblue;
+    animation: animation-bg 2s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 5;
+    animation-direction: reverse;
+    animation-timing-function: ease;
+}
+.block-3 {
+    background-color: lightgreen;
+    animation: animation-bg 3s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes animation-bg {
+    from {
+        background-color: red;
+        height: 200px;
+        width: 200px;
+    }
+    to {
+        background-color: blue;
+        height: 400px;
+        width: 400px;
+    }
+}

@@ -1,0 +1,63 @@
+body {
+  font-family: Calibri, Verdana, sans-serif;
+  font-size: 20px;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.kader {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  margin: 25px;
+  border: 1px solid black;
+  perspective: 100px;
+  background-color: lightgrey;
+}
+
+.blokje {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  border: 1px solid black;
+  background: rgba(100, 100, 100, 0.5);
+  background: linear-gradient(to bottom, tomato, orange, mediumseagreen, dodgerblue, violet);
+}
+
+.kader:nth-child(1) > .blokje {
+  transform: rotateX(30deg);
+}
+
+.kader:nth-child(2) > .blokje {
+  transform: rotateY(315deg);
+}
+
+.kader:nth-child(3) > .blokje {
+  transform: rotateZ(90deg);
+}
+
+.kader:nth-child(4) > .blokje {
+  transform: scaleZ(1) rotateY(75deg);
+}
+
+.kader:nth-child(5) > .blokje {
+  transform: rotateX(30deg) rotateY(360deg) rotateZ(45deg);
+}
+
+.kader:nth-child(6) > .blokje {
+  transform: rotateX(330deg) rotateY(60deg) rotateZ(180deg);
+}
+
+.kader:nth-child(7) > .blokje {
+  transform: rotateX(225deg) rotateY(210deg) rotateZ(135deg);
+}
+
+.kader:nth-child(8) > .blokje {
+  transform: rotateX(105deg) rotateY(360deg) rotateZ(240deg);
+}/*# sourceMappingURL=stylesheet.css.map */

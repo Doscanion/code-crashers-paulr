@@ -1,0 +1,65 @@
+.container {
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+  -webkit-animation: figures 5s;
+          animation: figures 5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes figures {
+  0% {
+    background-color: orange;
+  }
+  25% {
+    transform: translateX(400px);
+    border-radius: 50%;
+    background-color: purple;
+  }
+  50% {
+    background-color: darkcyan;
+    transform: translateX(400px) translateY(400px);
+    border-radius: 0;
+  }
+  75% {
+    background-color: gray;
+    transform: translateX(0) translateY(400px);
+    border-radius: 50%;
+  }
+  100% {
+    background-color: orange;
+    transform: translateX(0) translateY(0);
+  }
+}
+
+@keyframes figures {
+  0% {
+    background-color: orange;
+  }
+  25% {
+    transform: translateX(400px);
+    border-radius: 50%;
+    background-color: purple;
+  }
+  50% {
+    background-color: darkcyan;
+    transform: translateX(400px) translateY(400px);
+    border-radius: 0;
+  }
+  75% {
+    background-color: gray;
+    transform: translateX(0) translateY(400px);
+    border-radius: 50%;
+  }
+  100% {
+    background-color: orange;
+    transform: translateX(0) translateY(0);
+  }
+}/*# sourceMappingURL=style.css.map */
