@@ -1,0 +1,16 @@
+* {
+  font-family: "Times New Roman", Times, serif;
+}
+
+section {
+  padding: 20px;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.background {
+  background-image: none;
+}/*# sourceMappingURL=small-stylesheet.css.map */

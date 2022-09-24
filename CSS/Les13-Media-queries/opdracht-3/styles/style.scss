@@ -23,6 +23,18 @@ section {
     padding: 40px;
 }
 
+section > iframe {
+    display: none;
+    height: auto;
+    width: 100%;
+}
+
+section > img {
+    display: none;
+    height: auto;
+    width: 100%;
+}
+
 h1,
 h2 {
     font-family: Treasure Island, sans-serif;
@@ -42,4 +54,15 @@ blockquote::selection {
 }
 h1 + p {
     font-style: italic;
+}
+
+@media (min-width: 1200px) {
+    body {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    section > iframe,
+    section > img {
+        display: block;
+    }
 }
