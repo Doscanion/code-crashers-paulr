@@ -1,1 +1,257 @@
-/*# sourceMappingURL=style.css.map */
+body {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  padding: 5px;
+  display: grid;
+  grid-template-rows: auto, 1fr, 1fr;
+  gap: 20px;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+header .logo {
+  text-align: center;
+}
+header .shop-bag {
+  text-align: end;
+}
+
+main {
+  display: grid;
+  grid-template-rows: 3;
+  gap: 20px;
+}
+
+.gallery {
+  grid-template-rows: 2;
+}
+.gallery img {
+  height: auto;
+  width: 100%;
+}
+
+.big-picture {
+  position: relative;
+}
+.big-picture .zoom {
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  width: 50px;
+  height: 50px;
+}
+.big-picture .next {
+  position: absolute;
+  bottom: 40%;
+  right: 0;
+  width: 50px;
+  height: 50px;
+}
+.big-picture .prev {
+  position: absolute;
+  bottom: 40%;
+  left: 0;
+  width: 50px;
+  height: 50px;
+}
+
+.thumbnail {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.thumbnail img {
+  height: auto;
+  width: 100%;
+}
+
+.info {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "info-top-text info-top-text info-top-text" "info-money . ." "info-text info-text info-text" "info-number info-button info-button" "info-add info-add info-add" "info-extra info-extra info-extra";
+}
+.info h1 {
+  font-size: 20px;
+  grid-area: info-top-text;
+}
+.info .info-money {
+  font-size: 22px;
+  grid-area: info-money;
+}
+.info .info-text {
+  grid-area: info-text;
+}
+.info button {
+  grid-area: info-button;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  margin-bottom: 5px;
+}
+.info .info-add {
+  grid-area: info-add;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.info .info-extra {
+  grid-area: info-extra;
+}
+.info .info-extra ul {
+  list-style-type: none;
+  padding: 0;
+}
+.info .info-extra span {
+  color: gray;
+}
+
+.info > img {
+  grid-area: info-number;
+  margin-right: 5px;
+}
+
+.tabs {
+  padding: 10px;
+  line-height: 24px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+.tabs .tabs-info {
+  text-align: center;
+  color: grey;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "tabs-info-desc tabs-info-add" "tabs-info-rev tabs-info-rev";
+}
+.tabs .tabs-info .tabs-info-desc {
+  color: black;
+  text-decoration: underline;
+  font-weight: bold;
+  grid-area: tabs-info-desc;
+}
+.tabs .tabs-info .tabs-info-add {
+  grid-area: tabs-info-add;
+}
+.tabs .tabs-info .tabs-info-rev {
+  grid-area: tabs-info-rev;
+}
+.tabs .tabs-text {
+  display: grid;
+}
+.tabs .tabs-text .tabs-text-title {
+  color: black;
+  font-weight: bold;
+}
+.tabs .tabs-text p {
+  margin-bottom: 40px;
+}
+
+footer {
+  position: relative;
+  padding: 20px 10px;
+  line-height: 24px;
+  background-color: #e4e4e4;
+}
+
+.inner {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+}
+
+.inner-1 {
+  display: grid;
+}
+
+.social {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  text-decoration: none;
+}
+
+.fa-brands {
+  color: black;
+}
+
+.inner-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.inner-title {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.li-style {
+  padding-bottom: 10px;
+}
+.li-style a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.email-form {
+  position: relative;
+  padding: 0;
+  background-color: white;
+  height: 40px;
+  margin-bottom: 40px;
+}
+
+#email {
+  padding-left: 12px;
+  height: 37px;
+  width: 75%;
+  border: none;
+}
+
+#submit {
+  position: absolute;
+  right: 0;
+  border: none;
+  height: 40px;
+  width: 15%;
+  font-size: 18px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.up-you-go {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  right: 0;
+  bottom: 0;
+}
+
+.inner-4 ul {
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+}
+.inner-4 ul span {
+  width: 40%;
+}
+.inner-4 li {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.inner-4 span {
+  color: gray;
+}
+.inner-4 img {
+  margin-left: 20px;
+}/*# sourceMappingURL=style.css.map */

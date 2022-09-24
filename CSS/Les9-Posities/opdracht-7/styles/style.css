@@ -237,14 +237,12 @@ ul {
 
 #email {
   height: 40px;
-  width: 240px;
+  width: 220px;
   border: none;
 }
 
 #submit {
   border: none;
-  height: 40px;
-  width: 55px;
   background-color: white;
   font-style: normal;
   font-weight: 500;
