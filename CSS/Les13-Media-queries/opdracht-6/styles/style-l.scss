@@ -1,0 +1,267 @@
+.mobile {
+    display: none;
+}
+
+.container {
+    margin-top: 30px;
+}
+
+header {
+    margin-bottom: 30px;
+    padding: 0 10%;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr 40px;
+    grid-template-areas: 'logo nav shop-bag nav-icon';
+    nav {
+        display: flex;
+        gap: 15px;
+        grid-area: nav;
+    }
+    .logo {
+        grid-area: logo;
+        text-align: start;
+        margin-right: 30px;
+    }
+    .nav-icon {
+        grid-area: nav-icon;
+        text-align: end;
+    }
+
+    .shop-bag {
+        grid-area: shop-bag;
+        text-align: end;
+        justify-content: end;
+        display: flex;
+        gap: 25px;
+    }
+    .extra-icons {
+        display: flex;
+        font-size: 22px;
+        gap: 25px;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+main {
+    padding: 0 10%;
+    margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    grid-template-areas:
+        'gallery info'
+        'related-products related-products';
+    gap: 20px;
+}
+
+.gallery {
+    margin-right: 30px;
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-template-areas: 'thumbnail big-picture';
+    gap: 10px;
+    grid-area: gallery;
+    padding-bottom: 20px;
+}
+
+.big-picture {
+    grid-area: big-picture;
+    height: 100%;
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.thumbnail {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-area: thumbnail;
+}
+
+.info {
+    grid-area: info;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        'info-menu info-menu info-menu info-menu'
+        'info-top-text info-top-text info-top-text info-top-text'
+        'info-money . . .'
+        'info-text info-text info-text info-text'
+        'info-number info-button info-button .'
+        'info-add info-add info-add .'
+        'info-extra info-extra info-extra info-extra'
+        'main-info main-info main-info main-info';
+
+    .info-add {
+        display: flex;
+        p:first-child {
+            margin-right: 40px;
+        }
+    }
+    .info-extra {
+        ul {
+            margin: 0;
+        }
+    }
+    h1 {
+        margin: 0;
+    }
+}
+
+.info-menu {
+    grid-area: info-menu;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 100px 100px;
+
+    span:nth-child(2),
+    span:nth-child(3) {
+        text-align: end;
+    }
+}
+
+.main-info {
+    grid-area: main-info;
+    display: grid;
+    color: grey;
+}
+
+.main-underline {
+    display: flex;
+    padding-bottom: 10px;
+    position: relative;
+    &::before {
+        content: '';
+        border-top: 1px solid #cfcdcd;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+    span {
+        width: 100%;
+        text-align: end;
+    }
+}
+
+.main-info-extra {
+    &:first-child {
+        color: black;
+    }
+    .fa-solid {
+        color: black;
+    }
+}
+
+.text-lineh {
+    line-height: 24px;
+}
+.related-products {
+    margin-top: 40px;
+    grid-area: related-products;
+    display: grid;
+    i {
+        width: 100%;
+        text-align: end;
+    }
+    img {
+        height: 400px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+.related-product-category {
+    display: flex;
+    color: #767676;
+    font-size: 12px;
+}
+
+.related-products-info {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.related-extra {
+    p {
+        margin: 0;
+        margin-top: 5px;
+    }
+}
+
+footer {
+    padding: 0;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 100px;
+}
+
+.inner {
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas:
+        'inner-1 inner-2 inner-3'
+        'inner-4 inner-4 inner-4 ';
+    gap: 10px;
+}
+
+.inner-1 {
+    grid-area: inner-1;
+    display: block;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.inner-2 {
+    grid-area: inner-2;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.address {
+    margin-top: 10px 0;
+}
+
+.inner-3 {
+    grid-area: inner-3;
+}
+
+.inner-3-text {
+    margin: 0;
+}
+
+.inner-4 {
+    grid-area: inner-4;
+    margin-top: 50px;
+    display: flex;
+    p {
+        width: 100%;
+        display: inline-block;
+    }
+    ul {
+        text-align: end;
+        .fa-solid {
+            vertical-align: baseline;
+            position: relative;
+            top: 2px;
+        }
+    }
+
+    li {
+        display: inline-block;
+        margin: 0;
+        margin-right: 20px;
+    }
+    li:last-child {
+        margin: 0;
+    }
+    &::before {
+        width: 100%;
+        left: 0;
+    }
+}
+
+.end-option {
+    display: inline-block;
+}
