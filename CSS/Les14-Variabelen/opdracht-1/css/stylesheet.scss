@@ -1,0 +1,27 @@
+body {
+    counter-reset: teller 0;
+}
+h2 {
+    counter-increment: teller;
+}
+h2::before {
+    content: 'Chapter ' counter(teller) ' - ';
+}
+
+body > section:first-child {
+    counter-reset: main-count 0;
+}
+
+section > h1::before {
+    counter-increment: main-count;
+    content: counter(main-count) ' ';
+}
+
+section > h1 {
+    counter-reset: sub-count 0;
+}
+
+article h1::before {
+    counter-increment: sub-count;
+    content: counter(main-count) '.' counter(sub-count) ' ';
+}
