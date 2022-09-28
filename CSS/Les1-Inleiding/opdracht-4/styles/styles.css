@@ -3,7 +3,7 @@ body {
 }
 
 h1 {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: #ff7f50;
 }
 
@@ -18,14 +18,14 @@ p {
 }
 
 li {
+  font-family: "Courier New", monospace;
   color: #33987f;
 }
 
 .light-pink {
-  color: #db8fed;
+  color: rgb(219, 143, 237);
 }
 
 ol {
   list-style-type: hiragana;
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
