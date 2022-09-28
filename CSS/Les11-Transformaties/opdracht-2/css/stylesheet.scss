@@ -68,3 +68,7 @@ footer {
 footer > p {
     transform: skew(60deg, 355deg);
 }
+
+p::selection {
+    background-color: grey;
+}

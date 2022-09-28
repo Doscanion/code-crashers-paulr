@@ -36,7 +36,7 @@ body {
 }
 
 .kader:nth-child(1) > .blokje {
-    transform: rotateX(30deg);
+    transform: rotateX(45deg);
 }
 
 .kader:nth-child(2) > .blokje {
@@ -50,7 +50,7 @@ body {
 }
 
 .kader:nth-child(5) > .blokje {
-    transform: rotateX(30deg) rotateY(360deg) rotateZ(45deg);
+    transform: rotateX(15deg) rotateY(360deg) rotateZ(45deg);
 }
 
 .kader:nth-child(6) > .blokje {

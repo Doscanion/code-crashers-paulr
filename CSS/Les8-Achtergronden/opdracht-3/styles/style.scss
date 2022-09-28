@@ -78,3 +78,12 @@
         SlateBlue 80% 100%
     );
 }
+
+.gradient-forgotten {
+    background-image: linear-gradient(
+        to right,
+        #1e90ff 30%,
+        white,
+        #1e90ff 70%
+    );
+}

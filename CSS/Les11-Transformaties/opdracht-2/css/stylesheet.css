@@ -74,4 +74,12 @@ footer {
 
 footer > p {
   transform: skew(60deg, 355deg);
+}
+
+p::-moz-selection {
+  background-color: grey;
+}
+
+p::selection {
+  background-color: grey;
 }/*# sourceMappingURL=stylesheet.css.map */

@@ -1,0 +1,23 @@
+:root {
+  --l-gradient-direction: to right;
+  --l-gradient-1: rgb(calc(207 * 0.75), 100, 154);
+  --l-gradient-2: rgb(calc(0 * 0.75), 0, 255);
+  --l-gradient-3: rgb(calc(255 * 0.75), 255, 255);
+  --l-gradient-4: rgb(calc(255 * 0.75), 255, 0);
+  --l-gradient-5: rgb(calc(207 * 0.75), 100, 154);
+  --main-l-gradient-direction: to right;
+  --main-l-gradient-1: rgba(calc(20 * 0.75), 182, 163, 0.787);
+  --main-l-gradient-2: rgba(calc(21 * 0.75), 184, 199, 0.8);
+  --main-l-gradient-3: rgba(calc(255 * 0.75), 255, 255, 0);
+  --nav-l-gradient-direction: to right;
+  --nav-l-gradient-1: rgb(calc(122 * 0.75), 3, 25);
+  --nav-l-gradient-2: rgb(calc(113 * 0.75), 119, 124);
+  --nav-l-gradient-3: rgb(calc(112 * 0.75), 107, 169);
+  --nav-l-gradient-4: rgb(calc(92 * 0.75), 86, 22);
+  --nav-l-gradient-5: rgb(calc(122 * 0.75), 3, 25);
+  --footer-l-gradient-1: rgb(calc(122 * 0.75), 3, 25);
+  --footer-l-gradient-2: rgba(calc(52 * 0.75), 195, 0, 0.397);
+  --footer-l-gradient-3: rgb(calc(228 * 0.75), 21, 21);
+  --footer-l-gradient-4: rgb(calc(161 * 0.75), 143, 152);
+  --footer-l-gradient-5: rgb(calc(201 * 0.75), 79, 101);
+}/*# sourceMappingURL=theme.css.map */

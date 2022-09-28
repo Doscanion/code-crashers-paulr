@@ -1,23 +1,20 @@
 :root {
     --l-gradient-direction: to right;
     --l-gradient-1: rgb(207, 100, 154);
-    --l-gradient-2: blue;
-    --l-gradient-3: white;
-    --l-gradient-4: yellow;
-    --l-gradient-5: #cf649a;
-
+    --l-gradient-2: rgb(0, 0, 255);
+    --l-gradient-3: rgb(255, 255, 255);
+    --l-gradient-4: rgb(255, 255, 0);
+    --l-gradient-5: rgb(207, 100, 154);
     --main-l-gradient-direction: to right;
     --main-l-gradient-1: rgba(20, 182, 163, 0.787);
     --main-l-gradient-2: rgba(21, 184, 199, 0.8);
     --main-l-gradient-3: rgba(255, 255, 255, 0);
-
     --nav-l-gradient-direction: to right;
-    --nav-l-gradient-1: rgb(122, 3, 25);
+    --nav-l-gradient-1: hsl(349, 95%, 25%);
     --nav-l-gradient-2: rgb(113, 119, 124);
     --nav-l-gradient-3: rgb(112, 107, 169);
     --nav-l-gradient-4: rgb(92, 86, 22);
     --nav-l-gradient-5: rgb(122, 3, 25);
-
     --footer-l-gradient-1: rgb(122, 3, 25);
     --footer-l-gradient-2: rgba(52, 195, 0, 0.397);
     --footer-l-gradient-3: rgb(228, 21, 21);

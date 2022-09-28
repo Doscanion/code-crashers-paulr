@@ -1,0 +1,36 @@
+body {
+  font-family: Calibri, Arial, sans-serif;
+  font-size: 18px;
+  background-color: #f0e6be;
+}
+
+section {
+  padding: 25px;
+  counter-reset: number-picture 0;
+}
+
+section:first-child figcaption::before {
+  counter-increment: number-picture;
+  content: counter(number-picture) ". ";
+}
+
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#gallery img {
+  border-radius: 10px;
+}
+
+#gallery figcaption {
+  text-align: center;
+}
+
+#graph a {
+  white-space: pre-wrap;
+}
+
+#graph a::after {
+  content: "\a(" attr(href) ")";
+}/*# sourceMappingURL=style.css.map */

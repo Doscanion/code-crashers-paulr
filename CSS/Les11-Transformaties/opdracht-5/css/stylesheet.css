@@ -24,4 +24,8 @@ h2 {
 h2 {
   text-transform: uppercase;
   font-size: 5rem;
+}
+
+p {
+  letter-spacing: 6px;
 }/*# sourceMappingURL=stylesheet.css.map */

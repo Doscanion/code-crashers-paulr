@@ -73,9 +73,13 @@ footer {
     flex-direction: column;
   }
 }
-p:active {
+p {
   transition: font-size 3s, color 2s;
-  transition-timing-function: ease-out 500ms;
+  transition-timing-function: ease-out;
+  transition-delay: 500ms;
+}
+
+p:active {
   font-size: 2em;
   color: purple;
 }/*# sourceMappingURL=stylesheet.css.map */
