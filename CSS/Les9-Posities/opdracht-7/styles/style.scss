@@ -44,6 +44,16 @@ nav {
         color: #222222;
         text-decoration: none;
         padding-right: 10px;
+        position: relative;
+        &:hover {
+            &::before {
+                content: '';
+                position: absolute;
+                width: 50%;
+                border-bottom: 2px solid black;
+                bottom: 0px;
+            }
+        }
     }
 
     // img {
@@ -85,19 +95,34 @@ main {
 }
 
 .side-nav {
-    width: 123px;
+    display: grid;
+    width: 140px;
     height: 350px;
     top: 123px;
     margin-top: 39px;
     a {
+        position: relative;
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
         line-height: 30px;
         text-transform: uppercase;
-        padding-top: 20px;
-        text-decoration: none;
-        color: #222222;
+    }
+}
+
+.hover-a {
+    position: relative;
+    color: black;
+    text-decoration: none;
+    &:hover {
+        color: red;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 35%;
+            border-bottom: 2px solid black;
+            bottom: 10px;
+        }
     }
 }
 
@@ -115,6 +140,10 @@ main {
         border-spacing: 2px;
         border-color: gray;
     }
+}
+
+.table-order-number {
+    text-decoration: underline;
 }
 
 .thead {
@@ -215,6 +244,7 @@ footer {
     padding-bottom: 10px;
     a {
         text-decoration: none;
+        color: black;
     }
 }
 
@@ -267,6 +297,57 @@ ul {
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
+}
+
+.inner-4 {
+    padding-top: 15px;
+    width: 1410px;
+    display: flex;
+    position: relative;
+    &::before {
+        content: '';
+        border-top: 1px solid #cfcdcd;
+        position: absolute;
+        width: calc(100% + 20px);
+        left: -10px;
+        top: 0;
+    }
+
+    p {
+        width: 200px;
+    }
+
+    ul {
+        display: flex;
+        text-align: end;
+        justify-content: end;
+        list-style-type: none;
+        padding: 0;
+        width: 100%;
+        span {
+            width: 40%;
+        }
+    }
+    li {
+        width: 220px;
+        display: flex;
+        justify-content: end;
+        grid-template-columns: 1fr 2fr;
+    }
+    span {
+        text-align: end;
+        color: gray;
+    }
+    i {
+        margin-left: 10px;
+        font-size: 18px;
+    }
+}
+
+.end-option {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
 }
 
 .up-you-go {
