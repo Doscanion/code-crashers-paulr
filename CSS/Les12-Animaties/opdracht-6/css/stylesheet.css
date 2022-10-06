@@ -20,10 +20,19 @@ body {
   position: absolute;
   top: 200px;
   left: 20px;
+  transition: transform 3s;
+  -webkit-animation: sanic 1s;
+          animation: sanic 1s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .sanic:active {
-  transition: transform 5s;
+  transition: transform 3s;
   transform: translateY(-200px);
 }
 
@@ -33,6 +42,7 @@ body {
     background: blue;
   }
   30% {
+    border-radius: 0;
     background: url("../images/sanic.png");
   }
   100% {
@@ -46,6 +56,7 @@ body {
     background: blue;
   }
   30% {
+    border-radius: 0;
     background: url("../images/sanic.png");
   }
   100% {

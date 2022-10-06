@@ -45,5 +45,5 @@ blockquote::selection {
 }
 
 h1 + p {
-  color: red;
+  font-style: italic;
 }/*# sourceMappingURL=style.css.map */

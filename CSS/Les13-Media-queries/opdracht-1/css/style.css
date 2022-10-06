@@ -125,9 +125,9 @@ iframe {
     background-color: white;
     text-shadow: none;
     font-size: 14px;
+    color: black;
   }
   body {
-    color: black;
     font-family: sans-serif;
   }
   a {
@@ -147,5 +147,17 @@ form > input:last-child {
   }
   section:last-child:after {
     content: "Deze tekst is geoptimaliseerd voor printers ";
+  }
+  main a {
+    color: black;
+  }
+  h1 {
+    color: black;
+  }
+  h2 {
+    color: black;
+  }
+  h3 {
+    color: black;
   }
 }/*# sourceMappingURL=style.css.map */

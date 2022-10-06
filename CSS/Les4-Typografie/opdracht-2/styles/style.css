@@ -1,7 +1,7 @@
 body {
   font-size: 18px;
-  font-family: 'Lucida Sans Unicode';
-  color: #191919;
+  font-family: "Lucida Sans Unicode", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", Geneva, Verdana, sans-serif;
+  color: rgb(25, 25, 25);
   word-break: break-all;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -25,15 +25,19 @@ p {
 }
 
 h1 {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 1.75em;
   text-align: center;
   font-weight: normal;
   letter-spacing: 10px;
   text-transform: uppercase;
+  font-style: italic;
 }
 
 h1:hover {
   text-decoration: underline;
 }
-/*# sourceMappingURL=style.css.map */
+
+h1:active {
+  text-decoration: line-through;
+}/*# sourceMappingURL=style.css.map */

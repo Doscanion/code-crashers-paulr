@@ -18,20 +18,20 @@ body {
         var(--l-gradient-5)
     );
     background-image: -webkit-linear-gradient(
-        var(--l-gradient-direction),
-        var(--l-gradient-1),
-        var(--l-gradient-2),
-        var(--l-gradient-3),
-        var(--l-gradient-4),
-        var(--l-gradient-5)
+        var(--l-gradient-direction-webkit),
+        var(--l-gradient-1-webkit),
+        var(--l-gradient-2-webkit),
+        var(--l-gradient-3-webkit),
+        var(--l-gradient-4-webkit),
+        var(--l-gradient-5-webkit)
     );
     background-image: -moz-linear-gradient(
-        var(--l-gradient-direction),
-        var(--l-gradient-1),
-        var(--l-gradient-2),
-        var(--l-gradient-3),
-        var(--l-gradient-4),
-        var(--l-gradient-5)
+        var(--l-gradient-direction-moz),
+        var(--l-gradient-1-moz),
+        var(--l-gradient-2-moz),
+        var(--l-gradient-3-moz),
+        var(--l-gradient-4-moz),
+        var(--l-gradient-5-moz)
     );
     background-position: center;
     background-size: auto 50px, auto;
@@ -57,9 +57,9 @@ header {
             var(--l-gradient-5)
         );
     background-image: url('../images/CSS.3.svg'),
-        -webkit-linear-gradient(to right, var(--l-gradient-1), var(--l-gradient-2), var(--l-gradient-3), var(--l-gradient-4), var(--l-gradient-5));
+        -webkit-linear-gradient(to right, var(--l-gradient-1-webkit), var(--l-gradient-2-webkit), var(--l-gradient-3-webkit), var(--l-gradient-4-webkit), var(--l-gradient-5-webkit));
     background-image: url('../images/CSS.3.svg'),
-        -moz-linear-gradient(to right, var(--l-gradient-1), var(--l-gradient-2), var(--l-gradient-3), var(--l-gradient-4), var(--l-gradient-5));
+        -moz-linear-gradient(to right, var(--l-gradient-1-moz), var(--l-gradient-2-moz), var(--l-gradient-3-moz), var(--l-gradient-4-moz), var(--l-gradient-5-moz));
     background-position: center;
     background-size: auto 200px, auto;
     background-repeat: no-repeat;
@@ -81,20 +81,20 @@ nav {
         var(--nav-l-gradient-5)
     );
     background-image: -webkit-linear-gradient(
-        var(--nav-l-gradient-direction),
-        var(--nav-l-gradient-1),
-        var(--nav-l-gradient-2),
-        var(--nav-l-gradient-3),
-        var(--nav-l-gradient-4),
-        var(--nav-l-gradient-5)
+        var(--nav-l-gradient-direction-webkit),
+        var(--nav-l-gradient-1-webkit),
+        var(--nav-l-gradient-2-webkit),
+        var(--nav-l-gradient-3-webkit),
+        var(--nav-l-gradient-4-webkit),
+        var(--nav-l-gradient-5-webkit)
     );
     background-image: -moz-linear-gradient(
-        var(--nav-l-gradient-direction),
-        var(--nav-l-gradient-1),
-        var(--nav-l-gradient-2),
-        var(--nav-l-gradient-3),
-        var(--nav-l-gradient-4),
-        var(--nav-l-gradient-5)
+        var(--nav-l-gradient-direction-moz),
+        var(--nav-l-gradient-1-moz),
+        var(--nav-l-gradient-2-moz),
+        var(--nav-l-gradient-3-moz),
+        var(--nav-l-gradient-4-moz),
+        var(--nav-l-gradient-5-moz)
     );
     border-top: 5px solid rgb(122, 3, 25);
     border-bottom: 5px solid rgb(122, 3, 25);
@@ -170,17 +170,17 @@ main {
         var(--main-l-gradient-3)
     );
     background-image: -webkit-linear-gradient(
-        var(--main-l-gradient-direction),
-        var(--main-l-gradient-1),
-        var(--main-l-gradient-2),
-        var(--main-l-gradient-3)
+        var(--main-l-gradient-direction-webkit),
+        var(--main-l-gradient-1-webkit),
+        var(--main-l-gradient-2-webkit),
+        var(--main-l-gradient-3-webkit)
     );
     background-image: -moz-linear-gradient(
-        var(--main-l-gradient-direction),
-        var(--main-l-gradient-1),
-        var(--main-l-gradient-2),
+        var(--main-l-gradient-direction-moz),
+        var(--main-l-gradient-1-moz),
+        var(--main-l-gradient-2-moz),
         /*main-l-gradient-2 was pink maar ik denk dat dat een fout was dus is heb ik het nu wit gemaakt*/
-            var(--main-l-gradient-3)
+            var(--main-l-gradient-3-moz)
     );
     margin: 0 auto;
     padding: 50px;
@@ -205,51 +205,70 @@ main > div:first-of-type {
     --background-image-1: #ff0000;
     --background-image-2: #ffff00;
 
+    --background-image-1-webkit: #ff0000;
+    --background-image-2-webkit: #ffff00;
+
+    --background-image-1-moz: #ff0000;
+    --background-image-2-moz: #ffff00;
+
     background-image: linear-gradient(
         var(--background-image-1),
         var(--background-image-2)
     );
     background-image: -webkit-linear-gradient(
-        var(--background-image-1),
-        var(--background-image-2)
+        var(--background-image-1-webkit),
+        var(--background-image-2-webkit)
     );
     background-image: -moz-linear-gradient(
-        var(--background-image-1),
-        var(--background-image-2)
+        var(--background-image-1-moz),
+        var(--background-image-2-moz)
     );
 }
 
 main > div:nth-of-type(2) {
     --background-image-1: purple;
     --background-image-2: mediumseagreen;
+
+    --background-image-1-webkit: purple;
+    --background-image-2-webkit: mediumseagreen;
+
+    --background-image-1-moz: purple;
+    --background-image-2-moz: mediumseagreen;
+
     background-image: linear-gradient(
         var(--background-image-1),
         var(--background-image-2)
     );
     background-image: -webkit-linear-gradient(
-        var(--background-image-1),
-        var(--background-image-2)
+        var(--background-image-1-webkit),
+        var(--background-image-2-webkit)
     );
     background-image: -moz-linear-gradient(
-        var(--background-image-1),
-        var(--background-image-2)
+        var(--background-image-1-moz),
+        var(--background-image-2-moz)
     );
 }
 
 main > div:nth-of-type(3) {
     --background-image-1: dodgerblue;
     --background-image-2: crimson;
+
+    --background-image-1-webkit: dodgerblue;
+    --background-image-2-webkit: crimson;
+
+    --background-image-1-moz: dodgerblue;
+    --background-image-2-moz: crimson;
     background-image: linear-gradient(
         var(--background-image-1),
         var(--background-image-2)
     );
     background-image: -webkit-linear-gradient(
-        var(--background-image-1),
-        var(--background-image-2)
+        var(--background-image-1-webkit),
+        var(--background-image-2-webkit)
     );
     background-image: -moz-linear-gradient(
-        var(--background-image-1),
-        var(--background-image-2)
+        var(--background-image-1-moz),
+        var(--background-image-2-moz)
     );
 }
 
@@ -333,19 +352,19 @@ footer {
     );
     background-image: -webkit-linear-gradient(
         to right,
-        var(--footer-l-gradient-1),
-        var(--footer-l-gradient-2),
-        var(--footer-l-gradient-3),
-        var(--footer-l-gradient-4),
-        var(--footer-l-gradient-5)
+        var(--footer-l-gradient-1-webkit),
+        var(--footer-l-gradient-2-webkit),
+        var(--footer-l-gradient-3-webkit),
+        var(--footer-l-gradient-4-webkit),
+        var(--footer-l-gradient-5-webkit)
     );
     background-image: -moz-linear-gradient(
         to right,
-        var(--footer-l-gradient-1),
-        var(--footer-l-gradient-2),
-        var(--footer-l-gradient-3),
-        var(--footer-l-gradient-4),
-        var(--footer-l-gradient-5)
+        var(--footer-l-gradient-1-moz),
+        var(--footer-l-gradient-2-moz),
+        var(--footer-l-gradient-3-moz),
+        var(--footer-l-gradient-4-moz),
+        var(--footer-l-gradient-5-moz)
     );
     bottom: 0;
     padding-right: 20px;

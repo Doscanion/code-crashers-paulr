@@ -31,6 +31,7 @@ body {
 }
 
 #header a {
+  width: auto;
   text-decoration: none;
   color: lightgrey;
 }
@@ -107,4 +108,18 @@ body {
 #footer p {
   margin: 0;
   padding: 0 20px;
+}
+
+@media screen and (max-width: 570px) {
+  #header a {
+    font-size: 50px;
+  }
+}
+section > img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  word-break: break-all;
 }/*# sourceMappingURL=style.css.map */
