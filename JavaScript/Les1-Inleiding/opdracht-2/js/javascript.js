@@ -5,6 +5,6 @@ let beschikbaarheid;
 
 naamProduct = 'Zony 1';
 beschrijvingProduct = 'Een spelcomputer met een controller';
-prijsProduct = 300;
+prijsProduct = 299.99;
 beschikbaarheid = true;
 alert(naamProduct + ' - ' + prijsProduct + ' : ' + '\n' + beschrijvingProduct);

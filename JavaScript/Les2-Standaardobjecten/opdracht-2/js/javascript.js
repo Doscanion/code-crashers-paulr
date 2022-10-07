@@ -5,11 +5,11 @@ document.getElementById('footer-text').innerHTML =
 
 document.getElementById('section-text').innerHTML =
     'Het is nu ' +
-    dateInfo.getHours() +
+    String(dateInfo.getHours() + 1).padStart(2, '0') +
     ':' +
-    dateInfo.getMinutes() +
+    String(dateInfo.getMinutes() + 1).padStart(2, '0') +
     ':' +
-    dateInfo.getSeconds();
+    String(dateInfo.getSeconds() + 1).padStart(2, '0');
 
 document.getElementById('header-text').innerHTML =
     'Deze pagina is opgevraagd op ' +

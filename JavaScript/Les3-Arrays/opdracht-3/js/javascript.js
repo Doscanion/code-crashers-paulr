@@ -21,5 +21,4 @@ document.getElementById('list').innerHTML = place;
 
 function placeLi(name) {
     place += '<li>' + name + '</li>';
-    alert(place);
 }
