@@ -5,6 +5,7 @@ body {
 }
 
 .container {
+    max-width: 420px;
     display: grid;
     grid-template-rows: auto, 1fr, 1fr;
     gap: 20px;

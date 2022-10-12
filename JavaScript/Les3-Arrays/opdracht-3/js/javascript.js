@@ -10,10 +10,10 @@ let planes = [
 ];
 
 planes.unshift('Kaladesh');
-planes.splice(3, 1);
+planes.splice(4, 1);
 planes.splice(2, 0, 'Lorwyn');
-planes.sort;
-planes.reverse;
+planes.sort();
+planes.reverse();
 
 let place = '';
 planes.forEach(placeLi);

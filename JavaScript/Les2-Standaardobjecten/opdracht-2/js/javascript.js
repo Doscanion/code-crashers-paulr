@@ -5,15 +5,15 @@ document.getElementById('footer-text').innerHTML =
 
 document.getElementById('section-text').innerHTML =
     'Het is nu ' +
-    String(dateInfo.getHours() + 1).padStart(2, '0') +
+    String(dateInfo.getHours()).padStart(2, '0') +
     ':' +
-    String(dateInfo.getMinutes() + 1).padStart(2, '0') +
+    String(dateInfo.getMinutes()).padStart(2, '0') +
     ':' +
-    String(dateInfo.getSeconds() + 1).padStart(2, '0');
+    String(dateInfo.getSeconds()).padStart(2, '0');
 
 document.getElementById('header-text').innerHTML =
     'Deze pagina is opgevraagd op ' +
-    (dateInfo.getDay() + 2) +
+    dateInfo.getDate() +
     '-' +
     (dateInfo.getMonth() + 1) +
     '-' +

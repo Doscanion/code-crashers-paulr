@@ -10,7 +10,5 @@ do {
     x *= 2;
     total += x;
 } while (total < 2000);
-{
-}
 
 document.getElementById('total').innerHTML = total;

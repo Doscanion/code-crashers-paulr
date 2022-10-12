@@ -10,7 +10,7 @@ let producten = new Array(
 let winkelwagen = [
     producten.slice(1, 2),
     producten.slice(2, 3),
-    producten.slice(-2, -1),
+    producten.slice(-1),
 ];
 winkelwagen = winkelwagen.map(function (number) {
     return number.toString().substring(0, 3).toUpperCase();

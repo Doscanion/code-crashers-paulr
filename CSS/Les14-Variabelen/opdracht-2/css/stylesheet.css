@@ -1,404 +1,244 @@
 @import url(./theme.css);
-
 body {
-    font-family: Calibri;
-    margin: 0;
+  font-family: Calibri;
+  margin: 0;
 }
 
 #container {
-    width: 100%;
-    min-height: 1000px;
-    background-color: rgb(255, 255, 255);
-    background-image: linear-gradient(
-        var(--l-gradient-direction),
-        var(--l-gradient-1),
-        var(--l-gradient-2),
-        var(--l-gradient-3),
-        var(--l-gradient-4),
-        var(--l-gradient-5)
-    );
-    background-image: -webkit-linear-gradient(
-        var(--l-gradient-direction-webkit),
-        var(--l-gradient-1-webkit),
-        var(--l-gradient-2-webkit),
-        var(--l-gradient-3-webkit),
-        var(--l-gradient-4-webkit),
-        var(--l-gradient-5-webkit)
-    );
-    background-image: -moz-linear-gradient(
-        var(--l-gradient-direction-moz),
-        var(--l-gradient-1-moz),
-        var(--l-gradient-2-moz),
-        var(--l-gradient-3-moz),
-        var(--l-gradient-4-moz),
-        var(--l-gradient-5-moz)
-    );
-    background-position: center;
-    background-size: auto 50px, auto;
-    background-repeat: repeat;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  min-height: 1000px;
+  background-color: rgb(255, 255, 255);
+  background-image: linear-gradient(var(--l-gradient-direction), var(--l-gradient-1), var(--l-gradient-2), var(--l-gradient-3), var(--l-gradient-4), var(--l-gradient-5));
+  background-position: center;
+  background-size: auto 50px, auto;
+  background-repeat: repeat;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 /* ----- Header ----- */
-
 header {
-    width: 100%;
-    height: 250px;
-    background-color: rgb(255, 178, 211);
-    background-image: url('../images/CSS.3.svg'),
-        linear-gradient(
-            var(--l-gradient-direction),
-            var(--l-gradient-1),
-            var(--l-gradient-2),
-            var(--l-gradient-3),
-            var(--l-gradient-4),
-            var(--l-gradient-5)
-        );
-    background-image: url('../images/CSS.3.svg'),
-        -webkit-linear-gradient(to right, var(--l-gradient-1-webkit), var(--l-gradient-2-webkit), var(--l-gradient-3-webkit), var(--l-gradient-4-webkit), var(--l-gradient-5-webkit));
-    background-image: url('../images/CSS.3.svg'),
-        -moz-linear-gradient(to right, var(--l-gradient-1-moz), var(--l-gradient-2-moz), var(--l-gradient-3-moz), var(--l-gradient-4-moz), var(--l-gradient-5-moz));
-    background-position: center;
-    background-size: auto 200px, auto;
-    background-repeat: no-repeat;
-    left: 0;
+  width: 100%;
+  height: 250px;
+  background-color: rgb(255, 178, 211);
+  background-image: url("../images/CSS.3.svg"), linear-gradient(var(--l-gradient-direction), var(--l-gradient-1), var(--l-gradient-2), var(--l-gradient-3), var(--l-gradient-4), var(--l-gradient-5));
+  background-position: center;
+  background-size: auto 200px, auto;
+  background-repeat: no-repeat;
+  left: 0;
 }
 
 /* ----- Menu ----- */
-
 nav {
-    width: 100%;
-    height: 100px;
-    background-color: rgb(207, 100, 154);
-    background-image: linear-gradient(
-        var(--nav-l-gradient-direction),
-        var(--nav-l-gradient-1),
-        var(--nav-l-gradient-2),
-        var(--nav-l-gradient-3),
-        var(--nav-l-gradient-4),
-        var(--nav-l-gradient-5)
-    );
-    background-image: -webkit-linear-gradient(
-        var(--nav-l-gradient-direction-webkit),
-        var(--nav-l-gradient-1-webkit),
-        var(--nav-l-gradient-2-webkit),
-        var(--nav-l-gradient-3-webkit),
-        var(--nav-l-gradient-4-webkit),
-        var(--nav-l-gradient-5-webkit)
-    );
-    background-image: -moz-linear-gradient(
-        var(--nav-l-gradient-direction-moz),
-        var(--nav-l-gradient-1-moz),
-        var(--nav-l-gradient-2-moz),
-        var(--nav-l-gradient-3-moz),
-        var(--nav-l-gradient-4-moz),
-        var(--nav-l-gradient-5-moz)
-    );
-    border-top: 5px solid rgb(122, 3, 25);
-    border-bottom: 5px solid rgb(122, 3, 25);
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(207, 100, 154);
+  background-image: linear-gradient(var(--nav-l-gradient-direction), var(--nav-l-gradient-1), var(--nav-l-gradient-2), var(--nav-l-gradient-3), var(--nav-l-gradient-4), var(--nav-l-gradient-5));
+  border-top: 5px solid rgb(122, 3, 25);
+  border-bottom: 5px solid rgb(122, 3, 25);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
 }
 
 ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 nav > ul {
-    width: 100%;
-    height: 100px;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 5%;
+  width: 100%;
+  height: 100px;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 5%;
 }
 
 nav ul li {
-    width: 15%;
-    height: 65px;
-    background-color: rgba(255, 178, 211, 0.8);
-    line-height: 55px;
-    text-align: center;
-    border: 5px solid rgb(122, 3, 25);
-    border-radius: 10px;
-    margin: auto;
-    flex: 0 0 auto;
-    box-sizing: border-box;
+  width: 15%;
+  height: 65px;
+  background-color: rgba(255, 178, 211, 0.8);
+  line-height: 55px;
+  text-align: center;
+  border: 5px solid rgb(122, 3, 25);
+  border-radius: 10px;
+  margin: auto;
+  flex: 0 0 auto;
+  box-sizing: border-box;
 }
 
 nav ul li:hover {
-    background-color: rgb(255, 178, 211);
-    border: none;
-    line-height: 65px;
+  background-color: rgb(255, 178, 211);
+  border: none;
+  line-height: 65px;
 }
 
 nav ul li:active {
-    background-color: rgb(122, 3, 25);
+  background-color: rgb(122, 3, 25);
 }
 
 nav ul li:active a {
-    color: #fff;
+  color: #fff;
 }
 
 nav > ul > li > a {
-    height: auto;
-    font-size: 30px;
-    font-weight: bold;
-    padding: 0 20px;
+  height: auto;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0 20px;
 }
 
 nav ul li a {
-    color: rgb(122, 3, 25);
-    text-decoration: none;
-    display: block;
+  color: rgb(122, 3, 25);
+  text-decoration: none;
+  display: block;
 }
 
 /* ----- Main ----- */
-
 main {
-    width: 70%;
-    min-height: 1000px;
-    background-image: linear-gradient(
-        var(--main-l-gradient-direction),
-        var(--main-l-gradient-1),
-        var(--main-l-gradient-2),
-        var(--main-l-gradient-3)
-    );
-    background-image: -webkit-linear-gradient(
-        var(--main-l-gradient-direction-webkit),
-        var(--main-l-gradient-1-webkit),
-        var(--main-l-gradient-2-webkit),
-        var(--main-l-gradient-3-webkit)
-    );
-    background-image: -moz-linear-gradient(
-        var(--main-l-gradient-direction-moz),
-        var(--main-l-gradient-1-moz),
-        var(--main-l-gradient-2-moz),
-        /*main-l-gradient-2 was pink maar ik denk dat dat een fout was dus is heb ik het nu wit gemaakt*/
-            var(--main-l-gradient-3-moz)
-    );
-    margin: 0 auto;
-    padding: 50px;
-    display: grid;
-    grid-gap: 50px;
-    grid-template-columns: auto auto auto;
+  width: 70%;
+  min-height: 1000px;
+  background-image: linear-gradient(var(--main-l-gradient-direction), var(--main-l-gradient-1), var(--main-l-gradient-2), var(--main-l-gradient-3));
+  margin: 0 auto;
+  padding: 50px;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: auto auto auto;
 }
 
 main > div {
-    --background-size: 100% 100%;
-    --background-repeat: no-repeat;
-    --background-postion: top, bottom;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(122, 3, 25, 0.8);
-    border: 10px solid rgb(122, 3, 25);
-    border-radius: 10px;
-    box-sizing: border-box;
+  --background-size: 100% 100%;
+  --background-repeat: no-repeat;
+  --background-postion: top, bottom;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(122, 3, 25, 0.8);
+  border: 10px solid rgb(122, 3, 25);
+  border-radius: 10px;
+  box-sizing: border-box;
 }
 
 main > div:first-of-type {
-    --background-image-1: #ff0000;
-    --background-image-2: #ffff00;
-
-    --background-image-1-webkit: #ff0000;
-    --background-image-2-webkit: #ffff00;
-
-    --background-image-1-moz: #ff0000;
-    --background-image-2-moz: #ffff00;
-
-    background-image: linear-gradient(
-        var(--background-image-1),
-        var(--background-image-2)
-    );
-    background-image: -webkit-linear-gradient(
-        var(--background-image-1-webkit),
-        var(--background-image-2-webkit)
-    );
-    background-image: -moz-linear-gradient(
-        var(--background-image-1-moz),
-        var(--background-image-2-moz)
-    );
+  --background-image-1: #ff0000;
+  --background-image-2: #ffff00;
+  background-image: linear-gradient(var(--background-image-1), var(--background-image-2));
 }
 
 main > div:nth-of-type(2) {
-    --background-image-1: purple;
-    --background-image-2: mediumseagreen;
-
-    --background-image-1-webkit: purple;
-    --background-image-2-webkit: mediumseagreen;
-
-    --background-image-1-moz: purple;
-    --background-image-2-moz: mediumseagreen;
-
-    background-image: linear-gradient(
-        var(--background-image-1),
-        var(--background-image-2)
-    );
-    background-image: -webkit-linear-gradient(
-        var(--background-image-1-webkit),
-        var(--background-image-2-webkit)
-    );
-    background-image: -moz-linear-gradient(
-        var(--background-image-1-moz),
-        var(--background-image-2-moz)
-    );
+  --background-image-1: purple;
+  --background-image-2: mediumseagreen;
+  background-image: linear-gradient(var(--background-image-1), var(--background-image-2));
 }
 
 main > div:nth-of-type(3) {
-    --background-image-1: dodgerblue;
-    --background-image-2: crimson;
-
-    --background-image-1-webkit: dodgerblue;
-    --background-image-2-webkit: crimson;
-
-    --background-image-1-moz: dodgerblue;
-    --background-image-2-moz: crimson;
-    background-image: linear-gradient(
-        var(--background-image-1),
-        var(--background-image-2)
-    );
-    background-image: -webkit-linear-gradient(
-        var(--background-image-1-webkit),
-        var(--background-image-2-webkit)
-    );
-    background-image: -moz-linear-gradient(
-        var(--background-image-1-moz),
-        var(--background-image-2-moz)
-    );
+  --background-image-1: dodgerblue;
+  --background-image-2: crimson;
+  background-image: linear-gradient(var(--background-image-1), var(--background-image-2));
 }
 
 main > div:nth-of-type(4) {
-    background: none;
-    background-image: url('https://cdn.myanimelist.net/s/common/uploaded_files/1448416762-c4fea080c937bdde8ac476e4bfa76efe.png'),
-        url('https://atlantis.nyc3.digitaloceanspaces.com/styled/1bec9ec74aac91e70b3ef91fee1fc0f9');
-    background-size: var(--background-size);
-    background-repeat: var(--background-repeat);
-    background-position: var(--background-postion);
-    background-blend-mode: darken;
+  background: none;
+  background-image: url("https://cdn.myanimelist.net/s/common/uploaded_files/1448416762-c4fea080c937bdde8ac476e4bfa76efe.png"), url("https://atlantis.nyc3.digitaloceanspaces.com/styled/1bec9ec74aac91e70b3ef91fee1fc0f9");
+  background-size: var(--background-size);
+  background-repeat: var(--background-repeat);
+  background-position: var(--background-postion);
+  background-blend-mode: darken;
 }
 
 main > div:nth-of-type(5) {
-    background: none;
-    background-image: url('https://cdn.myanimelist.net/s/common/uploaded_files/1448417480-7811773ee2adea67172c080868d9d33a.png'),
-        url('https://cdn.abcotvs.com/dip/images/24996_kgo-windows-bliss-040714-1280.jpg?w=1280&r=16%3A9');
-    background-size: var(--background-size);
-    background-repeat: var(--background-repeat);
-    background-position: var(--background-postion);
-    background-blend-mode: overlay;
+  background: none;
+  background-image: url("https://cdn.myanimelist.net/s/common/uploaded_files/1448417480-7811773ee2adea67172c080868d9d33a.png"), url("https://cdn.abcotvs.com/dip/images/24996_kgo-windows-bliss-040714-1280.jpg?w=1280&r=16%3A9");
+  background-size: var(--background-size);
+  background-repeat: var(--background-repeat);
+  background-position: var(--background-postion);
+  background-blend-mode: overlay;
 }
 
 main > div:nth-of-type(6) {
-    background: none;
-    background-image: url('https://cdn.myanimelist.net/s/common/uploaded_files/1448417849-8251d755f2ca114b778e6ca9685ed1d2.png'),
-        url('https://www.theuiaa.org/wp-content/uploads/2017/12/2018_banner.jpg');
-    background-size: var(--background-size);
-    background-repeat: var(--background-repeat);
-    background-position: var(--background-postion);
-    background-blend-mode: lighten;
+  background: none;
+  background-image: url("https://cdn.myanimelist.net/s/common/uploaded_files/1448417849-8251d755f2ca114b778e6ca9685ed1d2.png"), url("https://www.theuiaa.org/wp-content/uploads/2017/12/2018_banner.jpg");
+  background-size: var(--background-size);
+  background-repeat: var(--background-repeat);
+  background-position: var(--background-postion);
+  background-blend-mode: lighten;
 }
 
 main > div:nth-of-type(7) {
-    border-top-color: blue;
-    border-right-color: mediumseagreen;
-    border-bottom-color: red;
-    border-left-color: yellow;
-    border-top-style: double;
-    border-right-style: dashed;
-    border-bottom-style: dotted;
-    border-left-style: groove;
+  border-top-color: blue;
+  border-right-color: mediumseagreen;
+  border-bottom-color: red;
+  border-left-color: yellow;
+  border-top-style: double;
+  border-right-style: dashed;
+  border-bottom-style: dotted;
+  border-left-style: groove;
 }
 
 main > div:nth-of-type(8) {
-    border-top-color: orange;
-    border-right-color: violet;
-    border-bottom-color: tomato;
-    border-left-color: aqua;
-    border-top-style: ridge;
-    border-right-style: dotted;
-    border-bottom-style: double;
-    border-left-style: dashed;
+  border-top-color: orange;
+  border-right-color: violet;
+  border-bottom-color: tomato;
+  border-left-color: aqua;
+  border-top-style: ridge;
+  border-right-style: dotted;
+  border-bottom-style: double;
+  border-left-style: dashed;
 }
 
 main > div:nth-of-type(9) {
-    border-top-color: chartreuse;
-    border-right-color: darkcyan;
-    border-bottom-color: gold;
-    border-left-color: deeppink;
-    border-top-style: groove;
-    border-right-style: double;
-    border-bottom-style: ridge;
-    border-left-style: dotted;
+  border-top-color: chartreuse;
+  border-right-color: darkcyan;
+  border-bottom-color: gold;
+  border-left-color: deeppink;
+  border-top-style: groove;
+  border-right-style: double;
+  border-bottom-style: ridge;
+  border-left-style: dotted;
 }
 
 /* ----- Footer ----- */
-
 footer {
-    width: 100%;
-    height: 160px;
-    border-top: 5px solid rgb(122, 3, 25);
-    border-bottom: 5px solid rgb(122, 3, 25);
-    background-image: linear-gradient(
-        to right,
-        var(--footer-l-gradient-1),
-        var(--footer-l-gradient-2),
-        var(--footer-l-gradient-3),
-        var(--footer-l-gradient-4),
-        var(--footer-l-gradient-5)
-    );
-    background-image: -webkit-linear-gradient(
-        to right,
-        var(--footer-l-gradient-1-webkit),
-        var(--footer-l-gradient-2-webkit),
-        var(--footer-l-gradient-3-webkit),
-        var(--footer-l-gradient-4-webkit),
-        var(--footer-l-gradient-5-webkit)
-    );
-    background-image: -moz-linear-gradient(
-        to right,
-        var(--footer-l-gradient-1-moz),
-        var(--footer-l-gradient-2-moz),
-        var(--footer-l-gradient-3-moz),
-        var(--footer-l-gradient-4-moz),
-        var(--footer-l-gradient-5-moz)
-    );
-    bottom: 0;
-    padding-right: 20px;
-    box-sizing: border-box;
+  width: 100%;
+  height: 160px;
+  border-top: 5px solid rgb(122, 3, 25);
+  border-bottom: 5px solid rgb(122, 3, 25);
+  background-image: linear-gradient(to right, var(--footer-l-gradient-1), var(--footer-l-gradient-2), var(--footer-l-gradient-3), var(--footer-l-gradient-4), var(--footer-l-gradient-5));
+  bottom: 0;
+  padding-right: 20px;
+  box-sizing: border-box;
 }
 
 footer > ul {
-    width: 100%;
-    height: 100%;
-    flex-direction: row;
-    justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 footer ul li {
-    width: 80px;
-    height: 80px;
-    background-color: rgba(255, 178, 211, 0.8);
-    line-height: 93px;
-    text-align: center;
-    border: 3px solid rgb(122, 3, 25);
-    border-radius: 50%;
-    margin-top: 40px;
-    margin-right: 20px;
-    flex: 0 0 auto;
-    box-sizing: border-box;
+  width: 80px;
+  height: 80px;
+  background-color: rgba(255, 178, 211, 0.8);
+  line-height: 93px;
+  text-align: center;
+  border: 3px solid rgb(122, 3, 25);
+  border-radius: 50%;
+  margin-top: 40px;
+  margin-right: 20px;
+  flex: 0 0 auto;
+  box-sizing: border-box;
 }
 
 footer ul li:hover {
-    background-color: rgb(255, 178, 211);
-    border: none;
-    line-height: 100px;
+  background-color: rgb(255, 178, 211);
+  border: none;
+  line-height: 100px;
 }
 
 .fab {
-    color: rgb(122, 3, 25);
-    font-size: 40px;
-}
+  color: rgb(122, 3, 25);
+  font-size: 40px;
+}/*# sourceMappingURL=stylesheet.css.map */

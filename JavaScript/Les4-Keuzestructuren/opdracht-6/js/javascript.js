@@ -23,13 +23,13 @@ switch (true) {
     case time.getHours() <= 5:
         document.body.style.backgroundColor = 'purple';
         break;
-    case time.getHours >= 6 && time.getHours() <= 11:
+    case time.getHours() >= 6 && time.getHours() <= 11:
         document.body.style.backgroundColor = 'orange';
         break;
-    case time.getHours >= 12 && time.getHours() <= 17:
+    case time.getHours() >= 12 && time.getHours() <= 17:
         document.body.style.backgroundColor = 'blue';
         break;
-    case time.getHours >= 18 && time.getHours() <= 23:
+    case time.getHours() >= 18 && time.getHours() <= 23:
         document.body.style.backgroundColor = 'red';
         break;
 }
