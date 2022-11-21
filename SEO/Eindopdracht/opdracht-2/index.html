@@ -9,6 +9,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow" />
         <meta property="og:title" content="Luigi's Pizzeria" />
         <meta property="og:type" content="website" />
         <meta
@@ -35,9 +36,134 @@
         <link href="plugin-frameworks/swiper.css" rel="stylesheet" />
         <link href="fonts/ionicons.css" rel="stylesheet" />
         <link href="common/styles.css" rel="stylesheet" />
+        <script type="application/ld+json">
+            [
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "LocalBusiness",
+                    "name": "Luigi's",
+                    "description": "Restaurant Luigi's werkt uitsluitend met de mooiste producten die de Italiaanse keuken te bieden heeft om de beste pizza's te maken.",
+                    "image": "images/logo-white.png",
+                    "openingHours": ["We-Su 16:00-22:00"],
+                    "telephone": "040-9177128",
+                    "email": "info@luigis.nl",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "Eindhoven",
+                        "addressRegion": "TE",
+                        "postalCode": "5628",
+                        "streetAddress": "2E-1 Ukkelstraat"
+                    }
+                },
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "IndividualProduct",
+                    "name": "Pizza Margherita",
+                    "category": "pizza",
+                    "image": "images/menu/margherita.png",
+                    "description": "Pizza Margherita",
+                    "offers": {
+                        "@type": "Offer",
+                        "priceCurrency": "EUR",
+                        "price": "9.90"
+                    }
+                },
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "IndividualProduct",
+                    "name": "Pizza Quattro Stagioni",
+                    "category": "pizza",
+                    "image": "images/menu/cheese.png",
+                    "description": "Pizza Quattro Stagioni",
+                    "offers": {
+                        "@type": "Offer",
+                        "priceCurrency": "EUR",
+                        "price": "11.90"
+                    }
+                },
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "IndividualProduct",
+                    "name": "Pizza Tonno",
+                    "category": "pizza",
+                    "image": "images/menu/tuna.png",
+                    "description": "Pizza Tonno",
+                    "offers": {
+                        "@type": "Offer",
+                        "priceCurrency": "EUR",
+                        "price": "11.90"
+                    }
+                },
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "IndividualProduct",
+                    "name": "Pizza Pollo",
+                    "category": "pizza",
+                    "image": "images/menu/pollo.png",
+                    "description": "Pizza Pollo",
+                    "offers": {
+                        "@type": "Offer",
+                        "priceCurrency": "EUR",
+                        "price": "12.90"
+                    }
+                },
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "IndividualProduct",
+                    "name": "Pizza Hawaii",
+                    "category": "pizza",
+                    "image": "images/menu/hawaii.png",
+                    "description": "Pizza Hawaii",
+                    "offers": {
+                        "@type": "Offer",
+                        "priceCurrency": "EUR",
+                        "price": "11.90"
+                    }
+                },
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "IndividualProduct",
+                    "name": "Pizza Veggie",
+                    "category": "pizza",
+                    "image": "images/menu/veggie.png",
+                    "description": "Pizza Veggie",
+                    "offers": {
+                        "@type": "Offer",
+                        "priceCurrency": "EUR",
+                        "price": "9.90"
+                    }
+                },
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "IndividualProduct",
+                    "name": "Pizza Funghi",
+                    "category": "pizza",
+                    "image": "images/menu/funghi.png",
+                    "description": "Pizza Funghi",
+                    "offers": {
+                        "@type": "Offer",
+                        "priceCurrency": "EUR",
+                        "price": "12.90"
+                    }
+                },
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "IndividualProduct",
+                    "name": "Pizza Döner",
+                    "category": "pizza",
+                    "image": "images/menu/doner.png",
+                    "description": "Pizza Döner",
+                    "offers": {
+                        "@type": "Offer",
+                        "priceCurrency": "EUR",
+                        "price": "11.90"
+                    }
+                }
+            ]
+        </script>
     </head>
     <body>
-        <div id="header">
+        <header id="header">
             <div class="container">
                 <a class="logo" href="#"
                     ><img src="images/logo-white.png" alt="Logo"
@@ -82,7 +208,7 @@
                 <div class="clearfix"></div>
             </div>
             <!-- container -->
-        </div>
+        </header>
 
         <section class="bg-1 h-900x main-slider pos-relative">
             <div class="triangle-up pos-bottom"></div>
@@ -119,7 +245,7 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-md-6">
+                        <section class="col-md-6">
                             <p class="mb-30">
                                 Op 28 augustus 1980 opende Luigi's haar deuren.
                                 Inmiddels zijn we 40 jaar verder en is de
@@ -136,10 +262,10 @@
                                 vriendelijke en behulpzame eigenschappen van ons
                                 bedienend personeel.
                             </p>
-                        </div>
+                        </section>
                         <!-- col-md-6 -->
 
-                        <div class="col-md-6">
+                        <section class="col-md-6">
                             <p class="mb-30">
                                 Restaurant Luigi's werkt uitsluitend met de
                                 mooiste producten die de Italiaanse keuken te
@@ -150,7 +276,7 @@
                                 voorbereidingen. Hierdoor werken we dagelijks
                                 met verse producten.
                             </p>
-                        </div>
+                        </section>
                         <!-- col-md-6 -->
                     </div>
                     <!-- row -->
@@ -173,7 +299,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-6">
+                    <article class="col-lg-3 col-md-4 col-sm-6">
                         <div class="center-text mb-30">
                             <div class="ïmg-200x mlr-auto pos-relative">
                                 <h6 class="ribbon-cont">
@@ -194,10 +320,10 @@
                             </h6>
                         </div>
                         <!--text-center-->
-                    </div>
+                    </article>
                     <!-- col-md-3 -->
 
-                    <div class="col-lg-3 col-md-4 col-sm-6">
+                    <article class="col-lg-3 col-md-4 col-sm-6">
                         <div class="center-text mb-30">
                             <div class="ïmg-200x mlr-auto pos-relative">
                                 <img
@@ -214,10 +340,10 @@
                             </h6>
                         </div>
                         <!--text-center-->
-                    </div>
+                    </article>
                     <!-- col-md-3 -->
 
-                    <div class="col-lg-3 col-md-4 col-sm-6">
+                    <article class="col-lg-3 col-md-4 col-sm-6">
                         <div class="center-text mb-30">
                             <div class="ïmg-200x mlr-auto pos-relative">
                                 <img
@@ -234,10 +360,10 @@
                             </h6>
                         </div>
                         <!--text-center-->
-                    </div>
+                    </article>
                     <!-- col-md-3 -->
 
-                    <div class="col-lg-3 col-md-4 col-sm-6">
+                    <article class="col-lg-3 col-md-4 col-sm-6">
                         <div class="center-text mb-30">
                             <div class="ïmg-200x mlr-auto pos-relative">
                                 <h6 class="ribbon-cont">
@@ -258,10 +384,10 @@
                             </h6>
                         </div>
                         <!--text-center-->
-                    </div>
+                    </article>
                     <!-- col-md-3 -->
 
-                    <div class="col-lg-3 col-md-4 col-sm-6">
+                    <article class="col-lg-3 col-md-4 col-sm-6">
                         <div class="center-text mb-30">
                             <div class="ïmg-200x mlr-auto pos-relative">
                                 <img
@@ -278,10 +404,10 @@
                             </h6>
                         </div>
                         <!--text-center-->
-                    </div>
+                    </article>
                     <!-- col-md-3 -->
 
-                    <div class="col-lg-3 col-md-4 col-sm-6">
+                    <article class="col-lg-3 col-md-4 col-sm-6">
                         <div class="center-text mb-30">
                             <div class="ïmg-200x mlr-auto pos-relative">
                                 <h6 class="ribbon-cont">
@@ -302,10 +428,10 @@
                             </h6>
                         </div>
                         <!--text-center-->
-                    </div>
+                    </article>
                     <!-- col-md-3 -->
 
-                    <div class="col-lg-3 col-md-4 col-sm-6">
+                    <article class="col-lg-3 col-md-4 col-sm-6">
                         <div class="center-text mb-30">
                             <div class="ïmg-200x mlr-auto pos-relative">
                                 <h6 class="ribbon-cont color-black">
@@ -326,10 +452,10 @@
                             </h6>
                         </div>
                         <!--text-center-->
-                    </div>
+                    </article>
                     <!-- col-md-3 -->
 
-                    <div class="col-lg-3 col-md-4 col-sm-6">
+                    <article class="col-lg-3 col-md-4 col-sm-6">
                         <div class="center-text mb-30">
                             <div class="ïmg-200x mlr-auto pos-relative">
                                 <img
@@ -346,7 +472,7 @@
                             </h6>
                         </div>
                         <!--text-center-->
-                    </div>
+                    </article>
                     <!-- col-md-3 -->
                 </div>
                 <!-- row -->
@@ -402,7 +528,7 @@
                 <!--row-->
 
                 <div class="row">
-                    <div class="col-md-6 food-menu pizza">
+                    <article class="col-md-6 food-menu pizza">
                         <div class="sided-90x mb-30">
                             <div class="s-left">
                                 <img
@@ -429,10 +555,10 @@
                             <!--s-right-->
                         </div>
                         <!-- sided-90x -->
-                    </div>
+                    </article>
                     <!-- food-menu -->
 
-                    <div class="col-md-6 food-menu pizza">
+                    <article class="col-md-6 food-menu pizza">
                         <div class="sided-90x mb-30">
                             <div class="s-left">
                                 <img
@@ -458,10 +584,10 @@
                             <!--s-right-->
                         </div>
                         <!-- sided-90x -->
-                    </div>
+                    </article>
                     <!-- food-menu -->
 
-                    <div class="col-md-6 food-menu pasta">
+                    <article class="col-md-6 food-menu pasta">
                         <div class="sided-90x mb-30">
                             <div class="s-left">
                                 <img
@@ -488,10 +614,10 @@
                             <!--s-right-->
                         </div>
                         <!-- sided-90x -->
-                    </div>
+                    </article>
                     <!-- food-menu -->
 
-                    <div class="col-md-6 food-menu salads">
+                    <article class="col-md-6 food-menu salads">
                         <div class="sided-90x mb-30">
                             <div class="s-left">
                                 <img
@@ -517,9 +643,9 @@
                             <!--s-right-->
                         </div>
                         <!-- sided-90x -->
-                    </div>
+                    </article>
                     <!-- food-menu -->
-                    <div class="col-md-6 food-menu deserts">
+                    <article class="col-md-6 food-menu deserts">
                         <div class="sided-90x mb-30">
                             <div class="s-left">
                                 <img
@@ -545,10 +671,10 @@
                             <!--s-right-->
                         </div>
                         <!-- sided-90x -->
-                    </div>
+                    </article>
                     <!-- food-menu -->
 
-                    <div class="col-md-6 food-menu pizza">
+                    <article class="col-md-6 food-menu pizza">
                         <div class="sided-90x mb-30">
                             <div class="s-left">
                                 <img
@@ -574,10 +700,10 @@
                             <!--s-right-->
                         </div>
                         <!-- sided-90x -->
-                    </div>
+                    </article>
                     <!-- food-menu -->
 
-                    <div class="col-md-6 food-menu deserts">
+                    <article class="col-md-6 food-menu deserts">
                         <div class="sided-90x mb-30">
                             <div class="s-left">
                                 <img
@@ -603,10 +729,10 @@
                             <!--s-right-->
                         </div>
                         <!-- sided-90x -->
-                    </div>
+                    </article>
                     <!-- food-menu -->
 
-                    <div class="col-md-6 food-menu pasta">
+                    <article class="col-md-6 food-menu pasta">
                         <div class="sided-90x mb-30">
                             <div class="s-left">
                                 <img
@@ -630,7 +756,7 @@
                             <!--s-right-->
                         </div>
                         <!-- sided-90x -->
-                    </div>
+                    </article>
                     <!-- food-menu -->
                 </div>
                 <!-- row -->
@@ -644,7 +770,7 @@
             <!-- container -->
         </section>
 
-        <div id="footer" class="pb-50 pt-70 pos-relative">
+        <footer id="footer" class="pb-50 pt-70 pos-relative">
             <div class="pos-top triangle-bottom"></div>
             <div class="container-fluid">
                 <a href="index.html"
@@ -706,7 +832,7 @@
                 </p>
             </div>
             <!-- container -->
-        </div>
+        </footer>
 
         <!-- SCRIPTS -->
         <script src="plugin-frameworks/jquery-3.2.1.min.js"></script>
