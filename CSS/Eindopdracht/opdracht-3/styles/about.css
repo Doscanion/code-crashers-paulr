@@ -1,0 +1,35 @@
+main {
+  margin: auto;
+}
+
+.about-us {
+  margin-top: 50px;
+  display: grid;
+  gap: 40px;
+}
+
+.about-us-picture h1 {
+  margin: auto;
+  width: 80%;
+}
+
+.about-us-main {
+  margin: auto;
+  width: 80%;
+  margin: auto;
+  display: grid;
+}
+
+.main-text-extra {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.company-info {
+  margin: auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5%;
+}/*# sourceMappingURL=about.css.map */
