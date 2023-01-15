@@ -1,0 +1,19 @@
+body {
+    background-color: darkgrey;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    p {
+        text-align: center;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+article {
+    background-color: antiquewhite;
+    border-radius: 5px;
+    border: 1px solid black;
+}

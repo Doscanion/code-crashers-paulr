@@ -10,6 +10,7 @@ while (i < 8) {
     }
 
     if (number[i] >= 0 && number[i] <= 999) {
+        number.splice(i);
         i--;
         continue;
     }
@@ -20,6 +21,16 @@ while (i < 8) {
 number.sort(function (a, b) {
     return a - b;
 });
-for (let i = 0; i < 8; i++) {
-    document.getElementById('numbers').innerHTML += '<p>' + number[i] + '</p>';
+
+let count = 0;
+console.log(number);
+while (count < i) {
+    if (number[i] == 666) {
+        document.getElementById('numbers').innerHTML +=
+            '<p>' + number[i] + '</p>';
+        break;
+    }
+    document.getElementById('numbers').innerHTML +=
+        '<p>' + number[count] + '</p>';
+    count++;
 }

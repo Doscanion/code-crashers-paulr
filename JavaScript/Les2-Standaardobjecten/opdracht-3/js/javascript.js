@@ -1,8 +1,11 @@
-var wordChose = prompt('Kies een woord uit.', 'Sushi');
-var letterChose = prompt('Kies een letter uit.', 'a');
+var randomNumber = Math.random();
+document.getElementById('span-1').innerHTML = randomNumber;
 
-document.getElementById('title').innerHTML = wordChose;
-document.getElementById('length').innerHTML = wordChose.length;
-document.getElementById('lowercase').innerHTML = wordChose.toLowerCase();
-document.getElementById('uppercase').innerHTML = wordChose.toUpperCase();
-document.getElementById('index').innerHTML = wordChose.indexOf(letterChose);
+var numberTen = randomNumber * 10;
+document.getElementById('span-2').innerHTML = numberTen;
+
+var numberRound = Math.round(randomNumber * 255 + 1);
+document.getElementById('span-3').innerHTML = numberRound;
+
+var numberdecimal = Math.round((Math.random() * 50 + 50) * 2) / 2;
+document.getElementById('span-4').innerHTML = numberdecimal;

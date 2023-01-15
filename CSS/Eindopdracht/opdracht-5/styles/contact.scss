@@ -1,0 +1,103 @@
+main {
+    margin: auto;
+}
+
+.contact-title {
+    margin: auto;
+    width: 80%;
+}
+
+//location-shop<
+
+.location-shop {
+    width: 100%;
+    margin-top: 20px;
+}
+
+//location-shop>
+
+//contact-info<
+.contact-info {
+    margin: auto;
+    margin-top: 20px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info-store {
+    display: grid;
+    gap: 20px;
+}
+
+//contact-info>
+
+//contact-form<
+.contact-form {
+    margin: auto;
+    margin-top: 50px;
+    width: 80%;
+}
+
+.review-form {
+    display: grid;
+    gap: 20px;
+
+    input {
+        border: none;
+    }
+
+    .submit {
+        background-color: #222222;
+        color: white;
+        padding: 10px;
+        width: 180px;
+        height: 60px;
+    }
+}
+
+.form-box {
+    input {
+        border: 1px solid #e4e4e4;
+        padding: 5px;
+        width: 100%;
+    }
+    #review {
+        height: 200px;
+    }
+    textarea {
+        border: 1px solid #e4e4e4;
+        width: 100%;
+        height: 200px;
+    }
+}
+
+.form-box:active {
+    border-color: black;
+}
+//contact-form>
+
+@media screen and (max-width: 1000px) {
+    //contact-info<
+    .contact-info {
+        margin: auto;
+        margin-top: 20px;
+        width: 80%;
+        display: grid;
+        gap: 25px;
+    }
+
+    .contact-info-store {
+        display: grid;
+        gap: 10px;
+    }
+
+    //contact-info>
+
+    .review-form {
+        .submit {
+            width: 120px;
+            height: 50px;
+        }
+    }
+}

@@ -1,16 +1,20 @@
-var numberChose = prompt(
-    'Kies een cijfer met 4 getallen voor en na de komma.',
-    '0.0',
-);
+var dateInfo = new Date();
 
-number = Number(numberChose);
+document.getElementById('footer-text').innerHTML =
+    '© CodeCrashers – ' + dateInfo.getFullYear();
 
-document.getElementById('title').innerText = number;
-document.getElementById('fixed-1').innerText = number.toFixed(1);
-document.getElementById('fixed-3').innerText = number.toFixed(3);
-document.getElementById('random-multiplied').innerText = (
-    number * Math.random()
-).toFixed(2);
-document.getElementById('random-divide').innerText = (
-    number / Math.random()
-).toFixed(2);
+document.getElementById('section-text').innerHTML =
+    'Het is nu ' +
+    String(dateInfo.getHours()).padStart(2, '0') +
+    ':' +
+    String(dateInfo.getMinutes()).padStart(2, '0') +
+    ':' +
+    String(dateInfo.getSeconds()).padStart(2, '0');
+
+document.getElementById('header-text').innerHTML =
+    'Deze pagina is opgevraagd op ' +
+    dateInfo.getDate() +
+    '-' +
+    (dateInfo.getMonth() + 1) +
+    '-' +
+    dateInfo.getFullYear();

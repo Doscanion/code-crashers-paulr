@@ -1,25 +1,36 @@
-let producten = new Array(
-    'Sleutelhanger',
-    'Bandenpomp',
-    'Ruitenwisservloeistof',
-    'Reddingsvest',
-    'Olie',
-    'Skittles',
-);
-
-let winkelwagen = [
-    producten.slice(1, 2),
-    producten.slice(2, 3),
-    producten.slice(-1),
+const biggestCitiesBenelux = [
+    'Brussel',
+    'Amsterdam',
+    'Rotterdam',
+    'Den Haag',
+    'Antwerpen',
+    'Utrecht',
+    'Gent',
+    'Eindhoven',
+    'Groningen',
+    'Tilburg',
 ];
-winkelwagen = winkelwagen.map(function (number) {
-    return number.toString().substring(0, 3).toUpperCase();
-});
 
-let li = '';
-winkelwagen.forEach(listLi);
-document.getElementById('list').innerHTML = li;
+let a, b, rest;
 
-function listLi(name) {
-    li += '<li>' + name + '</li>';
-}
+[a, b, ...rest] = biggestCitiesBenelux;
+
+document.getElementById(
+    'city',
+).innerHTML = `<p>De grootste steden in de Benelux zijn ${a} en ${b}.</p>`;
+
+const myPets = [
+    'Hond',
+    'Kat',
+    'Konijn',
+    ['Gladhaar cavia', 'Borstel cavia', 'Rex cavia', 'Coronet cavia'],
+];
+
+let hond, kat, konijn, caviaGlad, caviaBorstel, caviaRex, caviaCoronet;
+
+[hond, kat, konijn, caviaGlad, caviaBorstel, caviaRex, caviaCoronet] =
+    myPets.flat(Infinity);
+
+document.getElementById(
+    'pet',
+).innerHTML = `<p>Mijn favoriete huisdieren zijn de ${hond.toLowerCase()}, ${kat.toLowerCase()}, ${konijn.toLowerCase()}, ${caviaGlad.toLowerCase()}, ${caviaBorstel.toLowerCase()}, ${caviaRex.toLowerCase()} en ${caviaCoronet.toLowerCase()}.</p>`;

@@ -1,11 +1,24 @@
-let hondachtigen = ['Hond', 'Wolf', 'Vos', 'Jakhals', 'Olifant'];
-let katachtigen = ['Kat', 'Leeuw', 'Tijger', 'Lynx', 'Poema'];
+let planes = [
+    'Ixalan',
+    'Tarkir',
+    'Ravnica',
+    'Dominaria',
+    'Theros',
+    'Amonkhet',
+    'Mirrodin',
+    'Innistrad',
+];
 
-hondachtigen.pop();
-hondachtigen.push('Coyote');
-katachtigen.push('Luipaard', 'Jaguar');
+planes.unshift('Kaladesh');
+planes.splice(4, 1);
+planes.splice(3, 0, 'Lorwyn');
+planes.sort();
+planes.reverse();
 
-let zoogdieren = hondachtigen.concat(katachtigen);
-zoogdieren.sort();
-zoogdieren.push(prompt('Voeg een dier toe', ''));
-alert(zoogdieren.join('\n'));
+let place = '';
+planes.forEach(placeLi);
+document.getElementById('list').innerHTML = place;
+
+function placeLi(name) {
+    place += '<li>' + name + '</li>';
+}
