@@ -19,8 +19,12 @@ const courses = {
 for (const code in courses) {
     console.log(code);
     document.body.innerHTML += `<h3>${code}</h3>`;
+    var ul = document.createElement('ul');
+    document.body.appendChild(ul);
     for (const les of courses[code]) {
-        document.body.innerHTML += `<li>${les}</li>`;
+        var li = document.createElement('li');
+        li.innerText = les;
+        ul.appendChild(li);
     }
 
     // if (Object.hasOwnProperty.call(courses, code)) {

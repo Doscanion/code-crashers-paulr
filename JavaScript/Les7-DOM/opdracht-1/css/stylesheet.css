@@ -1,0 +1,17 @@
+body {
+	background-color: rgb(255,225,235);
+	display: flex;
+	flex-direction: row;
+}
+section {
+	flex: 1;
+	padding: 20px;
+	box-sizing: border-box;
+}
+input, label {
+	display: block;
+	margin-bottom: 10px;
+}
+form {
+	margin: 40px 0;
+}

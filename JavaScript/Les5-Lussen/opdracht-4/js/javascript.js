@@ -126,8 +126,8 @@ for (let game of games) {
     document.body.innerHTML += `<article>
     <p>${game.name}</p> 
     <div><img src="./img/${game.img}"></div>
-    <p>${game.platform} | ${(game.releaseEU = null
-        ? game.releaseEU
-        : 'Niet uitgebracht')}</p>
+    <p>${game.platform} | ${
+        game.releaseEU !== null ? game.releaseEU : 'Niet uitgebracht'
+    }</p>
     </article>`;
 }

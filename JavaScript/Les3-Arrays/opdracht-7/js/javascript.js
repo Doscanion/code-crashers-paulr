@@ -1,4 +1,8 @@
-const fruits = ['🍎', '', '🍓', '', '🍒', '🍋', '', '🍍', '🍑', '🍇'];
+const fruits = ['🍎', '🍐', '🍓', '🍌', '🍒', '🍋', '🍉', '🍍', '🍑', '🍇'];
+
+delete fruits[6];
+delete fruits[4];
+delete fruits[2];
 
 console.log(fruits);
 

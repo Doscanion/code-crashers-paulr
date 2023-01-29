@@ -18,7 +18,7 @@ function submitForm(event) {
     event.preventDefault();
     if (confirm('Wilt u doorgaan?')) {
         alert('yup');
-        window.location.assign('https://www.google.nl');
+        window.location.assign('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
     } else {
         alert('nope');
         window.location.assign('https://www.google.nl');

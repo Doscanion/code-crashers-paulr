@@ -8,7 +8,6 @@ function makeItalic(inputString) {
     return outputString;
 }
 
-const textBold = makeBold('Javascript');
-const textCursive = makeItalic(textBold);
+const textCursive = makeItalic(makeBold('Javascript'));
 
 document.getElementById('container').innerHTML += `<p>${textCursive}</p>`;

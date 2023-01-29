@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="./js/javascript.js" defer></script>
+        <link rel="stylesheet" href="./styles/style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <section>
+            <form>
+                <label for="tag">Choose the tag</label>
+                <select name="tag" id="tag">
+                    <option value="h1">&lt;h1&gt;</option>
+                    <option value="h2">&lt;h2&gt;</option>
+                    <option value="h3">&lt;h3&gt;</option>
+                    <option value="p">&lt;p&gt;</option>
+                    <option value="blockquote">&lt;blockquote&gt;</option>
+                </select>
+                <label for="text">Text</label>
+                <textarea id="text"></textarea>
+                <input
+                    type="number"
+                    name="font-size"
+                    id="font-size"
+                    min="10"
+                    max="20"
+                />
+                <label for="family">Choose the tag</label>
+                <select name="family" id="family">
+                    <option value="system-ui">system-ui</option>
+                    <option value="cursive">cursive</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="sans-serif">sans-serif</option>
+                    <option value="arial">arial</option>
+                </select>
+                <label for="colorletter">Letter Color</label>
+                <input
+                    type="color"
+                    id="colorletter"
+                    name="colorletter"
+                    value="#000000"
+                />
+                <label for="colorpicker">Backgroundcolor</label>
+                <input
+                    type="color"
+                    id="colorpicker"
+                    name="colorpicker"
+                    value="#000000"
+                />
+            </form>
+            <br />
+            <button id="add">Toevoegen</button>
+            <button id="remove">Verwijder</button>
+            <div id="created-content"></div>
+        </section>
+    </body>
+</html>

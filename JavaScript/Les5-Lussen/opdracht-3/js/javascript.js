@@ -3,16 +3,15 @@ let number = new Array();
 let i = 0;
 
 while (i < 8) {
-    number[i] = Math.floor(Math.random() * 9999 + 1);
+    randomNumber = Math.floor(Math.random() * 9999 + 1);
+    if (randomNumber >= 0 && randomNumber <= 999) {
+        continue;
+    }
+
+    number[i] = randomNumber;
 
     if (number[i] == 666) {
         break;
-    }
-
-    if (number[i] >= 0 && number[i] <= 999) {
-        number.splice(i);
-        i--;
-        continue;
     }
 
     i++;

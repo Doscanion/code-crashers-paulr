@@ -1,0 +1,67 @@
+section {
+  display: flex;
+  gap: 20px;
+}
+
+#plus {
+  display: block;
+  height: 75px;
+  width: 75px;
+  background-image: url(../img/navigation-buttons-s.png);
+  background-position: 0px 0px;
+  background-size: 225px 150px;
+}
+
+#red {
+  display: block;
+  height: 75px;
+  width: 75px;
+  background-image: url(../img/navigation-buttons-s.png);
+  background-position: -75px 0px;
+  background-size: 225px 150px;
+}
+
+#refresh {
+  display: block;
+  height: 75px;
+  width: 75px;
+  background-image: url(../img/navigation-buttons-s.png);
+  background-position: -150px 0px;
+  background-size: 225px 150px;
+}
+
+#plus {
+  display: block;
+  height: 75px;
+  width: 75px;
+  background-image: url(../img/navigation-buttons-s.png);
+  background-position: 0px 0px;
+  background-size: 225px 150px;
+}
+
+#arrow-left {
+  display: block;
+  height: 75px;
+  width: 75px;
+  background-image: url(../img/navigation-buttons-s.png);
+  background-position: 0px -75px;
+  background-size: 225px 150px;
+}
+
+#arrow-right {
+  display: block;
+  height: 75px;
+  width: 75px;
+  background-image: url(../img/navigation-buttons-s.png);
+  background-position: -75px -75px;
+  background-size: 225px 150px;
+}
+
+#info {
+  display: block;
+  height: 75px;
+  width: 75px;
+  background-image: url(../img/navigation-buttons-s.png);
+  background-position: -150px -75px;
+  background-size: 225px 150px;
+}/*# sourceMappingURL=style.css.map */
