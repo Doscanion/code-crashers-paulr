@@ -27,6 +27,8 @@ function addContent() {
 }
 
 document.querySelector('#add').addEventListener('click', function () {
+    addTime = setTimeout(addContent, 2000);
+    addTime = setTimeout(addContent, 4000);
     addTime = setTimeout(addContent, 6000);
 });
 

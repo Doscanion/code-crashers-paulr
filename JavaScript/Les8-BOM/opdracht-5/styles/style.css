@@ -1,6 +1,6 @@
 @font-face {
   font-family: alarmClock;
-  src: url(../alarm-clock.ttf);
+  src: url(../font/alarm-clock.ttf);
 }
 #time {
   font-family: alarmClock;

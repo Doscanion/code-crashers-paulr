@@ -10,7 +10,8 @@ section {
   text-align: right;
 }
 
-#euro {
+#euro,
+#dollar {
   text-align: right;
 }
 

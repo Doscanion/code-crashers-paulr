@@ -1,12 +1,14 @@
 let createdContent = document.querySelector('#created-content');
 
 document.querySelector('#add').addEventListener('click', function () {
-    let selectStart = '<' + document.querySelector('#tag').value + '>';
-    let selectClose = '</' + document.querySelector('#tag').value + '>';
+    let tag = document.querySelector('#tag').value;
     let text = document.querySelector('#text').value;
+    let newContent = document.createElement(tag);
+    let newText = document.createTextNode(text);
+    newContent.appendChild(newText);
     console.log(text);
 
-    createdContent.innerHTML = `${selectStart}${text}${selectClose}`;
+    createdContent.appendChild(newContent);
 });
 
 document.querySelector('#remove').addEventListener('click', function () {
@@ -33,3 +35,4 @@ document.querySelector('#colorpicker').addEventListener('change', function () {
     console.log(this.value);
     createdContent.style.backgroundColor = this.value;
 });
+document.a;

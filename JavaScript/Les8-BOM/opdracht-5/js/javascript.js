@@ -7,7 +7,7 @@ function timeClock() {
         '#time',
     ).innerHTML = `${hours}:${minutes}:${seconds}`;
 }
-
+timeClock();
 let intervalClock = setInterval(timeClock, 1000);
 
 let clock = true;

@@ -10,8 +10,7 @@ cities = [
     'Veluwe',
     'Spijkenisse',
 ];
-cities.sort;
-
+cities.sort();
 for (let i = 0; i < cities.length; i++) {
     let li = document.createElement('li');
     let liText = document.createTextNode(cities[i]);

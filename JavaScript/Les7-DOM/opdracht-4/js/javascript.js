@@ -11,5 +11,5 @@ for (let i = 0; i < bHtml.length; i++) {
 }
 
 document.querySelector('button').addEventListener('click', function () {
-    document.querySelector('p:nth-of-type(2)').style.backgroundColor = 'red';
+    document.querySelector('p:nth-of-type(2)').style.color = 'red';
 });
