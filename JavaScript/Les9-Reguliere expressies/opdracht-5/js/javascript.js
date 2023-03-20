@@ -16,7 +16,7 @@ try {
         throw 'STOP! Het is weekend!';
     }
 } catch (err) {
-    console.error(err);
+    console.warn(err);
 }
 
 createElement(day);

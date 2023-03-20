@@ -1,6 +1,8 @@
 let leaveTime;
 let changeTime;
-let addTime;
+let addTimeOne;
+let addTimeTwo;
+let addTimeThree;
 
 function addLeave() {
     venster = window.open('https://youtu.be/kTp2tYKmftE?t=31');
@@ -27,13 +29,15 @@ function addContent() {
 }
 
 document.querySelector('#add').addEventListener('click', function () {
-    addTime = setTimeout(addContent, 2000);
-    addTime = setTimeout(addContent, 4000);
-    addTime = setTimeout(addContent, 6000);
+    addTimeOne = setTimeout(addContent, 2000);
+    addTimeTwo = setTimeout(addContent, 4000);
+    addTimeThree = setTimeout(addContent, 6000);
 });
 
 document.querySelector('#stop').addEventListener('click', function () {
-    clearTimeout(addTime);
+    clearTimeout(addTimeOne);
+    clearTimeout(addTimeTwo);
+    clearTimeout(addTimeThree);
     clearTimeout(changeTime);
     clearTimeout(leaveTime);
 });

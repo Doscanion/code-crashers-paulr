@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Promise Chains</title>
+        <style>
+            body {
+                font-family: Verdana, sans-serif;
+                background-color: wheat;
+            }
+            section {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+            .blok {
+                background-color: tomato;
+                border: 1px solid black;
+                width: 100px;
+                height: 100px;
+                border-radius: 25px 25px 50px 50px;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <div class="blok"></div>
+            <div class="blok"></div>
+            <div class="blok"></div>
+            <div class="blok"></div>
+            <div class="blok"></div>
+        </section>
+        <h1></h1>
+        <figure>
+            <img src="images/tomato.png" width="600" height="600" />
+        </figure>
+    </body>
+    <script>
+        let promisesDone = 0;
+        const alertPromis = (number) =>
+            number == 2 ? alert('Done with promises') : '';
+        const hellPromise = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                document.querySelector(
+                    '.blok:nth-child(1)',
+                ).style.backgroundColor = 'dodgerblue';
+                resolve();
+            }, 1000);
+        })
+            .then((resolved) => {
+                return new Promise((resolve, reject) => {
+                    setTimeout(() => {
+                        document.querySelector(
+                            '.blok:nth-child(2)',
+                        ).style.backgroundColor = 'khaki';
+                        resolve();
+                    }, 600);
+                });
+            })
+            .then((resolved) => {
+                return new Promise((resolve, reject) => {
+                    setTimeout(() => {
+                        document.querySelector(
+                            '.blok:nth-child(3)',
+                        ).style.backgroundColor = 'mediumseagreen';
+                        resolve();
+                    }, 400);
+                });
+            })
+            .then((resolved) => {
+                return new Promise((resolve, reject) => {
+                    setTimeout(() => {
+                        document.querySelector(
+                            '.blok:nth-child(4)',
+                        ).style.backgroundColor = 'silver';
+                        resolve();
+                    }, 200);
+                });
+            })
+            .then((resolved) => {
+                return new Promise((resolve, reject) => {
+                    setTimeout(() => {
+                        document.querySelector(
+                            '.blok:nth-child(5)',
+                        ).style.backgroundColor = 'violet';
+                        resolve();
+                    }, 400);
+                });
+            })
+            .then((resolved) => {
+                return new Promise((resolve, reject) => {
+                    setTimeout(() => {
+                        document.querySelector('h1').innerHTML =
+                            'You say tomato, but I say Kenny';
+                        resolve();
+                    }, 600);
+                });
+            })
+            .then((resolved) => {
+                return new Promise((resolve, reject) => {
+                    setTimeout(() => {
+                        document.querySelector('img').src = 'images/kenny.png';
+                        resolve(1);
+                    }, 1000);
+                });
+            })
+            .then((resolved) => {
+                promisesDone += resolved;
+                alertPromis(promisesDone);
+            });
+
+        // .then((resolved)=>{
+        // 	return new Promise((resolve, reject)=>{
+
+        // 	})
+        // })
+        const doomPromise = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                console.log('You say yes');
+
+                resolve();
+            }, 1500);
+        })
+            .then((resolved) => {
+                return new Promise((resolve, reject) => {
+                    setTimeout(() => {
+                        console.warn('I say no');
+                        resolve();
+                    }, 1000);
+                });
+            })
+            .then((resolved) => {
+                return new Promise((resolve, reject) => {
+                    setTimeout(() => {
+                        console.log('You say stop');
+                        resolve();
+                    }, 1500);
+                });
+            })
+            .then((resolved) => {
+                return new Promise((resolve, reject) => {
+                    setTimeout(() => {
+                        console.warn('I say go go go');
+                        resolve(1);
+                    }, 1000);
+                });
+            })
+            .then((resolved) => {
+                promisesDone += resolved;
+                alertPromis(promisesDone);
+            });
+    </script>
+</html>

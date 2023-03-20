@@ -1,0 +1,61 @@
+body {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 18px;
+}
+#container {
+	max-width: 900px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+}
+section {
+	flex: 1;
+	margin: 0 20px;
+}
+section:last-child {
+	flex: 2;
+}
+section>button, section>div {
+	width: 100%;
+	border: 2px solid black;
+	padding: 0;
+	margin-bottom: 5px;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+section>button {
+	height: 50px;
+	cursor: pointer;
+}
+section>div {
+	background-color: lightgrey;
+	height: 50px;
+	line-height: 50px;
+}
+section>div:nth-child(odd){
+	height: 105px;
+	line-height: 105px;
+}
+
+.row-1{
+	background-color: mediumpurple;
+}
+.row-2{
+	background-color: lightseagreen;
+}
+.row-3{
+	background-color: wheat;
+}
+.row-4{
+	background-color: deepskyblue;
+}
+.row-5{
+	background-color: orangered;
+}
+.row-6{
+	background-color: plum;
+}
+.row-7{
+	background-color: olivedrab;
+}

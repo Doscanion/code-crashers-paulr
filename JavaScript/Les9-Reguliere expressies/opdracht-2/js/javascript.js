@@ -14,6 +14,16 @@ document.querySelector('button').addEventListener('click', function () {
         document.querySelector('#form').appendChild(falseNumber);
         console.warn('fout');
     } else {
+        if (
+            document
+                .querySelector('#form')
+                .contains(document.querySelector('p'))
+        ) {
+            document
+                .querySelector('#form')
+                .removeChild(document.querySelector('p'));
+        }
+
         console.log('yup');
     }
 });

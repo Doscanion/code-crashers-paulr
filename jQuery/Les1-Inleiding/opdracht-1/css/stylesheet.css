@@ -1,0 +1,16 @@
+body {
+	background-color: yellowgreen;
+	background-image: url("../images/grass.jpg");
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 20px;
+}
+#container {
+	max-width: 800px;
+	padding: 40px;
+	margin: 0 auto;
+	background-color: rgba(225,255,150, 0.7);
+}
+img {
+	max-width: 100%;
+	height: auto;
+}

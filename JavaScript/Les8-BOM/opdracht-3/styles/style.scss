@@ -9,39 +9,33 @@ section {
     height: 75px;
     width: 75px;
     background-size: 225px 150px;
+    background-image: url(../img/navigation-buttons-s.png);
 }
 
 #plus {
-    background-image: url(../img/navigation-buttons-s.png);
     background-position: 0px 0px;
 }
 
 #red {
-    background-image: url(../img/navigation-buttons-s.png);
     background-position: -75px 0px;
 }
 
 #refresh {
-    background-image: url(../img/navigation-buttons-s.png);
     background-position: -150px 0px;
 }
 
 #plus {
-    background-image: url(../img/navigation-buttons-s.png);
     background-position: 0px 0px;
 }
 
 #arrow-left {
-    background-image: url(../img/navigation-buttons-s.png);
     background-position: 0px -75px;
 }
 
 #arrow-right {
-    background-image: url(../img/navigation-buttons-s.png);
     background-position: -75px -75px;
 }
 
 #info {
-    background-image: url(../img/navigation-buttons-s.png);
     background-position: -150px -75px;
 }

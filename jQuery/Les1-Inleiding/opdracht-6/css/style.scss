@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+}
+
+header {
+    height: 50px;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    background-color: blue;
+    padding-left: 20px;
+}
+
+.header-block {
+    width: 100px;
+
+    position: relative;
+    padding-left: 4px;
+    span {
+        height: 100%;
+        overflow: auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: lightblue;
+    }
+    ul {
+        display: none;
+        position: absolute;
+        background-color: blue;
+        margin: auto;
+        padding: 0;
+        li {
+            width: 100px;
+            margin: auto;
+            list-style: none;
+            text-align: left;
+            padding: 12px;
+        }
+    }
+}
+
+section {
+    height: 800px;
+    background-color: antiquewhite;
+}
+
+footer {
+    height: 200px;
+    background-color: beige;
+}
