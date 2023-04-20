@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>jQuery DOM: posities</title>
+        <link rel="stylesheet" href="css/stylesheet.css" />
+        <script src="./js/jquery-3.6.4.js" defer></script>
+        <script src="./js/javascript.js" defer></script>
+    </head>
+    <body>
+        <div id="container">
+            <header></header>
+            <nav></nav>
+            <main>
+                <section>
+                    <video controls>
+                        <source
+                            src="video/hello-darkness-my-old-friend.mp4"
+                            type="video/mp4"
+                        />
+                    </video>
+                </section>
+                <section>
+                    <p>
+                        <ins
+                            >Positie van video berekend t.o.v. het scherm met
+                            <strong>.offset()</strong></ins
+                        >
+                    </p>
+                    <p>X-coördinaat: <span id="offsetx"></span></p>
+                    <p>Y-coördinaat: <span id="offsety"></span></p>
+                    <br />
+                    <p>
+                        <ins
+                            >Positie van video berekend t.o.v. parent element
+                            met <strong>.position()</strong></ins
+                        >
+                    </p>
+                    <p>X-coördinaat: <span id="positionx"></span></p>
+                    <p>Y-coördinaat: <span id="positiony"></span></p>
+                </section>
+            </main>
+            <footer></footer>
+        </div>
+    </body>
+</html>

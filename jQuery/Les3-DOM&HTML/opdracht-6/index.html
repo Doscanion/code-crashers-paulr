@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="./js/jquery-3.6.4.js" defer></script>
+        <script src="./js/javascript.js" defer></script>
+        <link rel="stylesheet" href="./styles/style.css" />
+        <script
+            src="https://kit.fontawesome.com/011262279e.js"
+            crossorigin="anonymous"
+        ></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <section>
+            <div id="euro-container">
+                <h3>Euro's</h3>
+                <input
+                    type="number"
+                    id="euro"
+                    name="euro"
+                    pattern="^\d*(\.\d{0,2})?$"
+                    min="0.00"
+                    value="0.00"
+                />
+                <i class="fa-solid fa-angle-left"></i>
+            </div>
+            <div id="dollar-container">
+                <h3>Dollars</h3>
+                <i class="fa-solid fa-angle-right"></i
+                ><input
+                    type="number"
+                    id="dollar"
+                    name="dollar"
+                    pattern="^\d*(\.\d{0,2})?$"
+                    min="0.00"
+                    value="0.00"
+                />
+            </div>
+        </section>
+    </body>
+</html>

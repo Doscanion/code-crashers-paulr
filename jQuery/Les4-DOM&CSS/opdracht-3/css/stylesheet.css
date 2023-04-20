@@ -1,0 +1,36 @@
+body {
+    font-size: 20px;
+    font-family: Arial, Verdana, sans-serif;
+    background-color: #d7be86;
+}
+#container {
+    background-color: white;
+    max-width: 1000px;
+    min-height: 600px;
+    margin: 0 auto;
+}
+header {
+    height: 200px;
+    background-color: #775438;
+}
+nav {
+    height: 50px;
+    background-color: #b58646;
+}
+main {
+    min-height: 400px;
+    background-color: #f0e6be;
+    position: relative;
+}
+section {
+    min-height: 100px;
+    padding: 50px;
+}
+footer {
+    height: 40px;
+    background-color: #b58646;
+}
+img {
+    border: 10px solid black;
+    padding: 20px;
+}

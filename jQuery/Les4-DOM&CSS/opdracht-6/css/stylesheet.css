@@ -1,0 +1,30 @@
+body {
+	font-size: 20px;
+	font-family: Calibri, sans-serif;
+	background-color: lightgrey;
+	background-image: url("https://lolstatic-a.akamaihd.net/lolkit/1.1.6/resources/images/bg-default.jpg");
+}
+#container {
+	background-color: #dedede;
+	max-width: 1240px;
+	min-height: 600px;
+	margin: 0 auto;
+}
+section {
+	padding: 50px;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+section figure {
+	max-width: 300px;
+	height: auto;
+}
+section figcaption {
+	text-align: center;
+}
+section img {
+	width: 100%;
+	height: 100%;
+}

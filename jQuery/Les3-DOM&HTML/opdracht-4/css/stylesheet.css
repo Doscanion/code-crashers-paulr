@@ -1,0 +1,37 @@
+html, body {
+	font-size: 18px;
+	font-family: Georgia, Times, serif;
+	color: rgb(50,50,50);
+	padding: 0;
+	margin: 0;
+}
+#container {
+	max-width: 1000px;
+	min-height: 400px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+}
+h2 {
+	font-size: 1.2em;
+}
+section {
+	flex: 1;
+	padding: 50px;
+}
+section:first-child {
+	background-color: khaki;
+}
+section:first-child span {
+	cursor: pointer;
+}
+section:last-child span {
+	cursor: crosshair;
+}
+section span:hover {
+	color: brown;
+	text-shadow: 1px 1px 1px grey;
+}
+section:last-child {
+	background-color: navajowhite;
+}

@@ -1,0 +1,16 @@
+#container {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+button {
+	width: 200px;
+	height: 100px;
+	display: block;
+	margin-bottom: 20px;
+	font-size: 2em;
+	box-shadow: 2px 2px 2px lightgrey;
+}
+img {
+	border: 1px solid darkgrey;
+	box-shadow: 2px 2px 2px lightgrey;
+}

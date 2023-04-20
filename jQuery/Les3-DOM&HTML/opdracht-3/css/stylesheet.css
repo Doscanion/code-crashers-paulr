@@ -1,0 +1,23 @@
+body {
+	font-size: 20px;
+	font-family: Calibri, sans-serif;
+	color: rgb(50,50,50);
+}
+#container {
+	width: 960px;
+	min-height: 600px;
+	margin: 0 auto;
+}
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+th, td {
+	padding: 10px;
+}
+tr:nth-child(even)>*:nth-child(even), tr:nth-child(odd)>*:nth-child(odd){
+	background-color: lightgreen;
+}
+tr:nth-child(odd)>*:nth-child(even), tr:nth-child(even)>*:nth-child(odd){
+	background-color: lightcyan;
+}

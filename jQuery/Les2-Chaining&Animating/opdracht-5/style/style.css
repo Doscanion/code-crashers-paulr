@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(144, 238, 144);
+}
+
+#block {
+  margin-top: 20px;
+  background-color: #e9967a;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border: 5px solid #fa8072;
+}/*# sourceMappingURL=style.css.map */

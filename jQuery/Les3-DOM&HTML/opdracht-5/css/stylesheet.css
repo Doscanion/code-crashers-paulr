@@ -1,0 +1,21 @@
+body {
+	font-size: 20px;
+	font-family: Calibri, sans-serif;
+	color: rgb(50,50,50);
+}
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+th, td {
+	width: 100px;
+	height: 60px;
+	padding: 10px;
+	text-align: center;
+}
+tr:nth-child(even)>*:nth-child(even), tr:nth-child(odd)>*:nth-child(odd){
+	background-color: lightblue;
+}
+tr:nth-child(odd)>*:nth-child(even), tr:nth-child(even)>*:nth-child(odd){
+	background-color: pink;
+}
