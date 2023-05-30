@@ -1,0 +1,57 @@
+[{
+	"_id": 0,
+	"product_name": "Espresso Golden",
+	"supplier": "Wooden",
+	"quantity": 0,
+	"unit_cost": "99.99",
+    "pic": "Espresso-Golden.png"
+}, {
+	"_id": 1,
+	"product_name": "Nedlog Esto",
+	"supplier": "Esto",
+	"quantity": 23,
+	"unit_cost": "88.99",
+    "pic": "Nedlog-Esto.png"
+}, {
+	"_id": 2,
+	"product_name": "Logned Esto",
+	"supplier": "Esto",
+	"quantity": 0,
+	"unit_cost": "120.05",
+    "pic": "Logned-Esto.png"
+}, {
+	"_id": 3,
+	"product_name": "Liop Machine",
+	"supplier": "Machine",
+	"quantity": 22,
+	"unit_cost": "45.99",
+    "pic": "Liop-Machine.png"
+}, {
+	"_id": 4,
+	"product_name": "Bean Gold",
+	"supplier": "Mountain Ferlk",
+	"quantity": 26,
+	"unit_cost": "55.55",
+    "pic": "Bean-Gold.png"
+}, {
+	"_id": 5,
+	"product_name": "BeanMachine",
+	"supplier": "Rotsfert",
+	"quantity": 67,
+	"unit_cost": "67.50",
+    "pic": "BeanMachine.png"
+}, {
+	"_id": 6,
+	"product_name": "Festo Terrasa",
+	"supplier": "Terrasa",
+	"quantity": 88,
+	"unit_cost": "89.99",
+    "pic": "Festo-Terrasa.png"
+}, {
+	"_id": 7,
+	"product_name": "Tokko Sata",
+	"supplier": "Tokko",
+	"quantity": 13,
+	"unit_cost": "68.74",
+    "pic": "Tokko-Sata.png"
+}]
