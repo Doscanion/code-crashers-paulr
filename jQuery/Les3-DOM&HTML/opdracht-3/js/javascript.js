@@ -9,7 +9,7 @@ $('button').on('click', function () {
     let age = prompt('Your age', '');
     let city = prompt('Your city', '');
 
-    if (name == null || age == null || city == null) {
+    if (name == '' || age == '' || city == '') {
         alert('Fill in all the prompts');
     } else {
         $('table').append(

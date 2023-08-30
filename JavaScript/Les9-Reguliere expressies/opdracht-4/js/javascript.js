@@ -34,7 +34,7 @@ document.querySelector('button').addEventListener('click', function () {
     }
 
     const dateValue = document.querySelector('#date').value;
-    const patternDate = /\d{2}\-\d{2}$|\d{,2}\-[a-z]{3,}/;
+    const patternDate = /\d{2}\-\d{2}$|\d{1,2}\s[a-z]{3,}/; 
     if (patternDate.test(dateValue) !== true) {
         if (
             !document
@@ -62,10 +62,10 @@ document.querySelector('button').addEventListener('click', function () {
                 .removeChild(document.querySelector('#date-warn'));
         }
     }
-
+    //|[A-Z]?[a-z]+\s{1}\d[A-Z]?[a-z]$|[A-Z]?[a-z]+\s{1}\d\-[A-Z]?[a-z]$
     const houseValue = document.querySelector('#street').value;
     const patternHouse =
-        /[A-Z]?[a-z]+\s{1}\d$|[A-Z]?[a-z]+\s{1}\d[A-Z]$|[A-Z]?[a-z]+\s{1}\d\-[A-Z]$/;
+        /[A-Z]?[a-z]+\s{1}\d\-?[A-Z]?[a-z]?$/;
     if (patternHouse.test(houseValue) !== true) {
         if (
             !document
@@ -141,7 +141,7 @@ document.querySelector('button').addEventListener('click', function () {
             falsePassword.appendChild(falsePasswordText);
             document.querySelector('#form').appendChild(falsePassword);
         }
-        console.warn('fout web');
+        console.warn('fout password');
     } else {
         if (
             document

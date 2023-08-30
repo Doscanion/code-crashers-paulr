@@ -6,7 +6,7 @@ const config = {
 
 document.querySelector("button").addEventListener("click", function () {
     console.log('test')
-    fetch("info.json", config)
+    fetch("https://codecrashersnl.github.io/json/users.json.", config)
   .then(response => response.json())
   .then(data => {
     console.log(data);

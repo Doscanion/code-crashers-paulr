@@ -1,0 +1,6 @@
+'servlet'   was niet correct getypt "servlet"
+"cachePackageTagsTrack": 200    moest nog een komma aan het eind
+"dataStoreLogFile";     De ; vervangen voor :
+"init-param": [     De [ vervangen voor {
+"init-param"    De : miste
+"betaServer": true}  Er na miste nog een }

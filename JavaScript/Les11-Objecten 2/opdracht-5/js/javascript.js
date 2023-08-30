@@ -20,19 +20,19 @@ function Movie(name, releaseDate, genre, directors, writers, actors) {
     if (Array.isArray(directors) && directors.length > 0) {
         this.drectors = directors;
     } else {
-        throw new TypeError('Must have a string');
+        throw new TypeError('Must be array with at least one string');
     }
 
     if (Array.isArray(writers) && writers.length > 0) {
         this.writers = writers;
     } else {
-        throw new TypeError('Must have a string');
+        throw new TypeError('Must be array with at least one string');
     }
 
     if (Array.isArray(actors) && actors.length > 0) {
         this.actors = actors;
     } else {
-        throw new TypeError('Must have a string');
+        throw new TypeError('Must be array with at least one string');
     }
 }
 
