@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+.title-family {
+  font-family: "Times New Roman", Times, serif;
+}
+
 body {
   margin: 0;
   font-size: 14px;
@@ -464,11 +468,51 @@ nav a:hover {
   display: grid;
   grid-template-columns: 45% 55%;
 }
-.deal-time-container img {
+.deal-time-container img:nth-child(2) {
   height: auto;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+#deal-time-offer {
+  display: grid;
+  gap: 10px;
+}
+
+#deal-time-offer-timer {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+#deal-time-offer-timer span {
+  margin: auto;
+}
+#deal-time-offer-timer span:nth-child(1) {
+  margin: unset;
+  text-align: left;
+}
+
+#deal-time-small-text {
+  font-size: 10px;
+  color: #b9a16b;
+}
+#deal-time-small-text img {
+  padding-bottom: 3px;
+}
+
+#deal-time-offer-text {
+  color: gray;
+  font-size: 12px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+#deal-time-offer-text span {
+  margin: unset;
+  text-align: right;
+}
+#deal-time-offer-text span:nth-child(1) {
+  margin: unset;
+  text-align: left;
 }
 
 .deal-time-info {

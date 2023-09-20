@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+.title-family{
+    font-family: "Times New Roman", Times, serif;
+}
+
 body {
     margin: 0;
     font-size: 14px;
@@ -481,11 +485,54 @@ nav {
     width: 100%;
     display: grid;
     grid-template-columns: 45% 55%;
-    img {
+    img:nth-child(2) {
         height: auto;
         width: 100%;
         object-fit: cover;
     }
+}
+
+#deal-time-offer{
+    display: grid;
+    gap: 10px;
+}
+
+#deal-time-offer-timer{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    span{
+        margin: auto;
+    }
+
+    span:nth-child(1){
+        margin: unset;
+        text-align: left;
+    }
+}
+
+#deal-time-small-text{
+    font-size: 10px;
+    color: #b9a16b;
+    img{
+        padding-bottom: 3px;
+    }
+}
+
+#deal-time-offer-text{
+    color: gray;
+    font-size: 12px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    span{
+        margin: unset;
+        text-align: right;
+    }
+
+    span:nth-child(1){
+        margin: unset;
+        text-align: left;
+    }
+
 }
 
 .deal-time-info {
