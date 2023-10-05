@@ -38,8 +38,14 @@ function addGames(newGames) {
 }
 
 async function htmlGames(arraytext) {
-    await addGames(arraytext);
-    getGames();
+    try{
+        await addGames(arraytext);
+        getGames();
+    }
+    catch(e){
+        console.log('Nope')
+    }
+    
 }
 
 htmlGames([

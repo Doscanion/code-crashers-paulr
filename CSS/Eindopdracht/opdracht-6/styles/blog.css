@@ -51,6 +51,7 @@ main {
 
 .blog-post-items {
   margin: auto;
+  font-weight: bold;
   text-align: center;
 }
 
@@ -61,8 +62,23 @@ main {
   padding-bottom: 5px;
 }
 
+.progress-bar {
+  margin: auto;
+  height: 10px;
+  max-width: 200px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.progress-bar-fill {
+  width: 50%;
+  height: 100%;
+  background-color: black;
+}
+
 .blog-more {
-  font-weight: bold;
+  margin-top: 14px;
 }
 
 @media screen and (max-width: 700px) {

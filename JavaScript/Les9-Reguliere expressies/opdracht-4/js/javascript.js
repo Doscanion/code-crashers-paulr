@@ -65,7 +65,7 @@ document.querySelector('button').addEventListener('click', function () {
     //|[A-Z]?[a-z]+\s{1}\d[A-Z]?[a-z]$|[A-Z]?[a-z]+\s{1}\d\-[A-Z]?[a-z]$
     const houseValue = document.querySelector('#street').value;
     const patternHouse =
-        /[A-Z]?[a-z]+\s{1}\d\-?[A-Z]?[a-z]?$/;
+        /[A-Z]?[a-z]+\s{1}\d{1,2}\-?[A-Z]?[a-z]?$/;
     if (patternHouse.test(houseValue) !== true) {
         if (
             !document

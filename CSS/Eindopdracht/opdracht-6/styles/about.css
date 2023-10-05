@@ -20,7 +20,10 @@ main {
 
 .about-us-img-extra {
   height: auto;
-  width: 50%;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .about-us-main {
@@ -31,9 +34,8 @@ main {
 }
 
 .main-text-extra {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .company-info {
@@ -41,7 +43,6 @@ main {
   width: 90%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 5%;
 }
 
 @media screen and (max-width: 1000px) {
