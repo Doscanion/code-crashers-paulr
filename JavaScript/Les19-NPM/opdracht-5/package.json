@@ -1,0 +1,17 @@
+{
+  "name": "opdracht-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "browserify": "^17.0.0"
+  }
+}
