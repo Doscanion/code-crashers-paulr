@@ -1,0 +1,34 @@
+a:where(:not(:hover)) {
+    text-decoration: none;
+}
+
+nav a {
+    text-decoration: underline;
+}
+
+/* ^ TEST */
+
+@custom-selector  :--titel h1, h2, h3, h4;
+
+:--titel {
+    font-size: 30;
+    color: red;
+}
+
+
+p:has(> span){
+    color: green;
+}
+
+p{
+    font-size: 14px;
+
+    span {
+        text-decoration: underline;
+    }
+}
+
+body{
+    width: calc(500px * sin(45deg));
+}
+

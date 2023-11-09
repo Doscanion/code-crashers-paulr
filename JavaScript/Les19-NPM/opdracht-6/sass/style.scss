@@ -1,0 +1,38 @@
+$theme-color: rgb(86, 41, 158);
+
+body {
+	font-family: Verdana, Arial, sans-serif;
+	background-color: invert($theme-color);
+}
+
+#container {
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: $theme-color;
+}
+
+header, section, footer {
+	padding: 20px 40px;
+}
+
+header {
+	background-color: scale-color($theme-color, $lightness: -30%);
+	
+	h1 {
+		color: scale-color(invert($theme-color), $lightness: 70%);
+	}
+}
+
+section {
+	p:last-child {
+		font-size: 0.8em;
+	}
+	
+	a {
+		color: scale-color(invert($theme-color), $lightness: -50%);
+	}
+}
+
+footer {
+	background-color: scale-color($theme-color, $lightness: 50%);
+}

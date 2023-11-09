@@ -1,0 +1,35 @@
+a:where(:not(:hover)) {
+    -webkit-text-decoration: none;
+    text-decoration: none;
+}
+
+nav a {
+    -webkit-text-decoration: underline;
+    text-decoration: underline;
+}
+
+/* ^ TEST */
+
+h1, h2, h3, h4 {
+    font-size: 30;
+    color: red;
+}
+
+
+p:has(> span){
+    color: green;
+}
+
+p{
+    font-size: 14px;
+}
+
+p span {
+        -webkit-text-decoration: underline;
+        text-decoration: underline;
+    }
+
+body{
+    width: 353.55339px;
+}
+
