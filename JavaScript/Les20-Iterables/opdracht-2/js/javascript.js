@@ -16,8 +16,10 @@ document.querySelectorAll("figure").forEach((album) => {
 			let currentValue = artistMap.get(song);
 			let newValue = currentValue + 1;
 			artistMap.set(song, newValue);
+
 			console.log("bestaat");
 			console.log(artistMap);
+			album.querySelector("figcaption").innerHTML = song.name + " - " + newValue;
 		} else {
 			console.log("nope");
 		}
