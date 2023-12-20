@@ -1,0 +1,52 @@
+form {
+  display: table;
+}
+
+.form-row {
+  display: table-row;
+}
+
+label,
+input {
+  display: table-cell;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+#tables {
+  width: 880px;
+}
+
+table {
+  margin-top: 20px;
+}
+
+#tooltip {
+  background: #333;
+  color: white;
+  font-weight: bold;
+  padding: 4px 8px;
+  font-size: 13px;
+  border-radius: 4px;
+  display: none;
+}
+
+#tooltip[data-show] {
+  display: block;
+}/*# sourceMappingURL=style.css.map */

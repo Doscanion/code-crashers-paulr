@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script type="module" src="./js/javascript.js" defer></script>
+    <title>Javascript Prototypes 3</title>
+</head>
+<body>
+    <div id="container">
+        <div class="user-form">
+            <p>Type gebruiker</p>
+            <select id="select-box">
+                <option selected value="admin">Admin</option>
+                <option value="user">User</option>
+            </select>
+            <form id="form" action="#">
+                <div id="user" class="form-row">
+                    <label for="Gebruikersnaam">Gebruikersnaam</label>
+                    <input type="text" id="gebruikersnaam" name="gebruikersnaam">
+                </div>
+                <div id="auth" class="form-row">
+                    <label for="Authenticatieniveau">Authenticatieniveau</label>
+                    <input type="number" id="authenticatieniveau" name="authenticatieniveau">
+                </div>
+            </form>
+            <button id="button">Gebruiker toevoegen</button>
+        </div>
+        <div id="tables">
+            <table id="admin-table">
+                <tr>
+                    <th>Gerbuikernaam</th>
+                    <th>Authenticatieniveau</th>
+                </tr>
+            </table>
+            <table id="user-table">
+                <tr>
+                    <th>Gerbuikernaam</th>
+                    <th>Voornaam</th>
+                    <th>Achternaam</th>
+                    <th>Locatie</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
