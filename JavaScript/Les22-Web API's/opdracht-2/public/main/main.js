@@ -8,7 +8,7 @@ const options = {
 };
 let movies;
 
-fetch("https://api.themoviedb.org/3/tv/top_rated?language=en-US&page=1", options)
+fetch("https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1", options)
 	.then((response) => response.json())
 	.then((response) => {
 		console.log(response);
@@ -28,8 +28,14 @@ function topMovies() {
 		divMovie.classList.add("movies-info");
 
 		let name = document.createElement("p");
-		let nameText = document.createTextNode(movies.results[key].name);
+		name.classList.add("movie-title");
+		let nameText = document.createTextNode(movies.results[key].title);
 		name.appendChild(nameText);
+
+		name.addEventListener("click", function () {
+			movieFetch(movies.results[key].id);
+		});
+
 		divMovie.appendChild(name);
 
 		let img = document.createElement("img");
@@ -44,27 +50,25 @@ function topMovies() {
 	document.body.appendChild(divMovies);
 }
 
-// let movieDetails;
-// fetch("https://api.themoviedb.org/3/movie/502356?language=nl-NL", options)
-// 	.then((response) => response.json())
-// 	.then((response) => {
-// 		movieDetails = response;
-// 		console.log(response);
-// 		movie();
-// 	})
-// 	.catch((err) => console.error(err));
-
-// let credits;
-// fetch("https://api.themoviedb.org/3/movie/502356/credits?language=en-US", options)
-// 	.then((response) => response.json())
-// 	.then((response) => {
-// 		credits = response;
-// 		console.log(response);
-// 		movieCast();
-// 	})
-// 	.catch((err) => console.error(err));
+let movieDetails;
+let credits;
+function movieFetch(movieId) {
+	console.log(`${movieId}`);
+	fetch(`https://api.themoviedb.org/3/movie/${movieId}?language=nl-NL`, options)
+		.then((response) => response.json())
+		.then((response) => {
+			movieDetails = response;
+			console.log(response);
+			movie();
+		})
+		.catch((err) => console.error(err));
+}
 
 function movie() {
+	if (document.querySelector(".movie")) {
+		document.querySelector(".movie").remove();
+		console.log("delete");
+	}
 	console.log(movieDetails);
 	let name = movieDetails.title;
 	let tagline = movieDetails.tagline;
@@ -117,9 +121,23 @@ function movie() {
 	divMovie.appendChild(divMovieInfo);
 	divMovie.appendChild(divMovieImg);
 	document.body.appendChild(divMovie);
+
+	fetch(`https://api.themoviedb.org/3/movie/${movieDetails.id}/credits?language=nl-NL`, options)
+		.then((response) => response.json())
+		.then((response) => {
+			credits = response;
+			console.log(response);
+			movieCast();
+		})
+		.catch((err) => console.error(err));
 }
 
 function movieCast() {
+	if (document.querySelector(".credits")) {
+		document.querySelector(".credits").remove();
+		console.log("delete");
+	}
+	console.log(credits);
 	let divCast = document.createElement("div");
 	divCast.classList.add("credits");
 
