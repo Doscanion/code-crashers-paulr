@@ -5,6 +5,10 @@
     display: flex;
 }
 
+p{
+    margin-top: 5px;
+}
+
 .list{
     align-self: flex-start;
     border: 1px solid black;
@@ -41,4 +45,19 @@
     border-radius: 5px;
     background-color: azure;
     margin: 5px;
+}
+
+.labels-container{
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    gap: 10px;
+    height: 30px;
+    
+}
+
+.label{
+    border-radius: 10px;
 }
