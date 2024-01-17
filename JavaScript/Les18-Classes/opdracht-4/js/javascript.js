@@ -9,11 +9,19 @@ class Flower {
 		this.color = color;
 	}
 
-	set species(species) {}
-	get species() {}
+	set species(species) {
+		this.species = species;
+	}
+	get species() {
+		return this.species;
+	}
 
-	set color(color) {}
-	get color() {}
+	set color(color) {
+		this.color = color;
+	}
+	get color() {
+		return this.color;
+	}
 }
 
 let flowerOne = new Flower("paardenbloem", "geel");

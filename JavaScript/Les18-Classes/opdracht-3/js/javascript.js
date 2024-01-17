@@ -48,15 +48,6 @@ function deleteInput(id) {
 	document.getElementById(id).parentNode.removeChild(document.getElementById(id));
 }
 
-// if (document.querySelector('username-table')) {
-//     console.log('bestaat')
-//     if (document.querySelector('username-table').value == document.querySelector('#gebruikersnaam').value) {
-//         alert('Gebruikersnaam moet unique zijn')
-//     } else{
-
-//     }
-// }
-
 document.querySelector("#button").addEventListener("click", function () {
 	let user = document.querySelector("#gebruikersnaam").value;
 	if (document.getElementById(user)) {
@@ -113,6 +104,10 @@ class User {
 	constructor(username) {
 		this.#username = username;
 	}
+
+	get username() {
+		return this.#username;
+	}
 }
 
 class Admin extends User {
@@ -131,46 +126,17 @@ class Admin extends User {
 }
 
 class Customer extends User {
-	#username;
 	#firstName;
 	#lastName;
 	#location;
 	constructor(username, firstName, lastName, location) {
 		super(username);
-		this.#username = username;
 		this.#firstName = firstName;
 		this.#lastName = lastName;
 		this.#location = location;
 	}
+
 	get customer() {
-		return this.#username + " " + this.#firstName + " " + this.#lastName + " " + this.#location;
+		return this.username + " " + this.#firstName + " " + this.#lastName + " " + this.#location;
 	}
 }
-
-// function Admin(username, auth) {
-// 	this.auth = auth;
-// 	User.call(this, username);
-// }
-
-// function Customer(username, firstName, lastName, location) {
-// 	this.firstName = firstName;
-// 	this.lastName = lastName;
-// 	this.location = location;
-// 	User.call(this, username);
-// }
-
-// function User(username) {
-// 	this.username = username;
-// }
-
-// Admin.prototype = Object.create(User.prototype);
-// Customer.prototype = Object.create(User.prototype);
-
-// const userAdmin = new Admin('JPaul', 1)
-// const userCustomer = new Customer('Revgew', 'Hans', 'Aldak', 'Verweg')
-
-// console.log(userAdmin);
-// console.log(userCustomer);
-
-// console.log(userAdmin instanceof User, userAdmin instanceof Admin);
-// console.log(userCustomer instanceof User, userCustomer instanceof Customer);

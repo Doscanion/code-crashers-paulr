@@ -48,15 +48,6 @@ function deleteInput(id) {
 	document.getElementById(id).parentNode.removeChild(document.getElementById(id));
 }
 
-// if (document.querySelector('username-table')) {
-//     console.log('bestaat')
-//     if (document.querySelector('username-table').value == document.querySelector('#gebruikersnaam').value) {
-//         alert('Gebruikersnaam moet unique zijn')
-//     } else{
-
-//     }
-// }
-
 document.querySelector("#button").addEventListener("click", function () {
 	let user = document.querySelector("#gebruikersnaam").value;
 	if (document.getElementById(user)) {
@@ -147,7 +138,7 @@ class Admin extends User {
 	}
 
 	static fromCustomer(customerUsername, auth) {
-		return new Admin(customerUsername, auth);
+		return new Admin(customerUsername.getUsername(), auth);
 	}
 }
 
@@ -170,46 +161,18 @@ class Customer extends User {
 	}
 
 	static fromAdmin(adminUsername, firstName, lastName, location) {
-		return new Customer(adminUsername, firstName, lastName, location);
+		return new Customer(adminUsername.getUsername(), firstName, lastName, location);
 	}
 }
 
 let testCustomer = new Customer("customer", "naar", "admin", "gelukt?");
 console.log(testCustomer);
 console.log(testCustomer.getName);
-testCustomer = Admin.fromCustomer(testCustomer.getName, 1);
+testCustomer = Admin.fromCustomer(testCustomer, 1);
 console.log(testCustomer);
 
 let testAdmin = new Admin("admin", 1);
 console.log(testAdmin);
 console.log(testAdmin.getName);
-testAdmin = Customer.fromAdmin(testAdmin.getName, "naar", "customer", "gelukt");
+testAdmin = Customer.fromAdmin(testAdmin, "naar", "customer", "gelukt");
 console.log(testAdmin);
-
-// function Admin(username, auth) {
-// 	this.auth = auth;
-// 	User.call(this, username);
-// }
-
-// function Customer(username, firstName, lastName, location) {
-// 	this.firstName = firstName;
-// 	this.lastName = lastName;
-// 	this.location = location;
-// 	User.call(this, username);
-// }
-
-// function User(username) {
-// 	this.username = username;
-// }
-
-// Admin.prototype = Object.create(User.prototype);
-// Customer.prototype = Object.create(User.prototype);
-
-// const userAdmin = new Admin('JPaul', 1)
-// const userCustomer = new Customer('Revgew', 'Hans', 'Aldak', 'Verweg')
-
-// console.log(userAdmin);
-// console.log(userCustomer);
-
-// console.log(userAdmin instanceof User, userAdmin instanceof Admin);
-// console.log(userCustomer instanceof User, userCustomer instanceof Customer);

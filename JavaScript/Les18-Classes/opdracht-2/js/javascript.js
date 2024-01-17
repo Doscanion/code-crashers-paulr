@@ -1,41 +1,3 @@
-// function Movie(name, releaseDate, genre, directors, writers, actors) {
-//     if (typeof name == 'string') {
-//         this.name = name;
-//     } else {
-//         throw new TypeError('Must have a string');
-//     }
-
-//     if (typeof releaseDate == 'number' && /\d{4}/.test(releaseDate)) {
-//         this.releaseDate = releaseDate;
-//     } else {
-//         throw new TypeError('Must have a integer with 4 numbers');
-//     }
-
-//     if (typeof genre == 'string') {
-//         this.genre = genre;
-//     } else {
-//         throw new TypeError('Must have a string');
-//     }
-
-//     if (Array.isArray(directors) && directors.length > 0) {
-//         this.drectors = directors;
-//     } else {
-//         throw new TypeError('Must be array with at least one string');
-//     }
-
-//     if (Array.isArray(writers) && writers.length > 0) {
-//         this.writers = writers;
-//     } else {
-//         throw new TypeError('Must be array with at least one string');
-//     }
-
-//     if (Array.isArray(actors) && actors.length > 0) {
-//         this.actors = actors;
-//     } else {
-//         throw new TypeError('Must be array with at least one string');
-//     }
-// }
-
 class Movie {
 	#name;
 	#releaseDate;
@@ -60,7 +22,9 @@ class Movie {
 			throw new TypeError("Must have a string");
 		}
 	}
-	get name() {}
+	get name() {
+		return this.#name;
+	}
 
 	set releaseDate(releaseDate) {
 		if (typeof releaseDate == "number" && /\d{4}/.test(releaseDate)) {
@@ -69,7 +33,9 @@ class Movie {
 			throw new TypeError("Must have a integer with 4 numbers");
 		}
 	}
-	get releaseDate() {}
+	get releaseDate() {
+		return this.#releaseDate;
+	}
 
 	set genre(genre) {
 		if (typeof genre == "string") {
@@ -78,7 +44,9 @@ class Movie {
 			throw new TypeError("Must have a string");
 		}
 	}
-	get genre() {}
+	get genre() {
+		return this.#genre;
+	}
 
 	set directors(directors) {
 		if (Array.isArray(directors) && directors.length > 0) {
@@ -87,7 +55,9 @@ class Movie {
 			throw new TypeError("Must be array with at least one string");
 		}
 	}
-	get directors() {}
+	get directors() {
+		return this.#directors;
+	}
 
 	set writers(writers) {
 		if (Array.isArray(writers) && writers.length > 0) {
@@ -96,7 +66,9 @@ class Movie {
 			throw new TypeError("Must be array with at least one string");
 		}
 	}
-	get writers() {}
+	get writers() {
+		return this.#writers;
+	}
 
 	set actors(actors) {
 		if (Array.isArray(actors) && actors.length > 0) {
@@ -105,7 +77,9 @@ class Movie {
 			throw new TypeError("Must be array with at least one string");
 		}
 	}
-	get actors() {}
+	get actors() {
+		return this.#actors;
+	}
 }
 
 let vampire = new Movie(
@@ -134,14 +108,7 @@ let bulk = new Movie(
 	["Terence Lording", "Shevaun Kastl", "Randal Malone"]
 );
 
-let wars = new Movie(
-	"Geen actie",
-	1900,
-	"Action, Comedy",
-	["Rev Gew"],
-	["Neeg Etirw"],
-	["Taw Epon", "Epon Taw"]
-);
+let wars = new Movie("Geen actie", 1900, "Action, Comedy", ["Rev Gew"], ["Neeg Etirw"], ["Taw Epon", "Epon Taw"]);
 
 console.log(wars);
 
