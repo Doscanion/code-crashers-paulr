@@ -1,7 +1,6 @@
-//Kon geen board ophalen moest op raar manier het oplossen
-//gets the cards needed for starting the code
+//gets the list needed for starting the code
 fetch(
-	"https://api.trello.com/1/boards/iAbFW66W/cards?key=4ca804874aefd1639f948d09a3e25bee&token=ATTA286faecf22aab46654b2ce9c1305e98eadbbf5a35349358ea43faa51d562148aFAFCFB73",
+	"https://api.trello.com/1/boards/iAbFW66W/lists?key=4ca804874aefd1639f948d09a3e25bee&token=ATTA286faecf22aab46654b2ce9c1305e98eadbbf5a35349358ea43faa51d562148aFAFCFB73",
 	{
 		method: "GET",
 	}
@@ -11,9 +10,116 @@ fetch(
 		return response.json();
 	})
 	.then((text) => {
-		console.log(text), cards(text);
+		console.log(text);
+		listsId(text);
 	})
 	.catch((err) => console.error(err));
+
+async function listsId(params) {
+	for (let element of params) {
+		console.log(element.id);
+		let list = await lists(element.id);
+		let listCards = await fetchListCards(element.id);
+		cardsId(listCards, list);
+	}
+}
+
+async function cardsId(params, list) {
+	for (let card of params) {
+		console.log(card);
+		cardCreate(card.name, list, card.id, card.labels);
+	}
+}
+
+//gets the list cards
+async function fetchListCards(idList) {
+	try {
+		let response = await fetch(
+			`https://api.trello.com/1/lists/${idList}/cards/?key=4ca804874aefd1639f948d09a3e25bee&token=ATTA286faecf22aab46654b2ce9c1305e98eadbbf5a35349358ea43faa51d562148aFAFCFB73`,
+			{
+				method: "GET",
+			}
+		);
+		if (!response.ok) {
+			throw new Error(`HTTP error! Status: ${response.status}`);
+		}
+		let cards = await response.json();
+		console.log(cards);
+		return await cards;
+	} catch (err) {
+		console.error(err);
+		throw err;
+	}
+}
+
+//gets the card needed for creating a card
+async function fetchCard(idCard) {
+	try {
+		let response = await fetch(
+			`https://api.trello.com/1/cards/${idCard}/cards/?key=4ca804874aefd1639f948d09a3e25bee&token=ATTA286faecf22aab46654b2ce9c1305e98eadbbf5a35349358ea43faa51d562148aFAFCFB73`,
+			{
+				method: "GET",
+			}
+		);
+		if (!response.ok) {
+			throw new Error(`HTTP error! Status: ${response.status}`);
+		}
+		let card = await response.json();
+		console.log(card);
+		return await card;
+	} catch (err) {
+		console.error(err);
+		throw err;
+	}
+}
+
+async function lists(idList) {
+	console.log("list");
+	try {
+		let list = await fetchList(idList);
+		let listName = list.name;
+		console.log(list);
+		let div = document.createElement("div");
+		div.classList.add("list");
+		let p = document.createElement("p");
+		let ptext = document.createTextNode(listName);
+		p.classList.add("list-title");
+		p.appendChild(ptext);
+		let span = document.createElement("span");
+		let spantext = document.createTextNode("id:" + idList);
+		span.appendChild(spantext);
+		div.appendChild(p);
+		div.appendChild(span);
+		document.querySelector(".container").appendChild(div);
+		console.log("list");
+
+		let addCard = document.createElement("div");
+		addCard.classList.add("add-card");
+		let input = document.createElement("input");
+		input.setAttribute("type", "text");
+		input.setAttribute("placeholder", "Enter card name");
+		let button = document.createElement("button");
+		button.textContent = "Add Card";
+
+		button.addEventListener("click", async function () {
+			let cardName = input.value.trim();
+			if (cardName !== "") {
+				// cardCreate(cardName, div);
+				// addCardToTrelloList(cardName, list.id);
+				const cardData = await addCardToTrelloList(cardName, list.id);
+				cardCreate(cardName, div, cardData.id);
+			}
+		});
+
+		addCard.appendChild(input);
+		addCard.appendChild(button);
+		div.appendChild(addCard);
+
+		return div;
+	} catch (err) {
+		console.error(err);
+	}
+}
 
 //gets the list needed for placing the card(s)
 async function fetchList(idList) {
@@ -34,34 +140,34 @@ async function fetchList(idList) {
 	}
 }
 
-async function cards(params) {
-	try {
-		for (const key in params) {
-			let existList = false;
-			let listItem;
-			console.log("card");
-			let idList = params[key].idList;
-			let list = await fetchList(idList);
+// async function cards(params) {
+// 	try {
+// 		for (const key in params) {
+// 			let existList = false;
+// 			let listItem;
+// 			console.log("card");
+// 			let idList = params[key].idList;
+// 			let list = await fetchList(idList);
 
-			for (const element of document.querySelectorAll(".list")) {
-				if (element.textContent.includes(list.name)) {
-					existList = true;
-					listItem = element;
-				}
-			}
-			if (existList) {
-				console.log("list");
-				cardCreate(params[key].name, listItem, params[key].id, params[key].labels);
-			} else {
-				let newList = await lists(idList);
-				cardCreate(params[key].name, newList, params[key].id, params[key].labels);
-				console.log("no list");
-			}
-		}
-	} catch (err) {
-		console.error(err);
-	}
-}
+// 			for (const element of document.querySelectorAll(".list")) {
+// 				if (element.textContent.includes(list.name)) {
+// 					existList = true;
+// 					listItem = element;
+// 				}
+// 			}
+// 			if (existList) {
+// 				console.log("list");
+// 				cardCreate(params[key].name, listItem, params[key].id, params[key].labels);
+// 			} else {
+// 				let newList = await lists(idList);
+// 				cardCreate(params[key].name, newList, params[key].id, params[key].labels);
+// 				console.log("no list");
+// 			}
+// 		}
+// 	} catch (err) {
+// 		console.error(err);
+// 	}
+// }
 
 function cardCreate(name, list, cardId, labels) {
 	let div = document.createElement("div");
@@ -168,54 +274,6 @@ async function deleteCardFromTrello(cardId) {
 		console.log("Card deleted from Trello");
 	} catch (error) {
 		console.error("Error deleting card from Trello:", error);
-	}
-}
-
-async function lists(idList) {
-	console.log("list");
-	try {
-		let list = await fetchList(idList);
-		let listName = list.name;
-		console.log(list);
-		let div = document.createElement("div");
-		div.classList.add("list");
-		let p = document.createElement("p");
-		let ptext = document.createTextNode(listName);
-		p.classList.add("list-title");
-		p.appendChild(ptext);
-		let span = document.createElement("span");
-		let spantext = document.createTextNode("id:" + idList);
-		span.appendChild(spantext);
-		div.appendChild(p);
-		div.appendChild(span);
-		document.querySelector(".container").appendChild(div);
-		console.log("list");
-
-		let addCard = document.createElement("div");
-		addCard.classList.add("add-card");
-		let input = document.createElement("input");
-		input.setAttribute("type", "text");
-		input.setAttribute("placeholder", "Enter card name");
-		let button = document.createElement("button");
-		button.textContent = "Add Card";
-
-		button.addEventListener("click", async function () {
-			let cardName = input.value.trim();
-			if (cardName !== "") {
-				// cardCreate(cardName, div);
-				// addCardToTrelloList(cardName, list.id);
-				const cardData = await addCardToTrelloList(cardName, list.id);
-				cardCreate(cardName, div, cardData.id);
-			}
-		});
-
-		addCard.appendChild(input);
-		addCard.appendChild(button);
-		div.appendChild(addCard);
-
-		return div;
-	} catch (err) {
-		console.error(err);
 	}
 }
 
