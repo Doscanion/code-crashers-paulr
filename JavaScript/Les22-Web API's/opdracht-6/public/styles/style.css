@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightsalmon;
+}
+
+.villagers-filters {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  gap: 10px;
+}
+
+.filter-button {
+  padding: 5px;
+  background-color: yellow;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.villagers-matrix {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+img {
+  width: 200px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.villager-name {
+  text-align: center;
+}
+
+.villager-container {
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: salmon;
+}/*# sourceMappingURL=style.css.map */
