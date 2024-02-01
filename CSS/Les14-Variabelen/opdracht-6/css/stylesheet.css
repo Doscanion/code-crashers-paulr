@@ -1,0 +1,32 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	overflow-x: hidden;
+	background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+	color: WhiteSmoke;
+	font-size: 24px;
+	font-family: "Twinkle Star", Calibri, sans-serif;
+}
+
+section {
+	max-width: max(50vw, 600px);
+	margin: 0 auto;
+	padding: 1rem 3rem;
+}
+
+@supports (list-style: symbols(fixed "\2648" "\2649" "\264A" "\264B" "\264C" "\264D" "\264E" "\264F" "\2650" "\2651" "\2652" "\2653")) {
+	ol {
+	  list-style: symbols(fixed "\2648" "\2649" "\264A" "\264B" "\264C" "\264D" "\264E" "\264F" "\2650" "\2651" "\2652" "\2653");
+	}
+	li::first-letter{
+		color: rgb(136, 108, 228);
+	}
+  }
+  
+  /* Fallback for browsers not supporting symbols() */
+  @supports not (list-style: symbols(fixed "\2648" "\2649" "\264A" "\264B" "\264C" "\264D" "\264E" "\264F" "\2650" "\2651" "\2652" "\2653")) {
+	ol li{
+	  list-style-type: arabic-indic;
+	}
+  }

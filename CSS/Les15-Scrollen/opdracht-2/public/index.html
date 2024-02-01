@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Syntax highlighting</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism-tomorrow.min.css" integrity="sha512-kSwGoyIkfz4+hMo5jkJngSByil9jxJPKbweYec/UgS+S1EgE45qm4Gea7Ks2oxQ7qiYyyZRn66A9df2lMtjIsw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js" integrity="sha512-UOoJElONeUNzQbbKQbjldDf9MwOHqxNz49NNJJ1d90yp+X9edsHyJoAs6O4K19CZGaIdjI5ohK+O2y5lBTW6uQ==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/components/prism-php.min.js" integrity="sha512-6UGCfZS8v5U+CkSBhDy+0cA3hHrcEIlIy2++BAjetYt+pnKGWGzcn+Pynk41SIiyV2Oj0IBOLqWCKS3Oa+v/Aw==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+		<link rel="stylesheet" href="./styles/style.css">
+		
+	</head>
+	<body>
+		<section>
+<pre><code class="language-javascript">
+/* JavaScript snippet */
+const p = document.createElement("p");
+p.appendChild(document.createTextNode("Kindercarnavalsoptochtvoorbereidingswerkzaamhedencomitéleden"));
+document.querySelector("body").insertBefore(p, document.querySelector("p:nth-of-type(2)"));
+</code></pre>
+<pre><code class="language-php">
+/* PHP & MySQL snippet */
+$stmt = $dbh->prepare("INSERT INTO user (username, password, age) VALUES (:user, :pass, :age)");
+$stmt->bindParam(':user', 'Tom', PDO::PARAM_STR, 50);
+$stmt->bindParam(':pass', 'veiligww', PDO::PARAM_STR, 50);
+$stmt->bindParam(':age', 32, PDO::PARAM_INT, 3);
+$stmt->execute();
+</code></pre>
+<pre><code class="language-css">
+/* CSS snippet */
+.abstract-art {
+	background-image: conic-gradient(from 0deg at 25% 50%, coral 0deg 45deg, crimson 100deg, chartreuse 100deg 130deg, gold, dodgerblue 200deg, plum);
+	border-radius: 25px;
+	box-shadow: 5px 5px 5px sienna;
+	width: 400px;
+	height: 300px;
+	margin: 0 auto;
+}
+</code></pre>
+		</section>
+	</body>
+</html>
