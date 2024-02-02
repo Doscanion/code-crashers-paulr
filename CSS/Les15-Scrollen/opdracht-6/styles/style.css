@@ -1,0 +1,50 @@
+body {
+  background-color: gray;
+  font-size: 16px;
+}
+
+.empty-space {
+  width: 150px;
+}
+
+.img-gallery {
+  margin: auto;
+  padding: clamp(5px, 2vw, 50px);
+  background-color: darkgrey;
+  width: 50vw;
+  min-width: 300px;
+  overflow: scroll;
+  display: flex;
+  gap: 60px;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scrollbar-color: blue rgb(41, 169, 212);
+}
+
+figure {
+  margin: auto;
+  margin-top: 0;
+  scroll-snap-align: center;
+}
+figure figcaption {
+  margin-top: 10px;
+  text-align: center;
+  font-size: clamp(1rem, 2vw, 2rem);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+figure img {
+  min-width: 300px;
+  height: auto;
+  width: 50vw;
+}
+
+@media (max-height: 450px) {
+  .img-gallery {
+    height: 80vh;
+    width: 20vw;
+  }
+  figure img {
+    min-width: none;
+    width: 20vw;
+  }
+}/*# sourceMappingURL=style.css.map */

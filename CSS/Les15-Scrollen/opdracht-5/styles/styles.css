@@ -1,0 +1,74 @@
+body {
+  font-family: Book Antiqua;
+  background-color: gray;
+}
+
+li {
+  list-style-type: upper-roman;
+}
+
+.algemeen, #algemeen {
+  color: red;
+}
+.algemeen p, #algemeen p {
+  color: black;
+}
+
+.geschiedenis, #geschiedenis {
+  color: orange;
+}
+.geschiedenis p, #geschiedenis p {
+  color: black;
+}
+
+.politiek, #politiek {
+  color: yellow;
+}
+.politiek p, #politiek p {
+  color: black;
+}
+
+.demografie, #demografie {
+  color: green;
+}
+.demografie p, #demografie p {
+  color: black;
+}
+
+.economie, #economie {
+  color: blue;
+}
+.economie p, #economie p {
+  color: black;
+}
+
+.kunst, #kunst {
+  color: violet;
+}
+.kunst p, #kunst p {
+  color: black;
+}
+
+#economie, #demografie, #politiek, #geschiedenis, #algemeen {
+  scroll-snap-align: start;
+}
+
+#kunst {
+  scroll-snap-align: end;
+}
+
+.container {
+  margin: auto;
+  max-width: max(80vw, 1000px);
+  padding: 25px;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+html {
+  scroll-snap-type: y proximity;
+  scroll-padding-top: 25px;
+  scroll-behavior: smooth;
+}/*# sourceMappingURL=styles.css.map */
