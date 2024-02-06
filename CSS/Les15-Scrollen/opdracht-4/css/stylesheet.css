@@ -314,8 +314,8 @@ section{
 	width: 118px;
 	height: 71px;
 	height: auto;
-	transform: translateX(calc(100vw - 100%)) translateY(calc(100vh - 100%));
-	animation: ferretMove 5s ease-in-out 7;
+	transform: translateX(calc(100vw + 100%)) translateY(calc(100vh + 100%));
+	animation: ferretMove 5s ease-in-out 2;
   }
 /* --- Media queries --- */
 

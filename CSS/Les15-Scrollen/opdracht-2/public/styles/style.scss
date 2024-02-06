@@ -1,6 +1,6 @@
-body code[class^="language-"] {
+body section code[class^=" language-"] {
     white-space: normal;
-    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 
 // .comment {

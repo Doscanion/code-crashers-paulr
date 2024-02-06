@@ -30,6 +30,7 @@ section {
 	width: 500px;
 	height: 400px;
 	background-color: mistyrose;
+	overscroll-behavior: contain;
 }
 
 .layer-1::before {
@@ -40,7 +41,6 @@ section {
 .layer-2::before {
 	content: "Laag 2. ";
 	font-weight: bold;
-	overscroll-behavior: contain;
 }
 
 .layer-3::before {
@@ -90,7 +90,6 @@ p:not([class]){
 	.layer-2::before {
 		content: "Laag 2. ";
 		font-weight: bold;
-		overscroll-behavior: auto;
 	}
 	
 	.layer-3::before {
