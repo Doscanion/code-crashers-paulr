@@ -1,11 +1,11 @@
-function* mmSongs() {
+async function* mmSongs() {
 	yield "Sonata of Awakening";
 	yield "Goron Lullaby";
 	yield "New Wave Bossa Nova";
 	yield "Elegy of Emptiness";
 }
 
-function* songs() {
+async function* songs() {
 	yield "Minuet of Forest";
 	yield "Bolero of Fire";
 	yield "Serenade of Water";
@@ -20,7 +20,7 @@ const songPlayer = songs();
 async function songLoop(songPlayer) {
 	console.log("Start");
 
-	for (const iterator of songPlayer) {
+	for await (const iterator of songPlayer) {
 		await songTime(iterator);
 	}
 

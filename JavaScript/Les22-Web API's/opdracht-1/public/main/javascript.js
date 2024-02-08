@@ -27,11 +27,11 @@ fetch("https://api.themoviedb.org/3/movie/502356/credits?language=en-US", option
 	.catch((err) => console.error(err));
 
 function movie() {
-	console.log(movieDetails);
+	console.log(new Date(movieDetails.release_date).toLocaleDateString("nl-NL"));
 	let name = movieDetails.title;
 	let tagline = movieDetails.tagline;
 	let description = movieDetails.overview;
-	let release = movieDetails.release_date;
+	let release = new Date(movieDetails.release_date).toLocaleDateString("nl-NL");
 	let runtime = movieDetails.runtime;
 	let genre = movieDetails.genres.map((genre) => genre.name).join(", ");
 	let score = movieDetails.vote_average + " based on " + movieDetails.vote_count + " votes";
@@ -50,7 +50,7 @@ function movie() {
 		Geld: money,
 		Afbeelding: img,
 	};
-
+	console.log(movieInfo.Tagline);
 	let divMovie = document.createElement("div");
 	divMovie.classList.add("movie");
 
@@ -61,19 +61,21 @@ function movie() {
 	divMovieImg.classList.add("movie-poster", "flex-item");
 
 	for (let key in movieInfo) {
-		let p = document.createElement("p");
-		if (key !== "Afbeelding") {
-			let text = document.createTextNode(`${key}: ${movieInfo[key]}`);
-			p.appendChild(text);
-			p.classList.add("movie-text");
-			divMovieInfo.appendChild(p);
-		} else {
-			let img = document.createElement("img");
-			console.log(key);
-			img.src = movieInfo[key];
-			img.alt = movieInfo.Naam;
-			img.classList.add("movie-img");
-			divMovieImg.appendChild(img);
+		if (movieInfo[key] !== "") {
+			let p = document.createElement("p");
+			if (key !== "Afbeelding") {
+				let text = document.createTextNode(`${key}: ${movieInfo[key]}`);
+				p.appendChild(text);
+				p.classList.add("movie-text");
+				divMovieInfo.appendChild(p);
+			} else {
+				let img = document.createElement("img");
+				console.log(key);
+				img.src = movieInfo[key];
+				img.alt = movieInfo.Naam;
+				img.classList.add("movie-img");
+				divMovieImg.appendChild(img);
+			}
 		}
 	}
 	divMovie.appendChild(divMovieInfo);
@@ -95,12 +97,10 @@ function movieCast() {
 	divCastPersons.classList.add("cast");
 
 	for (let key in credits.cast) {
-		console.log(credits.cast[key]);
 		if (credits.cast[key].profile_path !== null) {
 			let divPerson = document.createElement("div");
 			divPerson.classList.add("person-info");
 			let img = document.createElement("img");
-			console.log(key);
 			img.src = "https://image.tmdb.org/t/p/w500/" + credits.cast[key].profile_path;
 			img.alt = credits.cast[key].name;
 			img.classList.add("person-img");

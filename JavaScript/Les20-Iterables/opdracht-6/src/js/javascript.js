@@ -11,7 +11,7 @@ console.log(minHeap.peek());
 
 for (const iterator of minHeap) {
 	let pTag = document.createElement("p");
-	let pText = document.createTextNode(iterator);
+	let pText = document.createTextNode("Eerst volgende waarde is " + iterator);
 	pTag.appendChild(pText);
 	document.body.append(pTag);
 }

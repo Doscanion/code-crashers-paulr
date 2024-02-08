@@ -8,21 +8,24 @@ const options = {
 };
 let movies;
 
-fetch("https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1", options)
-	.then((response) => response.json())
-	.then((response) => {
-		console.log(response);
-		movies = response;
-		topMovies();
-	})
-	.catch((err) => console.error(err));
+let divMovies = document.createElement("div");
+divMovies.classList.add("movies");
+
+for (let pageInt = 1; pageInt <= 5; pageInt++) {
+	fetch(`https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=${pageInt}`, options)
+		.then((response) => response.json())
+		.then((response) => {
+			console.log(response);
+			movies = response;
+			topMovies();
+		})
+		.catch((err) => console.error(err));
+}
 
 function topMovies() {
-	let divMovies = document.createElement("div");
-	divMovies.classList.add("movies");
-
 	for (let key in movies.results) {
 		console.log(movies.results[key]);
+		let movieId = movies.results[key].id;
 
 		let divMovie = document.createElement("div");
 		divMovie.classList.add("movies-info");
@@ -33,7 +36,7 @@ function topMovies() {
 		name.appendChild(nameText);
 
 		name.addEventListener("click", function () {
-			movieFetch(movies.results[key].id);
+			movieFetch(movieId);
 		});
 
 		divMovie.appendChild(name);
@@ -52,22 +55,68 @@ function topMovies() {
 
 let movieDetails;
 let credits;
-function movieFetch(movieId) {
+function movieFetch(movieId, langSelect) {
 	console.log(`${movieId}`);
-	fetch(`https://api.themoviedb.org/3/movie/${movieId}?language=nl-NL`, options)
+	if (langSelect === undefined) {
+		langSelect === "nl-NL";
+	}
+	fetch(`https://api.themoviedb.org/3/movie/${movieId}?language=${langSelect}`, options)
 		.then((response) => response.json())
 		.then((response) => {
 			movieDetails = response;
 			console.log(response);
-			movie();
+			movie(langSelect);
 		})
 		.catch((err) => console.error(err));
 }
 
-function movie() {
+let languageSet = {
+	"nl-NL": {
+		name: "Naam",
+		tagline: "Tagline",
+		description: "Beschrijving",
+		release: "Uitgave",
+		runtime: "Duren",
+		genre: "Genre",
+		score: "Scoren",
+		money: "Geld",
+		img: "Afbeelding",
+		min: " minuten",
+	},
+	"en-GB": {
+		name: "Name",
+		tagline: "Tagline",
+		description: "Description",
+		release: "Release",
+		runtime: "Runtime",
+		genre: "Genre",
+		score: "Score",
+		money: "Money",
+		img: "Afbeelding",
+		min: " minutes",
+	},
+	"de-DE": {
+		name: "Name",
+		tagline: "Slogan",
+		description: "Beschreibung",
+		release: "freigeben",
+		runtime: "Laufzeit",
+		genre: "Genre",
+		score: "Punktzahl",
+		money: "Geld",
+		img: "Afbeelding",
+		min: " minuten",
+	},
+};
+
+function movie(langSelect) {
 	if (document.querySelector(".movie")) {
 		document.querySelector(".movie").remove();
 		console.log("delete");
+	}
+	console.log(langSelect);
+	if (langSelect === undefined) {
+		langSelect = "nl-NL";
 	}
 	console.log(movieDetails);
 	let name = movieDetails.title;
@@ -79,22 +128,47 @@ function movie() {
 	let score = movieDetails.vote_average + " based on " + movieDetails.vote_count + " votes";
 	let money = movieDetails.revenue.toLocaleString("nl-NL");
 	let img = "https://image.tmdb.org/t/p/w500/" + movieDetails.poster_path;
-
-	console.log(tagline);
+	let movieTextName = "Name";
 	let movieInfo = {
-		Naam: name,
-		Tagline: tagline,
-		Beschrijving: description,
-		Uitgave: release,
-		Duren: runtime + " minuten",
-		Genre: genre,
-		Scoren: score,
-		Geld: money,
-		Afbeelding: img,
+		[languageSet[langSelect].name]: name,
+		[languageSet[langSelect].tagline]: tagline,
+		[languageSet[langSelect].description]: description,
+		[languageSet[langSelect].release]: release,
+		[languageSet[langSelect].runtime]: runtime + [languageSet[langSelect].min],
+		[languageSet[langSelect].genre]: genre,
+		[languageSet[langSelect].score]: score,
+		[languageSet[langSelect].money]: money,
+		[languageSet[langSelect].img]: img,
 	};
+	//Select for Language change
+
+	let selectElement = document.createElement("select");
+	let dutch = document.createElement("option");
+	dutch.value = "nl-NL";
+	dutch.text = "Dutch";
+	selectElement.appendChild(dutch);
+
+	let english = document.createElement("option");
+	english.value = "en-GB";
+	english.text = "English";
+	selectElement.appendChild(english);
+
+	let german = document.createElement("option");
+	german.value = "de-DE";
+	german.text = "German";
+	selectElement.appendChild(german);
+
+	selectElement.value = langSelect;
+	let movieId = movieDetails.id;
+	selectElement.addEventListener("change", function () {
+		movieFetch(movieId, this.value);
+	});
+	selectElement.style.width = "100px";
+	selectElement.style.height = "30px";
 
 	let divMovie = document.createElement("div");
 	divMovie.classList.add("movie");
+	divMovie.appendChild(selectElement);
 
 	let divMovieInfo = document.createElement("div");
 	divMovieInfo.classList.add("movie-info", "flex-item");
@@ -103,19 +177,21 @@ function movie() {
 	divMovieImg.classList.add("movie-poster", "flex-item");
 
 	for (let key in movieInfo) {
-		let p = document.createElement("p");
-		if (key !== "Afbeelding") {
-			let text = document.createTextNode(`${key}: ${movieInfo[key]}`);
-			p.appendChild(text);
-			p.classList.add("movie-text");
-			divMovieInfo.appendChild(p);
-		} else {
-			let img = document.createElement("img");
-			console.log(key);
-			img.src = movieInfo[key];
-			img.alt = movieInfo.Naam;
-			img.classList.add("movie-img");
-			divMovieImg.appendChild(img);
+		if (movieInfo[key] !== "") {
+			let p = document.createElement("p");
+			if (key !== "Afbeelding") {
+				let text = document.createTextNode(`${key}: ${movieInfo[key]}`);
+				p.appendChild(text);
+				p.classList.add("movie-text");
+				divMovieInfo.appendChild(p);
+			} else {
+				let img = document.createElement("img");
+				console.log(key);
+				img.src = movieInfo[key];
+				img.alt = movieInfo.Naam;
+				img.classList.add("movie-img");
+				divMovieImg.appendChild(img);
+			}
 		}
 	}
 	divMovie.appendChild(divMovieInfo);

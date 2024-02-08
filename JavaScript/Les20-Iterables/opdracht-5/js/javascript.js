@@ -64,6 +64,7 @@ document.querySelectorAll("figure").forEach((album) => {
 	buttonDOM.addEventListener("click", function () {
 		artistMap.set(song, 0);
 		valueText.nodeValue = 0;
+		localStorage.setItem(song.name, 0);
 		album.querySelector("figcaption").innerHTML = song.name;
 	});
 });
