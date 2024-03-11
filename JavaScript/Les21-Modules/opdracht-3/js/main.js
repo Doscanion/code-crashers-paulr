@@ -8,7 +8,7 @@ document.querySelector(".mark-console").addEventListener("click", function () {
 	markClick++;
 	if (markClick === 10) {
 		window.open("https://www.youtube.com/watch?v=aekfPU0SwNw", "_blank");
-		count = 0;
+		markClick = 0;
 	}
 });
 
