@@ -27,7 +27,7 @@ usort($menu, 'orderArray')
                 if ($value['active']) {
             ?>
 
-                    <a style="padding: 10px; align-text: center;  background-color: bisque" href="<?= $value['text'] ?>" title="<?= $value['text'] ?>" target="<?= $value['target'] ?>"><?= $value['text'] ?></a>
+                    <a style="padding: 10px; align-text: center;  background-color: bisque" href="<?= $value['href'] ?>" title="<?= $value['text'] ?>" target="<?= $value['target'] ?>"><?= $value['text'] ?></a>
             <?php
                 }
             }
