@@ -1,0 +1,28 @@
+ul {
+	list-style: square;
+
+	a {
+		text-decoration: none;
+		color: black;
+	}
+	a:hover {
+		color: blue;
+	}
+	li {
+		margin-top: 5px;
+	}
+}
+.sitemap {
+	margin: auto;
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+
+	section {
+		min-width: 500px;
+	}
+}
+
+h2 {
+	text-align: center;
+}

@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="./styles/style.css" />
 	<script defer src="./js/javascript.js"></script>
-	<title>Embed Index</title>
+	<title>Embed Slaapcomfort Index</title>
 </head>
 
 <body>
@@ -30,7 +30,7 @@
 						<p>Lente Collectie</p>
 					</section>
 				</article>
-				<article><iframe autoplay="0" width="100%" height="100%" src="./video/old.mp4" frameborder="0"></iframe></article>
+				<article><iframe autoplay="0" width="100%" height="100%" src="./video/old.mp4?muted=1" frameborder="0"></iframe></article>
 				<article>
 					<section class="triple-container-transparency">
 						<p>Bekijk de online</p>

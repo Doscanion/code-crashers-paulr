@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/location.css" />
     <script defer src="./js/javascript.js"></script>
-    <title>Location</title>
+    <title>Embed Slaapcomfort Location</title>
 </head>
 
 <body>

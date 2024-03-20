@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/content.css" />
     <script defer src="./js/javascript.js"></script>
-    <title>Embed products</title>
+    <title>Embed Slaapcomfort products</title>
 </head>
 
 <body>

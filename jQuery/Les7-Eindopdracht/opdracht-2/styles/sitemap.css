@@ -1,0 +1,24 @@
+ul {
+  list-style: square;
+}
+ul a {
+  text-decoration: none;
+  color: black;
+}
+ul li {
+  margin-top: 5px;
+}
+
+.sitemap {
+  margin: auto;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.sitemap section {
+  min-width: 500px;
+}
+
+h2 {
+  text-align: center;
+}/*# sourceMappingURL=sitemap.css.map */

@@ -1,0 +1,10 @@
+main {
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main h2 {
+  text-align: center;
+}/*# sourceMappingURL=location.css.map */
