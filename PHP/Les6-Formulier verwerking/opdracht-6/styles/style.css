@@ -1,0 +1,32 @@
+form {
+  width: 400px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+form div {
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input[type=text] {
+  width: 250px;
+}
+
+input[type=number] {
+  width: 150px;
+}
+
+input[type=submit] {
+  width: 80px;
+}
+
+select {
+  width: 250px;
+}/*# sourceMappingURL=style.css.map */

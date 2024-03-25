@@ -1,0 +1,20 @@
+form {
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	div {
+		display: flex;
+		flex-direction: column;
+	}
+	#verzenden {
+		width: 100px;
+	}
+	.form-radio {
+		display: flex;
+		flex-direction: row;
+		div {
+			display: block;
+		}
+	}
+}
