@@ -16,4 +16,4 @@ for (const iterator of minHeap) {
 	document.body.append(pTag);
 }
 
-conole.log("wow");
+console.log("wow");

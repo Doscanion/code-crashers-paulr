@@ -1,7 +1,10 @@
 class ThanosArray extends Array {
 	snap() {
-		let length = this.length;
-		for (let index = 0; index < Math.floor(this.length / 2) + 1; index++) {
+		let removeNumber = Math.floor(this.length / 2);
+		if (this.length % 2 !== 0) {
+			removeNumber++;
+		}
+		for (let index = 0; index < removeNumber; index++) {
 			let number = Math.floor(Math.random() * this.length);
 			this.splice(number, 1);
 		}

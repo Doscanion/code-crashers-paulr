@@ -30,7 +30,7 @@ function addGames(newGames) {
 				console.log("oke");
 				getGames();
 			} else {
-				reject();
+				reject("Dit is geen geldige input.");
 				console.error("Dit is geen geldige input.");
 			}
 		}, 2000);
