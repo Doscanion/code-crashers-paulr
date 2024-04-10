@@ -7,7 +7,7 @@ $catalogus = [
     'Sterke dranken' => ['Baileys', 'Wodka', 'Whisky', 'Cognac', 'Rum', 'Malibu']
 ];
 
-$catalogus['Witte wijnen'][3] = 'Pinot Gris';
+$catalogus['Witte wijnen'][2] = 'Pinot Gris';
 $catalogus['Gedestilleerde dranken'] = $catalogus['Sterke dranken'];
 unset($catalogus['Sterke dranken']);
 unset($catalogus['Gedestilleerde dranken'][0], $catalogus['Gedestilleerde dranken'][5]);

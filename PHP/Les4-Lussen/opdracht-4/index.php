@@ -13,8 +13,8 @@ $end = 100;
 <body>
     <div>
         <?php
-        for ($i = 1; $i < $end + 1; $i++) {
-            if ($i % 4 === 0 &  $i % 7 === 0 && $i % 4 === 0) {
+        for ($i = 1; $i <= $end; $i++) {
+            if ($i % 4 === 0 && $i % 7 === 0) {
                 echo <<<HTML
                 <p style="color: red;">$i en deelbaar door 7</p>
                 HTML;

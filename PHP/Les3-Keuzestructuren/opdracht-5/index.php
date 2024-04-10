@@ -29,7 +29,8 @@ $resultSubject = match ($subject) {
     'CSS' => 'CSS is a computer language for laying out and structuring web pages (HTML or XML).',
     'PHP' => 'PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.',
     'MySQL', 'SEO', 'JavaScript' => 'In aanbouw…',
-    'React', 'Laravel' => 'Gepland voor later…'
+    'React', 'Laravel' => 'Gepland voor later…',
+    default => 'None'
 };
 
 echo $resultSubject;

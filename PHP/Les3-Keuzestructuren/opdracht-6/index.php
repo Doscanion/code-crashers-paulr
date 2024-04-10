@@ -38,7 +38,7 @@ foreach ($temperatureColors as $tColor) {
         <?php
         if ($temperature >= 25) {
         ?>
-            <img src="./sun.jpg" alt="Cold">
+            <img src="./sun.jpg" alt="Star">
         <?php
         } else if ($temperature <= 0) {
         ?>

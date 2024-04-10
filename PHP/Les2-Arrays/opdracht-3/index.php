@@ -7,7 +7,7 @@ for ($i = 0; $i < 10; $i++) {
     $randomNumbers[] = rand($minNumber, $maxNumber);
 }
 
-sort($randomNumbers);
+arsort($randomNumbers);
 ?>
 <!DOCTYPE html>
 <html lang="en">

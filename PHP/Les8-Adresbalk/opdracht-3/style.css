@@ -1,0 +1,35 @@
+.nl{
+    border: 0;
+    width: 16px;
+    height: 11px;
+    background-image: url('flags.png');
+    background-position: -80px -110px;
+}
+.en{
+    border: 0;
+    width: 16px;
+    height: 11px;
+    background-image: url('flags.png');
+    background-position: -176px -44px;
+}
+.fr{
+    border: 0;
+    width: 16px;
+    height: 11px;
+    background-image: url('flags.png');
+    background-position: -224px -44px;
+}
+.de{
+    border: 0;
+    width: 16px;
+    height: 11px;
+    background-image: url('flags.png');
+    background-position: -80px -33px;
+}
+.es{
+    border: 0;
+    width: 16px;
+    height: 11px;
+    background-image: url('flags.png');
+    background-position: -16px -44px;
+}

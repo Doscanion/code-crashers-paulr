@@ -36,10 +36,10 @@ uasort($katanas, function ($a, $b) {
 
 <body>
     <?php foreach ($katanas as $weapon_key => $weapon) { ?>
-        <article id="<?= $weapon_key ?>">
+        <article id="katana-<?= $weapon_key ?>">
             <div>
                 <h1><?php echo $weapon['Name'] ?></h1>
-                <p>Description<?php echo $weapon['Description'] ?></p>
+                <p><?php echo $weapon['Description'] ?></p>
                 <p>Price: <?php echo $weapon['Price'] ?></p>
                 <p>Strength: <?php echo $weapon['Strength'] ?></p>
                 <p>Element: <?php echo $weapon['Element'] ?></p>
@@ -48,8 +48,6 @@ uasort($katanas, function ($a, $b) {
 
         </article>
     <?php } ?>
-
-
 
 </body>
 
