@@ -481,43 +481,37 @@ nav a:hover {
 }
 
 #deal-time-offer {
+  margin-top: 10px;
   display: grid;
   gap: 10px;
+  font-size: 20px;
 }
 
 #deal-time-offer-timer {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
 }
-#deal-time-offer-timer span {
-  margin: auto;
-}
 #deal-time-offer-timer span:nth-child(1) {
   margin: unset;
   text-align: left;
 }
+#deal-time-offer-timer div {
+  display: flex;
+  flex-direction: column;
+}
+
+.deal-time-offer-timer-text {
+  color: gray;
+  font-size: 22px;
+  margin: 0;
+}
 
 #deal-time-small-text {
-  font-size: 10px;
+  font-size: 12px;
   color: #b9a16b;
 }
 #deal-time-small-text img {
   padding-bottom: 3px;
-}
-
-#deal-time-offer-text {
-  color: gray;
-  font-size: 12px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-#deal-time-offer-text span {
-  margin: unset;
-  text-align: right;
-}
-#deal-time-offer-text span:nth-child(1) {
-  margin: unset;
-  text-align: left;
 }
 
 .deal-time-info {
@@ -536,6 +530,11 @@ nav a:hover {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.deal-time-title {
+  font-size: 60px;
+  margin: 10px 0;
 }
 
 .best-selling {
@@ -887,6 +886,15 @@ footer ul {
   }
   .deal-time-picture {
     height: auto;
+  }
+  .deal-time-title {
+    font-size: 20px;
+  }
+  #deal-time-offer {
+    font-size: 14px;
+  }
+  .deal-time-offer-timer-text {
+    font-size: 12px;
   }
   .best-selling {
     margin-top: 50px;
