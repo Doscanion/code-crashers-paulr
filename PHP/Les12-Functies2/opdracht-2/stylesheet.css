@@ -1,0 +1,46 @@
+ul{
+    list-style-type: none;
+    column-gap: 1px;
+}
+nav{
+    background-color: lightblue;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+li a{
+    display: block;
+    width: 100%;
+}
+
+ul li{
+    flex: 1;
+    background-color: azure;
+    position: relative;
+}
+
+ul li ul{
+    position: absolute;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+}
+
+ul li:hover ul {
+    visibility: visible;
+}
+
+
+nav.menu ul li:hover {
+    background-color: mediumseagreen;
+}
+  
+nav.menu ul li.active {
+    background-color: salmon;
+}
