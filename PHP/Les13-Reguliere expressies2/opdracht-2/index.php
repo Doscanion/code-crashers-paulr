@@ -2,8 +2,8 @@
 $message1 = 'I will be interviewed by @MariaBartiromo at 10:00 A.M. on @FoxNews. Thank you!';
 $message2 = 'Great Rally and fantastic job on @ffweekend this morning. It is all happening! #MAGA';
 
-$userArray = preg_replace('/@\b([A-Za-z0-9_]+)\b/', '<a href="https://twitter.com/$1">$1</a>', $message1);
-$userArray2 = preg_replace('/#\b([A-Za-z0-9_]+)\b/', '<a href="https://twitter.com/hashtag/$1?src=hashtag_click">$1</a>', $message2);
+// $userArray = preg_replace('/@\b([A-Za-z0-9_]+)\b/', '<a href="https://twitter.com/$1">$1</a>', $message1);
+// $userArray2 = preg_replace('/#\b([A-Za-z0-9_]+)\b/', '<a href="https://twitter.com/hashtag/$1?src=hashtag_click">$1</a>', $message2);
 
 
 
