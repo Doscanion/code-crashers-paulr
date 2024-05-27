@@ -1,0 +1,15 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_REFERER} !^http(s)?://ccphp/Les14\-Slugs/opdracht-3/
+RewriteRule \.(jpg|jpeg|png|gif)$ - [NC,F]
+
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html
+
+RewriteRule ^numbers(?:\.php)?$ table.php [PT]
+
+RewriteCond %{HTTP_USER_AGENT} Trident
+RewriteRule .* - [F,L]

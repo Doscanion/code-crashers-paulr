@@ -1,0 +1,31 @@
+<xml version="1.0" encoding="UTF-8">
+	<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+		<url>
+			<loc>http://localhost/php/slugs/opdracht3/index.php</loc>
+			<priority>0.9</priority>
+			<changefreq>weekly</changefreq>
+			<lastmod>3-6-2016 15:00:00</lastmod>
+		</url>
+		
+		<url>
+			<loc>http://localhost/php/slugs/opdracht3/table.php</loc>
+			<priority>0.3</priority>
+			<changefreq>monthly</changefreq>
+			<lastmod>3-6-2016 15:00:00</lastmod>
+		</url>
+		
+		<url>
+			<loc>http://localhost/php/slugs/opdracht3/contact.php</loc>
+			<priority>0.6</priority>
+			<changefreq>monthly</changefreq>
+			<lastmod>3-6-2016 15:00:00</lastmod>
+		</url>
+		
+		<url>
+			<loc>http://localhost/php/slugs/opdracht3/products.php</loc>
+			<priority>0.7</priority>
+			<changefreq>daily</changefreq>
+			<lastmod>3-6-2016 15:00:00</lastmod>
+		</url>
+	</urlset>
+</xml>

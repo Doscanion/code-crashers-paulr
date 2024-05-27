@@ -1,0 +1,37 @@
+5010. [[Sunday, October 09, 2011 at 16:06:44]]
+5011. **Current level: "Galactic Warfare" - gw.j2l
+5012. **Next level: irctf18
+5013. **Game Mode: CTF
+5014. **Custom Mode: OFF
+5015. [16:06:44] >>> Game Start
+5016. *** Game End Stats [[Sunday, October 09, 2011 at 16:30:04]] ***
+5017. >> Winner: Blue Team
+5018. Blue Score: 12
+5019. Red Score: 2
+5020. ID  IP Address          Player Name             Team    Points  Roasts  Deaths  SDs     Caps    Scores  Drops   
+5021. 2   88.115.209.176      SuomiSJ                 Red     25      25      25      0       16      0       15      
+5022. 3   92.254.14.137       [NL]Chiyu               Blue    21      21      21      0       15      3       11      
+5023. 6   83.87.217.161       [NL]Veg4SpR             Blue    38      38      27      0       11      6       5       
+5024. 7   88.112.227.41       SuomiSnooze             Red     25      25      32      0       20      2       18      
+5025. 9   82.75.149.30        [NL]FawFuL              Blue    30      30      23      0       13      3       10      
+5026. 10  86.50.73.171        SuomiRaven              Red     21      21      32      0       16      0       16      
+5027. [16:30:49] >>> Game End
+5028. 
+5029. [[Sunday, October 09, 2011 at 16:30:53]]
+5030. **Current level: "Superconductor CTF" - elmsuper.j2l
+5031. **Next level: elmsuper.j2l
+5032. **Game Mode: CTF
+5033. **Custom Mode: OFF
+5034. [16:30:53] >>> Game Start
+5035. [17:00:14] >>> Game End
+5036. *** Game End Stats [[Sunday, October 09, 2011 at 17:00:14]] ***
+5037. >> Winner: Blue Team
+5038. Blue Score: 13
+5039. Red Score: 8
+5040. ID  IP Address          Player Name             Team    Points  Roasts  Deaths  SDs     Caps    Scores  Drops   
+5041. 2   88.115.209.176      SuomiSJ                 Red     20      20      26      0       15      3       11      
+5042. 3   92.254.14.137       [NL]Chiyu               Blue    17      17      25      0       22      3       19      
+5043. 6   83.87.217.161       [NL]Veg4SpR             Blue    26      26      19      0       14      3       10      
+5044. 7   88.112.227.41       SuomiSnooze             Red     26      26      27      0       21      4       17      
+5045. 9   82.75.149.30        [NL]FawFuL              Blue    39      39      19      0       12      7       5       
+5046. 10  86.50.73.171        SuomiRaven              Red     17      17      29      0       11      1       10   

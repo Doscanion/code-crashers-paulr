@@ -1,0 +1,36 @@
+[[Tuesday, September 06, 2011 at 20:10:59]]
+**Current level: "Diamondus Warzone[JJnet Edit]" - JJnetCTFDW.j2l
+**Next level: JJnetCTFDW
+**Game Mode: CTF
+**Custom Mode: OFF
+[20:10:59] >>> Game Start
+*** Game End Stats [[Tuesday, September 06, 2011 at 20:39:36]] ***
+>> Winner: Red Team
+Blue Score: 2
+Red Score: 7
+ID  IP Address          Player Name             Team    Points  Roasts  Deaths  SDs     Caps    Scores  Drops   
+3   82.75.149.30        [NL]FawFuL              Red     29      29      18      0       13      3       10      
+4   212.235.172.47      EUbbe                   Blue    14      14      28      0       16      0       16      
+5   83.87.217.161       [NL]Vegito              Red     32      32      16      0       6       2       4       
+7   92.254.14.137       [NL]Chiyu               Red     22      22      17      0       11      2       8       
+8   86.165.214.69       PurpleJazzEU            Blue    16      16      28      0       17      1       15      
+10  95.247.249.160      EUccardo                Blue    21      21      27      0       17      1       16      
+[20:40:53] >>> Game End
+
+[[Tuesday, September 06, 2011 at 20:40:57]]
+**Current level: "Galactic Warfare" - gw.j2l
+**Next level: irctf18
+**Game Mode: CTF
+**Custom Mode: OFF
+[20:40:57] >>> Game Start
+*** Game End Stats [[Tuesday, September 06, 2011 at 21:06:35]] ***
+>> Winner: Red Team
+Blue Score: 2
+Red Score: 10
+ID  IP Address          Player Name             Team    Points  Roasts  Deaths  SDs     Caps    Scores  Drops   
+2   93.136.56.215       [EU]Snake               Blue    16      16      26      0       17      0       16      
+3   82.75.149.30        [NL]FawFuL              Red     23      23      20      0       10      3       7       
+4   95.247.249.160      EUccardo                Blue    28      28      27      0       16      2       14      
+5   83.87.217.161       [NL]Vegito              Red     28      28      24      0       12      2       10      
+7   92.254.14.137       [NL]Chiyu               Red     30      30      23      0       14      5       8       
+8   86.165.214.69       PurpleJazzEU            Blue    23      23      28      0       23      0       23      

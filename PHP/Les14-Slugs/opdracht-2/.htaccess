@@ -1,0 +1,9 @@
+RewriteEngine on
+
+RewriteRule ^contact/?$ contact.php
+
+RewriteRule ^product/?$ product.php
+RewriteRule ^product/(lords-of-waterdeep)/?$ product.php?id=$1
+RewriteRule ^product/(joking-hazard)/?$ product.php?id=$1
+RewriteRule ^product/(arkham-horror)/?$ product.php?id=$1
+RewriteRule ^product/(smash-up)/?$ product.php?id=$1

@@ -1,0 +1,28 @@
+html, body {
+	height: 100%;
+	background-image: linear-gradient(to bottom, rgb(220,250,250), rgb(170,200,200));
+	font-size: 24px;
+	font-family: Calibri, Arial, sans-serif;
+	color: rgb(20,80,80);
+	margin: 0;
+	padding: 0;
+}
+#container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+ul {
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	margin: 0;
+	padding: 0;
+}
+ul li a {
+	color: rgb(20,80,80);
+	text-decoration: none;
+}
+ul li a:hover {
+	color: rgb(120,180,180);
+}

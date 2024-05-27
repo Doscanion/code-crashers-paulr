@@ -1,0 +1,4 @@
+RewriteEngine on
+
+RewriteRule ^contact/?$ contact.php
+RewriteRule ^product/?$ product.php
