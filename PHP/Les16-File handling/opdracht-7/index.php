@@ -22,9 +22,8 @@ require_once './classes/Filelog.php';
 // }
 
 if (!empty($_POST)) {
-    $logFile = new Filelog;
-    $playerstats = $logFile->createLogArray($_POST['logFile']);
-    $logFile->statTable($playerstats);
+    $logFile = new Filelog($_POST['logFile']);
+    $result = $logFile->statTable();
 }
 ?>
 
@@ -47,6 +46,7 @@ if (!empty($_POST)) {
         <input type="submit" value="select">
 
     </form>
+    <?= $result ?>
 </body>
 
 </html>

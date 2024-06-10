@@ -1,11 +1,20 @@
 <?php
 class Filelog {
-    public static function createLogArray(string $file) {
-        $roundNumber = null;
-        $roundarray = [];
-        if (file_exists('./logs/' . $file)) {
-            echo 'File exist';
-            $contents = file_get_contents('./logs/' . $file);
+    private string $fileName;
+    private array $roundarray = [];
+
+    public function __construct(string $fileName) {
+        $this->fileName = $fileName;
+    }
+
+
+    public function createLogArray() {
+        if (!empty($this->roundarray)) return $this->roundarray;
+
+        if (file_exists('./logs/' . $this->fileName)) {
+            $roundNumber = null;
+            // echo 'File exist';
+            $contents = file_get_contents('./logs/' . $this->fileName);
             $encoding = mb_detect_encoding($contents, 'UTF-16,UTF-8');
             $normalizedContents = mb_convert_encoding($contents, 'UTF-8', $encoding);
             $logLines = explode("\n", $normalizedContents);
@@ -14,13 +23,13 @@ class Filelog {
             // echo '</pre>';
 
             foreach ($logLines as $key => $value) {
-                echo '<pre>';
-                var_dump($value);
-                var_dump(preg_match('/Game Start/', trim($value)));
-                var_dump(str_contains($value, "Game Start"));
-                echo '</pre>';
+                // echo '<pre>';
+                // var_dump($value);
+                // var_dump(preg_match('/Game Start/', trim($value)));
+                // var_dump(str_contains($value, "Game Start"));
+                // echo '</pre>';
                 if (preg_match('/Game Start/', trim($value))) {
-                    echo "Game Start";
+                    // echo "Game Start";
                     if ($roundNumber !== null) {
                         $roundNumber++;
                     } elseif ($roundNumber === null) {
@@ -31,29 +40,30 @@ class Filelog {
                 // var_dump($roundNumber);
                 // echo '</pre>';
                 if (preg_match_all('/\d+\s+\d+\.\d+\.\d+\.\d+\s+(\S+)\s+\w+\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+(\d+)\s+\d+\s*$/', $logLines[$key], $playerstats)) {
-                    $roundarray[$roundNumber][] = [$playerstats[1], $playerstats[2]];
+                    $this->roundarray[$roundNumber][] = [$playerstats[1], $playerstats[2]];
                 }
             }
-            echo '<pre>';
-            print_r($roundarray);
-            echo '</pre>';
+            // echo '<pre>';
+            // print_r($roundarray);
+            // echo '</pre>';
         }
-        return $roundarray;
+        return $this->roundarray;
     }
 
-    public function statTable(array $array) {
-        $rounds = count($array);
-        echo '<table>';
-        echo '<tr>';
-        echo '<th>Speler</th>';
+    public function statTable() {
+        $this->createLogArray();
+        $rounds = count($this->roundarray);
+        $result = '<table>';
+        $result .= '<tr>';
+        $result .= '<th>Speler</th>';
         for ($i = 0; $i < $rounds; $i++) {
-            echo '<th>Round ' . $i + 1 . '</th>';
+            $result .= '<th>Round ' . $i + 1 . '</th>';
         }
-        echo '<th>Total</th>';
-        echo '</tr>';
-        $namesNumber = count($array[0]);
+        $result .= '<th>Total</th>';
+        $result .= '</tr>';
+        // $namesNumber = count($this->roundarray[0]);
         $newStat = [];
-        foreach ($array as $round) {
+        foreach ($this->roundarray as $round) {
             foreach ($round as $roundPlayer) {
                 $playerName = $roundPlayer[0][0];
                 $score = $roundPlayer[1][0];
@@ -67,7 +77,7 @@ class Filelog {
         }
 
 
-        $playersAmount = count($newStat);
+        // $playersAmount = count($newStat);
 
         // foreach ($newStat as $key => $values) {
         //     $total = 0;
@@ -90,9 +100,9 @@ class Filelog {
             $newStat[$key][] = $total;
         }
 
-        echo '<pre>';
-        var_dump($newStat);
-        echo '</pre>';
+        // echo '<pre>';
+        // var_dump($newStat);
+        // echo '</pre>';
 
         uasort($newStat, function ($a, $b) {
             return $b[2] - $a[2];
@@ -100,14 +110,15 @@ class Filelog {
 
 
         foreach ($newStat as $key => $playstats) {
-            echo '<tr>';
-            echo '<td>' . $key . '</td>';
+            $result .= '<tr>';
+            $result .= '<td>' . $key . '</td>';
             for ($i = 0; $i < $rounds + 1; $i++) {
-                echo '<td>' . $playstats[$i] . '</td>';
+                $result .= '<td>' . $playstats[$i] . '</td>';
             }
-            echo '</tr>';
+            $result .= '</tr>';
         }
 
-        echo '</table>';
+        $result .= '</table>';
+        return $result;
     }
 }
