@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+	<category>
+		<name>electronica</name>
+		<products>
+			<product id="0101">
+				<name>HDTV</name>
+				<price cur="euro">694.95</price>
+			</product>
+			<product id="0102">
+				<name>Wii U</name>
+				<price cur="euro">249.95</price>
+			</product>
+			<product id="0103">
+				<name>Stereo-installatie</name>
+				<price cur="euro">199.95</price>
+			</product>
+		</products>
+	</category>
+	<category>
+		<name>wasmiddelen</name>
+		<products>
+			<product id="0201">
+				<name>Wasverzachter</name>
+				<price cur="dollar">3.95</price>
+			</product>
+			<product id="0202">
+				<name>Waspoeder</name>
+				<price cur="dollar">7.50</price>
+			</product>	
+			<product id="0203">
+				<name>Vlekverwijderaar</name>
+				<price cur="dollar">11.95</price>
+			</product>
+		</products>
+	</category>
+	<category>
+		<name>kazen</name>
+		<products>
+			<product id="0301">
+				<name>Brie</name>
+				<price cur="pound">0.80</price>
+			</product>
+			<product id="0302">
+				<name>Feta</name>
+				<price cur="pound">1.75</price>
+			</product>	
+			<product id="0303">
+				<name>Gouda</name>
+				<price cur="pound">3.00</price>
+			</product>
+		</products>
+	</category>	
+</catalog>
