@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<albums>
+	<albumhead>
+        <headname>Album</headname>
+        <headyear>Jaartal</headyear>
+        <headtime>Afspeeltijd</headtime>
+        <headnumbers>Nummers</headnumbers>
+    </albumhead>
+    <album>
+        <name>Fleetwood Mac</name>
+        <year>1975</year>
+        <time>42:12</time>
+        <numbers>11</numbers>
+        <songs>
+            <song>Rhiannon</song>
+            <song>Landside</song>
+            <song>Say You Love Me</song>
+        </songs>
+    </album>
+    <album>
+        <name>Rumours</name>
+        <year>1977</year>
+        <time>39:43</time>
+        <numbers>11</numbers>
+        <songs>
+            <song>Go Your Own Way</song>
+            <song>Dreams</song>
+            <song>Don't Stop</song>
+        </songs>
+    </album>
+    <album>
+        <name>Tusk</name>
+        <year>1979</year>
+        <time>74:25</time>
+        <numbers>20</numbers>
+        <songs>
+            <song>Tusk</song>
+            <song>Sarah</song>
+            <song>Not That Funny</song>
+        </songs>
+    </album>
+    <album>
+        <name>Mirage</name>
+        <year>1982</year>
+        <time>42:52</time>
+        <numbers>12</numbers>
+        <songs>
+            <song>Hold Me</song>
+            <song>Gypsy</song>
+            <song>Love in Store</song>
+        </songs>
+    </album>
+    <album>
+        <name>Tango in the Night</name>
+        <year>1987</year>
+        <time>44:28</time>
+        <numbers>12</numbers>
+        <songs>
+            <song>Big Love</song>
+            <song>Little Lies</song>
+            <song>Everywhere</song>
+        </songs>
+    </album>
+</albums>
+
+<!-- 
+    <album>
+        <name></name>
+        <year></year>
+        <time></time>
+        <numbers></numbers>
+    </album> -->
+
+
