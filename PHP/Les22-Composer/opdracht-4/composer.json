@@ -1,0 +1,8 @@
+{
+	"autoload": {
+		"classmap": ["classes"],
+        "psr-4": {
+            "Organisms\\":"classes/Organisms"
+        }
+	}
+}
