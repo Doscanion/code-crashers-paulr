@@ -1,0 +1,8 @@
+{
+    "require": {
+        "symfony/mailer": "^7.1",
+        "fakerphp/faker": "^1.23"
+    },
+    "autoload": {
+	}
+}
