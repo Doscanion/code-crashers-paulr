@@ -1,0 +1,6 @@
+RewriteEngine on
+
+RewriteRule ^contact$ \?action=contact
+RewriteRule ^catalog$ \?action=catalog
+RewriteRule ^about$ \?action=about
+RewriteRule ^index$ \?action=index
