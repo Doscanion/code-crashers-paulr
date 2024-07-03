@@ -1,0 +1,14 @@
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^contact/?$ index.php?page=contact
+
+RewriteRule ^product/?$ index.php?page=product
+RewriteRule ^product/(lords-of-waterdeep)/?$ index.php?page=product&id=$1
+RewriteRule ^product/(joking-hazard)/?$ index.php?page=product&id=$1
+RewriteRule ^product/(arkham-horror)/?$ index.php?page=product&id=$1
+RewriteRule ^product/(smash-up)/?$ index.php?page=product&id=$1
+
+RewriteRule ^$ index.php?page=home

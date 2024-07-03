@@ -1,0 +1,8 @@
+{% if messages|length > 0 %} {% for message in messages %}
+<article>
+	<p>{{ message.text }}</p>
+	<p>Gepost door <strong>{{ message.name }}</strong> op {{ message.time }}, onder ip-adres {{ message.ip }}</p>
+</article>
+{% endfor %} {% else %}
+<p>No messages found.</p>
+{% endif %}

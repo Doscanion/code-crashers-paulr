@@ -1,0 +1,17 @@
+{% extends "base.html" %} {% block base %}<base href="/Les24-Twig/opdracht-3/" target="_self" />{% endblock %} {% block css %}
+<link rel="stylesheet" href="css/product.css" />
+{% endblock %} {% block content%}
+<section>
+	<ul>
+		<li><a href="./product/lords-of-waterdeep">Lords of Waterdeep</a></li>
+		<li><a href="./product/joking-hazard">Joking Hazard</a></li>
+		<li><a href="./product/arkham-horror">Arkham Horror</a></li>
+		<li><a href="./product/smash-up">Smash Up</a></li>
+	</ul>
+</section>
+<section>
+	<h1>{{ content.name }}</h1>
+	<h2>€{{ content.price }}</h2>
+	<img src="images/{{content.img}}" alt="{{content.name}}" />
+</section>
+{% endblock %}

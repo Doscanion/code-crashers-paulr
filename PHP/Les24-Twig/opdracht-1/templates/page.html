@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Beren</title>
+		<link type="text/css" rel="stylesheet" href="./css/style.css" />
+		<meta name="description" content="Beer!!!!" />
+	</head>
+
+	<body>
+		<div id="container">
+			<div id="header">
+				<img style="width: 50px; height: auto; margin: 0px; border: 0px;" src="./images/Facebook.png" alt="Facebook" />
+			</div>
+			<nav id="menu">
+				<ul>
+					<li><a href="./index.php">Home</a></li>
+					<li><a href="./koala">Koala</a></li>
+					<li><a href="./grizzlybeer">Grizzlybeer</a></li>
+					<li><a href="./ijsbeer">IJsbeer</a></li>
+				</ul>
+			</nav>
+			<div id="content">
+				<h1>{{title}}</h1>
+				<p>
+					{{ptext}}
+				</p>
+				<img src="./images/{{ image.url }}" width="{{image.width}}" alt="{{image.alt}}" />
+			</div>
+			<footer id="footer"></footer>
+		</div>
+	</body>
+</html>

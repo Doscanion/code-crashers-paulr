@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+	<head>
+		{% block base %}{% endblock %}
+		<meta charset="UTF-8" />
+		<title>Webshop</title>
+		<link rel="stylesheet" href="css/main.css" />
+		{% block css %}{% endblock %}
+	</head>
+
+	<body>
+		<div id="container">
+			<nav>
+				<ul>
+					<li><a href="./">Home</a></li>
+					<li><a href="./product">Producten</a></li>
+					<li><a href="./contact">Contact</a></li>
+				</ul>
+			</nav>
+			{% block content %}{% endblock %}
+		</div>
+	</body>
+</html>
