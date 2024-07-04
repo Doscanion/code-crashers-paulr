@@ -54,6 +54,8 @@ if (!empty($_POST)) {
         } else {
             throw new Exception("Song 3 is empty");
         }
+
+        $xml->asXML('fleetwoodmac.xml');
     } catch (Exception $e) {
         echo '<p>Error: ' . $e->getMessage() . '</p>';
     }

@@ -1,0 +1,10 @@
+{
+    
+    "require": {
+        "twig/twig": "^3.10"
+    },
+
+    "autoload": {
+        "classmap": ["classes"]
+    }
+}

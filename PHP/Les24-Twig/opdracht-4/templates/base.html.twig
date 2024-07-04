@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>XML 4</title>
+		<style>
+			div {
+				margin-top: 10px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<form action="{{ action }}" method="post">
+			<div>
+				<label for="name">Name</label>
+				<input type="text" required id="name" name="name" />
+			</div>
+			<div>
+				<label for="year">Year - yyyy</label>
+				<input type="text" required pattern="^[0-9]{4}$" id="year" name="year" />
+			</div>
+			<div>
+				<label for="time">Time - mm:ss</label>
+				<input type="text" required pattern="^\d{2}:\d{2}$" id="time" name="time" />
+			</div>
+			<div>
+				<label for="numbers">Numbers</label>
+				<input type="number" required id="numbers" name="numbers" />
+			</div>
+			<div>
+				<label for="song1">Song 1</label>
+				<input type="text" required id="song1" name="song1" />
+			</div>
+			<div>
+				<label for="song2">Song 2</label>
+				<input type="text" required id="song2" name="song2" />
+			</div>
+			<div>
+				<label for="song3">Song 3</label>
+				<input type="text" required id="song3" name="song3" />
+			</div>
+			<div>
+				<input type="submit" value="Submit" name="submit" />
+			</div>
+		</form>
+		<table>
+			<tr>
+				<th>Album</th>
+				<th>Afspeeltijd</th>
+				<th>Nummers</th>
+			</tr>
+			{% for album in albums %}
+			<tr>
+				<td>{{ album.name }} ({{ album.year }})</td>
+				<td>{{ album.time }} minuten</td>
+				<td>
+					{{ album.numbers }} waaronder {% for song in album.songs %} {% if loop.last %}
+					{{ song }}
+					{% else %}
+					{{ song }}, {% endif %} {% endfor %}
+				</td>
+			</tr>
+			{% endfor %}
+		</table>
+	</body>
+</html>
