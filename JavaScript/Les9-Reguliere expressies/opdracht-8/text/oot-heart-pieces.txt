@@ -1,0 +1,110 @@
+-----CHILD LINK-----
+
+LOCATION: Graveyard
+OBTAINED BY: A Prize in Dampe's Heart Pounding Graveyard Tour
+
+LOCATION: Graveyard
+OBTAINED BY: Playing "Sun Song" in unmarked grave with redead
+
+LOCATION: Goron City
+OBTAINED BY: Lighting torches around pot and throwing bomb flowers in spinning pot
+
+LOCATION: Hyrule Market
+OBTAINED BY: Prize in Bombchu Bowling game
+
+LOCATION: Hyrule Market (Night)
+OBTAINED BY: Bringing Pooch lady's dog back (White dog near concession stand)
+
+LOCATION: Hyrule Market (Night)
+OBTAINED BY: Prize in treasure box game, suggestively with Lens of Truth
+
+LOCATION: Hyrule Field (w/stone of agony)
+OBTAINED BY: Hidden Hole in between the four fences in front of Lake Hylia, bought with 10 rupees.
+
+LOCATION: Kakariko Village
+OBTAINED BY: 50 Gold Skulltula Tokens
+
+LOCATION: Kakariko Village
+OBTAINED BY: Cow's Stall, reached by the owl's help, jump onto the roof above the chicken's pen and go through the crack
+
+LOCATION: Lake Hylia
+OBTAINED BY: Catching a 10-pounder in the fishing game
+
+LOCATION: Lon Lon Ranch
+OBTAINED BY: Moving boxes in storage shed and crawling through hole
+
+LOCATION: Lost Woods
+OBTAINED BY: Playing "Saria's Song" to Skull kid, just left of the entrance
+
+LOCATION: Lost Woods
+OBTAINED BY: Playing 3 songs with the two skull kids, to the right of entrance
+
+LOCATION: Zora's Domain
+OBTAINED BY: Lighting all four torches towards waterfall, on near store and the others on the way towards waterfall
+
+LOCATION: Zora's River (Have all 6 Gray Noted Songs)
+OBTAINED BY: Winning the Bug Catching Game with the frogs
+
+LOCATION: Zora's River
+OBTAINED BY: Jumping to lofty platform in the center of the river with chicken
+
+LOCATION: Zora's River
+OBTAINED BY: Having the chicken, head towards the end of the river and turn around to see it, jump from the highest point toward it
+
+LOCATION: Zora's River
+OBTAINED BY: Playing the "Song of Storms" to the frogs
+
+-----ADULT LINK-----
+LOCATION: Death Mountain Crater
+OBTAINED BY: A niche in the wall, climb to see it
+
+LOCATION: Death Mountain Crater (Magic Bean)
+OBTAINED BY: Ride the bean plant to the top of the left ash cone
+
+LOCATION: Death Mountain Trail (Magic Bean)
+OBTAINED BY: Ride the bean plant to the top of the Dodongo Cavern entrance
+
+LOCATION: Desert Colossus (Magic Bean)
+OBTAINED BY: Ride the bean plant to the top of the arc
+
+LOCATION: Gerudo Valley
+OBTAINED BY: In a niche behind the waterfall, climb the ladder
+
+LOCATION: Gerudo Valley
+OBTAINED BY: Inside a crate on the ledge of the river, use longshot
+
+LOCATION: Gerudo Fortress
+OBTAINED BY: Prize in the Horseback Archery Contest
+
+LOCATION: Gerudo Fortress
+OBTAINED BY: Hookshot on the highest roof of the Thieves' Hideout
+
+LOCATION: Graveyard
+OBTAINED BY: Beating Dampe's Ghost in a minute or less, use longshot
+
+LOCATION: Graveyard (Magic Bean)
+OBTAINED BY: Ride the bean plant to a crate, break it and it's yours
+
+LOCATION: Hyrule Field
+OBTAINED BY: Using Iron Boots and Gold Scale, look in the pond in a hidden hole near a tree between Gerudo valley and Hyrule Castle
+
+LOCATION: Ice Cavern
+OBTAINED BY: Using Blue Fire to melt away the red ice around a piece of heart
+
+LOCATION: Kakariko Village
+OBTAINED BY: Longshot to the lone man on a roof
+
+LOCATION: Kakariko Village
+OBTAINED BY: On a ledge in the Windmill
+
+LOCATION: Lake Hylia
+OBTAINED BY: Diving in the scientist's lab with Gold Scale
+
+LOCATION: Lake Hylia (Magic Bean)
+OBTAINED BY: Riding Magic Bean Leaf to the top of laboratory
+
+LOCATION: Zora's Fountain
+OBTAINED BY: Hopping to the lone iceberg
+
+LOCATION: Zora's Fountain
+OBTAINED BY: Using Iron Boots and Zora's Tunic to sink to the bottom and collect the heart piece
