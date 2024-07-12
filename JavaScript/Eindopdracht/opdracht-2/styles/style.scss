@@ -2,6 +2,12 @@ body {
 	margin: 0;
 }
 
+.container {
+	max-height: 100vh;
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+}
 .sidebar {
 	background-color: lightgray;
 	display: flex;
@@ -21,4 +27,8 @@ body {
 			margin-top: 2px;
 		}
 	}
+}
+
+.main {
+	margin-left: 15px;
 }
