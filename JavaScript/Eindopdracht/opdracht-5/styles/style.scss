@@ -1,5 +1,6 @@
 body {
 	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -60,19 +61,48 @@ h1 {
 		height: 30px;
 		border: 1px solid black;
 		border-radius: 6px;
+		color: white;
 	}
 }
 
 .pokemon-info-main {
-	width: 100%;
-	margin-top: 20px;
 	display: flex;
 	flex-wrap: wrap;
+	gap: 10px;
 	.pokemon-canvas {
 		flex: 1;
 	}
 	.pokemon-info-text {
 		flex: 1;
+	}
+}
+
+.pokemon-team {
+	margin-top: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	justify-content: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: gray;
+	figure {
+		position: relative;
+
+		background-color: white;
+		margin: 0;
+		border: 3px solid black;
+		border-radius: 5px;
+		figcaption {
+			text-align: center;
+		}
+		button {
+			border: 0;
+			background: transparent;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
 	}
 }
 
