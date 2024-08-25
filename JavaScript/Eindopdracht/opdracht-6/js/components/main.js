@@ -221,94 +221,159 @@ class Main {
 			newTeam.push(pokemonToAdd);
 
 			localStorage.setItem("pokemonTeam", JSON.stringify(newTeam));
-
 			this.pokemonShowTeam(newTeam);
+			this.pokemonTeamTotal(newTeam);
 		} else {
 			alert("The team already has 6 Pokémons.");
 		}
 	}
 
 	pokemonShowTeam(pokemonTeam) {
-		const teamSelector = document.querySelector(".pokemon-team");
-		teamSelector.innerHTML = "";
-		for (const pokemon of pokemonTeam) {
-			const pokemonFigure = document.createElement("figure");
-			const pokemonImg = document.createElement("img");
-			pokemonImg.src = pokemon.img;
-			pokemonImg.alt = pokemon.name;
-			pokemonImg.loading = "early";
+		console.log(pokemonTeam);
+		if (pokemonTeam.length > 0) {
+			const teamSelector = document.querySelector(".pokemon-team");
+			teamSelector.innerHTML = "";
+			for (const pokemon of pokemonTeam) {
+				const pokemonFigure = document.createElement("figure");
+				const pokemonImg = document.createElement("img");
+				pokemonImg.src = pokemon.img;
+				pokemonImg.alt = pokemon.name;
+				pokemonImg.loading = "early";
 
-			const pokemonDeleteMember = document.createElement("button");
-			pokemonDeleteMember.classList.add("pokemon-add-button");
-			pokemonDeleteMember.innerHTML = "&#10006;";
-			pokemonDeleteMember.addEventListener("click", () => {
-				const userDeletePokemon = window.confirm("Are you certain you want to delete " + pokemon.name + " from your team");
-				if (userDeletePokemon) {
-					this.pokemonDelete(pokemonTeam, pokemon);
-				}
-			});
+				const pokemonDeleteMember = document.createElement("button");
+				pokemonDeleteMember.classList.add("pokemon-add-button");
+				pokemonDeleteMember.innerHTML = "&#10006;";
+				pokemonDeleteMember.addEventListener("click", () => {
+					const userDeletePokemon = window.confirm("Are you certain you want to delete " + pokemon.name + " from your team");
+					if (userDeletePokemon) {
+						this.pokemonDelete(pokemonTeam, pokemon);
+					}
+					if (localStorage.getItem("pokemonTeam") !== null) {
+						let newTeam = JSON.parse(localStorage.getItem("pokemonTeam"));
+						this.pokemonTeamTotal(newTeam);
+					}
+				});
 
-			pokemonFigure.style.borderColor = pokemonTypeColor[pokemon.types[0].type.name];
+				pokemonFigure.style.borderColor = pokemonTypeColor[pokemon.types[0].type.name];
 
-			const pokemonCaption = document.createElement("figcaption");
-			pokemonCaption.textContent = pokemon.nickname;
+				const pokemonCaption = document.createElement("figcaption");
+				pokemonCaption.textContent = pokemon.nickname;
 
-			pokemonFigure.appendChild(pokemonImg);
-			pokemonFigure.appendChild(pokemonDeleteMember);
-			pokemonFigure.appendChild(pokemonCaption);
-			teamSelector.appendChild(pokemonFigure);
+				pokemonFigure.appendChild(pokemonImg);
+				pokemonFigure.appendChild(pokemonDeleteMember);
+				pokemonFigure.appendChild(pokemonCaption);
+				teamSelector.appendChild(pokemonFigure);
+			}
+		} else {
+			const teamSelector = document.querySelector(".pokemon-team");
+			teamSelector.innerHTML = "";
 		}
 	}
 
-	pokemonTotalCanvas(pokemonTeam){
+	pokemonTeamTotal(pokemonTeam) {
 		console.log(pokemonTeam);
-		const pokemonCanvasElement = document.createElement("canvas");
-		pokemonCanvasElement.width = "310";
-		pokemonCanvasElement.height = "180";
+		if (pokemonTeam.length > 0) {
+			const pokemonTeamTotal = document.querySelector(".pokemon-team-total");
+			pokemonTeamTotal.innerHTML = "";
+			const pokemonTeamCanvasElement = document.createElement("canvas");
+			pokemonTeamCanvasElement.width = "620";
+			pokemonTeamCanvasElement.height = "180";
 
-		let hp;
-		let atk;
-		let def;
-		let spatk;
-		let spdef;
-		let spd
+			let hp = 0;
+			let atk = 0;
+			let def = 0;
+			let spatk = 0;
+			let spdef = 0;
+			let spd = 0;
 
-		for (const element of object) {
-			
-			const hp = pokemon.stats[0].base_stat;
-			const atk = pokemon.stats[1].base_stat;
-			const def = pokemon.stats[2].base_stat;
-			const spatk = pokemon.stats[3].base_stat;
-			const spdef = pokemon.stats[4].base_stat;
-			const spd = pokemon.stats[5].base_stat;
+			let teamTypes = [];
+
+			for (const pokemon of pokemonTeam) {
+				hp += pokemon.hp;
+				atk += pokemon.atk;
+				def += pokemon.def;
+				spatk += pokemon.spatk;
+				spdef += pokemon.spdef;
+				spd += pokemon.spd;
+				pokemon.types.forEach((element) => {
+					if (!teamTypes.includes(element.type.name)) {
+						teamTypes.push(element.type.name);
+					}
+				});
+			}
+
+			console.log(teamTypes);
+
+			const teamStats = {
+				hp: {
+					stat: hp,
+					color: "#FF5959",
+				},
+				atk: {
+					stat: atk,
+					color: "#F5AC78",
+				},
+				def: {
+					stat: def,
+					color: "#FAE078",
+				},
+				spatk: {
+					stat: spatk,
+					color: "#9DB7F5",
+				},
+				spdef: {
+					stat: spdef,
+					color: "#A7DB8D",
+				},
+				spd: {
+					stat: spd,
+					color: "#FA92B2",
+				},
+			};
+
+			let x = 50;
+			let y = 0;
+			let width = 1;
+			let height = 20;
+
+			const pokemonTeamContext = pokemonTeamCanvasElement.getContext("2d");
+			pokemonTeamContext.font = "bold 15px Arial";
+
+			for (const stat in teamStats) {
+				pokemonTeamContext.fillStyle = "black";
+				pokemonTeamContext.fillText(stat, x - 50, y + height / 1.5);
+
+				pokemonTeamContext.fillStyle = teamStats[stat].color;
+				pokemonTeamContext.fillRect(x, y, (width * teamStats[stat].stat) / 2, height);
+
+				y += height + 10;
+			}
+
+			const pokemonTeamDiv = document.createElement("div");
+			const pokemonTeamText = document.createElement("p");
+			pokemonTeamText.textContent = "Team Info";
+			pokemonTeamDiv.classList.add("pokemon-team-canavas");
+			pokemonTeamDiv.appendChild(pokemonTeamText);
+			pokemonTeamDiv.appendChild(pokemonTeamCanvasElement);
+			pokemonTeamTotal.appendChild(pokemonTeamDiv);
+
+			const pokemonTeamTypeContainer = document.createElement("div");
+			pokemonTeamTypeContainer.classList.add("pokemon-types");
+			pokemonTeamTypeContainer.classList.add("pokemon-types-team");
+
+			teamTypes.forEach((element) => {
+				const pokemonType = element;
+				const pokemonTypeText = document.createElement("p");
+				pokemonTypeText.textContent = pokemonType;
+				pokemonTypeText.style.backgroundColor = pokemonTypeColor[pokemonType];
+				pokemonTeamTypeContainer.appendChild(pokemonTypeText);
+			});
+
+			pokemonTeamTotal.appendChild(pokemonTeamTypeContainer);
+		} else {
+			const pokemonTeamTotal = document.querySelector(".pokemon-team-total");
+			pokemonTeamTotal.innerHTML = "";
 		}
-		
-		const stats = {
-			hp: {
-				stat: hp,
-				color: "#FF5959",
-			},
-			atk: {
-				stat: atk,
-				color: "#F5AC78",
-			},
-			def: {
-				stat: def,
-				color: "#FAE078",
-			},
-			spatk: {
-				stat: spatk,
-				color: "#9DB7F5",
-			},
-			spdef: {
-				stat: spdef,
-				color: "#A7DB8D",
-			},
-			spd: {
-				stat: spd,
-				color: "#FA92B2",
-			},
-		};
 	}
 
 	pokemonDelete(pokemonTeam, clickedPokemon) {
@@ -327,6 +392,7 @@ class Main {
 
 			const pokemonTeam = JSON.parse(localStorage.getItem("pokemonTeam"));
 			this.pokemonShowTeam(pokemonTeam);
+			this.pokemonTeamTotal(pokemonTeam);
 		}
 	}
 }

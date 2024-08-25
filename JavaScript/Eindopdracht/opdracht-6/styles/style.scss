@@ -36,6 +36,11 @@ h1 {
 // ---------------- main START----------------
 .main {
 	flex: 1;
+	overflow-x: auto;
+}
+
+.pokemon-info {
+	width: 1050px;
 }
 
 .pokemon-info-childs {
@@ -62,10 +67,12 @@ h1 {
 		border: 1px solid black;
 		border-radius: 6px;
 		color: white;
+		flex-wrap: wrap;
 	}
 }
 
 .pokemon-info-main {
+	width: 1035px;
 	display: flex;
 	flex-wrap: wrap;
 	gap: 10px;
@@ -79,12 +86,12 @@ h1 {
 
 .pokemon-team {
 	margin-top: 10px;
+	width: 1050px;
 	display: flex;
 	flex-wrap: wrap;
+
 	gap: 10px;
 	justify-content: center;
-	padding-top: 5px;
-	padding-bottom: 5px;
 	background-color: gray;
 	figure {
 		position: relative;
@@ -103,6 +110,33 @@ h1 {
 			right: 0;
 			top: 0;
 		}
+	}
+}
+
+.pokemon-team-total {
+	margin: 10px;
+
+	display: flex;
+}
+
+.pokemon-team-canavas {
+	p {
+		margin: 0;
+		font-size: large;
+	}
+	canvas {
+		margin-top: 5px;
+	}
+}
+
+.pokemon-types-team {
+	margin-top: 20px;
+	flex: 1;
+	min-width: 320px;
+	display: flex;
+	flex-wrap: wrap;
+	p {
+		margin: 0;
 	}
 }
 
