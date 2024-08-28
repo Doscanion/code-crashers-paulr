@@ -1,0 +1,185 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+	max-width: 1400px;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+.sidebar {
+	background-color: lightgray;
+	display: flex;
+	flex-wrap: wrap;
+	width: 350px;
+	height: 100vh;
+	overflow-y: auto;
+	position: sticky;
+	top: 0;
+
+	figure {
+		display: flex;
+		margin: 5px;
+		width: 150px;
+		text-align: center;
+		align-items: center;
+		flex-direction: column;
+		figcaption {
+			margin-top: 2px;
+		}
+	}
+}
+h1 {
+	margin: 0;
+}
+
+// ---------------- main START----------------
+.main {
+	flex: 1;
+	overflow-x: auto;
+	overflow-y: auto;
+}
+
+.pokemon-info {
+	width: 1050px;
+}
+
+.pokemon-info-childs {
+	padding-top: 10px;
+	padding-left: 15px;
+}
+
+.pokemon-info-top {
+	img {
+		width: 150px;
+		height: auto;
+	}
+}
+
+.pokemon-types {
+	display: flex;
+	gap: 20px;
+	p {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 90px;
+		height: 30px;
+		border: 1px solid black;
+		border-radius: 6px;
+		color: white;
+		flex-wrap: wrap;
+	}
+}
+
+.pokemon-info-main {
+	width: 1035px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	.pokemon-canvas {
+		flex: 1;
+	}
+	.pokemon-info-text {
+		flex: 1;
+	}
+}
+
+.pokemon-team {
+	margin-top: 10px;
+	width: 1050px;
+	display: flex;
+	flex-wrap: wrap;
+
+	gap: 10px;
+	justify-content: center;
+	background-color: gray;
+	figure {
+		position: relative;
+
+		background-color: white;
+		margin: 0;
+		border: 3px solid black;
+		border-radius: 5px;
+		figcaption {
+			text-align: center;
+		}
+		button {
+			border: 0;
+			background: transparent;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+	}
+}
+
+.pokemon-team-total {
+	margin: 10px;
+
+	display: flex;
+}
+
+.pokemon-team-canavas {
+	p {
+		margin: 0;
+		font-size: large;
+	}
+	canvas {
+		margin-top: 5px;
+	}
+}
+
+.pokemon-types-team {
+	margin-top: 20px;
+	flex: 1;
+	min-width: 320px;
+	display: flex;
+	flex-wrap: wrap;
+	p {
+		margin: 0;
+	}
+}
+
+.pokemon-evolution-info {
+	display: flex;
+	align-items: center;
+}
+
+.pokemon-evolution {
+	margin-left: 10px;
+	display: flex;
+	text-align: center;
+	span {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 18px;
+	}
+}
+
+.evolutions-vertical {
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 10px;
+	align-items: center;
+}
+
+.evolutions-horizontal {
+	display: flex;
+	flex-flow: row nowrap;
+	gap: 10px;
+	align-items: center;
+}
+
+.evolution-pokemon {
+	display: inline-block;
+	align-items: center;
+}
+// ---------------- main END ----------------
