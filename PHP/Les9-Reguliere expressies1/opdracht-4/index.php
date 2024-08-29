@@ -1,7 +1,4 @@
 <?php
-if (!empty($_GET)) {
-}
-
 function checkComplexity($pw)
 {
     $error = [];
@@ -32,7 +29,7 @@ function checkComplexity($pw)
             <input type="text" name="name" id="name">
         </div>
         <div><label for="password">Password</label>
-            <input type="text" name="password" id="password">
+            <input type="password" name="password" id="password">
         </div>
         <input type="submit" value="Registreren">
     </form>

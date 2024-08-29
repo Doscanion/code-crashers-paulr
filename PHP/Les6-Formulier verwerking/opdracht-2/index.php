@@ -2,7 +2,7 @@
 $errors = [];
 
 if (isset($_POST['verzend'])) {
-    $leeftijd = -1;
+    $leeftijd = 0;
     foreach ($_POST as $key => $value) {
         if ($key !== 'verzend') {
             if (!empty($value)) {
@@ -65,29 +65,8 @@ if (isset($_POST['verzend'])) {
             <input type="submit" name="verzend" value="Verzenden">
         </div>
         <?php
-        // if (isset($_POST['verzend']) && count($errors) === 0 && $leeftijd >= 0 && $leeftijd <= 150) {
-        //     echo 'Je naam is ' . $voornaam . ' ' . $achternaam;
-        //     echo 'Je leeftijd is ' . $leeftijd;
-        //     echo 'De datum is ' . $datum;
-        //     echo '
-        //     <style>
-        //         body {
-        //         background-color: ' . $_POST['kleur'] . ';
-        //         }
-        //     </style>';
-        // } elseif (isset($_POST['verzend']) && count($errors) !== 0) {
-        //     if ($leeftijd < 0 && $leeftijd > 150) {
-        //         echo '<p style="color: red;">Vul een gelde waarde in voor de leeftijd</p>';
-        //     }
-        //     foreach ($errors as $key => $value) {
-        //         echo '<p style="color: red;">Vul de waarde in van ' . $value . '</p>';
-        //     }
-        // } elseif (isset($_POST['verzend']) && $leeftijd < 0 && $leeftijd > 150) {
-        //     echo 'Vul een gelde waarde in voor de leeftijd';
-        // }
-
         if (isset($_POST['verzend'])) {
-            if ($leeftijd < 0 && $leeftijd > 150) {
+            if ($leeftijd < 0 || $leeftijd > 150) {
                 echo '<p style="color: red;">Vul een gelde waarde in voor de leeftijd</p>';
             } elseif (count($errors) !== 0) {
                 foreach ($errors as $key => $value) {

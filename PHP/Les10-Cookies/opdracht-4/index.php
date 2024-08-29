@@ -1,7 +1,7 @@
 <?php
 if (!empty($_GET)) {
     $error = [];
-    if (!empty($_GET['font-size']) && !empty($_GET['text-color']) && !empty($_GET['background-color']) && isset($_GET['font-family']) && !empty($_GET['shadow'])) {
+    if (!empty($_GET['font-size']) && !empty($_GET['text-color']) && !empty($_GET['background-color']) && isset($_GET['font-family'])) {
         if (!is_numeric($_GET['font-size'])) {
             $error[] = 'The font-size was not entered correctly.';
         }
@@ -16,6 +16,8 @@ if (!empty($_GET)) {
         }
         if (empty($error)) {
             setcookie('favSettings',  json_encode($_GET), time() + (3 * 60 * 60));
+            header("Location: " . $_SERVER['PHP_SELF']);
+            exit();
         }
     } else {
         $error[] = 'Some field(s) were left empty.';
