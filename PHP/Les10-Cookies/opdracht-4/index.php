@@ -16,8 +16,6 @@ if (!empty($_GET)) {
         }
         if (empty($error)) {
             setcookie('favSettings',  json_encode($_GET), time() + (3 * 60 * 60));
-            header("Location: " . $_SERVER['PHP_SELF']);
-            exit();
         }
     } else {
         $error[] = 'Some field(s) were left empty.';
