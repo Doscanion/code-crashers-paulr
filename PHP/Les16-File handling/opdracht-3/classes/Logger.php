@@ -44,6 +44,17 @@ class Logger {
 
     public function addLog(string $author, string $message): void {
         $message = str_replace(';', '{SEMICOLON}', $message);
+        if (filesize($this->path) !== 0) {
+            $fileRead = fopen($this->path, 'r');
+            fseek($fileRead, -1, SEEK_END);
+            $lastChar = fgetc($fileRead);
+            if ($lastChar !== "\n") {
+                fwrite($this->handle, PHP_EOL);
+            }
+            fclose($fileRead);
+        }
+
+
         fwrite($this->handle, $author . ';' . $message . ';' . date('H:i:s Y-m-d') . ';' . $_SERVER['REMOTE_ADDR'] . PHP_EOL);
         echo 'Text added';
     }
@@ -59,7 +70,9 @@ class Logger {
                         $textarray[$key] = str_replace('{SEMICOLON}', ';', $value);
                     }
 
-                    echo '<article><p>' . $textarray[1] . '</p> <p>Gepost door <strong>' . $textarray[0] . '</strong> op ' . $textarray[2] . ', onder ip-adres ' . $textarray[3] . '</article>';
+                    if (!empty($textarray[0]) && !empty($textarray[1]) && !empty($textarray[2]) && !empty($textarray[3])) {
+                        echo '<article><p>' . $textarray[1] . '</p> <p>Gepost door <strong>' . $textarray[0] . '</strong> op ' . $textarray[2] . ', onder ip-adres ' . $textarray[3] . '</article>';
+                    }
                 }
             }
         }
