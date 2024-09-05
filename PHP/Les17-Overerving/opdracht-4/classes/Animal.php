@@ -12,7 +12,7 @@ abstract class Animal {
     }
 
     public function setAge(int $age) {
-        $this->age;
+        $this->age = $age;
     }
 
 

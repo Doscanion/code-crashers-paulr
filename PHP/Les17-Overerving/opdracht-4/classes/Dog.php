@@ -13,7 +13,7 @@ class Dog extends Animal {
     }
 
     public function setEduction(string $breed) {
-        $this->breed;
+        $this->breed = $breed;
     }
 
     public function bork() {

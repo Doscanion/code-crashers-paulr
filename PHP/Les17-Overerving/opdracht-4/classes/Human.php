@@ -15,7 +15,7 @@ class Human extends Animal {
     }
 
     public function setEduction(string $education) {
-        $this->education;
+        $this->education = $education;
     }
 
     public function getJob(): string {
@@ -23,7 +23,7 @@ class Human extends Animal {
     }
 
     public function setJob(string $job) {
-        $this->job;
+        $this->job = $job;
     }
 
     public function contemplateLife() {

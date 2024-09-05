@@ -6,10 +6,8 @@ use CodeCrashers\Marco\Calculator as MarcoCalculator;
 use CodeCrashers\Patrick\Calculator as PatrickCalculator;
 
 $array = [10, 7, 13, 6];
-$marco = new MarcoCalculator;
-$marcoHighest = $marco->findHighest($array);
-$patrick = new PatrickCalculator;
-$patrickDivide = $patrick->divide($marcoHighest, 3);
+$marcoHighest = MarcoCalculator::findHighest($array);
+$patrickDivide = PatrickCalculator::divide($marcoHighest, 3);
 
 ?>
 
