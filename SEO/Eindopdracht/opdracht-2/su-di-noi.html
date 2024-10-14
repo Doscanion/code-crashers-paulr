@@ -1,693 +1,478 @@
 <!DOCTYPE html>
 <html lang="it">
-    <head>
-        <title>Luigi's Pizzeria</title>
-        <meta
-            name="description"
-            content="Luigi's Pizzeria la migliore pizzeria di Eindhoven. Aperto dal mercoledì alla domenica dalle 16:00 alle 22:00, a Ukkelstraat 2E-1, 5628 TE"
-        />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta charset="UTF-8" />
-        <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="Luigi's Pizzeria" />
-        <meta property="og:type" content="website" />
-        <meta
-            property="og:description"
-            content="Luigi's Pizzeria the best pizzeria in Eindhoven. Come and get a delicious pizza from Luigi."
-        />
-        <meta property="og:image" content="./images/logo-white.png"" />
-        <meta property="og:url" content="https://www.luigi.com" />
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="@luigi" />
-        <!-- Font -->
-        <link
-            href="https://fonts.googleapis.com/css?family=Open+Sans:400,600"
-            rel="stylesheet"
-        />
-        <link
-            rel="stylesheet"
-            href="fonts/beyond_the_mountains-webfont.css"
-            type="text/css"
-        />
+	<head>
+		<title>Luigi's Pizzeria</title>
+		<meta
+			name="description"
+			content="Luigi's Pizzeria la migliore pizzeria di Eindhoven. Aperto dal mercoledì alla domenica dalle 16:00 alle 22:00, a Ukkelstraat 2E-1, 5628 TE"
+		/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta charset="UTF-8" />
+		<meta name="robots" content="index, follow" />
+		<meta property="og:title" content="Luigi's Pizzeria" />
+		<meta property="og:type" content="website" />
+		<meta property="og:description" content="Luigi's Pizzeria the best pizzeria in Eindhoven. Come and get a delicious pizza from Luigi." />
+		<meta property="og:image" content="./images/logo-white.png"" />
+		<meta property="og:url" content="https://www.luigi.com" />
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:site" content="@luigi" />
+		<!-- Font -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet" />
+		<link rel="stylesheet" href="fonts/beyond_the_mountains-webfont.css" type="text/css" />
 
-        <!-- Stylesheets -->
-        <link href="plugin-frameworks/bootstrap.min.css" rel="stylesheet" />
-        <link href="plugin-frameworks/swiper.css" rel="stylesheet" />
-        <link href="fonts/ionicons.css" rel="stylesheet" />
-        <link href="common/styles.css" rel="stylesheet" />
-        <script type="application/ld+json">
-            [
-                {
-                    "@context": "https://schema.org/",
-                    "@type": "LocalBusiness",
-                    "name": "Luigi's",
-                    "description": "Il Ristorante Luigi's lavora esclusivamente con i migliori prodotti che la cucina italiana ha da offrire per fare le migliori pizze.",
-                    "image": "images/logo-white.png",
-                    "openingHours": ["We-Su 16:00-22:00"],
-                    "telephone": "040-9177128",
-                    "email": "info@luigis.nl",
-                    "address": {
-                        "@type": "PostalAddress",
-                        "addressLocality": "Eindhoven",
-                        "addressRegion": "TE",
-                        "postalCode": "5628",
-                        "streetAddress": "2E-1 Ukkelstraat"
-                    },aggregateRating": {
-                        "@type": "AggregateRating",
-                        "itemReviewed": "Luigi's",
-                        "ratingCount": "4",
-                        "reviewCount": "4",
-                        "ratingValue": "3.5"
-                    },
-                    "review": [{
-                        "@type": "review",
-                        "author": "Eva",
-                        "reviewBody": "Ottimo ristorante italiano a Eindhoven. Le
-                        persone stanno aspettando al bar fino al
-                        rilascio di un tavolo. In questo caso un giovedì
-                        sera. Puoi scegliere da un menu molto ampio.
-                        Personale amichevole.",
-                        "reviewRating": {
-                        "@type": "Rating",
-                        "ratingValue": "4",
-                        "bestRating": "5"}
-                    },
+		<!-- Stylesheets -->
+		<link href="plugin-frameworks/bootstrap.min.css" rel="stylesheet" />
+		<link href="plugin-frameworks/swiper.css" rel="stylesheet" />
+		<link href="fonts/ionicons.css" rel="stylesheet" />
+		<link href="common/styles.css" rel="stylesheet" />
+		<script type="application/ld+json">
+			[
+			    {
+			        "@context": "https://schema.org/",
+			        "@type": "LocalBusiness",
+			        "name": "Luigi's",
+			        "description": "Il Ristorante Luigi's lavora esclusivamente con i migliori prodotti che la cucina italiana ha da offrire per fare le migliori pizze.",
+			        "image": "images/logo-white.png",
+			        "openingHours": ["We-Su 16:00-22:00"],
+			        "telephone": "040-9177128",
+			        "email": "info@luigis.nl",
+			        "address": {
+			            "@type": "PostalAddress",
+			            "addressLocality": "Eindhoven",
+			            "addressRegion": "TE",
+			            "postalCode": "5628",
+			            "streetAddress": "2E-1 Ukkelstraat"
+			        },aggregateRating": {
+			            "@type": "AggregateRating",
+			            "itemReviewed": "Luigi's",
+			            "ratingCount": "4",
+			            "reviewCount": "4",
+			            "ratingValue": "3.5"
+			        },
+			        "review": [{
+			            "@type": "review",
+			            "author": "Eva",
+			            "reviewBody": "Ottimo ristorante italiano a Eindhoven. Le
+			            persone stanno aspettando al bar fino al
+			            rilascio di un tavolo. In questo caso un giovedì
+			            sera. Puoi scegliere da un menu molto ampio.
+			            Personale amichevole.",
+			            "reviewRating": {
+			            "@type": "Rating",
+			            "ratingValue": "4",
+			            "bestRating": "5"}
+			        },
 
-                    {
-                        "@type": "review",
-                        "author": "Roberto",
-                        "reviewBody": "Il cibo gustoso l'ho messo per primo, ma i
-                        tavoli sono molto vicini tra loro ed è
-                        segretamente piuttosto costoso (leggi, solo
-                        costoso ...) per un italiano. Tuttavia, un
-                        ulteriore aiuto e cibo amichevoli erano tutti
-                        ottimi, anche se ho trovato personalmente il
-                        tiramisù mwoah.",
-                        "reviewRating": {
-                        "@type": "Rating",
-                        "ratingValue": "3",
-                        "bestRating": "5"}
-                    },
-                    {
-                        "@type": "review",
-                        "author": "Harold",
-                        "reviewBody": "Ho pensato che le pizze surgelate del Dr. Gli
-                        Oetker erano già gustosi, ma le pizze di Luigi
-                        sono molto migliori!",
-                        "reviewRating": {
-                        "@type": "Rating",
-                        "ratingValue": "5",
-                        "bestRating": "5"}
-                    },
-                    {
-                        "@type": "review",
-                        "author": "Truus",
-                        "reviewBody": "Il proprietario non è amichevole. Inoltre, per
-                        uno speciale di Döner, penso di chiedere 2 euro
-                        in più mentre solo peperoni e cipolle sono
-                        davvero ridicoli. Il cibo è buono.",
-                        "reviewRating": {
-                        "@type": "Rating",
-                        "ratingValue": "2",
-                        "bestRating": "5"}
-                    }]
-                }
-            ]
-        </script>
-    </head>
-    <body>
-        <header id="header">
-            <div class="container">
-                <a class="logo" href="#"
-                    ><img src="images/logo-white.png" alt="Logo"
-                /></a>
+			        {
+			            "@type": "review",
+			            "author": "Roberto",
+			            "reviewBody": "Il cibo gustoso l'ho messo per primo, ma i
+			            tavoli sono molto vicini tra loro ed è
+			            segretamente piuttosto costoso (leggi, solo
+			            costoso ...) per un italiano. Tuttavia, un
+			            ulteriore aiuto e cibo amichevoli erano tutti
+			            ottimi, anche se ho trovato personalmente il
+			            tiramisù mwoah.",
+			            "reviewRating": {
+			            "@type": "Rating",
+			            "ratingValue": "3",
+			            "bestRating": "5"}
+			        },
+			        {
+			            "@type": "review",
+			            "author": "Harold",
+			            "reviewBody": "Ho pensato che le pizze surgelate del Dr. Gli
+			            Oetker erano già gustosi, ma le pizze di Luigi
+			            sono molto migliori!",
+			            "reviewRating": {
+			            "@type": "Rating",
+			            "ratingValue": "5",
+			            "bestRating": "5"}
+			        },
+			        {
+			            "@type": "review",
+			            "author": "Truus",
+			            "reviewBody": "Il proprietario non è amichevole. Inoltre, per
+			            uno speciale di Döner, penso di chiedere 2 euro
+			            in più mentre solo peperoni e cipolle sono
+			            davvero ridicoli. Il cibo è buono.",
+			            "reviewRating": {
+			            "@type": "Rating",
+			            "ratingValue": "2",
+			            "bestRating": "5"}
+			        }]
+			    }
+			]
+		</script>
+	</head>
+	<body>
+		<header id="header">
+			<div class="container">
+				<a class="logo" href="#"><img src="images/logo-white.png" alt="Logo" /></a>
 
-                <div class="right-area">
-                    <h6>
-                        <a
-                            style="margin-right: 15px"
-                            class="plr-20 color-white btn-fill-primary"
-                            href="#"
-                            >ORDINE: 040-9177128</a
-                        >
-                        <a href="over-ons.html" hreflang="nl"
-                            ><img
-                                src="images/flags/nl.png"
-                                alt="flag nl"
-                                width="16"
-                                height="11"
-                                style="width: 16px; height: 11px"
-                        /></a>
-                        <a href="su-di-noi.html" hreflang="it"
-                            ><img
-                                src="images/flags/it.png"
-                                alt="flag it"
-                                width="16"
-                                height="11"
-                                style="width: 16px; height: 11px"
-                        /></a>
-                    </h6>
-                </div>
-                <!-- right-area -->
+				<div class="right-area">
+					<h6>
+						<a style="margin-right: 15px;" class="plr-20 color-white btn-fill-primary" href="#">ORDINE: 040-9177128</a>
+						<a href="over-ons.html" hreflang="nl"
+							><img src="images/flags/nl.png" alt="flag nl" width="16" height="11" style="width: 16px; height: 11px;"
+						/></a>
+						<a href="su-di-noi.html" hreflang="it"
+							><img src="images/flags/it.png" alt="flag it" width="16" height="11" style="width: 16px; height: 11px;"
+						/></a>
+					</h6>
+				</div>
+				<!-- right-area -->
 
-                <a class="menu-nav-icon" data-menu="#main-menu" href="#"
-                    ><i class="ion-navicon"></i
-                ></a>
+				<a class="menu-nav-icon" data-menu="#main-menu" href="#"><i class="ion-navicon"></i></a>
 
-                <ul class="main-menu font-mountainsre" id="main-menu">
-                    <li><a href="a-casa.html" hreflang="it">A CASA</a></li>
-                    <li>
-                        <a href="su-di-noi.html" hreflang="it">SU DI NOI</a>
-                    </li>
-                    <li><a href="contatto.html" hreflang="it">CONTATTO</a></li>
-                </ul>
+				<ul class="main-menu font-mountainsre" id="main-menu">
+					<li><a href="a-casa.html" hreflang="it">A CASA</a></li>
+					<li>
+						<a href="su-di-noi.html" hreflang="it">SU DI NOI</a>
+					</li>
+					<li><a href="contatto.html" hreflang="it">CONTATTO</a></li>
+				</ul>
 
-                <div class="clearfix"></div>
-            </div>
-            <!-- container -->
-        </header>
+				<div class="clearfix"></div>
+			</div>
+			<!-- container -->
+		</header>
 
-        <section class="bg-4 h-500x main-slider pos-relative">
-            <div class="triangle-up pos-bottom"></div>
-            <div class="container h-100">
-                <div class="dplay-tbl">
-                    <div class="dplay-tbl-cell center-text color-white pt-90">
-                        <h5><b>LE MIGLIORI PIZZE</b></h5>
-                        <h2 class="mt-30 mb-15">Sulla nostra pizzeria</h2>
-                    </div>
-                    <!-- dplay-tbl-cell -->
-                </div>
-                <!-- dplay-tbl -->
-            </div>
-            <!-- container -->
-        </section>
+		<section class="bg-4 h-500x main-slider pos-relative">
+			<div class="triangle-up pos-bottom"></div>
+			<div class="container h-100">
+				<div class="dplay-tbl">
+					<div class="dplay-tbl-cell center-text color-white pt-90">
+						<h5><b>LE MIGLIORI PIZZE</b></h5>
+						<h2 class="mt-30 mb-15">Sulla nostra pizzeria</h2>
+					</div>
+					<!-- dplay-tbl-cell -->
+				</div>
+				<!-- dplay-tbl -->
+			</div>
+			<!-- container -->
+		</section>
 
-        <section class="story-area left-text center-sm-text">
-            <div class="container">
-                <main>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <img
-                                class="mb-30"
-                                src="images/about-1-600x400.jpg"
-                                alt="photo pizzeria"
-                            />
-                        </div>
-                        <div class="col-md-6">
-                            <img
-                                class="mb-30"
-                                src="images/about-2-600x400.jpg"
-                                alt="photo pizzeria"
-                            />
-                        </div>
-                        <div class="col-md-12">
-                            <div
-                                class="mt-50 mt-sm-30 mb-50 mb-sm-30 center-text"
-                            >
-                                <h2>Siamo Luigi's</h2>
-                            </div>
+		<section class="story-area left-text center-sm-text">
+			<div class="container">
+				<main>
+					<div class="row">
+						<div class="col-md-6">
+							<img class="mb-30" src="images/about-1-600x400.jpg" alt="photo pizzeria" />
+						</div>
+						<div class="col-md-6">
+							<img class="mb-30" src="images/about-2-600x400.jpg" alt="photo pizzeria" />
+						</div>
+						<div class="col-md-12">
+							<div class="mt-50 mt-sm-30 mb-50 mb-sm-30 center-text">
+								<h2>Siamo Luigi's</h2>
+							</div>
 
-                            <h5 class="center-text mb-50 mb-sm-30 plr-25">
-                                Il 28 agosto 1980, Luigi ha aperto le sue porte.
-                                Ormai siamo passati 40 anni e la pizzeria è
-                                diventata un nome familiare a Eindhoven e nei
-                                dintorni. Abbiamo iniziato con quattro persone,
-                                al giorno d'oggi ci sono più di 20 impiegati nel
-                                nostro ristorante di famiglia.
-                            </h5>
-                        </div>
-                        <div class="col-md-6">
-                            <p class="mb-15">
-                                Dobbiamo l'enorme crescita, tra le altre cose,
-                                alla posizione accattivante del nostro
-                                ristorante, nel mezzo della parte più pittoresca
-                                del vecchio villaggio. Ma ovviamente anche alla
-                                clientela fedele, alla buona qualità dei nostri
-                                piatti e infine alle qualità amichevoli e
-                                disponibili del nostro personale di servizio.
-                            </p>
-                        </div>
-                        <!-- col-md-6 -->
+							<h5 class="center-text mb-50 mb-sm-30 plr-25">
+								Il 28 agosto 1980, Luigi ha aperto le sue porte. Ormai siamo passati 40 anni e la pizzeria è diventata un nome
+								familiare a Eindhoven e nei dintorni. Abbiamo iniziato con quattro persone, al giorno d'oggi ci sono più di 20
+								impiegati nel nostro ristorante di famiglia.
+							</h5>
+						</div>
+						<div class="col-md-6">
+							<p class="mb-15">
+								Dobbiamo l'enorme crescita, tra le altre cose, alla posizione accattivante del nostro ristorante, nel mezzo
+								della parte più pittoresca del vecchio villaggio. Ma ovviamente anche alla clientela fedele, alla buona
+								qualità dei nostri piatti e infine alle qualità amichevoli e disponibili del nostro personale di servizio.
+							</p>
+						</div>
+						<!-- col-md-6 -->
 
-                        <div class="col-md-6">
-                            <p class="mb-15">
-                                Il ristorante Luigi lavora esclusivamente con i
-                                migliori prodotti che la cucina italiana ha da
-                                offrire. Tutti gli ingredienti sono appena
-                                ordinati dal fornitore locale italiano o
-                                importati con cura dall'Italia. I nostri chef
-                                iniziano i preparativi ogni giorno. Ciò
-                                significa che lavoriamo quotidianamente con
-                                prodotti freschi.
-                            </p>
-                        </div>
-                        <!-- col-md-6 -->
-                    </div>
-                    <!-- row -->
+						<div class="col-md-6">
+							<p class="mb-15">
+								Il ristorante Luigi lavora esclusivamente con i migliori prodotti che la cucina italiana ha da offrire. Tutti
+								gli ingredienti sono appena ordinati dal fornitore locale italiano o importati con cura dall'Italia. I nostri
+								chef iniziano i preparativi ogni giorno. Ciò significa che lavoriamo quotidianamente con prodotti freschi.
+							</p>
+						</div>
+						<!-- col-md-6 -->
+					</div>
+					<!-- row -->
 
-                    <h6 class="center-text mt-40 mt-sm-30 mb-20">
-                        <a
-                            href="index.html#menu"
-                            class="btn-primaryc plr-25 mb-10 mlr-5"
-                            ><b>VISUALIZZA IL MENU OGGI</b></a
-                        >
-                        <a
-                            href="#"
-                            class="btn-primaryc secondary plr-50 mlr-5 mb-10"
-                            ><b>ORDINA ORA</b></a
-                        >
-                    </h6>
-                </main>
-            </div>
-            <!-- container -->
-        </section>
+					<h6 class="center-text mt-40 mt-sm-30 mb-20">
+						<a href="index.html#menu" class="btn-primaryc plr-25 mb-10 mlr-5"><b>VISUALIZZA IL MENU OGGI</b></a>
+						<a href="#" class="btn-primaryc secondary plr-50 mlr-5 mb-10"><b>ORDINA ORA</b></a>
+					</h6>
+				</main>
+			</div>
+			<!-- container -->
+		</section>
 
-        <section class="story-area bg-seller color-white pos-relative">
-            <div class="pos-bottom triangle-up"></div>
-            <div class="pos-top triangle-bottom"></div>
-            <div class="container">
-                <div class="heading">
-                    <img
-                        class="heading-img"
-                        src="images/heading_logo.png"
-                        alt="logo tomato"
-                    />
-                    <h2>Cosa dicono i nostri clienti</h2>
-                </div>
+		<section class="story-area bg-seller color-white pos-relative">
+			<div class="pos-bottom triangle-up"></div>
+			<div class="pos-top triangle-bottom"></div>
+			<div class="container">
+				<div class="heading">
+					<img class="heading-img" src="images/heading_logo.png" alt="logo tomato" />
+					<h2>Cosa dicono i nostri clienti</h2>
+				</div>
 
-                <div
-                    class="swiper-container"
-                    data-slide-effect="slide"
-                    data-autoheight="false"
-                    data-swiper-speed="500"
-                    data-swiper-margin="25"
-                    data-swiper-slides-per-view="3"
-                    data-swiper-breakpoints="true"
-                    data-scrollbar="true"
-                    data-swiper-loop="true"
-                    data-swpr-responsive="[1, 2, 2, 2]"
-                >
-                    <div
-                        class="swiper-wrapper pb-90 pb-sm-60 left-text center-sm-text"
-                    >
-                        <article class="swiper-slide">
-                            <h4>
-                                <img
-                                    src="images/star-full.png"
-                                    alt="review star"
-                                    width="14"
-                                    height="13"
-                                    style="width: 14px; height: 13px"
-                                />
-                                <img
-                                    src="images/star-full.png"
-                                    alt="review star"
-                                    width="14"
-                                    height="13"
-                                    style="width: 14px; height: 13px"
-                                />
-                                <img
-                                    src="images/star-full.png"
-                                    alt="review star"
-                                    width="14"
-                                    height="13"
-                                    style="width: 14px; height: 13px"
-                                />
-                                <img
-                                    src="images/star-full.png"
-                                    alt="review star"
-                                    width="14"
-                                    height="13"
-                                    style="width: 14px; height: 13px"
-                                />
-                                <img
-                                    src="images/star-empty.png"
-                                    alt="review star"
-                                    width="14"
-                                    height="13"
-                                    style="width: 14px; height: 13px"
-                                />
-                            </h4>
-                            <p class="color-ash mb-50 mb-sm-30 mt-20">
-                                Ottimo ristorante italiano a Eindhoven. Le
-                                persone stanno aspettando al bar fino al
-                                rilascio di un tavolo. In questo caso un giovedì
-                                sera. Puoi scegliere da un menu molto ampio.
-                                Personale amichevole.
-                            </p>
-                            <img
-                                class="circle-60 mb-20"
-                                src="images/klanten/eva.jpg"
-                                alt="profile photo"
-                            />
-                            <h6>
-                                <b class="color-primary">Eva</b>,
-                                <b class="color-ash">Cliente</b>
-                            </h6>
-                        </article>
-                        <!-- swiper-slide -->
+				<div
+					class="swiper-container"
+					data-slide-effect="slide"
+					data-autoheight="false"
+					data-swiper-speed="500"
+					data-swiper-margin="25"
+					data-swiper-slides-per-view="3"
+					data-swiper-breakpoints="true"
+					data-scrollbar="true"
+					data-swiper-loop="true"
+					data-swpr-responsive="[1, 2, 2, 2]"
+				>
+					<div class="swiper-wrapper pb-90 pb-sm-60 left-text center-sm-text">
+						<article class="swiper-slide">
+							<h4>
+								<img src="images/star-full.png" alt="review star" width="14" height="13" style="width: 14px; height: 13px;" />
+								<img src="images/star-full.png" alt="review star" width="14" height="13" style="width: 14px; height: 13px;" />
+								<img src="images/star-full.png" alt="review star" width="14" height="13" style="width: 14px; height: 13px;" />
+								<img src="images/star-full.png" alt="review star" width="14" height="13" style="width: 14px; height: 13px;" />
+								<img
+									src="images/star-empty.png"
+									alt="review star"
+									width="14"
+									height="13"
+									style="width: 14px; height: 13px;"
+								/>
+							</h4>
+							<p class="color-ash mb-50 mb-sm-30 mt-20">
+								Ottimo ristorante italiano a Eindhoven. Le persone stanno aspettando al bar fino al rilascio di un tavolo. In
+								questo caso un giovedì sera. Puoi scegliere da un menu molto ampio. Personale amichevole.
+							</p>
+							<img class="circle-60 mb-20" src="images/klanten/eva.jpg" alt="profile photo" />
+							<h6>
+								<b class="color-primary">Eva</b>,
+								<b class="color-ash">Cliente</b>
+							</h6>
+						</article>
+						<!-- swiper-slide -->
 
-                        <article class="swiper-slide">
-                            <h4>
-                                <img
-                                    src="images/star-full.png"
-                                    alt="review star"
-                                    width="14"
-                                    height="13"
-                                    style="width: 14px; height: 13px"
-                                />
-                                <img
-                                    src="images/star-full.png"
-                                    alt="review star"
-                                    width="14"
-                                    height="13"
-                                    style="width: 14px; height: 13px"
-                                />
-                                <img
-                                    src="images/star-full.png"
-                                    alt="review star"
-                                    width="14"
-                                    height="13"
-                                    style="width: 14px; height: 13px"
-                                />
-                                <img
-                                    src="images/star-empty.png"
-                                    alt="review star"
-                                    width="14"
-                                    height="13"
-                                    style="width: 14px; height: 13px"
-                                />
-                                <img
-                                    src="images/star-empty.png"
-                                    alt="review star"
-                                    width="14"
-                                    height="13"
-                                    style="width: 14px; height: 13px"
-                                />
-                            </h4>
-                            <p class="color-ash mb-50 mb-sm-30 mt-20">
-                                Il cibo gustoso l'ho messo per primo, ma i
-                                tavoli sono molto vicini tra loro ed è
-                                segretamente piuttosto costoso (leggi, solo
-                                costoso ...) per un italiano. Tuttavia, un
-                                ulteriore aiuto e cibo amichevoli erano tutti
-                                ottimi, anche se ho trovato personalmente il
-                                tiramisù mwoah.
-                            </p>
-                            <img
-                                class="circle-60 mb-20"
-                                src="images/klanten/roberto.jpg"
-                                alt="profile photo"
-                            />
-                            <h6>
-                                <b class="color-primary">Roberto</b>,
-                                <b class="color-ash">Cliente</b>
-                            </h6>
-                        </article>
-                        <!-- swiper-slide -->
+						<article class="swiper-slide">
+							<h4>
+								<img src="images/star-full.png" alt="review star" width="14" height="13" style="width: 14px; height: 13px;" />
+								<img src="images/star-full.png" alt="review star" width="14" height="13" style="width: 14px; height: 13px;" />
+								<img src="images/star-full.png" alt="review star" width="14" height="13" style="width: 14px; height: 13px;" />
+								<img
+									src="images/star-empty.png"
+									alt="review star"
+									width="14"
+									height="13"
+									style="width: 14px; height: 13px;"
+								/>
+								<img
+									src="images/star-empty.png"
+									alt="review star"
+									width="14"
+									height="13"
+									style="width: 14px; height: 13px;"
+								/>
+							</h4>
+							<p class="color-ash mb-50 mb-sm-30 mt-20">
+								Il cibo gustoso l'ho messo per primo, ma i tavoli sono molto vicini tra loro ed è segretamente piuttosto
+								costoso (leggi, solo costoso ...) per un italiano. Tuttavia, un ulteriore aiuto e cibo amichevoli erano tutti
+								ottimi, anche se ho trovato personalmente il tiramisù mwoah.
+							</p>
+							<img class="circle-60 mb-20" src="images/klanten/roberto.jpg" alt="profile photo" />
+							<h6>
+								<b class="color-primary">Roberto</b>,
+								<b class="color-ash">Cliente</b>
+							</h6>
+						</article>
+						<!-- swiper-slide -->
 
-                        <article class="swiper-slide">
-                            <h4>
-                                <img
-                                    src="images/star-full.png"
-                                    alt="review star"
-                                    width="14"
-                                    height="13"
-                                    style="width: 14px; height: 13px"
-                                />
-                                <img
-                                    src="images/star-full.png"
-                                    alt="review star"
-                                    width="14"
-                                    height="13"
-                                    style="width: 14px; height: 13px"
-                                />
-                                <img
-                                    src="images/star-full.png"
-                                    alt="review star"
-                                    width="14"
-                                    height="13"
-                                    style="width: 14px; height: 13px"
-                                />
-                                <img
-                                    src="images/star-full.png"
-                                    alt="review star"
-                                    width="14"
-                                    height="13"
-                                    style="width: 14px; height: 13px"
-                                />
-                                <img
-                                    src="images/star-full.png"
-                                    alt="review star"
-                                    width="14"
-                                    height="13"
-                                    style="width: 14px; height: 13px"
-                                />
-                            </h4>
-                            <p class="color-ash mb-50 mb-sm-30 mt-20">
-                                Ho pensato che le pizze surgelate del Dr. Gli
-                                Oetker erano già gustosi, ma le pizze di Luigi
-                                sono molto migliori!
-                            </p>
-                            <img
-                                class="circle-60 mb-20"
-                                src="images/klanten/harold.jpg"
-                                alt="profile photo"
-                            />
-                            <h6>
-                                <b class="color-primary">Harold</b>,
-                                <b class="color-ash">Cliente</b>
-                            </h6>
-                        </article>
-                        <!-- swiper-slide -->
+						<article class="swiper-slide">
+							<h4>
+								<img src="images/star-full.png" alt="review star" width="14" height="13" style="width: 14px; height: 13px;" />
+								<img src="images/star-full.png" alt="review star" width="14" height="13" style="width: 14px; height: 13px;" />
+								<img src="images/star-full.png" alt="review star" width="14" height="13" style="width: 14px; height: 13px;" />
+								<img src="images/star-full.png" alt="review star" width="14" height="13" style="width: 14px; height: 13px;" />
+								<img src="images/star-full.png" alt="review star" width="14" height="13" style="width: 14px; height: 13px;" />
+							</h4>
+							<p class="color-ash mb-50 mb-sm-30 mt-20">
+								Ho pensato che le pizze surgelate del Dr. Gli Oetker erano già gustosi, ma le pizze di Luigi sono molto
+								migliori!
+							</p>
+							<img class="circle-60 mb-20" src="images/klanten/harold.jpg" alt="profile photo" />
+							<h6>
+								<b class="color-primary">Harold</b>,
+								<b class="color-ash">Cliente</b>
+							</h6>
+						</article>
+						<!-- swiper-slide -->
 
-                        <article class="swiper-slide">
-                            <h4>
-                                <img
-                                    src="images/star-full.png"
-                                    alt="review star"
-                                    width="14"
-                                    height="13"
-                                    style="width: 14px; height: 13px"
-                                />
-                                <img
-                                    src="images/star-full.png"
-                                    alt="review star"
-                                    width="14"
-                                    height="13"
-                                    style="width: 14px; height: 13px"
-                                />
-                                <img
-                                    src="images/star-empty.png"
-                                    alt="review star"
-                                    width="14"
-                                    height="13"
-                                    style="width: 14px; height: 13px"
-                                />
-                                <img
-                                    src="images/star-empty.png"
-                                    alt="review star"
-                                    width="14"
-                                    height="13"
-                                    style="width: 14px; height: 13px"
-                                />
-                                <img
-                                    src="images/star-empty.png"
-                                    alt="review star"
-                                    width="14"
-                                    height="13"
-                                    style="width: 14px; height: 13px"
-                                />
-                            </h4>
-                            <p class="color-ash mb-50 mb-sm-30 mt-20">
-                                Il proprietario non è amichevole. Inoltre, per
-                                uno speciale di Döner, penso di chiedere 2 euro
-                                in più mentre solo peperoni e cipolle sono
-                                davvero ridicoli. Il cibo è buono.
-                            </p>
-                            <img
-                                class="circle-60 mb-20"
-                                src="images/klanten/truus.jpg"
-                                alt="profile photo"
-                            />
-                            <h6>
-                                <b class="color-primary">Truus</b>,
-                                <b class="color-ash">Cliente</b>
-                            </h6>
-                        </article>
-                        <!-- swiper-slide -->
-                    </div>
-                    <!-- swiper-wrapper -->
+						<article class="swiper-slide">
+							<h4>
+								<img src="images/star-full.png" alt="review star" width="14" height="13" style="width: 14px; height: 13px;" />
+								<img src="images/star-full.png" alt="review star" width="14" height="13" style="width: 14px; height: 13px;" />
+								<img
+									src="images/star-empty.png"
+									alt="review star"
+									width="14"
+									height="13"
+									style="width: 14px; height: 13px;"
+								/>
+								<img
+									src="images/star-empty.png"
+									alt="review star"
+									width="14"
+									height="13"
+									style="width: 14px; height: 13px;"
+								/>
+								<img
+									src="images/star-empty.png"
+									alt="review star"
+									width="14"
+									height="13"
+									style="width: 14px; height: 13px;"
+								/>
+							</h4>
+							<p class="color-ash mb-50 mb-sm-30 mt-20">
+								Il proprietario non è amichevole. Inoltre, per uno speciale di Döner, penso di chiedere 2 euro in più mentre
+								solo peperoni e cipolle sono davvero ridicoli. Il cibo è buono.
+							</p>
+							<img class="circle-60 mb-20" src="images/klanten/truus.jpg" alt="profile photo" />
+							<h6>
+								<b class="color-primary">Truus</b>,
+								<b class="color-ash">Cliente</b>
+							</h6>
+						</article>
+						<!-- swiper-slide -->
+					</div>
+					<!-- swiper-wrapper -->
 
-                    <div class="swiper-pagination"></div>
-                </div>
-                <!-- swiper-container -->
-            </div>
-            <!-- container -->
-        </section>
+					<div class="swiper-pagination"></div>
+				</div>
+				<!-- swiper-container -->
+			</div>
+			<!-- container -->
+		</section>
 
-        <section class="counter-section section center-text" id="counter">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-md-3">
-                        <div class="mb-30">
-                            <i
-                                class="mlr-auto mb-30 icon-gradient icon-pizza"
-                            ></i>
-                            <h2>
-                                <b
-                                    ><span
-                                        class="counter-value"
-                                        data-duration="400"
-                                        data-count="574"
-                                        >0</span
-                                    ></b
-                                >
-                            </h2>
-                            <h5 class="semi-black"><b>Pizze al giorno</b></h5>
-                        </div>
-                        <!-- margin-b-30 -->
-                    </div>
-                    <!-- col-md-3-->
+		<section class="counter-section section center-text" id="counter">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-md-3">
+						<div class="mb-30">
+							<i class="mlr-auto mb-30 icon-gradient icon-pizza"></i>
+							<h2>
+								<b><span class="counter-value" data-duration="400" data-count="574">0</span></b>
+							</h2>
+							<h5 class="semi-black"><b>Pizze al giorno</b></h5>
+						</div>
+						<!-- margin-b-30 -->
+					</div>
+					<!-- col-md-3-->
 
-                    <div class="col-sm-6 col-md-3">
-                        <div class="mb-30">
-                            <i
-                                class="mlr-auto mb-30 icon-gradient icon-sea-food"
-                            ></i>
-                            <h2>
-                                <b
-                                    ><span
-                                        class="counter-value"
-                                        data-duration="1400"
-                                        data-count="14"
-                                        >0</span
-                                    ></b
-                                >
-                            </h2>
-                            <h5 class="semi-black"><b>Frutti di Mare</b></h5>
-                        </div>
-                        <!-- margin-b-30 -->
-                    </div>
-                    <!-- col-md-3-->
+					<div class="col-sm-6 col-md-3">
+						<div class="mb-30">
+							<i class="mlr-auto mb-30 icon-gradient icon-sea-food"></i>
+							<h2>
+								<b><span class="counter-value" data-duration="1400" data-count="14">0</span></b>
+							</h2>
+							<h5 class="semi-black"><b>Frutti di Mare</b></h5>
+						</div>
+						<!-- margin-b-30 -->
+					</div>
+					<!-- col-md-3-->
 
-                    <div class="col-sm-6 col-md-3">
-                        <div class="mb-30">
-                            <i
-                                class="mlr-auto mb-30 icon-gradient icon-pasta"
-                            ></i>
-                            <h2>
-                                <b
-                                    ><span
-                                        class="counter-value"
-                                        data-duration="300"
-                                        data-count="3"
-                                        >0</span
-                                    ></b
-                                >
-                            </h2>
-                            <h5 class="semi-black"><b>Piatti di pasta</b></h5>
-                        </div>
-                        <!-- margin-b-30 -->
-                    </div>
-                    <!-- col-md-3-->
+					<div class="col-sm-6 col-md-3">
+						<div class="mb-30">
+							<i class="mlr-auto mb-30 icon-gradient icon-pasta"></i>
+							<h2>
+								<b><span class="counter-value" data-duration="300" data-count="3">0</span></b>
+							</h2>
+							<h5 class="semi-black"><b>Piatti di pasta</b></h5>
+						</div>
+						<!-- margin-b-30 -->
+					</div>
+					<!-- col-md-3-->
 
-                    <div class="col-sm-6 col-md-3">
-                        <div class="mb-30">
-                            <i
-                                class="mlr-auto mb-30 icon-gradient icon-salad"
-                            ></i>
-                            <h2>
-                                <b
-                                    ><span
-                                        class="counter-value"
-                                        data-duration="1000"
-                                        data-count="52"
-                                        >0</span
-                                    ></b
-                                >
-                            </h2>
-                            <h5 class="semi-black"><b>Insalate</b></h5>
-                        </div>
-                        <!-- margin-b-30 -->
-                    </div>
-                    <!-- col-md-3-->
-                </div>
-                <!-- row-->
-            </div>
-            <!-- container-->
-        </section>
-        <!-- counter-section-->
+					<div class="col-sm-6 col-md-3">
+						<div class="mb-30">
+							<i class="mlr-auto mb-30 icon-gradient icon-salad"></i>
+							<h2>
+								<b><span class="counter-value" data-duration="1000" data-count="52">0</span></b>
+							</h2>
+							<h5 class="semi-black"><b>Insalate</b></h5>
+						</div>
+						<!-- margin-b-30 -->
+					</div>
+					<!-- col-md-3-->
+				</div>
+				<!-- row-->
+			</div>
+			<!-- container-->
+		</section>
+		<!-- counter-section-->
 
-        <footer id="footer" class="pb-50 pt-70 pos-relative">
-            <div class="pos-top triangle-bottom"></div>
-            <div class="container-fluid">
-                <a href="index.html" hreflang="nl"
-                    ><img src="images/logo-white.png" alt="Logo"
-                /></a>
+		<footer id="footer" class="pb-50 pt-70 pos-relative">
+			<div class="pos-top triangle-bottom"></div>
+			<div class="container-fluid">
+				<a href="index.html" hreflang="nl"><img src="images/logo-white.png" alt="Logo" /></a>
 
-                <div class="pt-30">
-                    <p class="underline-secondary"><b>Orari di apertura:</b></p>
-                    <p>Da mercoledì a domenica, 16:00 - 22:00</p>
-                </div>
+				<div class="pt-30">
+					<p class="underline-secondary"><b>Orari di apertura:</b></p>
+					<p>Da mercoledì a domenica, 16:00 - 22:00</p>
+				</div>
 
-                <div class="pt-30">
-                    <p class="underline-secondary"><b>Indirizzo:</b></p>
-                    <p>Gare du Nord, Ukkelstraat 2E-1, 5628 TE Eindhoven</p>
-                </div>
+				<div class="pt-30">
+					<p class="underline-secondary"><b>Indirizzo:</b></p>
+					<p>Gare du Nord, Ukkelstraat 2E-1, 5628 TE Eindhoven</p>
+				</div>
 
-                <div class="pt-30">
-                    <p class="underline-secondary mb-10">
-                        <b>Numero di telefono:</b>
-                    </p>
-                    <a href="tel:040-9177128">040-9177128</a>
-                </div>
+				<div class="pt-30">
+					<p class="underline-secondary mb-10">
+						<b>Numero di telefono:</b>
+					</p>
+					<a href="tel:040-9177128">040-9177128</a>
+				</div>
 
-                <div class="pt-30">
-                    <p class="underline-secondary mb-10"><b>E-mail:</b></p>
-                    <a href="mailto:info@luigis.nl">info@luigis.nl</a>
-                </div>
+				<div class="pt-30">
+					<p class="underline-secondary mb-10"><b>E-mail:</b></p>
+					<a href="mailto:info@luigis.nl">info@luigis.nl</a>
+				</div>
 
-                <ul class="icon mt-30">
-                    <li>
-                        <a href="#"><i class="ion-social-pinterest"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="ion-social-facebook"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="ion-social-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            ><i class="ion-social-dribbble-outline"></i
-                        ></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="ion-social-linkedin"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="ion-social-vimeo"></i></a>
-                    </li>
-                </ul>
+				<ul class="icon mt-30">
+					<li>
+						<a href="#"><i class="ion-social-pinterest"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="ion-social-facebook"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="ion-social-twitter"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="ion-social-dribbble-outline"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="ion-social-linkedin"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="ion-social-vimeo"></i></a>
+					</li>
+				</ul>
 
-                <p class="color-light font-9 mt-50 mt-sm-30">
-                    Copyright &copy;
-                    <script>
-                        document.write(new Date().getFullYear());
-                    </script>
-                    |
-                    <a href="termini-e-condizioni.html">Termini e condizioni</a>
-                </p>
-            </div>
-            <!-- container -->
-        </footer>
+				<p class="color-light font-9 mt-50 mt-sm-30">
+					Copyright &copy;
+					<script>
+						document.write(new Date().getFullYear());
+					</script>
+					|
+					<a href="termini-e-condizioni.html">Termini e condizioni</a>
+				</p>
+			</div>
+			<!-- container -->
+		</footer>
 
-        <!-- SCRIPTS -->
-        <script src="plugin-frameworks/jquery-3.2.1.min.js"></script>
-        <script src="plugin-frameworks/bootstrap.min.js"></script>
-        <script src="plugin-frameworks/swiper.js"></script>
-        <script src="common/scripts.js"></script>
-    </body>
+		<!-- SCRIPTS -->
+		<script src="plugin-frameworks/jquery-3.2.1.min.js"></script>
+		<script src="plugin-frameworks/bootstrap.min.js"></script>
+		<script src="plugin-frameworks/swiper.js"></script>
+		<script src="common/scripts.js"></script>
+	</body>
 </html>

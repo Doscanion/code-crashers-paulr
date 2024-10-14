@@ -39,20 +39,25 @@ class Robot {
 			$this->secret($arguments[0], $arguments[1], $arguments[2]);
 		} else {
 			echo '<p>Method does not exist</p>';
+			Robot::__callStatic($name, $arguments);
 		}
 	}
 
-	public function __callStatic($name, $arguments) {
+	public static function __callStatic($name, $arguments) {
 		$filepath = 'log.txt';
 
-		$text = '<p>The method ' . $name . ' does not exist.  The arguments ';
+		$text = '<p>The method ' . $name . ' does not exist. ';
 		if (!empty($arguments)) {
+			$text .= 'The argument(s)';
 			foreach ($arguments as $argument) {
 				$text .= ' ' . $argument . ' ';
 			}
+			$text .= 'exist ';
+		} else {
+			$text .= 'No arguments are ';
 		}
 
-		$text .= 'were in the method.</p>';
+		$text .= 'in the method.</p>';
 
 		file_put_contents($filepath, $text);
 	}

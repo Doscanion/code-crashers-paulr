@@ -18,7 +18,6 @@ class AlbumModel {
                 }
                 $newAlbum = $this->resource->addChild('album');
                 if (!empty($albums['name'])) {
-                    echo 'test 2222';
                     $newAlbum->addChild('name', $albums['name']);
                 } else {
                     throw new Exception("Name is empty");
@@ -69,6 +68,7 @@ class AlbumModel {
                     throw new Exception("Song 3 is empty");
                 }
                 $this->resource->asXML('fleetwoodmac.xml');
+                $this->getAlbumsFromXML();
             } catch (Exception $e) {
                 echo '<p>Error: ' . $e->getMessage() . '</p>';
             }

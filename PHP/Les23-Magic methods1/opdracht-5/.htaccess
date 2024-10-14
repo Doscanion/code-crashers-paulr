@@ -1,6 +1,8 @@
 RewriteEngine on
 
-RewriteRule ^contact$ \?action=contact
-RewriteRule ^catalog$ \?action=catalog
-RewriteRule ^about$ \?action=about
-RewriteRule ^index$ \?action=index
+RewriteRule ^contact$ index.php?action=contact [L,QSA]
+RewriteRule ^catalog$ index.php?action=catalog [L,QSA]
+RewriteRule ^about$ index.php?action=about [L,QSA]
+RewriteRule ^index$ index.php?action=index [L,QSA]
+
+RewriteRule ^(.*)$ index.php?action=$1 [L,QSA]

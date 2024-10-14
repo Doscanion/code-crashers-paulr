@@ -18,7 +18,7 @@ sort($movies2018);
         <?php
 
         foreach ($movies2018 as $key => $movie) {
-            echo $movie === "Mandy" ? "<li><b><?= $movie ?></b></li>" : "<li><?= $movie ?> </li>";
+            echo $movie === "Mandy" ? "<li><b> $movie </b></li>" : "<li> $movie </li>";
         }
 
         ?>

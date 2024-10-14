@@ -21,6 +21,6 @@ class MainApp implements AppInterface {
 
 	// Voeg hier de magic method __call() toe.
 	public function __call($name, $arguments) {
-		return 'This page ' . $name . ' does not exist';
+		$this->content = 'The page ' . $name . ' does not exist';
 	}
 }

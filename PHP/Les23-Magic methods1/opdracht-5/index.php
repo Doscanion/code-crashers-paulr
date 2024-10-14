@@ -20,6 +20,7 @@ if (isset($_GET['action'])) {
 			break;
 		default:
 			$app->__call($_GET['action'], null);
+			$text = $app->getContent();
 			break;
 	}
 } else {
@@ -56,7 +57,12 @@ if (isset($_GET['action'])) {
 
 <body>
 	<nav>
-		<p><a href="index">Home</a> | <a href="catalog">Our products</a> | <a href="about">About us</a> | <a href="contact">Contact</a></p>
+		<p>
+			<a href="index">Home</a> |
+			<a href="catalog">Our products</a> |
+			<a href="about">About us</a> |
+			<a href="contact">Contact</a>
+		</p>
 	</nav>
 	<section>
 		<?php
@@ -66,7 +72,7 @@ if (isset($_GET['action'])) {
 		?>
 	</section>
 	<footer>
-		<p>© Tom Bartels <?= date('Y'); ?> - <a href="?action=privacy">Privacy Disclaimer</a></p>
+		<p>© Tom Bartels <?= date('Y'); ?> - <a href="privacy">Privacy Disclaimer</a></p>
 	</footer>
 </body>
 

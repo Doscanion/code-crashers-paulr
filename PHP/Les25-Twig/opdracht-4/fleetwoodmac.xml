@@ -61,7 +61,7 @@
             <song>Everywhere</song>
         </songs>
     </album>
-<album><name>Paul</name><year>1234</year><time>12:34</time><numbers>6</numbers><songs><song>Test 1</song><song>Test 2</song><song>Test 3</song></songs></album><album><name>Paul</name><year>1234</year><time>12:34</time><numbers>5</numbers><songs><song>Test 1</song><song>Test 2</song><song>Test 3</song></songs></album></albums>
+<album><name>Paul</name><year>1234</year><time>12:34</time><numbers>4</numbers><songs><song>Test 1</song><song>Test 2</song><song>Test 3</song></songs></album><album><name>Paul</name><year>1234</year><time>12:34</time><numbers>5</numbers><songs><song>Test 1</song><song>Test 2</song><song>Test 3</song></songs></album></albums>
 <!-- 
     <album>
         <name></name>

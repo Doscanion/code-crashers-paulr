@@ -30,7 +30,7 @@
     <img src="./bcake.jpg" alt="cake">
     HTML;
     }
-    if ($dayOfMonth === 25 && $dayOfMonth === 26 && $month == 12) {
+    if (($dayOfMonth === 25 || $dayOfMonth === 26) && $month == 12) {
         echo <<<HTML
     <img src="./Christmas_Tree_photo.jpg" alt="cake">
     HTML;

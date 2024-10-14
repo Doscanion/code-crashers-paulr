@@ -1,5 +1,6 @@
 <?php
 require_once 'vendor/autoload.php';
+require_once 'classes/AlbumController.php';
 
 $controller = new AlbumController();
 

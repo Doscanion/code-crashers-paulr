@@ -13,5 +13,5 @@ for ($i = 0; $i < 4; $i++) {
 
 echo Robot::countRobots();
 
-$robot1->test();
+$robot1->test('test');
 $robot1->secret(1, 2, 1);

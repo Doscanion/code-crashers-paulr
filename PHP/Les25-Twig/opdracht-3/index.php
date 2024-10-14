@@ -5,9 +5,6 @@ $loader = new \Twig\Loader\FilesystemLoader('./templates');
 $twig = new \Twig\Environment($loader, []);
 
 
-// if ($_GET['page']) {
-// 	# code...
-// }
 $page = isset($_GET['page']) ? $_GET['page'] : 'home';
 $id = isset($_GET['id']) ? $_GET['id'] : null;
 
@@ -50,6 +47,7 @@ switch ($page) {
 			$template = 'product.html.twig';
 			$content = $products[$id];
 		} else {
+			$template = 'product.html.twig';
 			$content = [
 				'name' => 'Geen geldig product gekozen.',
 				'price' => 0.00,

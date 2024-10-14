@@ -4,6 +4,7 @@ require_once 'vendor/autoload.php';
 use Symfony\Component\Mailer\Mailer;
 use Symfony\Component\Mailer\Transport;
 use Symfony\Component\Mime\Email;
+use Symfony\Component\Mime\Address;
 
 if (!empty($_POST)) {
     //Outlook-Hotmail
@@ -58,7 +59,7 @@ if (!empty($_POST)) {
         $text .= '</body></html>';
 
         $email = new Email();
-        $email->from($emailsender, $name);
+        $email->from(new Address($emailsender, $name));
         $email->to('notreal@outlook.com');
         $email->subject($selectq);
         $email->html($text);
