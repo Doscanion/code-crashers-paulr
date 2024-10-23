@@ -36,7 +36,7 @@ $products = [
 
 switch ($page) {
 	case 'contact':
-		$template = 'homecontact.html';
+		$template = 'homecontact.html.twig';
 		$content = [
 			'title' => 'Contact',
 			'text' => 'U kunt contact met ons opnemen op <a href="mailto:info@webshop.nl">info@webshop.nl</a>.'
@@ -56,7 +56,7 @@ switch ($page) {
 		}
 		break;
 	default:
-		$template = 'homecontact.html';
+		$template = 'homecontact.html.twig';
 		$content = [
 			'title' => 'Welkom',
 			'text' => 'Welkom op onze webshop.'

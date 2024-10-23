@@ -7,11 +7,10 @@
         <musiclabel>Muzieklabel</musiclabel>
         <headnumbers>Nummers</headnumbers>
     </albumhead>
-    <album>
+    <album musiclabel="Reprise">
         <name>Fleetwood Mac</name>
         <year>1975</year>
         <time>42:12</time>
-        <musiclabel>Reprise</musiclabel>
         <numbers>11</numbers>
         <songs>
             <song>Rhiannon</song>
@@ -19,11 +18,10 @@
             <song>Say You Love Me</song>
         </songs>
     </album>
-    <album>
+    <album musiclabel="Warner Bros.">
         <name>Rumours</name>
         <year>1977</year>
         <time>39:43</time>
-        <musiclabel>Warner Bros.</musiclabel>
         <numbers>11</numbers>
         <songs>
             <song>Go Your Own Way</song>
@@ -31,11 +29,10 @@
             <song>Don't Stop</song>
         </songs>
     </album>
-    <album>
+    <album musiclabel="Warner Bros.">
         <name>Tusk</name>
         <year>1979</year>
         <time>74:25</time>
-        <musiclabel>Warner Bros.</musiclabel>
         <numbers>20</numbers>
         <songs>
             <song>Tusk</song>
@@ -43,11 +40,10 @@
             <song>Not That Funny</song>
         </songs>
     </album>
-    <album>
+    <album musiclabel="Warner Bros.">
         <name>Mirage</name>
         <year>1982</year>
         <time>42:52</time>
-        <musiclabel>Warner Bros.</musiclabel>
         <numbers>12</numbers>
         <songs>
             <song>Hold Me</song>
@@ -55,11 +51,10 @@
             <song>Love in Store</song>
         </songs>
     </album>
-    <album>
+    <album musiclabel="Warner Bros.">
         <name>Tango in the Night</name>
         <year>1987</year>
         <time>44:28</time>
-        <musiclabel>Warner Bros.</musiclabel>
         <numbers>12</numbers>
         <songs>
             <song>Big Love</song>

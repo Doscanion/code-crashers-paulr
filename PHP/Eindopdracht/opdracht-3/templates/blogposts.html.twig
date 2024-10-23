@@ -1,0 +1,14 @@
+{% extends "base.html.twig" %}
+{% block content%}
+	<h1>Eindopdracht Blog</h1>
+	<section>
+		{% for post in posts %}
+			<article>
+				<h2>BlogTitle{{ post.name }}</h1>
+				<p>AuteurNaam{{ post.author }}</p>
+				<p>publicatie datum{{ post.publication }}</p>
+				<p>Blog Content{{ post.content }}</p>
+			</article>
+		{% endfor %}
+	</section>
+{% endblock %}

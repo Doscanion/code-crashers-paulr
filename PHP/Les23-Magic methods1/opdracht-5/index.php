@@ -3,30 +3,34 @@ require_once 'vendor/autoload.php';
 
 
 $app = new MainApp();
-$text = 'Welcome';
-if (isset($_GET['action'])) {
-	switch ($_GET['action']) {
-		case 'index':
-			$app->index();
-			$text = $app->getContent();
-			break;
-		case 'catalog':
-			$app->catalog();
-			$text = $app->getContent();
-			break;
-		case 'about':
-			$app->about();
-			$text = $app->getContent();
-			break;
-		default:
-			$app->__call($_GET['action'], null);
-			$text = $app->getContent();
-			break;
-	}
-} else {
-	$text = $app->index();
-	$text = $app->getContent();
-}
+$action = $_GET['action'] ?? 'index';
+$app->$action();
+
+$text = $app->getContent();
+
+// if (isset($_GET['action'])) {
+// 	switch ($_GET['action']) {
+// 		case 'index':
+// 			$app->index();
+// 			$text = $app->getContent();
+// 			break;
+// 		case 'catalog':
+// 			$app->catalog();
+// 			$text = $app->getContent();
+// 			break;
+// 		case 'about':
+// 			$app->about();
+// 			$text = $app->getContent();
+// 			break;
+// 		default:
+// 			$app->__call($_GET['action'], null);
+// 			$text = $app->getContent();
+// 			break;
+// 	}
+// } else {
+// 	$text = $app->index();
+// 	$text = $app->getContent();
+// }
 
 ?>
 
@@ -65,11 +69,7 @@ if (isset($_GET['action'])) {
 		</p>
 	</nav>
 	<section>
-		<?php
-
-		echo $text;
-
-		?>
+		<?= $text ?>
 	</section>
 	<footer>
 		<p>© Tom Bartels <?= date('Y'); ?> - <a href="privacy">Privacy Disclaimer</a></p>
