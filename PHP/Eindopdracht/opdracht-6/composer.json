@@ -1,0 +1,10 @@
+{
+    "autoload": {
+        "classmap": ["classes"],
+        "files": ["config.php"]
+    },
+    "require": {
+        "twig/twig": "^3.14",
+        "symfony/mailer": "^7.1"
+    }
+}

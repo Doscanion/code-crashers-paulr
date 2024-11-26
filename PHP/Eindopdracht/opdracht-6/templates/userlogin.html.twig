@@ -1,0 +1,20 @@
+{% extends "base.html.twig" %}
+{% block title %}
+	Blog Login
+{% endblock %}
+{% block content%}
+	<div class="login-container">
+		<h2>Login</h2>
+		<form action="index.php?page=login" method="POST">
+			<input type="hidden" name="action" value="login">
+			<input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+			<label for="username">Username:</label>
+			<input type="text" id="username" name="username" required>
+
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password" required>
+
+			<button type="submit">Login</button>
+		</form>
+	</div>
+{% endblock %}

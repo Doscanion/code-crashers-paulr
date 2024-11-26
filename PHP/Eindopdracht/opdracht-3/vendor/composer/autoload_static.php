@@ -15,6 +15,7 @@ class ComposerStaticInitd751713988987e9331980363e24189ce
         'ffecb95d45175fd40f75be8a23b34f90' => __DIR__ . '/..' . '/twig/twig/src/Resources/debug.php',
         'c7baa00073ee9c61edf148c51917cfb4' => __DIR__ . '/..' . '/twig/twig/src/Resources/escaper.php',
         'f844ccf1d25df8663951193c3fc307c8' => __DIR__ . '/..' . '/twig/twig/src/Resources/string_loader.php',
+        'cfe4039aa2a78ca88e07dadb7b1c6126' => __DIR__ . '/../..' . '/config.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -51,12 +52,13 @@ class ComposerStaticInitd751713988987e9331980363e24189ce
 
     public static $classMap = array (
         'Blog' => __DIR__ . '/../..' . '/classes/models/Blog.php',
-        'BlogController' => __DIR__ . '/../..' . '/classes/controller/BlogController.php',
+        'BlogController' => __DIR__ . '/../..' . '/classes/controllers/BlogController.php',
         'BlogModel' => __DIR__ . '/../..' . '/classes/models/BlogModel.php',
         'BlogPost' => __DIR__ . '/../..' . '/classes/models/BlogPost.php',
         'CURLStringFile' => __DIR__ . '/..' . '/symfony/polyfill-php81/Resources/stubs/CURLStringFile.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'ReturnTypeWillChange' => __DIR__ . '/..' . '/symfony/polyfill-php81/Resources/stubs/ReturnTypeWillChange.php',
+        'Session' => __DIR__ . '/../..' . '/classes/models/Session.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

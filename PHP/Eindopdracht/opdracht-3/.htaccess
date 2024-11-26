@@ -1,0 +1,18 @@
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^([a-zA-z]+)$ index.php?page=$1 [L,QSA]
+RewriteRule ^post/?([0-9]+)$ index.php?post=$1 [L,QSA]
+
+# Redirect to author only if session role is valid
+# All posts of an author
+RewriteRule ^author/([a-zA-Z0-9_-]+)$ index.php?author=$1 [L,QSA]
+
+# Author create post
+RewriteRule ^author/([a-zA-Z0-9_-]+)/create$ index.php?author=$1&action=create [L,QSA]
+
+# Author post edit
+RewriteRule ^author/([a-zA-Z0-9_-]+)/edit/([a-zA-Z0-9_-]+)$ index.php?author=$1&action=edit&post=$2 [L,QSA]
+

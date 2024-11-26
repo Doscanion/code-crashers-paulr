@@ -7,10 +7,11 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Blog' => $baseDir . '/classes/models/Blog.php',
-    'BlogController' => $baseDir . '/classes/controller/BlogController.php',
+    'BlogController' => $baseDir . '/classes/controllers/BlogController.php',
     'BlogModel' => $baseDir . '/classes/models/BlogModel.php',
     'BlogPost' => $baseDir . '/classes/models/BlogPost.php',
     'CURLStringFile' => $vendorDir . '/symfony/polyfill-php81/Resources/stubs/CURLStringFile.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'ReturnTypeWillChange' => $vendorDir . '/symfony/polyfill-php81/Resources/stubs/ReturnTypeWillChange.php',
+    'Session' => $baseDir . '/classes/models/Session.php',
 );

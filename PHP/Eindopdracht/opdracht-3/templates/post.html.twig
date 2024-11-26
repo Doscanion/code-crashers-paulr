@@ -1,20 +1,27 @@
 {% extends "base.html.twig" %}
 {% block title %}
-	{{ post.name }}
+	{{ post.post.title }}
 {% endblock %}
-{% block content%}
+{% block content %}
 	<article>
 		<section>
-			<h1>BlogTitle{{ post.name }}</h1>
-			<p>AuteurNaam{{ post.author }}</p>
-			<p>publicatie datum{{ post.publication }}</p>
-			<p>Blog Content{{ post.content }}</p>
+			<h1>{{ post.post.title }}</h1>
+			<p>Author -
+				{{ post.post.author }}</p>
+			<p>Publication -
+				{{ post.post.publication }}</p>
+			<p>{{ post.post.content }}</p>
 		</section>
 		<section>
-			{% for comment in comments %}
-				<p>Blog Content{{ comment.content }}</p>
-				<p>publicatie datum{{ comment.publication }}
-					- AuteurNaam{{ comment.author }}</p>
+			{% for comment in post.comments %}
+				<p>Content -
+					{{ comment.content }}</p>
+				<p>Date -
+					{{ comment.publication }}
+					- Author -
+					{{ comment.author }}</p>
+			{% else %}
+				<p>No comments yet.</p>
 			{% endfor %}
 		</section>
 	</article>

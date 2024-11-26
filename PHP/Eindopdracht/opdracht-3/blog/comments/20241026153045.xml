@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comments>
+    <comment>
+        <id>1</id>
+        <content>Test comment</content>
+        <publication>28-10-2024
+        </publication>
+        <author>admin</author>
+    </comment>
+    <comment>
+        <id>2</id>
+        <content>Test comment 2</content>
+        <publication>28-10-2024
+        </publication>
+        <author>admin</author>
+    </comment>
+</comments>

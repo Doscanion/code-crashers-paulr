@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="stylesheet" href="./styles/style.css"/>
+		<title>
+			{% block title %}{% endblock %}
+		</title>
+	</head>
+
+	<body>
+		<nav>
+			<form action="{{ base_path ~ '/search' }}" method="GET">
+				{% if author %}
+					<input type="hidden" name="author" value="author">
+				{% endif %}
+				<input type="checkbox" id="title" name="categories[]" value="title">
+				<label for="title">
+					Title</label><br>
+				<input type="checkbox" id="author" name="categories[]" value="author">
+				<label for="author">
+					Author</label><br>
+				<input type="checkbox" id="content" name="categories[]" value="content">
+				<label for="content">
+					Content</label><br><br>
+				<input type="text" id="query" name="query" placeholder="Search" required>
+
+				<button type="submit">Search</button>
+			</form>
+
+			{% block nav %}
+				{% if loggedIn %}
+					{% include "navlogout.html.twig" with {'csrf_token': csrf_token} %}
+				{% else %}
+					{% include "navlogin.html.twig" %}
+				{% endif %}
+			{% endblock %}
+		</nav>
+		<div id="container"> {% block content %}{% endblock %}
+			</div>
+			<footer>
+				{% block footer %}
+					{% if timeSinceLastVisit is not null %}
+						<p>Last visit was
+							{{ timeSinceLastVisit }}
+							minutes ago.</p>
+					{% else %}
+						<p>Welcome! This is your first visit.</p>
+					{% endif %}
+				{% endblock %}
+			</footer>
+		</body>
+	</html>

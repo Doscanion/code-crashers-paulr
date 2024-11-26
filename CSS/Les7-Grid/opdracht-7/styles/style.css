@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #191919;
+  background-color: rgb(25, 25, 25);
 }
 
 .container {
@@ -14,13 +14,10 @@ body {
 .tiles {
   max-height: 534px;
   background-color: red;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[6];
-      grid-template-columns: repeat(6, 1fr);
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
-      grid-template-areas: 'grid-block-1 grid-block-2 grid-block-3 grid-block-4 grid-block-5 grid-block-5' 'grid-block-6 grid-block-6 grid-block-3 grid-block-4 grid-block-7 grid-block-8';
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "grid-block-1 grid-block-2 grid-block-3 grid-block-4 grid-block-5 grid-block-5" "grid-block-6 grid-block-6 grid-block-3 grid-block-4 grid-block-7 grid-block-8";
 }
 
 figure {
@@ -35,80 +32,55 @@ img {
 
 .grid-block-1 {
   background-color: lightcoral;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: grid-block-1;
 }
 
 .grid-block-2 {
   background-color: lightblue;
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: grid-block-2;
 }
 
 .grid-block-3 {
   background-color: lightcyan;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 3;
   grid-area: grid-block-3;
 }
 
 .grid-block-4 {
   background-color: lightgoldenrodyellow;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 4;
   grid-area: grid-block-4;
 }
 
 .grid-block-5 {
   background-color: lightgray;
-  -ms-grid-row: 1;
-  -ms-grid-column: 5;
-  -ms-grid-column-span: 2;
   grid-area: grid-block-5;
 }
 
 .grid-block-6 {
   background-color: lightgreen;
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: grid-block-6;
 }
 
 .grid-block-7 {
   background-color: lightpink;
-  -ms-grid-row: 2;
-  -ms-grid-column: 5;
   grid-area: grid-block-7;
 }
 
 .grid-block-8 {
   background-color: lightsalmon;
-  -ms-grid-row: 2;
-  -ms-grid-column: 6;
   grid-area: grid-block-8;
 }
 
 .banner {
   height: 200px;
   background-color: #282f35;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr minmax(1fr) 1fr;
-      grid-template-columns: 1fr minmax(1fr) 1fr;
+  grid-template-columns: 1fr minmax(1fr) 1fr;
 }
 
 .banner-block-2 {
-  display: -ms-grid;
   display: grid;
   justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 button {
@@ -127,37 +99,24 @@ button {
 .content {
   height: 469px;
   background-color: white;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr minmax(1fr) 1fr;
-      grid-template-columns: 1fr minmax(1fr) 1fr;
+  grid-template-columns: 1fr minmax(1fr) 1fr;
 }
 
 .content-block-2 {
   color: #9ca6ae;
   font-style: italic;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 60px;
 }
-
 .content-block-2 .email {
   height: 40px;
   padding-left: 10px;
   font-style: italic;
 }
-
 .content-block-2 .submit {
   padding: 5px 15px;
   height: 44px;
@@ -165,16 +124,9 @@ button {
   color: white;
   border: none;
 }
-
 .content-block-2 form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

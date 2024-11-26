@@ -1,0 +1,7 @@
+<nav>
+	<form action="{{ base_path ~ '/index.php' }}" method="POST">
+		<input type="hidden" name="action" value="logout">
+		<input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+		<button type="submit">Logout</button>
+	</form>
+</nav>
