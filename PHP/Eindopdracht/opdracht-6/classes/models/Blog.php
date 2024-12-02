@@ -36,7 +36,6 @@ class Blog {
                     $search =  $_GET['authorQuery'];
                 }
                 if ($search) {
-                    echo $search;
                     $post = $this->searchPosts($files, $search, $author);
                     $this->post = $post;
                 }

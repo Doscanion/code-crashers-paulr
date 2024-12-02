@@ -1,0 +1,46 @@
+{% extends "base.html.twig" %}
+{% block title %}
+	{{ post.post.title }}
+{% endblock %}
+{% block content %}
+	<article>
+		<section class="post-container">
+			<h1 class="post-title">{{ post.post.title }}</h1>
+			<p>Author -
+				{{ post.post.author }}</p>
+			<p>Publication -
+				{{ post.post.publication }}</p>
+			<p>{{ post.post.content|raw }}</p>
+		</section>
+		<section class="post-comment-container">
+			<span>Post a comment</span>
+
+			<form action="{{ base_path ~ '/index.php' }}" method="POST">
+				<input type="hidden" name="action" value="commentCreate">
+				{% if not loggedIn %}
+					<label for="username">Username</label>
+					<input type="text" id="username" name="username">
+				{% endif %}
+				<label for="usercontent">Content:
+				</label>
+				<textarea id="text" name="usercontent"></textarea>
+				<input type="submit" value="Submit">
+			</form>
+			{% if error %}
+				<p style="color: red;">{{ error}}</p>
+			{% endif %}
+		</section>
+		<section>
+			{% for comment in post.comments %}
+				<p>Content
+					{{ comment.content|raw }}</p>
+				<p>Date:
+					{{ comment.publication }}
+					- Author:
+					{{ comment.author }}</p>
+			{% else %}
+				<p>No comments yet.</p>
+			{% endfor %}
+		</section>
+	</article>
+{% endblock %}

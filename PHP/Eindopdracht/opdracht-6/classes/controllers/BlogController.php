@@ -30,6 +30,12 @@ class BlogController {
             $this->twig->addGlobal('errorTextMessage', $errorTextMessage);
         }
 
+        if ($this->session->isRoleAuthor()) {
+            $authorName = $this->session->getUserName();
+        } else {
+            $authorName = null;
+        }
+
         if (isset($_SESSION['error'])) {
             $error = $_SESSION['error'];
             unset($_SESSION['error']);
@@ -40,6 +46,7 @@ class BlogController {
         $this->twig->addGlobal('csrf_token', $this->session->csrf());
         $this->twig->addGlobal('loggedIn', $this->session->isLoggedIn());
         $this->twig->addGlobal('timeSinceLastVisit', $this->session->minuteslastVisit());
+        $this->twig->addGlobal('authorName', $authorName);
     }
 
     // public function __call($name, $arguments) {
@@ -69,18 +76,11 @@ class BlogController {
         } else {
             $categoriesTwig = null;
         }
-        print_r($categoriesTwig);
 
         $sortTwig = $_SESSION['sortPosts'] ?? null;
         unset($_SESSION['sortPosts'], $_SESSION['searchCategories'], $_SESSION['searchQuery'], $_SESSION['hasMoreFiles'],);
         echo $this->twig->render('index.html.twig', ['posts' => $posts, 'pageNumber' => $pageNumber, 'hasMoreFiles' => $hasMoreFiles, 'search' => $searchTwig, 'categories' => $categoriesTwig, 'sort' => $sortTwig]);
     }
-
-    // public function addBlogPost() {
-    //     if (!empty($_POST)) {
-    //         # code...
-    //     }
-    // }
 
     public function login() {
         $csrf_token = $this->session->csrf();
@@ -142,7 +142,6 @@ class BlogController {
         $author = $_GET['author'];
         $action = $_GET['action'] ?? null;
         $postId = $_GET['post'] ?? null;
-        echo $author;
         //Pagination
         if (!empty($_GET['pageNumber'])) {
             $pageNumber = $_GET['pageNumber'];

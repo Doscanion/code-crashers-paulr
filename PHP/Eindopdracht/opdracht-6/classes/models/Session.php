@@ -50,7 +50,7 @@ class Session {
     public function logOut() {
         session_unset();
         session_destroy();
-        header('Location: ' . BASE_PATH . ' index.php');
+        header('Location: ' . BASE_PATH);
     }
 
     public function isLoggedIn() {

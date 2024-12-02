@@ -247,7 +247,6 @@ class BlogPost {
         $commentsXml->asXML('./blog/comments/' . $filename . '.xml');
 
         header('Location: ' . BASE_PATH . '/author/' . $this->author . '/edit/' . $filename);
-        echo 'test';
     }
 
     public function wordsBlackList($string) {

@@ -1,0 +1,56 @@
+{% extends "base.html.twig" %}
+
+{% block title %}
+	Blog Eindopdracht
+{% endblock %}
+
+{% block content%}
+	<h1>Blog Eindopdracht</h1>
+	<section>
+		<div class="sort-container">
+			<a href="{{ base_path ~ (search ? '/search/' ~ search : '') ~ (categories ? '/categories/' ~ categories : '') ~ '/sort/newOld' }}" class="sort-link" {% if sort == 'newOld' %} style="font-weight: bold;" {% endif %}>
+				Newest First
+			</a>
+			|
+			<a href="{{ base_path ~ (search ? '/search/' ~ search : '') ~ (categories ? '/categories/' ~ categories : '') ~ '/sort/oldNew' }}" class="sort-link" {% if sort == 'oldNew' %} style="font-weight: bold;" {% endif %}>
+				Oldest First
+			</a>
+			|
+			<a href="{{ base_path ~ (search ? '/search/' ~ search : '') ~ (categories ? '/categories/' ~ categories : '') ~ '/sort/authorAbc' }}" class="sort-link" {% if sort == 'authorAbc' %} style="font-weight: bold;" {% endif %}>
+				Author (A-Z)
+			</a>
+			|
+			<a href="{{ base_path ~ (search ? '/search/' ~ search : '') ~ (categories ? '/categories/' ~ categories : '') ~ '/sort/authorZyx' }}" class="sort-link" {% if sort == 'authorZyx' %} style="font-weight: bold;" {% endif %}>
+				Author (Z-A)
+			</a>
+		</div>
+		{% for post in posts %}
+			<article>
+				<h2>
+					<a href='{{ base_path }}/post/{{ post.filename }}'>{{ post.title }}</a>
+				</h2>
+				<p>
+					Author:{{ post.author }}
+				</p>
+				<p>
+					Publication:{{ post.publication}}
+				</p>
+				<div class="post-content">
+					{{ post.content|raw  }}
+					<a href='{{ base_path }}/post/{{ post.filename }}'>Read more</a>
+				</div>
+			</article>
+		{% else %}
+			<p>No posts available.</p>
+		{% endfor %}
+		<p>
+			{% if pageNumber > 1 %}
+				<a href='{{ base_path ~ (search ? '/search/' ~ search : '') ~ (categories ? '/categories/' ~ categories : '') ~ (sort ? '/sort/' ~ sort : '') ~ '/page/' ~ (pageNumber - 1) }}'>Previous page</a>
+			{% endif %}
+			<span>{{ pageNumber }}</span>
+			{% if hasMoreFiles %}
+				<a href='{{ base_path ~ (search ? '/search/' ~ search : '') ~ (categories ? '/categories/' ~ categories : '') ~ (sort ? '/sort/' ~ sort : '') ~ '/page/' ~ (pageNumber + 1) }}'>Next page</a>
+			{% endif %}
+		</p>
+	</section>
+{% endblock %}

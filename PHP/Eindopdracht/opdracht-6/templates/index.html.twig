@@ -7,7 +7,7 @@
 {% block content%}
 	<h1>Blog Eindopdracht</h1>
 	<section>
-		<div>
+		<div class="sort-container">
 			<a href="{{ base_path ~ (search ? '/search/' ~ search : '') ~ (categories ? '/categories/' ~ categories : '') ~ '/sort/newOld' }}" class="sort-link" {% if sort == 'newOld' %} style="font-weight: bold;" {% endif %}>
 				Newest First
 			</a>
@@ -37,6 +37,7 @@
 				</p>
 				<p>
 					{{ post.content }}
+					<a href='{{ base_path }}/post/{{ post.filename }}'>Read more</a>
 				</p>
 			</article>
 		{% else %}

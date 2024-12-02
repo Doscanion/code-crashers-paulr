@@ -5,14 +5,16 @@
 {% block content %}
 	<article>
 		<section>
-			<h1>{{ post.post.title }}</h1>
+			<h1 class="post-title">{{ post.post.title }}</h1>
 			<p>Author -
 				{{ post.post.author }}</p>
 			<p>Publication -
 				{{ post.post.publication }}</p>
 			<p>{{ post.post.content }}</p>
 		</section>
-		<section>
+		<section class="post-comment-container">
+			<span>Post a comment</span>
+
 			<form action="{{ base_path ~ '/index.php' }}" method="POST">
 				<input type="hidden" name="action" value="commentCreate">
 				{% if not loggedIn %}

@@ -1,0 +1,191 @@
+* {
+	a {
+		color: black;
+	}
+	a:link {
+		text-decoration: none;
+	}
+	a:active {
+		color: lightgray;
+	}
+	a:hover {
+		color: gray;
+	}
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	position: relative;
+	font-size: 16px;
+}
+
+// Nav _Start
+nav {
+	font-family: "Courier New", Courier, monospace;
+	justify-content: center;
+	width: 100%;
+	background-color: lightgray;
+	position: sticky;
+	top: 0px;
+	display: flex;
+	a:active {
+		color: blue;
+	}
+	a:hover {
+		color: gray;
+		background-color: aliceblue;
+	}
+}
+
+.nav-a {
+	padding: 5px;
+	align-items: center;
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+	display: flex;
+	justify-content: center;
+	height: 50px;
+	border-radius: 5px;
+}
+
+.nav-container {
+	height: 75px;
+	width: 1080px;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	position: relative;
+	margin: 0 auto;
+}
+
+.nav-form-search {
+	display: flex;
+	margin: 0;
+	gap: 2px;
+	margin-left: auto; /* Push the form to the far right */
+	button {
+		height: fit-content;
+		cursor: pointer;
+	}
+}
+
+.nav-search-filter-container {
+	display: flex;
+}
+
+// Nav _End
+
+// Main _Start
+
+main {
+	flex: 1;
+
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.main-container {
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	width: 1080px;
+}
+
+.sort-container {
+	a {
+	}
+	a:hover {
+		color: gray;
+	}
+}
+
+.post-title {
+	font-size: 24px;
+}
+
+.post-comment-container {
+	display: flex;
+	flex-direction: column;
+	form {
+		display: flex;
+		gap: 4px;
+		flex-direction: column;
+		textarea {
+			max-width: 240px;
+			height: 80px;
+		}
+		input[type="submit"] {
+			width: auto;
+			align-self: flex-start;
+		}
+	}
+}
+
+.createpost-container {
+	display: flex;
+	flex-direction: column;
+	form {
+		display: flex;
+		gap: 4px;
+		flex-direction: column;
+		textarea {
+			max-width: 240px;
+			height: 80px;
+		}
+		button,
+		input[type="text"] {
+			width: auto;
+			align-self: flex-start;
+		}
+	}
+}
+
+.editpost-container {
+	display: flex;
+	flex-direction: column;
+	form {
+		display: flex;
+		gap: 4px;
+		flex-direction: column;
+		textarea {
+			max-width: 240px;
+			height: 80px;
+		}
+		button,
+		input[type="text"] {
+			width: auto;
+			align-self: flex-start;
+		}
+	}
+}
+
+// Main _End
+
+// Footer _Start
+
+footer {
+	min-height: 100px;
+	background-color: #f5f5f5;
+	overflow: auto;
+	display: flex;
+	justify-content: center;
+}
+
+.footer-container {
+	height: 100%;
+	margin: auto;
+	width: 1080px;
+}
+
+// Footer _End

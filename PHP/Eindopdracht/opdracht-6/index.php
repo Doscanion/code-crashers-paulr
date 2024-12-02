@@ -2,7 +2,8 @@
 require 'vendor/autoload.php';
 
 $controller = new BlogController();
-print_r($_GET);
+// print_r($_GET);
+// print_r($_POST);
 
 if (!empty($_POST)) {
     if ($_POST['action'] === 'logout') {
@@ -12,10 +13,8 @@ if (!empty($_POST)) {
     } elseif ($_POST['action'] === 'register') {
         $controller->registerUser();
     } elseif ($_POST['action'] === 'createpost') {
-        echo 'create?';
         $controller->createPostFile();
     } elseif ($_POST['action'] === 'editpost') {
-        echo 'update?';
         $controller->editPostFile();
     } elseif ($_POST['action'] === 'commentCreate') {
         $controller->commentCreate();

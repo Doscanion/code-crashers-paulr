@@ -4,6 +4,10 @@
 	Blog Eindopdracht
 {% endblock %}
 
+{% block navAuthor %}
+	<a href={{ base_path ~ '/author/' ~ authorName ~ '/create'}} class="nav-a">Create post</a>
+{% endblock %}
+
 {% block content%}
 	<h1>Posts by
 		{{ author }}</h1>

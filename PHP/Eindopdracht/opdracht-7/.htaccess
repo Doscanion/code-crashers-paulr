@@ -1,0 +1,36 @@
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Needs to stay above the next rule RewriteRule ^([a-zA-z]+)$ # as
+# RewriteRule ^page/([0-9]+)$ index.php?pageNumber=$1 [L,QSA]
+
+RewriteRule ^(sort/([^/]+)/)?page/([0-9]+)$ index.php?sort=$2&pageNumber=$3 [L,QSA]
+
+RewriteRule ^search/([\s\S]+)/categories/([^/]+)(\/sort\/([^/]+))?(\/page\/([0-9]+))?$ index.php?indexQuery=$1&categories=$2&sort=$4&pageNumber=$6 [L,QSA]
+
+# RewriteRule ^(sort/([^/]+)/)?page/([0-9]+)$ index.php?sort=$2&pageNumber=$3 [L,QSA]
+RewriteRule ^sort/([a-zA-Z0-9_-]+)$ index.php?sort=$1 [L,QSA]
+
+RewriteRule ^([a-zA-z]+)$ index.php?page=$1 [L,QSA]
+
+
+RewriteRule ^post/?([0-9]+)$ index.php?post=$1 [L,QSA]
+
+# Redirect to author only if session role is valid
+# First page of an authors post
+RewriteRule ^author/([a-zA-Z0-9_-]+)(/sort/([^/]+))?$ index.php?author=$1&sort=$3 [L,QSA]
+
+# Author pagination (for author pages)
+# RewriteRule ^author/([a-zA-Z0-9_-]+)/page/([0-9]+)$ index.php?author=$1&pageNumber=$2 [L,QSA]
+RewriteRule ^author/([a-zA-Z0-9_-]+)(/sort/([^/]+))?/page/([0-9]+)$ index.php?author=$1&sort=$3&pageNumber=$4 [L,QSA]
+# Author with search
+RewriteRule ^author\/([a-zA-Z0-9_-]+)\/search\/([\s\S]+)\/categories\/([a-zA-Z0-9,]+)(\/sort\/([^\/]+))?(\/page\/([0-9]+))?$ index.php?author=$1&authorQuery=$2&categories=$3&sort=$5&pageNumber=$7 [L,QSA]
+
+# Author create post
+RewriteRule ^author/([a-zA-Z0-9_-]+)/create$ index.php?author=$1&action=create [L,QSA]
+
+# Author post edit
+RewriteRule ^author/([a-zA-Z0-9_-]+)/edit/([a-zA-Z0-9_-]+)$ index.php?author=$1&action=edit&post=$2 [L,QSA]
+
