@@ -12,6 +12,23 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <script defer src="./js/javascript.js"></script>
     <script defer src="./js/jquery.js"></script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Embed Slaapcomfort",
+            "description": "Bij Embed Slaapcomfort vindt u uitgebreide selectie hoogwaardige bedden en slaapaccessoires in de stad Weert en in de straat Parallelweg 102, ",
+            "image": "/img/logo.svg",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "102 Parallelweg",
+                "addressLocality": "Weert",
+                "postalCode": "6001HM",
+                "addressRegion": "Limburg",
+                "addressCountry": "Nederland"
+            }
+        }
+    </script>
     <title>Embed Slaapcomfort Info</title>
 </head>
 
@@ -19,6 +36,9 @@
     <header><?php require_once(__DIR__ . '/includes/header.html'); ?> </header>
     <nav> <?php require_once(__DIR__ . '/includes/nav.html'); ?></nav>
     <main>
+        <div id="popup">
+            <p>Helaas, aanmelden op de nieuwsbrief is nog niet mogelijk. Probeer het over een week nog eens.</p>
+        </div>
         <h2>Informatie over Embed</h2>
         <p>Bij Embed begrijpen we het belang van een goede nachtrust voor uw algehele welzijn. Daarom bieden we een uitgebreide selectie hoogwaardige bedden en slaapaccessoires om ervoor te zorgen dat u de beste nachtrust krijgt.</p>
         <h2>Deskundig Advies</h2>

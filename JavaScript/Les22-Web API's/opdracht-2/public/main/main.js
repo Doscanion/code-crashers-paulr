@@ -36,7 +36,8 @@ function topMovies() {
 		name.appendChild(nameText);
 
 		name.addEventListener("click", function () {
-			movieFetch(movieId);
+			let language = sessionStorage.getItem("language");
+			movieFetch(movieId, language);
 		});
 
 		divMovie.appendChild(name);
@@ -57,9 +58,10 @@ let movieDetails;
 let credits;
 function movieFetch(movieId, langSelect) {
 	console.log(`${movieId}`);
-	if (langSelect === undefined) {
-		langSelect === "nl-NL";
+	if (langSelect === null) {
+		langSelect = "nl-NL";
 	}
+	console.log(langSelect);
 	fetch(`https://api.themoviedb.org/3/movie/${movieId}?language=${langSelect}`, options)
 		.then((response) => response.json())
 		.then((response) => {
@@ -112,14 +114,16 @@ let languageSet = {
 function movie(langSelect) {
 	if (document.querySelector(".movie")) {
 		document.querySelector(".movie").remove();
-		console.log("delete");
+		// console.log("delete");
 	}
-	console.log(langSelect);
-	if (langSelect === undefined) {
+	// console.log(langSelect);
+	langSelect = sessionStorage.getItem("language");
+	if (!langSelect) {
 		langSelect = "nl-NL";
 	}
 	console.log(movieDetails);
 	let name = movieDetails.title;
+	console.log(name);
 	let tagline = movieDetails.tagline;
 	let description = movieDetails.overview;
 	let release = movieDetails.release_date;
@@ -161,6 +165,7 @@ function movie(langSelect) {
 	selectElement.value = langSelect;
 	let movieId = movieDetails.id;
 	selectElement.addEventListener("change", function () {
+		sessionStorage.setItem("language", this.value);
 		movieFetch(movieId, this.value);
 	});
 	selectElement.style.width = "100px";

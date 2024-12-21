@@ -21,6 +21,9 @@
     <header><?php require_once(__DIR__ . '/includes/header.html'); ?> </header>
     <nav> <?php require_once(__DIR__ . '/includes/nav.html'); ?></nav>
     <main>
+        <div id="popup">
+            <p>Helaas, aanmelden op de nieuwsbrief is nog niet mogelijk. Probeer het over een week nog eens.</p>
+        </div>
         <h2>Sitemap</h2>
         <section class="sitemap">
             <section>

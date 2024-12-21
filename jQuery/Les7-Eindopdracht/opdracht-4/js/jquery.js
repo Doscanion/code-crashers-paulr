@@ -24,19 +24,27 @@ $("#popup").dialog({
 	modal: true,
 	width: 400,
 	resizable: false,
+	open: function () {
+		$(this).css({
+			"background-color": "gray",
+			opacity: "1",
+		});
+	},
 });
 
 $("#subscribe").on("click", function () {
 	$("#popup").dialog("open");
 });
 
-$(".main-slider .slider-img").bxSlider({
-	mode: "fade",
-	captions: true,
-	auto: true,
-	pause: 3000,
-	controls: true,
-});
+if ($(".main-slider .slider-img").length > 0) {
+	$(".main-slider .slider-img").bxSlider({
+		mode: "fade",
+		captions: true,
+		auto: true,
+		pause: 3000,
+		controls: true,
+	});
+}
 
 $(".svg-circle").on("click", function () {
 	$dataTarget = $(this).data("target");

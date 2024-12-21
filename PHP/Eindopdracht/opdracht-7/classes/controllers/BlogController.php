@@ -83,8 +83,10 @@ class BlogController {
     }
 
     public function login() {
-        $csrf_token = $this->session->csrf();
-        echo $this->twig->render('userlogin.html.twig', []);
+        // $csrf_token = $this->session->csrf();
+        $loginError = $_SESSION['loginError'] ?? null;
+        unset($_SESSION['loginError']);
+        echo $this->twig->render('userlogin.html.twig', ['error' => $loginError]);
     }
 
     public function showPost($filename) {
@@ -155,12 +157,16 @@ class BlogController {
 
         switch ($action) {
             case 'create':
-                echo $this->twig->render('createblogpost.html.twig', ['error' => $error]);
+                $postcreated = $_SESSION['hasCreatedPost'] ?? null;
+                unset($_SESSION['hasCreatedPost']);
+                echo $this->twig->render('createblogpost.html.twig', ['error' => $error, 'created' => $postcreated]);
                 break;
 
             case 'edit':
                 $post = $this->post->editPost($author, $postId);
-                echo $this->twig->render('usereditpost.html.twig', ['post' => $post['post'], 'comments' => $post['comments'], 'error' => $error]);
+                $postEdited = $_SESSION['hasEditedPost'] ?? null;
+                unset($_SESSION['hasEditedPost']);
+                echo $this->twig->render('usereditpost.html.twig', ['post' => $post['post'], 'comments' => $post['comments'], 'error' => $error, 'edited' => $postEdited]);
                 break;
 
             default:

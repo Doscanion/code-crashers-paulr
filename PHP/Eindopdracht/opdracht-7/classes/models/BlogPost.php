@@ -106,6 +106,7 @@ class BlogPost {
         $filePathComments = './blog/comments/' . $filename . '.xml';
 
         if ($xmlPost->asXML($filePathPost) && $xmlComments->asXML($filePathComments)) {
+            $_SESSION['hasCreatedPost'] = "Post has been created";
             header('Location: ' . BASE_PATH . '/author/' . $this->author . '/create');
         } else {
             $_SESSION['error'] = "Could not create " . $title . ' blogpost';
@@ -145,6 +146,7 @@ class BlogPost {
 
         $postxml->asXML('./blog/posts/' . $filename . '.xml');
 
+        $_SESSION['hasEditedPost'] = "Post has been edited";
         header('Location: ' . BASE_PATH . '/author/' . $this->author . '/edit/' . $filename);
     }
 
@@ -207,7 +209,9 @@ class BlogPost {
             ->from('websitename-comment@company.com')
             ->to($receiverEmail)
             ->subject('The blogpost ' . $title . ' has received a comment')
-            ->text('Hello ' . $author . '\n\n' . 'The user ' . $username . ' has placed a comment on your post ' . $title . '.' . "\n\n" . 'The comment has the following content: ' . $emailTextContent);
+            ->text(
+                'Hello ' . $author . "\n\n" . 'The user ' . $username . ' has placed a comment on your post ' . $title . '.' . "\n\n" . 'The comment has the following content: ' . $emailTextContent . "\n\n Link containing the message: " . BASE_PATH . '/post/' . $filename
+            );
 
         try {
             $mailer->send($email);

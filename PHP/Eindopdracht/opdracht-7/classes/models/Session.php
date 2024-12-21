@@ -16,6 +16,7 @@ class Session {
     }
 
     public function logIn() {
+        // $_SESSION['userLogIn'] = true;
         if (!isset($_POST['csrf_token']) || $_POST['csrf_token'] !== $_SESSION['csrf_token']) {
             echo 'Invalid CSRF token';
             exit;
@@ -36,13 +37,19 @@ class Session {
                             header('Location: index.php');
                             exit;
                         } else {
-                            return 'Incorrect password';
+                            $_SESSION['loginError'] = 'Incorrect username or password';
+                            $redirectUrl = $_SERVER['HTTP_REFERER'] ?? BASE_PATH;
+                            header("Location: $redirectUrl");
                         }
                     }
                 }
-                return 'User not found';
+                $_SESSION['loginError'] = 'Incorrect username or password';
+                $redirectUrl = $_SERVER['HTTP_REFERER'] ?? BASE_PATH;
+                header("Location: $redirectUrl");
             } else {
-                return 'You are already logged in as ' . htmlspecialchars($_SESSION['username']) . ".";
+                $_SESSION['loginError'] = 'You are already logged in as ' . htmlspecialchars($_SESSION['username']) . ".";
+                $redirectUrl = $_SERVER['HTTP_REFERER'] ?? BASE_PATH;
+                header("Location: $redirectUrl");
             }
         }
     }

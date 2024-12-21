@@ -246,7 +246,9 @@ class Main {
 		if (pokemonTeam.length > 0) {
 			const teamSelector = document.querySelector(".pokemon-team");
 			teamSelector.innerHTML = "";
-			for (const pokemon of pokemonTeam) {
+
+			for (let index = 0; index < pokemonTeam.length; index++) {
+				const pokemon = pokemonTeam[index];
 				const pokemonFigure = document.createElement("figure");
 				const pokemonImg = document.createElement("img");
 				pokemonImg.src = pokemon.img;
@@ -270,7 +272,19 @@ class Main {
 				pokemonFigure.style.borderColor = pokemonTypeColor[pokemon.types[0].type.name];
 
 				const pokemonCaption = document.createElement("figcaption");
-				pokemonCaption.textContent = pokemon.nickname;
+				pokemonCaption.textContent = pokemon.nickname + "✏️";
+
+				pokemonCaption.addEventListener("click", () => {
+					const nickname = prompt("Nickname: ", pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1));
+					if (nickname === null) {
+						return;
+					}
+					const pokemonIndex = index;
+					console.log(nickname + pokemonIndex);
+					pokemonTeam[pokemonIndex].nickname = nickname;
+					localStorage.setItem("pokemonTeam", JSON.stringify(pokemonTeam));
+					this.pokemonShowTeam(pokemonTeam);
+				});
 
 				pokemonFigure.appendChild(pokemonImg);
 				pokemonFigure.appendChild(pokemonDeleteMember);

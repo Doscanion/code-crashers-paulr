@@ -1,845 +1,654 @@
 <!DOCTYPE html>
 <html lang="nl">
-    <head>
-        <title>Luigi's Pizzeria</title>
-        <meta
-            name="description"
-            content="Luigi's Pizzeria de beste pizzeria in Eindhoven. Open op woensdag - zondag 16:00 - 22:00, op Ukkelstraat 2E-1, 5628 TE"
-        />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta charset="UTF-8" />
-        <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="Luigi's Pizzeria" />
-        <meta property="og:type" content="website" />
-        <meta
-            property="og:description"
-            content="Luigi's Pizzeria is the best pizzeria in Eindhoven. Come and get a delicious pizza from Luigi."
-        />
-        <meta property="og:image" content="./images/logo-white.png"" />
-        <meta property="og:url" content="https://www.luigi.com" />
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="@luigi" />
-        <!-- Font -->
-        <link
-            href="https://fonts.googleapis.com/css?family=Open+Sans:400,600"
-            rel="stylesheet"
-        />
-        <link
-            rel="stylesheet"
-            href="fonts/beyond_the_mountains-webfont.css"
-            type="text/css"
-        />
+	<head>
+		<title>Luigi's Pizzeria</title>
+		<meta
+			name="description"
+			content="Luigi's Pizzeria de beste pizzeria in Eindhoven. Open op woensdag - zondag 16:00 - 22:00, op Ukkelstraat 2E-1, 5628 TE"
+		/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta charset="UTF-8" />
+		<meta name="robots" content="index, follow" />
+		<meta property="og:title" content="Luigi's Pizzeria" />
+		<meta property="og:type" content="website" />
+		<meta property="og:description" content="Luigi's Pizzeria is the best pizzeria in Eindhoven. Come and get a delicious pizza from Luigi." />
+		<meta property="og:image" content="./images/logo-white.png"" />
+		<meta property="og:url" content="https://www.luigi.com" />
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:site" content="@luigi" />
+		<!-- Font -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet" />
+		<link rel="stylesheet" href="fonts/beyond_the_mountains-webfont.css" type="text/css" />
 
-        <!-- Stylesheets -->
-        <link href="plugin-frameworks/bootstrap.min.css" rel="stylesheet" />
-        <link href="plugin-frameworks/swiper.css" rel="stylesheet" />
-        <link href="fonts/ionicons.css" rel="stylesheet" />
-        <link href="common/styles.css" rel="stylesheet" />
-        <script type="application/ld+json">
-            [
-                {
-                    "@context": "https://schema.org/",
-                    "@type": "LocalBusiness",
-                    "name": "Luigi's",
-                    "description": "Restaurant Luigi's werkt uitsluitend met de mooiste producten die de Italiaanse keuken te bieden heeft om de beste pizza's te maken.",
-                    "image": "images/logo-white.png",
-                    "openingHours": ["We-Su 16:00-22:00"],
-                    "telephone": "040-9177128",
-                    "email": "info@luigis.nl",
-                    "address": {
-                        "@type": "PostalAddress",
-                        "addressLocality": "Eindhoven",
-                        "addressRegion": "TE",
-                        "postalCode": "5628",
-                        "streetAddress": "2E-1 Ukkelstraat"
-                    }
-                },
-                {
-                    "@context": "https://schema.org/",
-                    "@type": "IndividualProduct",
-                    "name": "Pizza Margherita",
-                    "category": "pizza",
-                    "image": "images/menu/margherita.png",
-                    "description": "Pizza Margherita",
-                    "offers": {
-                        "@type": "Offer",
-                        "priceCurrency": "EUR",
-                        "price": "9.90"
-                    }
-                },
-                {
-                    "@context": "https://schema.org/",
-                    "@type": "IndividualProduct",
-                    "name": "Pizza Quattro Stagioni",
-                    "category": "pizza",
-                    "image": "images/menu/cheese.png",
-                    "description": "Pizza Quattro Stagioni",
-                    "offers": {
-                        "@type": "Offer",
-                        "priceCurrency": "EUR",
-                        "price": "11.90"
-                    }
-                },
-                {
-                    "@context": "https://schema.org/",
-                    "@type": "IndividualProduct",
-                    "name": "Pizza Tonno",
-                    "category": "pizza",
-                    "image": "images/menu/tuna.png",
-                    "description": "Pizza Tonno",
-                    "offers": {
-                        "@type": "Offer",
-                        "priceCurrency": "EUR",
-                        "price": "11.90"
-                    }
-                },
-                {
-                    "@context": "https://schema.org/",
-                    "@type": "IndividualProduct",
-                    "name": "Pizza Pollo",
-                    "category": "pizza",
-                    "image": "images/menu/pollo.png",
-                    "description": "Pizza Pollo",
-                    "offers": {
-                        "@type": "Offer",
-                        "priceCurrency": "EUR",
-                        "price": "12.90"
-                    }
-                },
-                {
-                    "@context": "https://schema.org/",
-                    "@type": "IndividualProduct",
-                    "name": "Pizza Hawaii",
-                    "category": "pizza",
-                    "image": "images/menu/hawaii.png",
-                    "description": "Pizza Hawaii",
-                    "offers": {
-                        "@type": "Offer",
-                        "priceCurrency": "EUR",
-                        "price": "11.90"
-                    }
-                },
-                {
-                    "@context": "https://schema.org/",
-                    "@type": "IndividualProduct",
-                    "name": "Pizza Veggie",
-                    "category": "pizza",
-                    "image": "images/menu/veggie.png",
-                    "description": "Pizza Veggie",
-                    "offers": {
-                        "@type": "Offer",
-                        "priceCurrency": "EUR",
-                        "price": "9.90"
-                    }
-                },
-                {
-                    "@context": "https://schema.org/",
-                    "@type": "IndividualProduct",
-                    "name": "Pizza Funghi",
-                    "category": "pizza",
-                    "image": "images/menu/funghi.png",
-                    "description": "Pizza Funghi",
-                    "offers": {
-                        "@type": "Offer",
-                        "priceCurrency": "EUR",
-                        "price": "12.90"
-                    }
-                },
-                {
-                    "@context": "https://schema.org/",
-                    "@type": "IndividualProduct",
-                    "name": "Pizza Döner",
-                    "category": "pizza",
-                    "image": "images/menu/doner.png",
-                    "description": "Pizza Döner",
-                    "offers": {
-                        "@type": "Offer",
-                        "priceCurrency": "EUR",
-                        "price": "11.90"
-                    }
-                }
-            ]
-        </script>
-    </head>
-    <body>
-        <header id="header">
-            <div class="container">
-                <a class="logo" href="#"
-                    ><img src="images/logo-white.png" alt="Logo"
-                /></a>
+		<!-- Stylesheets -->
+		<link href="plugin-frameworks/bootstrap.min.css" rel="stylesheet" />
+		<link href="plugin-frameworks/swiper.css" rel="stylesheet" />
+		<link href="fonts/ionicons.css" rel="stylesheet" />
+		<link href="common/styles.css" rel="stylesheet" />
+		<script type="application/ld+json">
+			[
+				{
+					"@context": "https://schema.org/",
+					"@type": "LocalBusiness",
+					"name": "Luigi's",
+					"description": "Restaurant Luigi's werkt uitsluitend met de mooiste producten die de Italiaanse keuken te bieden heeft om de beste pizza's te maken.",
+					"image": "images/logo-white.png",
+					"openingHours": ["We-Su 16:00-22:00"],
+					"telephone": "040-9177128",
+					"email": "info@luigis.nl",
+					"address": {
+						"@type": "PostalAddress",
+						"addressLocality": "Eindhoven",
+						"addressRegion": "TE",
+						"postalCode": "5628",
+						"streetAddress": "2E-1 Ukkelstraat"
+					}
+				},
+				{
+					"@context": "https://schema.org/",
+					"@type": "IndividualProduct",
+					"name": "Pizza Margherita",
+					"category": "pizza",
+					"image": "images/menu/margherita.png",
+					"description": "Pizza Margherita",
+					"offers": {
+						"@type": "Offer",
+						"priceCurrency": "EUR",
+						"price": "9.90"
+					}
+				},
+				{
+					"@context": "https://schema.org/",
+					"@type": "IndividualProduct",
+					"name": "Pizza Quattro Stagioni",
+					"category": "pizza",
+					"image": "images/menu/cheese.png",
+					"description": "Pizza Quattro Stagioni",
+					"offers": {
+						"@type": "Offer",
+						"priceCurrency": "EUR",
+						"price": "11.90"
+					}
+				},
+				{
+					"@context": "https://schema.org/",
+					"@type": "IndividualProduct",
+					"name": "Pizza Tonno",
+					"category": "pizza",
+					"image": "images/menu/tuna.png",
+					"description": "Pizza Tonno",
+					"offers": {
+						"@type": "Offer",
+						"priceCurrency": "EUR",
+						"price": "11.90"
+					}
+				},
+				{
+					"@context": "https://schema.org/",
+					"@type": "IndividualProduct",
+					"name": "Pizza Pollo",
+					"category": "pizza",
+					"image": "images/menu/pollo.png",
+					"description": "Pizza Pollo",
+					"offers": {
+						"@type": "Offer",
+						"priceCurrency": "EUR",
+						"price": "12.90"
+					}
+				},
+				{
+					"@context": "https://schema.org/",
+					"@type": "IndividualProduct",
+					"name": "Pizza Hawaii",
+					"category": "pizza",
+					"image": "images/menu/hawaii.png",
+					"description": "Pizza Hawaii",
+					"offers": {
+						"@type": "Offer",
+						"priceCurrency": "EUR",
+						"price": "11.90"
+					}
+				},
+				{
+					"@context": "https://schema.org/",
+					"@type": "IndividualProduct",
+					"name": "Pizza Veggie",
+					"category": "pizza",
+					"image": "images/menu/veggie.png",
+					"description": "Pizza Veggie",
+					"offers": {
+						"@type": "Offer",
+						"priceCurrency": "EUR",
+						"price": "9.90"
+					}
+				},
+				{
+					"@context": "https://schema.org/",
+					"@type": "IndividualProduct",
+					"name": "Pizza Funghi",
+					"category": "pizza",
+					"image": "images/menu/funghi.png",
+					"description": "Pizza Funghi",
+					"offers": {
+						"@type": "Offer",
+						"priceCurrency": "EUR",
+						"price": "12.90"
+					}
+				},
+				{
+					"@context": "https://schema.org/",
+					"@type": "IndividualProduct",
+					"name": "Pizza Döner",
+					"category": "pizza",
+					"image": "images/menu/doner.png",
+					"description": "Pizza Döner",
+					"offers": {
+						"@type": "Offer",
+						"priceCurrency": "EUR",
+						"price": "11.90"
+					}
+				}
+			]
+		</script>
+	</head>
+	<body>
+		<header id="header">
+			<div class="container">
+				<a class="logo" href="#"><img src="images/logo-white.png" alt="Logo" /></a>
 
-                <div class="right-area">
-                    <h6>
-                        <a
-                            style="margin-right: 15px"
-                            class="plr-20 color-white btn-fill-primary"
-                            href="#"
-                            >BESTELLEN: 040-9177128</a
-                        >
-                        <a href="index.html" hreflang="nl"
-                            ><img
-                                src="images/flags/nl.png"
-                                alt="flag nl"
-                                width="16"
-                                height="11"
-                                style="width: 16px; height: 11px"
-                        /></a>
-                        <a href="a-casa.html" hreflang="it"
-                            ><img
-                                src="images/flags/it.png"
-                                alt="flag it"
-                                width="16"
-                                height="11"
-                                style="width: 16px; height: 11px"
-                        /></a>
-                    </h6>
-                </div>
-                <!-- right-area -->
+				<div class="right-area">
+					<h6>
+						<a style="margin-right: 15px;" class="plr-20 color-white btn-fill-primary" href="#">BESTELLEN: 040-9177128</a>
+						<a href="index.html" hreflang="nl"
+							><img src="images/flags/nl.png" alt="flag nl" width="16" height="11" style="width: 16px; height: 11px;"
+						/></a>
+						<a href="a-casa.html" hreflang="it"
+							><img src="images/flags/it.png" alt="flag it" width="16" height="11" style="width: 16px; height: 11px;"
+						/></a>
+					</h6>
+				</div>
+				<!-- right-area -->
 
-                <a class="menu-nav-icon" data-menu="#main-menu" href="#"
-                    ><i class="ion-navicon"></i
-                ></a>
+				<a class="menu-nav-icon" data-menu="#main-menu" href="#"><i class="ion-navicon"></i></a>
 
-                <ul class="main-menu font-mountainsre" id="main-menu">
-                    <li><a href="index.html" hreflang="nl">HOME</a></li>
-                    <li><a href="over-ons.html" hreflang="nl">OVER ONS</a></li>
-                    <li><a href="contact.html" hreflang="nl">CONTACT</a></li>
-                </ul>
+				<ul class="main-menu font-mountainsre" id="main-menu">
+					<li><a href="index.html" hreflang="nl">HOME</a></li>
+					<li><a href="over-ons.html" hreflang="nl">OVER ONS</a></li>
+					<li><a href="contact.html" hreflang="nl">CONTACT</a></li>
+				</ul>
 
-                <div class="clearfix"></div>
-            </div>
-            <!-- container -->
-        </header>
+				<div class="clearfix"></div>
+			</div>
+			<!-- container -->
+		</header>
 
-        <section class="bg-1 h-900x main-slider pos-relative">
-            <div class="triangle-up pos-bottom"></div>
-            <div class="container h-100">
-                <div class="dplay-tbl">
-                    <div class="dplay-tbl-cell center-text color-white">
-                        <h5><b>DE LEKKERSTE PIZZA'S</b></h5>
-                        <h1 class="mt-30 mb-15">Pizza & Pasta</h1>
-                        <h5>
-                            <a href="#menu" class="btn-primaryc plr-25"
-                                ><b>BEKIJK HET MENU VAN VANDAAG</b></a
-                            >
-                        </h5>
-                    </div>
-                    <!-- dplay-tbl-cell -->
-                </div>
-                <!-- dplay-tbl -->
-            </div>
-            <!-- container -->
-        </section>
+		<section class="bg-1 h-900x main-slider pos-relative">
+			<div class="triangle-up pos-bottom"></div>
+			<div class="container h-100">
+				<div class="dplay-tbl">
+					<div class="dplay-tbl-cell center-text color-white">
+						<h5>DE LEKKERSTE PIZZA'S</h5>
+						<h1 class="mt-30 mb-15">Pizza & Pasta</h1>
+						<h5>
+							<a href="#menu" class="btn-primaryc plr-25 bold">BEKIJK HET MENU VAN VANDAAG</a>
+						</h5>
+					</div>
+					<!-- dplay-tbl-cell -->
+				</div>
+				<!-- dplay-tbl -->
+			</div>
+			<!-- container -->
+		</section>
 
-        <section class="story-area left-text center-sm-text pos-relative">
-            <div class="abs-tbl bg-2 w-20 z--1 dplay-md-none"></div>
-            <div class="abs-tbr bg-3 w-20 z--1 dplay-md-none"></div>
-            <div class="container">
-                <main>
-                    <div class="heading">
-                        <img
-                            class="heading-img"
-                            src="images/heading_logo.png"
-                            alt="logo"
-                        />
-                        <h2>Ons Verhaal</h2>
-                    </div>
+		<section class="story-area left-text center-sm-text pos-relative">
+			<div class="abs-tbl bg-2 w-20 z--1 dplay-md-none"></div>
+			<div class="abs-tbr bg-3 w-20 z--1 dplay-md-none"></div>
+			<div class="container">
+				<main>
+					<div class="heading">
+						<img class="heading-img" src="images/heading_logo.png" alt="logo" />
+						<h2>Ons Verhaal</h2>
+					</div>
 
-                    <div class="row">
-                        <section class="col-md-6">
-                            <p class="mb-30">
-                                Op 28 augustus 1980 opende Luigi's haar deuren.
-                                Inmiddels zijn we 40 jaar verder en is de
-                                pizzeria uitgegroeid tot een begrip in Eindhoven
-                                en omstreken. Begonnen we met vier man
-                                personeel, tegenwoordig zijn er ruim 20
-                                medewerkers in dienst in ons familie restaurant.
-                                De enorme groei hebben wij onder andere te
-                                danken aan de aansprekende locatie van ons
-                                restaurant, midden in het schilderachtigste
-                                gedeelte van het oude dorp. Maar natuurlijk ook
-                                aan de trouwe clientèle, aan de goede kwaliteit
-                                van onze gerechten en tenslotte aan de
-                                vriendelijke en behulpzame eigenschappen van ons
-                                bedienend personeel.
-                            </p>
-                        </section>
-                        <!-- col-md-6 -->
+					<div class="row">
+						<section class="col-md-6">
+							<p class="mb-30">
+								Op 28 augustus 1980 opende Luigi's haar deuren. Inmiddels zijn we 40 jaar verder en is de pizzeria uitgegroeid
+								tot een begrip in Eindhoven en omstreken. Begonnen we met vier man personeel, tegenwoordig zijn er ruim 20
+								medewerkers in dienst in ons familie restaurant. De enorme groei hebben wij onder andere te danken aan de
+								aansprekende locatie van ons restaurant, midden in het schilderachtigste gedeelte van het oude dorp. Maar
+								natuurlijk ook aan de trouwe clientèle, aan de goede kwaliteit van onze gerechten en tenslotte aan de
+								vriendelijke en behulpzame eigenschappen van ons bedienend personeel.
+							</p>
+						</section>
+						<!-- col-md-6 -->
 
-                        <section class="col-md-6">
-                            <p class="mb-30">
-                                Restaurant Luigi's werkt uitsluitend met de
-                                mooiste producten die de Italiaanse keuken te
-                                bieden heeft. Alle ingrediënten worden vers
-                                besteld bij de plaatselijke Italiaanse
-                                leverancier of met zorg geïmporteerd uit Italië.
-                                Iedere dag beginnen onze koks met de
-                                voorbereidingen. Hierdoor werken we dagelijks
-                                met verse producten.
-                            </p>
-                        </section>
-                        <!-- col-md-6 -->
-                    </div>
-                    <!-- row -->
-                </main>
-            </div>
-            <!-- container -->
-        </section>
+						<section class="col-md-6">
+							<p class="mb-30">
+								Restaurant Luigi's werkt uitsluitend met de mooiste producten die de Italiaanse keuken te bieden heeft. Alle
+								ingrediënten worden vers besteld bij de plaatselijke Italiaanse leverancier of met zorg geïmporteerd uit
+								Italië. Iedere dag beginnen onze koks met de voorbereidingen. Hierdoor werken we dagelijks met verse
+								producten.
+							</p>
+						</section>
+						<!-- col-md-6 -->
+					</div>
+					<!-- row -->
+				</main>
+			</div>
+			<!-- container -->
+		</section>
 
-        <section class="story-area bg-seller color-white pos-relative">
-            <div class="pos-bottom triangle-up"></div>
-            <div class="pos-top triangle-bottom"></div>
-            <div class="container">
-                <div class="heading">
-                    <img
-                        class="heading-img"
-                        src="images/heading_logo.png"
-                        alt="logo"
-                    />
-                    <h2>Pizza Toppers!</h2>
-                </div>
+		<section class="story-area bg-seller color-white pos-relative">
+			<div class="pos-bottom triangle-up"></div>
+			<div class="pos-top triangle-bottom"></div>
+			<div class="container">
+				<div class="heading">
+					<img class="heading-img" src="images/heading_logo.png" alt="logo" />
+					<h2>Pizza Toppers!</h2>
+				</div>
 
-                <div class="row">
-                    <article class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="center-text mb-30">
-                            <div class="ïmg-200x mlr-auto pos-relative">
-                                <h6 class="ribbon-cont">
-                                    <div class="ribbon primary"></div>
-                                    <b>AANBIEDING</b>
-                                </h6>
-                                <img
-                                    src="images/menu/margherita.png"
-                                    alt="Pizza Margherita"
-                                />
-                            </div>
-                            <h5 class="mt-20">Pizza Margherita</h5>
-                            <h4 class="mt-5"><b>€9,90</b></h4>
-                            <h6 class="mt-20">
-                                <a href="#" class="btn-brdr-primary plr-25"
-                                    ><b>Bestel Nu</b></a
-                                >
-                            </h6>
-                        </div>
-                        <!--text-center-->
-                    </article>
-                    <!-- col-md-3 -->
+				<div class="row">
+					<article class="col-lg-3 col-md-4 col-sm-6">
+						<div class="center-text mb-30">
+							<div class="ïmg-200x mlr-auto pos-relative">
+								<h6 class="ribbon-cont">
+									<div class="ribbon primary"></div>
+									AANBIEDING
+								</h6>
+								<img src="images/menu/margherita.png" alt="Pizza Margherita" />
+							</div>
+							<h5 class="mt-20">Pizza Margherita</h5>
+							<h4 class="mt-5">€9,90</h4>
+							<h6 class="mt-20">
+								<a href="#" class="btn-brdr-primary plr-25 bold">Bestel Nu</a>
+							</h6>
+						</div>
+						<!--text-center-->
+					</article>
+					<!-- col-md-3 -->
 
-                    <article class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="center-text mb-30">
-                            <div class="ïmg-200x mlr-auto pos-relative">
-                                <img
-                                    src="images/menu/cheese.png"
-                                    alt="Pizza Quattro Stagioni"
-                                />
-                            </div>
-                            <h5 class="mt-20">Pizza Quattro Stagioni</h5>
-                            <h4 class="mt-5"><b>€11,90</b></h4>
-                            <h6 class="mt-20">
-                                <a href="#" class="btn-brdr-primary plr-25"
-                                    ><b>Bestel Nu</b></a
-                                >
-                            </h6>
-                        </div>
-                        <!--text-center-->
-                    </article>
-                    <!-- col-md-3 -->
+					<article class="col-lg-3 col-md-4 col-sm-6">
+						<div class="center-text mb-30">
+							<div class="ïmg-200x mlr-auto pos-relative">
+								<img src="images/menu/cheese.png" alt="Pizza Quattro Stagioni" />
+							</div>
+							<h5 class="mt-20">Pizza Quattro Stagioni</h5>
+							<h4 class="mt-5">€11,90</h4>
+							<h6 class="mt-20">
+								<a href="#" class="btn-brdr-primary plr-25 bold">Bestel Nu</a>
+							</h6>
+						</div>
+						<!--text-center-->
+					</article>
+					<!-- col-md-3 -->
 
-                    <article class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="center-text mb-30">
-                            <div class="ïmg-200x mlr-auto pos-relative">
-                                <img
-                                    src="images/menu/tuna.png"
-                                    alt="Pizza Tonno"
-                                />
-                            </div>
-                            <h5 class="mt-20">Pizza Tonno</h5>
-                            <h4 class="mt-5"><b>€11,90</b></h4>
-                            <h6 class="mt-20">
-                                <a href="#" class="btn-brdr-primary plr-25"
-                                    ><b>Bestel Nu</b></a
-                                >
-                            </h6>
-                        </div>
-                        <!--text-center-->
-                    </article>
-                    <!-- col-md-3 -->
+					<article class="col-lg-3 col-md-4 col-sm-6">
+						<div class="center-text mb-30">
+							<div class="ïmg-200x mlr-auto pos-relative">
+								<img src="images/menu/tuna.png" alt="Pizza Tonno" />
+							</div>
+							<h5 class="mt-20">Pizza Tonno</h5>
+							<h4 class="mt-5">€11,90</h4>
+							<h6 class="mt-20">
+								<a href="#" class="btn-brdr-primary plr-25 bold">Bestel Nu</a>
+							</h6>
+						</div>
+						<!--text-center-->
+					</article>
+					<!-- col-md-3 -->
 
-                    <article class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="center-text mb-30">
-                            <div class="ïmg-200x mlr-auto pos-relative">
-                                <h6 class="ribbon-cont">
-                                    <div class="ribbon secondary"></div>
-                                    <b>SPECIALITEIT</b>
-                                </h6>
-                                <img
-                                    src="images/menu/pollo.png"
-                                    alt="Pizza Pollo"
-                                />
-                            </div>
-                            <h5 class="mt-20">Pizza Pollo</h5>
-                            <h4 class="mt-5"><b>€12,90</b></h4>
-                            <h6 class="mt-20">
-                                <a href="#" class="btn-brdr-primary plr-25"
-                                    ><b>Bestel Nu</b></a
-                                >
-                            </h6>
-                        </div>
-                        <!--text-center-->
-                    </article>
-                    <!-- col-md-3 -->
+					<article class="col-lg-3 col-md-4 col-sm-6">
+						<div class="center-text mb-30">
+							<div class="ïmg-200x mlr-auto pos-relative">
+								<h6 class="ribbon-cont">
+									<div class="ribbon secondary"></div>
+									SPECIALITEIT
+								</h6>
+								<img src="images/menu/pollo.png" alt="Pizza Pollo" />
+							</div>
+							<h5 class="mt-20">Pizza Pollo</h5>
+							<h4 class="mt-5">€12,90</h4>
+							<h6 class="mt-20">
+								<a href="#" class="btn-brdr-primary plr-25 bold">Bestel Nu</a>
+							</h6>
+						</div>
+						<!--text-center-->
+					</article>
+					<!-- col-md-3 -->
 
-                    <article class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="center-text mb-30">
-                            <div class="ïmg-200x mlr-auto pos-relative">
-                                <img
-                                    src="images/menu/hawaii.png"
-                                    alt="Pizza Hawaii"
-                                />
-                            </div>
-                            <h5 class="mt-20">Pizza Hawaii</h5>
-                            <h4 class="mt-5"><b>€11,90</b></h4>
-                            <h6 class="mt-20">
-                                <a href="#" class="btn-brdr-primary plr-25"
-                                    ><b>Bestel Nu</b></a
-                                >
-                            </h6>
-                        </div>
-                        <!--text-center-->
-                    </article>
-                    <!-- col-md-3 -->
+					<article class="col-lg-3 col-md-4 col-sm-6">
+						<div class="center-text mb-30">
+							<div class="ïmg-200x mlr-auto pos-relative">
+								<img src="images/menu/hawaii.png" alt="Pizza Hawaii" />
+							</div>
+							<h5 class="mt-20">Pizza Hawaii</h5>
+							<h4 class="mt-5">€11,90</h4>
+							<h6 class="mt-20">
+								<a href="#" class="btn-brdr-primary plr-25 bold">Bestel Nu</a>
+							</h6>
+						</div>
+						<!--text-center-->
+					</article>
+					<!-- col-md-3 -->
 
-                    <article class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="center-text mb-30">
-                            <div class="ïmg-200x mlr-auto pos-relative">
-                                <h6 class="ribbon-cont">
-                                    <div class="ribbon primary"></div>
-                                    <b>AANBIEDING</b>
-                                </h6>
-                                <img
-                                    src="images/menu/veggie.png"
-                                    alt="Pizza Veggie"
-                                />
-                            </div>
-                            <h5 class="mt-20">Pizza Veggie</h5>
-                            <h4 class="mt-5"><b>€9,90</b></h4>
-                            <h6 class="mt-20">
-                                <a href="#" class="btn-brdr-primary plr-25"
-                                    ><b>Bestel Nu</b></a
-                                >
-                            </h6>
-                        </div>
-                        <!--text-center-->
-                    </article>
-                    <!-- col-md-3 -->
+					<article class="col-lg-3 col-md-4 col-sm-6">
+						<div class="center-text mb-30">
+							<div class="ïmg-200x mlr-auto pos-relative">
+								<h6 class="ribbon-cont">
+									<div class="ribbon primary"></div>
+									AANBIEDING
+								</h6>
+								<img src="images/menu/veggie.png" alt="Pizza Veggie" />
+							</div>
+							<h5 class="mt-20">Pizza Veggie</h5>
+							<h4 class="mt-5">€9,90</h4>
+							<h6 class="mt-20">
+								<a href="#" class="btn-brdr-primary plr-25 bold">Bestel Nu</a>
+							</h6>
+						</div>
+						<!--text-center-->
+					</article>
+					<!-- col-md-3 -->
 
-                    <article class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="center-text mb-30">
-                            <div class="ïmg-200x mlr-auto pos-relative">
-                                <h6 class="ribbon-cont color-black">
-                                    <div class="ribbon white"></div>
-                                    <b>EXTRA GROOT</b>
-                                </h6>
-                                <img
-                                    src="images/menu/funghi.png"
-                                    alt="Pizza Funghi"
-                                />
-                            </div>
-                            <h5 class="mt-20">Pizza Funghi</h5>
-                            <h4 class="mt-5"><b>€12,90</b></h4>
-                            <h6 class="mt-20">
-                                <a href="#" class="btn-brdr-primary plr-25"
-                                    ><b>Bestel Nu</b></a
-                                >
-                            </h6>
-                        </div>
-                        <!--text-center-->
-                    </article>
-                    <!-- col-md-3 -->
+					<article class="col-lg-3 col-md-4 col-sm-6">
+						<div class="center-text mb-30">
+							<div class="ïmg-200x mlr-auto pos-relative">
+								<h6 class="ribbon-cont color-black">
+									<div class="ribbon white"></div>
+									EXTRA GROOT
+								</h6>
+								<img src="images/menu/funghi.png" alt="Pizza Funghi" />
+							</div>
+							<h5 class="mt-20">Pizza Funghi</h5>
+							<h4 class="mt-5">€12,90</h4>
+							<h6 class="mt-20">
+								<a href="#" class="btn-brdr-primary plr-25 bold">Bestel Nu</a>
+							</h6>
+						</div>
+						<!--text-center-->
+					</article>
+					<!-- col-md-3 -->
 
-                    <article class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="center-text mb-30">
-                            <div class="ïmg-200x mlr-auto pos-relative">
-                                <img
-                                    src="images/menu/doner.png"
-                                    alt="Pizza Döner"
-                                />
-                            </div>
-                            <h5 class="mt-20">Pizza Döner</h5>
-                            <h4 class="mt-5"><b>€11,90</b></h4>
-                            <h6 class="mt-20">
-                                <a href="#" class="btn-brdr-primary plr-25"
-                                    ><b>Bestel Nu</b></a
-                                >
-                            </h6>
-                        </div>
-                        <!--text-center-->
-                    </article>
-                    <!-- col-md-3 -->
-                </div>
-                <!-- row -->
+					<article class="col-lg-3 col-md-4 col-sm-6">
+						<div class="center-text mb-30">
+							<div class="ïmg-200x mlr-auto pos-relative">
+								<img src="images/menu/doner.png" alt="Pizza Döner" />
+							</div>
+							<h5 class="mt-20">Pizza Döner</h5>
+							<h4 class="mt-5">€11,90</h4>
+							<h6 class="mt-20">
+								<a href="#" class="btn-brdr-primary plr-25 bold">Bestel Nu</a>
+							</h6>
+						</div>
+						<!--text-center-->
+					</article>
+					<!-- col-md-3 -->
+				</div>
+				<!-- row -->
 
-                <h6 class="center-text mt-40 mt-sm-20 mb-30">
-                    <a href="#menu" class="btn-primaryc plr-25"
-                        ><b>BEKIJK HET MENU VAN VANDAAG</b></a
-                    >
-                </h6>
-            </div>
-            <!-- container -->
-        </section>
+				<h6 class="center-text mt-40 mt-sm-20 mb-30">
+					<a href="#menu" class="btn-primaryc plr-25 bold">BEKIJK HET MENU VAN VANDAAG</a>
+				</h6>
+			</div>
+			<!-- container -->
+		</section>
 
-        <section>
-            <div class="container">
-                <div class="heading">
-                    <img
-                        class="heading-img"
-                        src="images/heading_logo.png"
-                        alt="logo tomato"
-                    />
-                    <h2 id="menu">Ons Menu</h2>
-                </div>
+		<section>
+			<div class="container">
+				<div class="heading">
+					<img class="heading-img" src="images/heading_logo.png" alt="logo tomato" />
+					<h2 id="menu">Ons Menu</h2>
+				</div>
 
-                <div class="row">
-                    <div class="col-sm-12">
-                        <ul class="selecton brdr-b-primary mb-70">
-                            <li>
-                                <a class="active" href="#" data-select="*"
-                                    ><b>ALLES</b></a
-                                >
-                            </li>
-                            <li>
-                                <a href="#" data-select="pizza"><b>PIZZA</b></a>
-                            </li>
-                            <li>
-                                <a href="#" data-select="pasta"><b>PASTA</b></a>
-                            </li>
-                            <li>
-                                <a href="#" data-select="salads"
-                                    ><b>SALADES</b></a
-                                >
-                            </li>
-                            <li>
-                                <a href="#" data-select="deserts"
-                                    ><b>NAGERECHTEN</b></a
-                                >
-                            </li>
-                        </ul>
-                    </div>
-                    <!--col-sm-12-->
-                </div>
-                <!--row-->
+				<div class="row">
+					<div class="col-sm-12">
+						<ul class="selecton brdr-b-primary mb-70">
+							<li>
+								<a class="active bold" href="#" data-select="*">ALLES</a>
+							</li>
+							<li>
+								<a class="bold" href="#" data-select="pizza">PIZZA</a>
+							</li>
+							<li>
+								<a class="bold" href="#" data-select="pasta">PASTA</a>
+							</li>
+							<li>
+								<a class="bold" href="#" data-select="salads">SALADES</a>
+							</li>
+							<li>
+								<a class="bold" href="#" data-select="deserts">NAGERECHTEN</a>
+							</li>
+						</ul>
+					</div>
+					<!--col-sm-12-->
+				</div>
+				<!--row-->
 
-                <div class="row">
-                    <article class="col-md-6 food-menu pizza">
-                        <div class="sided-90x mb-30">
-                            <div class="s-left">
-                                <img
-                                    class="br-3"
-                                    src="images/menu/margherita.png"
-                                    alt="Menu Image"
-                                />
-                            </div>
-                            <!--s-left-->
-                            <div class="s-right">
-                                <h5 class="mb-10">
-                                    <b>Pizza Margherita</b
-                                    ><b class="color-primary float-right"
-                                        >€9,90</b
-                                    >
-                                </h5>
-                                <p class="pr-70">
-                                    De pizza margherita is een typisch
-                                    Napolitaanse pizza met als ingrediënten
-                                    tomaten, mozzarella, verse basilicum, zout
-                                    en olijfolie.
-                                </p>
-                            </div>
-                            <!--s-right-->
-                        </div>
-                        <!-- sided-90x -->
-                    </article>
-                    <!-- food-menu -->
+				<div class="row">
+					<article class="col-md-6 food-menu pizza">
+						<div class="sided-90x mb-30">
+							<div class="s-left">
+								<img class="br-3" src="images/menu/margherita.png" alt="Menu Image" />
+							</div>
+							<!--s-left-->
+							<div class="s-right">
+								<h5 class="mb-10 bold">Pizza Margherita<span class="color-primary float-right bold">€9,90</span></h5>
+								<p class="pr-70">
+									De pizza margherita is een typisch Napolitaanse pizza met als ingrediënten tomaten, mozzarella, verse
+									basilicum, zout en olijfolie.
+								</p>
+							</div>
+							<!--s-right-->
+						</div>
+						<!-- sided-90x -->
+					</article>
+					<!-- food-menu -->
 
-                    <article class="col-md-6 food-menu pizza">
-                        <div class="sided-90x mb-30">
-                            <div class="s-left">
-                                <img
-                                    class="br-3"
-                                    src="images/menu/hawaii.png"
-                                    alt="Menu Image"
-                                />
-                            </div>
-                            <!--s-left-->
-                            <div class="s-right">
-                                <h5 class="mb-10">
-                                    <b>Pizza Hawaii</b
-                                    ><b class="color-primary float-right"
-                                        >€11,90</b
-                                    >
-                                </h5>
-                                <p class="pr-70">
-                                    Het is de ananas die deze pizza haar naam
-                                    geeft, naar Hawaï, de Amerikaanse staat waar
-                                    veel ananas wordt gekweekt.
-                                </p>
-                            </div>
-                            <!--s-right-->
-                        </div>
-                        <!-- sided-90x -->
-                    </article>
-                    <!-- food-menu -->
+					<article class="col-md-6 food-menu pizza">
+						<div class="sided-90x mb-30">
+							<div class="s-left">
+								<img class="br-3" src="images/menu/hawaii.png" alt="Menu Image" />
+							</div>
+							<!--s-left-->
+							<div class="s-right">
+								<h5 class="mb-10 bold">Pizza Hawaii<span class="color-primary float-right">€11,90</span></h5>
+								<p class="pr-70">
+									Het is de ananas die deze pizza haar naam geeft, naar Hawaï, de Amerikaanse staat waar veel ananas wordt
+									gekweekt.
+								</p>
+							</div>
+							<!--s-right-->
+						</div>
+						<!-- sided-90x -->
+					</article>
+					<!-- food-menu -->
 
-                    <article class="col-md-6 food-menu pasta">
-                        <div class="sided-90x mb-30">
-                            <div class="s-left">
-                                <img
-                                    class="br-3"
-                                    src="images/menu/spaghetti-bolognese.jpg"
-                                    alt="Menu Image"
-                                />
-                            </div>
-                            <!--s-left-->
-                            <div class="s-right">
-                                <h5 class="mb-10">
-                                    <b>Spaghetti Bolognese</b
-                                    ><b class="color-primary float-right"
-                                        >€10,90</b
-                                    >
-                                </h5>
-                                <p class="pr-70">
-                                    Als je in Italië spaghetti bolognese vraagt
-                                    , zal men je misschien vragend aankijken.
-                                    Wat wij bolognese noemen, heet in Italië
-                                    gewoon ragù.
-                                </p>
-                            </div>
-                            <!--s-right-->
-                        </div>
-                        <!-- sided-90x -->
-                    </article>
-                    <!-- food-menu -->
+					<article class="col-md-6 food-menu pasta">
+						<div class="sided-90x mb-30">
+							<div class="s-left">
+								<img class="br-3" src="images/menu/spaghetti-bolognese.jpg" alt="Menu Image" />
+							</div>
+							<!--s-left-->
+							<div class="s-right">
+								<h5 class="mb-10 bold">Spaghetti Bolognese<span class="color-primary float-right">€10,90</span></h5>
+								<p class="pr-70">
+									Als je in Italië spaghetti bolognese vraagt , zal men je misschien vragend aankijken. Wat wij bolognese
+									noemen, heet in Italië gewoon ragù.
+								</p>
+							</div>
+							<!--s-right-->
+						</div>
+						<!-- sided-90x -->
+					</article>
+					<!-- food-menu -->
 
-                    <article class="col-md-6 food-menu salads">
-                        <div class="sided-90x mb-30">
-                            <div class="s-left">
-                                <img
-                                    class="br-3"
-                                    src="images/menu/caprese-salad.jpg"
-                                    alt="Menu Image"
-                                />
-                            </div>
-                            <!--s-left-->
-                            <div class="s-right">
-                                <h5 class="mb-10">
-                                    <b>Insalata Caprese</b
-                                    ><b class="color-primary float-right"
-                                        >€5,90</b
-                                    >
-                                </h5>
-                                <p class="pr-70">
-                                    Caprese bestaat uit in plakken gesneden
-                                    tomaat en mozzarella - soms ook, maar
-                                    zelden, in blokjes - en blaadjes basilicum.
-                                </p>
-                            </div>
-                            <!--s-right-->
-                        </div>
-                        <!-- sided-90x -->
-                    </article>
-                    <!-- food-menu -->
-                    <article class="col-md-6 food-menu deserts">
-                        <div class="sided-90x mb-30">
-                            <div class="s-left">
-                                <img
-                                    class="br-3"
-                                    src="images/menu/tiramisu.jpg"
-                                    alt="Menu Image"
-                                />
-                            </div>
-                            <!--s-left-->
-                            <div class="s-right">
-                                <h5 class="mb-10">
-                                    <b>Tiramisu</b
-                                    ><b class="color-primary float-right"
-                                        >€8,90</b
-                                    >
-                                </h5>
-                                <p class="pr-70">
-                                    De naam tiramisu betekent letterlijk trek
-                                    mij omhoog, wat zoveel inhoudt als beur mij
-                                    op of maak mij blij.
-                                </p>
-                            </div>
-                            <!--s-right-->
-                        </div>
-                        <!-- sided-90x -->
-                    </article>
-                    <!-- food-menu -->
+					<article class="col-md-6 food-menu salads">
+						<div class="sided-90x mb-30">
+							<div class="s-left">
+								<img class="br-3" src="images/menu/caprese-salad.jpg" alt="Menu Image" />
+							</div>
+							<!--s-left-->
+							<div class="s-right">
+								<h5 class="mb-10 bold">Insalata Caprese<span class="color-primary float-right">€5,90</span></h5>
+								<p class="pr-70">
+									Caprese bestaat uit in plakken gesneden tomaat en mozzarella - soms ook, maar zelden, in blokjes - en
+									blaadjes basilicum.
+								</p>
+							</div>
+							<!--s-right-->
+						</div>
+						<!-- sided-90x -->
+					</article>
+					<!-- food-menu -->
+					<article class="col-md-6 food-menu deserts">
+						<div class="sided-90x mb-30">
+							<div class="s-left">
+								<img class="br-3" src="images/menu/tiramisu.jpg" alt="Menu Image" />
+							</div>
+							<!--s-left-->
+							<div class="s-right">
+								<h5 class="mb-10 bold">Tiramisu<span class="color-primary float-right">€8,90</span></h5>
+								<p class="pr-70">
+									De naam tiramisu betekent letterlijk trek mij omhoog, wat zoveel inhoudt als beur mij op of maak mij
+									blij.
+								</p>
+							</div>
+							<!--s-right-->
+						</div>
+						<!-- sided-90x -->
+					</article>
+					<!-- food-menu -->
 
-                    <article class="col-md-6 food-menu pizza">
-                        <div class="sided-90x mb-30">
-                            <div class="s-left">
-                                <img
-                                    class="br-3"
-                                    src="images/menu/funghi.png"
-                                    alt="Menu Image"
-                                />
-                            </div>
-                            <!--s-left-->
-                            <div class="s-right">
-                                <h5 class="mb-10">
-                                    <b>Pizza Funghi</b
-                                    ><b class="color-primary float-right"
-                                        >€12,90</b
-                                    >
-                                </h5>
-                                <p class="pr-70">
-                                    Tomatensaus, mozzarella, champignons &
-                                    oregano. De toevoeging van verse champignons
-                                    maakt deze pizza een ware traditional.
-                                </p>
-                            </div>
-                            <!--s-right-->
-                        </div>
-                        <!-- sided-90x -->
-                    </article>
-                    <!-- food-menu -->
+					<article class="col-md-6 food-menu pizza">
+						<div class="sided-90x mb-30">
+							<div class="s-left">
+								<img class="br-3" src="images/menu/funghi.png" alt="Menu Image" />
+							</div>
+							<!--s-left-->
+							<div class="s-right">
+								<h5 class="mb-10 bold">Pizza Funghi<span class="color-primary float-right">€12,90</span></h5>
+								<p class="pr-70">
+									Tomatensaus, mozzarella, champignons & oregano. De toevoeging van verse champignons maakt deze pizza een
+									ware traditional.
+								</p>
+							</div>
+							<!--s-right-->
+						</div>
+						<!-- sided-90x -->
+					</article>
+					<!-- food-menu -->
 
-                    <article class="col-md-6 food-menu deserts">
-                        <div class="sided-90x mb-30">
-                            <div class="s-left">
-                                <img
-                                    class="br-3"
-                                    src="images/menu/gelato.png"
-                                    alt="Menu Image"
-                                />
-                            </div>
-                            <!--s-left-->
-                            <div class="s-right">
-                                <h5 class="mb-10">
-                                    <b>Gelato Italiano</b
-                                    ><b class="color-primary float-right"
-                                        >€7,90</b
-                                    >
-                                </h5>
-                                <p class="pr-70">
-                                    Roomijs is een variant van consumptie-ijs en
-                                    bevat sinds 1 juli 2009 in Nederland
-                                    minimaal 5% melkvet.
-                                </p>
-                            </div>
-                            <!--s-right-->
-                        </div>
-                        <!-- sided-90x -->
-                    </article>
-                    <!-- food-menu -->
+					<article class="col-md-6 food-menu deserts">
+						<div class="sided-90x mb-30">
+							<div class="s-left">
+								<img class="br-3" src="images/menu/gelato.png" alt="Menu Image" />
+							</div>
+							<!--s-left-->
+							<div class="s-right">
+								<h5 class="mb-10 bold">Gelato Italiano<span class="color-primary float-right">€7,90</span></h5>
+								<p class="pr-70">
+									Roomijs is een variant van consumptie-ijs en bevat sinds 1 juli 2009 in Nederland minimaal 5% melkvet.
+								</p>
+							</div>
+							<!--s-right-->
+						</div>
+						<!-- sided-90x -->
+					</article>
+					<!-- food-menu -->
 
-                    <article class="col-md-6 food-menu pasta">
-                        <div class="sided-90x mb-30">
-                            <div class="s-left">
-                                <img
-                                    class="br-3"
-                                    src="images/menu/penne-carbonara.jpg"
-                                    alt="Menu Image"
-                                />
-                            </div>
-                            <!--s-left-->
-                            <div class="s-right">
-                                <h5 class="mb-10">
-                                    <b>Penne Carbonara</b
-                                    ><b class="color-primary float-right"
-                                        >€10,90</b
-                                    >
-                                </h5>
-                                <p class="pr-70">
-                                    Carbonarasaus en penne: perfecte match!
-                                </p>
-                            </div>
-                            <!--s-right-->
-                        </div>
-                        <!-- sided-90x -->
-                    </article>
-                    <!-- food-menu -->
-                </div>
-                <!-- row -->
+					<article class="col-md-6 food-menu pasta">
+						<div class="sided-90x mb-30">
+							<div class="s-left">
+								<img class="br-3" src="images/menu/penne-carbonara.jpg" alt="Menu Image" />
+							</div>
+							<!--s-left-->
+							<div class="s-right">
+								<h5 class="mb-10 bold">Penne Carbonara<span class="color-primary float-right">€10,90</span></h5>
+								<p class="pr-70">
+									Carbonarasaus en penne: perfecte match!
+								</p>
+							</div>
+							<!--s-right-->
+						</div>
+						<!-- sided-90x -->
+					</article>
+					<!-- food-menu -->
+				</div>
+				<!-- row -->
 
-                <h6 class="center-text mt-40 mt-sm-20 mb-30">
-                    <a href="#" class="btn-primaryc plr-25"
-                        ><b>BEKIJK HET MENU VAN VANDAAG</b></a
-                    >
-                </h6>
-            </div>
-            <!-- container -->
-        </section>
+				<h6 class="center-text mt-40 mt-sm-20 mb-30">
+					<a href="#" class="btn-primaryc plr-25 bold">BEKIJK HET MENU VAN VANDAAG</a>
+				</h6>
+			</div>
+			<!-- container -->
+		</section>
 
-        <footer id="footer" class="pb-50 pt-70 pos-relative">
-            <div class="pos-top triangle-bottom"></div>
-            <div class="container-fluid">
-                <a href="index.html"
-                    ><img src="images/logo-white.png" alt="Logo"
-                /></a>
+		<footer id="footer" class="pb-50 pt-70 pos-relative">
+			<div class="pos-top triangle-bottom"></div>
+			<div class="container-fluid">
+				<a href="index.html" hreflang="nl"><img src="images/logo-white.png" alt="Logo" /></a>
 
-                <div class="pt-30">
-                    <p class="underline-secondary"><b>Openingstijden:</b></p>
-                    <p>Woensdag t/m zondag, 16:00 - 22:00</p>
-                </div>
+				<div class="pt-30">
+					<p class="underline-secondary bold">Orari di apertura:</p>
+					<p>Da mercoledì a domenica, 16:00 - 22:00</p>
+				</div>
 
-                <div class="pt-30">
-                    <p class="underline-secondary"><b>Adres:</b></p>
-                    <p>Gare du Nord, Ukkelstraat 2E-1, 5628 TE Eindhoven</p>
-                </div>
+				<div class="pt-30">
+					<p class="underline-secondary bold">Indirizzo:</p>
+					<p>Gare du Nord, Ukkelstraat 2E-1, 5628 TE Eindhoven</p>
+				</div>
 
-                <div class="pt-30">
-                    <p class="underline-secondary mb-10">
-                        <b>Telefoonnummer:</b>
-                    </p>
-                    <a href="tel:040-9177128">040-9177128</a>
-                </div>
+				<div class="pt-30">
+					<p class="underline-secondary mb-10 bold">
+						Numero di telefono:
+					</p>
+					<a href="tel:040-9177128">040-9177128</a>
+				</div>
 
-                <div class="pt-30">
-                    <p class="underline-secondary mb-10"><b>E-mail:</b></p>
-                    <a href="mailto:info@luigis.nl">info@luigis.nl</a>
-                </div>
+				<div class="pt-30">
+					<p class="underline-secondary mb-10 bold">E-mail:</p>
+					<a href="mailto:info@luigis.nl">info@luigis.nl</a>
+				</div>
 
-                <ul class="icon mt-30">
-                    <li>
-                        <a href="#"><i class="ion-social-pinterest"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="ion-social-facebook"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="ion-social-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            ><i class="ion-social-dribbble-outline"></i
-                        ></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="ion-social-linkedin"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="ion-social-vimeo"></i></a>
-                    </li>
-                </ul>
+				<ul class="icon mt-30">
+					<li>
+						<a href="#"><i class="ion-social-pinterest"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="ion-social-facebook"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="ion-social-twitter"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="ion-social-dribbble-outline"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="ion-social-linkedin"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="ion-social-vimeo"></i></a>
+					</li>
+				</ul>
 
-                <p class="color-light font-9 mt-50 mt-sm-30">
-                    Copyright &copy;
-                    <script>
-                        document.write(new Date().getFullYear());
-                    </script>
-                    |
-                    <a href="algemene-voorwaarden.html">Algemene voorwaarden</a>
-                </p>
-            </div>
-            <!-- container -->
-        </footer>
+				<p class="color-light font-9 mt-50 mt-sm-30">
+					Copyright &copy;
+					<script>
+						document.write(new Date().getFullYear());
+					</script>
+					|
+					<a href="termini-e-condizioni.html">Termini e condizioni</a>
+				</p>
+			</div>
+			<!-- container -->
+		</footer>
 
-        <!-- SCRIPTS -->
-        <script src="plugin-frameworks/jquery-3.2.1.min.js"></script>
-        <script src="plugin-frameworks/bootstrap.min.js"></script>
-        <script src="plugin-frameworks/swiper.js"></script>
-        <script src="common/scripts.js"></script>
-    </body>
+		<!-- SCRIPTS -->
+		<script src="plugin-frameworks/jquery-3.2.1.min.js"></script>
+		<script src="plugin-frameworks/bootstrap.min.js"></script>
+		<script src="plugin-frameworks/swiper.js"></script>
+		<script src="common/scripts.js"></script>
+	</body>
 </html>
