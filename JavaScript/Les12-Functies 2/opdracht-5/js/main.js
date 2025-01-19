@@ -5,10 +5,10 @@ function calculateStringLengths(minStringLength, ...strings) {
 	const stringLengthsSum = strings.reduce((accumulator, currentValue) => accumulator + currentValue.length, 0);
 	const stringLengthsAverage = Math.ceil(stringLengthsSum / strings.length);
 	console.log(stringLengths, stringLengthsSum, stringLengthsAverage);
-	return { stringLengths, stringLengthsSum, stringLengthsAverage };
+	return { stringLengthsSum, stringLengthsAverage };
 }
 
-const { stringLengths, stringLengthsSum, stringLengthsAverage } = calculateStringLengths(5, "Test", "Train", "Dog", "Airplane", "Cat");
+const { stringLengthsSum, stringLengthsAverage } = calculateStringLengths(5, "Test", "Train", "Dog", "Airplane", "Cat");
 
 document.querySelector("body").innerHTML = "Som van de woordlengtes: " + stringLengthsSum + "<br>";
 document.querySelector("body").innerHTML += "Gemiddelde van de woordlengtes: " + stringLengthsAverage;

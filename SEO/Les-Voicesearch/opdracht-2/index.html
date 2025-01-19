@@ -7,120 +7,114 @@
 		<script type="application/ld+json">
 			{
 				"@context": "https://schema.org",
-				"@type": "MusicVenue",
-				"name": "Sjarre;",
-				"url": "https://www.muzilimbo.nl",
-				"address": {
-				  "@type": "PostalAddress",
-				  "streetAddress": "Stationsrtaat 34",
-				  "addressLocality": "Geleen",
-				  "postalCode": "6166 CB",
-				  "addressCountry": "NL"
-				},
-				"telephone": "+31-06-000000",
-				"openingHoursSpecification": [
-				  {
-					"@type": "OpeningHoursSpecification",
-					"dayOfWeek": [
-					  "Monday",
-					  "Tuesday",
-					  "Wednesday",
-					  "Thursday",
-					  "Friday"
-					],
-					"opens": "09:00",
-					"closes": "18:00"
-				  }
-				],
-				"image": "https://www.deharmonie.nl/images/concertzaal.jpg",
-				"description": "De plekken met de beste concerts."
-			},
-			{
-				"@context": "https://schema.org",
-				"@type": "FAQPage",
-				"mainEntity": [
+				"@graph": [
 					{
-						"@type": "Question",
-						"name": "Is de website van MuziLimbo te vertrouwen?",
-						"acceptedAnswer": {
-							"@type": "Answer",
-							"text": "De website is erkend door de volgende websites: WebsiteA, WebsiteB en WebsiteC."
-						}
+						"@type": "MusicVenue",
+						"name": "Sjarre;",
+						"url": "https://www.muzilimbo.nl",
+						"address": {
+							"@type": "PostalAddress",
+							"streetAddress": "Stationsrtaat 34",
+							"addressLocality": "Geleen",
+							"postalCode": "6166 CB",
+							"addressCountry": "NL"
+						},
+						"telephone": "+31-06-000000",
+						"openingHoursSpecification": [
+							{
+								"@type": "OpeningHoursSpecification",
+								"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+								"opens": "09:00",
+								"closes": "18:00"
+							}
+						],
+						"image": "https://www.deharmonie.nl/images/concertzaal.jpg",
+						"description": "De plekken met de beste concerts."
 					},
 					{
-						"@type": "Question",
-						"name": "Waar kan ik de concerts vinden op de website?",
-						"acceptedAnswer": {
-							"@type": "Answer",
-							"text": "Op de website kunt u gebruik maken van de zoekoptie. Als u het concert niet kunt vinden, kunt u contact opnemen met de
-							klantenservice."
-						}
-					},
-					{
-						"@type": "Question",
-						"name": "Hoe kan ik een ticket kopen bij MuziLimbo?",
-						"acceptedAnswer": {
-							"@type": "Answer",
-							"text": "Kies het concert op onze hoofdpagina of maak gebruik van de zoekoptie. Op de concertpagina zult u dan een aantal opties zien voor
-							mogelijke tickets."
-						}
-					},
-					{
-						"@type": "Question",
-						"name": "Waar zijn de prijzen van een ticket voor een concert?",
-						"acceptedAnswer": {
-							"@type": "Answer",
-							"text": "Op de concertpagina bevinden een aantal optie aan de rechterkant waar u een ticket kan kiezen die u wilt kopen."
-						}
-					},
-					{
-						"@type": "Question",
-						"name": "Hoe kan ik een klacht indienen bij MuziLimbo?",
-						"acceptedAnswer": {
-							"@type": "Answer",
-							"text": "U kunt een klacht indienen door telefonisch contact op te nemen of door ons een e-mail te versturen."
-						}
-					},
-					{
-						"@type": "Question",
-						"name": "Waar kan je parkeren voor een concert?",
-						"acceptedAnswer": {
-							"@type": "Answer",
-							"text": "Bij elk concert zult u informatie krijgen over waar u kunt parkeren. Mocht dat niet zo zijn, kunt u contact met ons opnemen."
-						}
-					},
-					{
-						"@type": "Question",
-						"name": "Wat zijn de contactgegevens van MuziLimbo?",
-						"acceptedAnswer": {
-							"@type": "Answer",
-							"text": "U kunt telefonisch contact opnemen met het volgende nummer: 06-000000000. U kunt ook contact met ons opnemen via het volgende
-							e-mailadres: maurice@00000.nl."
-						}
-					},
-					{
-						"@type": "Question",
-						"name": "Wat is het adres van MuziLimbo?",
-						"acceptedAnswer": {
-							"@type": "Answer",
-							"text": "Stationstraat 34 6166CB Geleen"
-						}
-					},
-					{
-						"@type": "Question",
-						"name": "Hoe kan ik mijn geld terug krijgen?",
-						"acceptedAnswer": {
-							"@type": "Answer",
-							"text": "Neem contact met ons op via telefoon of email."
-						}
-					},
-					{
-						"@type": "Question",
-						"name": "Hoeveel kost het om te parkeren?",
-						"acceptedAnswer": {
-							"@type": "Answer",
-							"text": "Bij elk ticket is de prijs inclusief parkeerkosten. Mocht dat niet zo zijn, wordt dit aangegeven bij de aankoop van de ticket."
-						}
+						"@type": "FAQPage",
+						"mainEntity": [
+							{
+								"@type": "Question",
+								"name": "Is de website van MuziLimbo te vertrouwen?",
+								"acceptedAnswer": {
+									"@type": "Answer",
+									"text": "De website is erkend door de volgende websites: WebsiteA, WebsiteB en WebsiteC."
+								}
+							},
+							{
+								"@type": "Question",
+								"name": "Waar kan ik de concerts vinden op de website?",
+								"acceptedAnswer": {
+									"@type": "Answer",
+									"text": "Op de website kunt u gebruik maken van de zoekoptie. Als u het concert niet kunt vinden, kunt u contact opnemen met de klantenservice."
+								}
+							},
+							{
+								"@type": "Question",
+								"name": "Hoe kan ik een ticket kopen bij MuziLimbo?",
+								"acceptedAnswer": {
+									"@type": "Answer",
+									"text": "Kies het concert op onze hoofdpagina of maak gebruik van de zoekoptie. Op de concertpagina zult u dan een aantal opties zien voor mogelijke tickets."
+								}
+							},
+							{
+								"@type": "Question",
+								"name": "Waar zijn de prijzen van een ticket voor een concert?",
+								"acceptedAnswer": {
+									"@type": "Answer",
+									"text": "Op de concertpagina bevinden een aantal optie aan de rechterkant waar u een ticket kan kiezen die u wilt kopen."
+								}
+							},
+							{
+								"@type": "Question",
+								"name": "Hoe kan ik een klacht indienen bij MuziLimbo?",
+								"acceptedAnswer": {
+									"@type": "Answer",
+									"text": "U kunt een klacht indienen door telefonisch contact op te nemen of door ons een e-mail te versturen."
+								}
+							},
+							{
+								"@type": "Question",
+								"name": "Waar kan je parkeren voor een concert?",
+								"acceptedAnswer": {
+									"@type": "Answer",
+									"text": "Bij elk concert zult u informatie krijgen over waar u kunt parkeren. Mocht dat niet zo zijn, kunt u contact met ons opnemen."
+								}
+							},
+							{
+								"@type": "Question",
+								"name": "Wat zijn de contactgegevens van MuziLimbo?",
+								"acceptedAnswer": {
+									"@type": "Answer",
+									"text": "U kunt telefonisch contact opnemen met het volgende nummer: 06-000000000. U kunt ook contact met ons opnemen via het volgende e-mailadres: maurice@00000.nl."
+								}
+							},
+							{
+								"@type": "Question",
+								"name": "Wat is het adres van MuziLimbo?",
+								"acceptedAnswer": {
+									"@type": "Answer",
+									"text": "Stationstraat 34 6166CB Geleen"
+								}
+							},
+							{
+								"@type": "Question",
+								"name": "Hoe kan ik mijn geld terug krijgen?",
+								"acceptedAnswer": {
+									"@type": "Answer",
+									"text": "Neem contact met ons op via telefoon of email."
+								}
+							},
+							{
+								"@type": "Question",
+								"name": "Hoeveel kost het om te parkeren?",
+								"acceptedAnswer": {
+									"@type": "Answer",
+									"text": "Bij elk ticket is de prijs inclusief parkeerkosten. Mocht dat niet zo zijn, wordt dit aangegeven bij de aankoop van de ticket."
+								}
+							}
+						]
 					}
 				]
 			}

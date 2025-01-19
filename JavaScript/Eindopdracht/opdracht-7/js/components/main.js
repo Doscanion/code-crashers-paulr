@@ -313,7 +313,7 @@ class Main {
 			let spdef = 0;
 			let spd = 0;
 
-			let teamTypes = [];
+			const teamTypes = new Set();
 
 			for (const pokemon of pokemonTeam) {
 				hp += pokemon.hp;
@@ -323,9 +323,7 @@ class Main {
 				spdef += pokemon.spdef;
 				spd += pokemon.spd;
 				pokemon.types.forEach((element) => {
-					if (!teamTypes.includes(element.type.name)) {
-						teamTypes.push(element.type.name);
-					}
+					teamTypes.add(element.type.name);
 				});
 			}
 
